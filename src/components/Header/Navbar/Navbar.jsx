@@ -7,7 +7,7 @@ import { BsCart4 } from 'react-icons/bs';
 import { RiMenu2Line, RiUser6Line } from 'react-icons/ri';
 import { TbSlashes } from 'react-icons/tb';
 import { HiOutlineLanguage } from 'react-icons/hi2';
-import {motion, AnimatePresence } from 'framer-motion';
+import {motion, AnimatePresence, easeIn } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiHome, FiSearch, FiUser } from 'react-icons/fi';
 import { BiCart } from 'react-icons/bi';
@@ -38,6 +38,15 @@ const Navbar = () => {
 
   const lastScrollY = useRef(0);
 
+  useEffect(() => {
+    if (mobileMenuOpen || subMenuOpen || itemListOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [mobileMenuOpen, subMenuOpen, itemListOpen]);
+
+  // This Variabels Create for Mobile Drawers system.
   const closeAllDrawers = () => {
     setMobileMenuOpen(false);
     setSubMenuOpen(null);
@@ -61,7 +70,7 @@ const Navbar = () => {
 // This useEffect for DeskTop devise Fixed Navigation.
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 400) {
           setIsScroll(true);
       } else {
         setIsScroll(false)
@@ -189,7 +198,7 @@ const Navbar = () => {
         {/* Fixed Nav Part */}
 
          <div className='hidden xl:flex'>
-        <div className={`items-center w-full bg-white backdrop-blur-3xl fixed top-0  ${isScroll ? 'flex' : 'hidden'}`}>
+        <motion.div className={`items-center w-full bg-white backdrop-blur-3xl fixed top-0 ${isScroll ? 'flex' : 'hidden'}`} animate={{ y: isScroll ? 0 : -100 }} transition={{duration: 0.3}} >
 
          <div className='relative flex w-full justify-evenly'>
   
@@ -249,7 +258,7 @@ const Navbar = () => {
               </div>
             </div>
        </div>
-         </div>
+         </motion.div>
          </div>
 
         {/* Mobile Nav Part */}
