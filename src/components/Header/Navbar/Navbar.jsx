@@ -38,6 +38,7 @@ const Navbar = () => {
 
   const lastScrollY = useRef(0);
 
+  // if Mobile Drawer open , page not scrollable
   useEffect(() => {
     if (mobileMenuOpen || subMenuOpen || itemListOpen) {
       document.body.style.overflow = 'hidden';

@@ -7,13 +7,13 @@ const App = () => {
   return (
       <Router>
         <div>
-      <Navbar/>
-      <Routes>
-      <Route path='/' element={<Home/>}/>
+          <Navbar/>
+            <Routes>
+             <Route path='/' element={<Home/>}/>
 
-      </Routes>
+            </Routes>
       </div>
-      </Router>
+    </Router>
   )
 }
 
