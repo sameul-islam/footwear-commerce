@@ -4,6 +4,7 @@ import { MENU_CONFIG } from "./menuData";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import { GoArrowUpRight } from "react-icons/go";
 
 const ItemListDrawer = ({ isOpen, onClose, onBack, menuName, columnTitle }) => {
   if (!menuName || !columnTitle) return null;
@@ -49,8 +50,8 @@ const ItemListDrawer = ({ isOpen, onClose, onBack, menuName, columnTitle }) => {
                 key={idx}
                 className="p-4 sm:p-5 border-b border-gray-200 cursor-pointer hover:bg-gray-100"
               >
-                  <Link to={item.href} className="block font-Lato text-gray-700" onClick={onClose}> 
-                  {item.label} 
+                <Link to={item.href} className="flex font-Lato  text-gray-700 items-center justify-between" onClick={onClose}> 
+                  <span>{item.label}</span> <GoArrowUpRight/>
                 </Link>
               </li>
             ))}

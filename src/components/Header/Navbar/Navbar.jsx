@@ -198,8 +198,8 @@ const Navbar = () => {
 
         {/* Fixed Nav Part */}
 
-         <div className='hidden xl:flex'>
-        <motion.div className={`items-center w-full bg-white backdrop-blur-3xl fixed top-0 ${isScroll ? 'flex' : 'hidden'}`} animate={{ y: isScroll ? 0 : -100 }} transition={{duration: 0.3}} >
+         <div className='hidden xl:flex z-50'>
+        <motion.div className={`items-center w-full bg-white backdrop-blur-3xl fixed top-0 z-50 ${isScroll ? 'flex' : 'hidden'}`} animate={{ y: isScroll ? 0 : -100 }} transition={{duration: 0.3}} >
 
          <div className='relative flex w-full justify-evenly'>
   

@@ -11,3 +11,11 @@
      --font-Jersey: "Jersey 25 Charted", sans-serif;
      --font-Poppins: "Poppins", sans-serif;
      }
+
+.no-scrollbar::-webkit-scrollbar {
+     display: none;
+}
+.no-scrollbar {
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}

@@ -61,11 +61,11 @@ const MainDrawer = ({ isOpen, onClose, onOpenSubMenu }) => {
           <div className="flex items-center gap-1">
             <CiLocationOn size={22}/>Location
           </div>
-           <div className="flex items-center gap-1">
-              BN || EN  
-           </div>
            <div>
             <MdFavoriteBorder size={22}/>
+           </div>
+            <div className="flex items-center gap-1">
+              BN || EN  
            </div>
           </div>
         </div>
