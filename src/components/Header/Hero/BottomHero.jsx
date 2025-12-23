@@ -6,7 +6,7 @@ import { MdOutlineDiscount, MdOutlineEventAvailable } from 'react-icons/md'
 const BottomHero = () => {
   return (
     <div>
-      <div className='flex flex-row overflow-x-auto overflow-y-hidden bg-gray-50 md:bg-white mt-0 w-full items-center justify-around border-b border-gray-200 md:border-none'>
+      <div className='flex flex-row overflow-x-auto overflow-y-hidden no-scrollbar bg-gray-50 md:bg-white mt-0 w-full items-center justify-around border-b border-gray-200 md:border-none'>
 
          <div className='flex items-center gap-2 p-5 md:p-7 whitespace-nowrap border-r  border-gray-200 md:border-none pr-4'>
            <LiaShippingFastSolid className='text-xl'/> <span className='font-Lato text-sm font-light'>Free shipping over Rs.799 </span>
