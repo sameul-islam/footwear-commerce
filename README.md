@@ -30,3 +30,7 @@ Completed the Hero section in its entirety. Additionally, spent time planning th
 ### Day 6 – December 22, 2025
 
 Completed the Collection section and downloaded several product images for future use. Reworked the homepage structure, removing the old layout from my notes and creating a new, more organized and efficient design.
+
+### Day 7 – December 23, 2025
+
+Today, I completed the remaining work of the collection section, and I also created the Brand State and best Seller sections.
