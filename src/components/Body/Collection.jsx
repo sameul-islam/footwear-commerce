@@ -63,12 +63,13 @@ const Collection = () => {
     handleScroll()
    },[])
    
+  //  Arrow Enable/Disable
    const handleScroll = () => {
     const el = scrollRef.current
     if (!el) return
     setCanScrollLeft(el.scrollLeft > 0)
     setCanScrollRight(
-      el.scrollLeft + el.clientWidth < el.scrollWidth - 1
+    Math.ceil(el.scrollLeft + el.clientWidth) < el.scrollWidth
     )
    }
 
@@ -118,6 +119,7 @@ const Collection = () => {
         <img
         src={item.image}
         alt={item.title}
+        onLoad={handleScroll}
         className='h-100 md:h-115 xl:h-126 2xl:h-128 cursor-pointer'
         />
         <span className='absolute font-Lato bottom-4 left-4 px-3 py-1 text-xs tracking-widest uppercase text-white/90 backdrop-blur-xs bg-black/20 rounded'>
