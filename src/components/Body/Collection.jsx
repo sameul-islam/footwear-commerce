@@ -96,8 +96,8 @@ const Collection = () => {
   return (
     <div className='mt-8 md:mt-14'>
      
-     <h1 className='text-center font-Poppins text-xl md:text-2xl lg:text-3xl'>
-      Our Collection
+     <h1 className='text-center font-Poppins text-lg sm:text-xl md:text-2xl lg:text-3xl'>
+      Designed for Every Step
      </h1>
    
    <div className='relative group mt-8'>
@@ -120,7 +120,7 @@ const Collection = () => {
         src={item.image}
         alt={item.title}
         onLoad={handleScroll}
-        className='h-100 md:h-115 xl:h-126 2xl:h-128 cursor-pointer'
+        className='h-65 sm:h-70 md:h-105 lg:h-115 xl:h-125 2xl:h-128 cursor-pointer'
         />
         <span className='absolute font-Lato bottom-4 left-4 px-3 py-1 text-xs tracking-widest uppercase text-white/90 backdrop-blur-xs bg-black/20 rounded'>
           {item.title}

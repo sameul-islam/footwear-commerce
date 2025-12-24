@@ -125,18 +125,22 @@ const BestSeller = () => {
         })
        }
 
-
   return (
     <section className='mt-8 md:mt-14'>
-        
-        <div className='flex flex-col sm:flex-row justify-around items-center'>
-        <h1 className='text-center font-Poppins text-xl md:text-2xl lg:text-3xl'>
-         Our Bestsellers
-        </h1>
-        <span className='font-Poppins text-sm text-gray-800 border-b cursor-pointer border-gray-400 p-0.5 '>
-            View All
-        </span>
-        </div>
+     <div class="w-full flex justify-center pb-8 relative">
+    
+
+    <h1 class="font-Poppins text-xl md:text-2xl lg:text-3xl absolute left-1/2 transform -translate-x-1/2">
+      Our Bestsellers
+    </h1>
+
+
+    <span class="absolute right-5 md:right-20 font-Poppins text-xs md:text-sm text-gray-800 hover:text-gray-500 border-b border-gray-400 cursor-pointer transition duration-300">
+      View All
+    </span>
+
+  </div>
+
       
       <div className='relative group mt-8'>
        {/* Left Arrow */}

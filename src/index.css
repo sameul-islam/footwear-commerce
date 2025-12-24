@@ -19,3 +19,23 @@
      -ms-overflow-style: none;
      scrollbar-width: none;
 }
+
+
+
+/* For Gender Section */
+
+@media (max-width: 550px) {
+     .gender-image {
+          height:220px;
+     }
+}
+@media (max-width: 550px) {
+     .gender-gap {
+          gap: 2px;
+     }
+}
+@media (max-width: 440px) {
+     .gender-image-xs {
+          height: 180px;
+     }
+}

@@ -34,3 +34,7 @@ Completed the Collection section and downloaded several product images for futur
 ### Day 7 – December 23, 2025
 
 Today, I completed the remaining work of the collection section, and I also created the Brand State and best Seller sections.
+
+### Day 8 – December 24, 2025
+
+Today, I completed parts of the Best Seller, Gender, and Spotlight sections.
