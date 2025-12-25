@@ -31,14 +31,14 @@ const CategoryImage = () => {
   return (
     <div>
 
-      <div className='flex overflow-x-auto items-center md:justify-between gap-2 p-3'>
+      <div className='flex overflow-x-auto items-center md:justify-between gap-1.5 sm:gap-2 p-1.5 sm:p-3'>
         {image.map((item, idx) => (
           <div key={idx} className='relative flex shrink-0 overflow-hidden category-img'>
           <img
           
           src={item.img}
           alt={`Image${idx}`}
-          className='h-80 sm:h-90 md:h-130 lg:h-140 xl:h-150 w-full object-cover transform'
+          className='h-75 sm:h-90 md:h-130 lg:h-140 xl:h-150 w-full object-cover transform'
           />
           <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-1 px-2 text-white hover:text-gray-700 text-sm font-Lato border-2 cursor-pointer rounded-full hover:bg-white transition duration-300 whitespace-nowrap'>
             {item.category}

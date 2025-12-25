@@ -22,6 +22,19 @@
 }
 
 
+/* Hight Perfect For Hero Section */
+@media (max-width: 475px) {
+     .hero-image {
+          height: 26vh;
+     }
+}
+@media (max-width: 390px) {
+     .hero-image-xs {
+          height: 24vh;
+     }
+}
+
+
 /* CagegoryImage Section use this design */
 .category-img {
   border-radius: 1rem;

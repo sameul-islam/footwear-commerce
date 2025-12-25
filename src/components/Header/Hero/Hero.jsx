@@ -30,7 +30,7 @@ const Hero = () => {
            key={isSlide}
            src={slideImage[isSlide]} 
            alt="slideImage" 
-           className='w-full xl:h-[80vh] object-contain xl:object-cover rounded-t-xl md:rounded-t-2xl'
+           className='w-full hero-image-xs hero-image h-[30vh] sm:h-[40vh] md:h-[55vh] lg:h-[70vh] xl:h-[80vh] 2xl:h-[83vh] object-cover rounded-t-xl md:rounded-t-2xl'
            initial={{ opacity: 0, scale: 1.05 }}
            animate={{ opacity: 1, scale: 1 }}
            exit={{ opacity: 0, scale: 0.98 }}

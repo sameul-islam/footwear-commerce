@@ -30,7 +30,7 @@ const Gender = () => {
       Find Your Fit
      </h1>
 
-    <div className='flex items-center justify-around w-full mt-3.5 sm:mt-4 md:mt-8 p-3 gap-2 md:gap-2.5 lg:gap-4 xl:gap-6 2xl:gap-10 overflow-x-auto'>
+    <div className='flex items-center justify-around w-full mt-3.5 sm:mt-4 md:mt-8 p-1.5 sm:p-3 gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-4 xl:gap-6 2xl:gap-10 overflow-x-auto'>
       {genderImage.map((item, idx) => ( 
         <div className='relative flex shrink-0 cursor-pointer mx-auto'>
           <img
