@@ -12,6 +12,7 @@
      --font-Poppins: "Poppins", sans-serif;
      }
 
+     /* This design create for horizantal line hide */
 .no-scrollbar::-webkit-scrollbar {
      display: none;
 }
@@ -21,21 +22,12 @@
 }
 
 
-
-/* For Gender Section */
-
-@media (max-width: 550px) {
-     .gender-image {
-          height:220px;
-     }
+/* CagegoryImage Section use this design */
+.category-img {
+  border-radius: 1rem;
+  transition: border-radius 0.5s ease-in-out; 
 }
-@media (max-width: 550px) {
-     .gender-gap {
-          gap: 2px;
-     }
-}
-@media (max-width: 440px) {
-     .gender-image-xs {
-          height: 180px;
-     }
+
+.category-img:hover {
+  border-radius: 50%;
 }

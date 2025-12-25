@@ -6,18 +6,22 @@ import BrandStatement from '../components/Body/BrandStatement'
 import BestSeller from '../components/Body/BestSeller'
 import Gender from '../components/Body/Gender'
 import SpotLight from '../components/Body/SpotLight'
+import Sneaker from '../components/Body/Sneaker'
+import CategoryImage from '../components/Body/CategoryImage'
 
 
 const Home = () => {
   return (
-    <div className='h-550'>
+    <div>
       <Hero/>
       <BottomHero/>
-      <Collection/>
-      <BestSeller/>
+      <CategoryImage/>
+      <Sneaker/>
       <Gender/>
+      <BestSeller/>
       <SpotLight/>
-      {/* <BrandStatement/> */}
+      <Collection/>
+      <BrandStatement/>
     </div>
   )
 }

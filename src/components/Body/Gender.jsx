@@ -30,16 +30,16 @@ const Gender = () => {
       Find Your Fit
      </h1>
 
-    <div className='flex items-center justify-center mt-3.5 sm:mt-4 md:mt-8 sm:p-0.5 md:p-2 xl:p-3 gender-gap gap-1 sm:gap-1.5 md:gap-2.5 lg:gap-4 xl:gap-6 2xl:gap-10 overflow-hidden'>
+    <div className='flex items-center justify-around w-full mt-3.5 sm:mt-4 md:mt-8 p-3 gap-2 md:gap-2.5 lg:gap-4 xl:gap-6 2xl:gap-10 overflow-x-auto'>
       {genderImage.map((item, idx) => ( 
-        <div className='relative cursor-pointer'>
+        <div className='relative flex shrink-0 cursor-pointer mx-auto'>
           <img
           key={idx}
           src={item.image}
           alt={item.category}
-          className='gender-image-xs gender-image h-65 sm:h-80 md:h-100 lg:h-130 xl:h-150 2xl:h-180 object-contain'
+          className=' rounded-xl sm:rounded-2xl h-90 md:h-105 lg:h-130 xl:h-150 2xl:h-200 object-contain'
           />
-          <span className='absolute top-2 left-2 md:top-5 xl:top-4 lg:left-3 text-white text-sm md:text-xl lg:text-2xl font-Poppins uppercase'>
+          <span className='absolute top-3 left-3 md:top-5  lg:left-4 text-white text-sm md:text-xl lg:text-2xl font-Poppins uppercase'>
             {item.category}
           </span>
         </div>

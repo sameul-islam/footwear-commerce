@@ -22,15 +22,15 @@ const Hero = () => {
     }, []);
 
   return (
-    <div>
+    <div className='p-1 md:p-2'>
       <Link to="/" className=' cursor-pointer'>
-        <div className='relative w-full mt-12 md:mt-16 xl:mt-0 -z-10 overflow-hidden'>
+        <div className='relative w-full mt-14 sm:mt-16 md:mt-20 lg:mt-26 xl:mt-0 -z-10 overflow-hidden'>
         <AnimatePresence mode='wait'>
            <motion.img
            key={isSlide}
            src={slideImage[isSlide]} 
            alt="slideImage" 
-           className='w-full xl:h-[80vh] object-contain xl:object-cover'
+           className='w-full xl:h-[80vh] object-contain xl:object-cover rounded-t-xl md:rounded-t-2xl'
            initial={{ opacity: 0, scale: 1.05 }}
            animate={{ opacity: 1, scale: 1 }}
            exit={{ opacity: 0, scale: 0.98 }}

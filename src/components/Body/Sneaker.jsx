@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
-import product1 from '../../assets/image/product1.avif'
-import product2 from '../../assets/image/product2.avif'
-import product3 from '../../assets/image/product3.avif'
-import product4 from '../../assets/image/product4.avif'
-import product5 from '../../assets/image/product5.avif'
-import product6 from '../../assets/image/product6.avif'
-import product7 from '../../assets/image/product7.avif'
-import product8 from '../../assets/image/product8.avif'
-import product9 from '../../assets/image/product9.webp'
-import product10 from '../../assets/image/product10.avif'
+import product1 from '../../assets/image/sneaker1.avif'
+import product2 from '../../assets/image/sneaker2.avif'
+import product3 from '../../assets/image/sneaker3.avif'
+import product4 from '../../assets/image/sneaker4.avif'
+import product5 from '../../assets/image/sneaker5.avif'
+import product6 from '../../assets/image/sneaker6.avif'
+import product7 from '../../assets/image/sneaker7.avif'
+import product8 from '../../assets/image/sneaker8.avif'
+import product9 from '../../assets/image/sneaker9.avif'
+import product10 from '../../assets/image/sneaker10.avif'
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
 
 
@@ -86,7 +86,7 @@ const product = [
 
 ];
 
-const BestSeller = () => {
+const Sneaker = () => {
        const scrollRef = useRef(null);
        const [canScrollLeft, setCanScrollLeft] = useState(false)
        const [canScrollRight, setCanScrollRight] = useState(true)
@@ -127,19 +127,10 @@ const BestSeller = () => {
 
   return (
     <section className='mt-8 md:mt-14'>
-     <div class="w-full flex justify-center pb-8 relative">
-    
 
-    <h1 class="font-Poppins text-xl md:text-2xl lg:text-3xl absolute left-1/2 transform -translate-x-1/2">
-      Our Bestsellers
+    <h1 class="font-Poppins text-xl md:text-2xl lg:text-3xl text-center">
+      Refresh Your Sneaker Rotation
     </h1>
-
-
-    <span class="absolute right-5 md:right-20 font-Poppins text-xs md:text-sm text-gray-800 hover:text-gray-500 border-b border-gray-400 cursor-pointer transition duration-300">
-      View All
-    </span>
-
-  </div>
 
       
       <div className='relative group mt-8'>
@@ -162,13 +153,13 @@ const BestSeller = () => {
            src={item.image}
            alt={item.title}
            onLoad={handleScroll}
-           className='h-60 md:h-70 xl:h-90 2xl:h-100 cursor-pointer rounded-2xl'
+           className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl'
            />
-           <div className='flex flex-col p-2 pt-0'>
+           {/* <div className='flex flex-col p-2 pt-0'>
             <p className='font-Lato font-semibold'>{item.title}</p>
             <p className='font-Poppins text-sm text-gray-500'>{item.category}</p>
             <p className='font-Poppins font-semibold'>{item.mrp}</p>
-           </div>
+           </div> */}
            </div>
          ))}
          </div>
@@ -184,4 +175,4 @@ const BestSeller = () => {
   )
 }
 
-export default BestSeller
+export default Sneaker
