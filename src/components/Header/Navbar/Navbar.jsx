@@ -119,29 +119,29 @@ const Navbar = () => {
           {/* TopUtility Row */}
            <div className='items-center flex justify-center'>
              <div className='flex font-Poppins gap-8 p-8 pt-0  text-sm'>
-                <div className='flex items-center border-l border-gray-300 p-2 cursor-pointer hover:text-red-400 transition duration-300'>
+                <div className='flex items-center border-l border-gray-300 p-2 cursor-pointer hover:text-black transition duration-300'>
                   <CiLocationOn size={20}/>location
                 </div>
 
                 <div className='border-l border-gray-300 p-4 flex items-center gap-1'>
-                  <HiOutlineLanguage size={20}/><span className=' cursor-pointer  hover:text-red-400 transition duration-300'>BN</span><TbSlashes/><span className=' cursor-pointer  hover:text-red-400 transition duration-300'>EN</span>
+                  <HiOutlineLanguage size={20}/><span className=' cursor-pointer  hover:text-black transition duration-300'>BN</span><TbSlashes/><span className=' cursor-pointer  hover:text-black transition duration-300'>EN</span>
                 </div>
 
-                <div className='pr-24 border-l border-gray-300 p-4 whitespace-nowrap  cursor-pointer  hover:text-red-400 transition duration-300'>
+                <div className='pr-24 border-l border-gray-300 p-4 whitespace-nowrap  cursor-pointer  hover:text-black transition duration-300'>
                  Call support free:(+880 1234-567890)
                 </div>
              </div>
               
             <div className='flex gap-2 p-8 pt-0'>
-              <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-red-400 transition duration-300'>
+              <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-black transition duration-300'>
                 <LuSearch size={22} className='font-semibold'/>
               </div>
 
-              <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-red-400 transition duration-300'>
+              <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-black transition duration-300'>
                 <RiUser6Line size={22} className='font-semibold'/>
               </div>
 
-              <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-red-400 transition duration-300'>
+              <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-black transition duration-300'>
                 <MdOutlineFavoriteBorder size={22} className='font-semibold'/>
               </div>
 
@@ -161,7 +161,7 @@ const Navbar = () => {
            <div>
              <ul className='flex items-center text-md font-semibold justify-center gap-12 p-6 pt-0 font-Lato'>
               {Menu.map((item) => (
-                <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative cursor-pointer ${activeMenu === item.name ? 'text-red-500' : "text-[#2f3542]"} group`}>
+                <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative cursor-pointer ${activeMenu === item.name ? 'text-black' : "text-[#2f3542]"} group`}>
                 <a href={item.link}> {item.name}
                     <span className='absolute left-0 -bottom-1 h-0.5 w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/> </a>                 
                 </li>
@@ -212,7 +212,7 @@ const Navbar = () => {
            <div>
              <ul className='flex items-center text-md font-semibold justify-center gap-12 p-8 font-Lato'>
               {Menu.map((item) => (
-              <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative z-50 cursor-pointer ${activeMenu === item.name ? 'text-red-500' : "text-[#2f3542]"} group`}>
+              <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative z-50 cursor-pointer ${activeMenu === item.name ? 'text-black' : "text-[#2f3542]"} group`}>
                <a href={item.link}>   {item.name}
                     <span className='absolute left-0 -bottom-1 h-0.5 w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/>  </a>
                 </li> 
@@ -246,7 +246,7 @@ const Navbar = () => {
          </div>
 
             <div className='flex gap-2 p-6'>
-              <div className='border-l border-gray-300 p-2 cursor-pointer hover:text-red-400 transition duration-300'>
+              <div className='border-l border-gray-300 p-2 cursor-pointer hover:text-black transition duration-300'>
                 <LuSearch size={22} className='font-semibold'/>
               </div>
               <div className='border-l border-r border-gray-300 p-2'>

@@ -129,7 +129,7 @@ const Sneaker = () => {
     <section className='mt-8 md:mt-14'>
 
     <h1 class="font-Poppins text-xl md:text-2xl lg:text-3xl text-center">
-      Refresh Your Sneaker Rotation
+      Crafted to Move
     </h1>
 
       

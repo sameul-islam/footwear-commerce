@@ -27,7 +27,7 @@ const Gender = () => {
     <div className='mt-4 sm:mt-8 md:mt-14 lg:mt-18 xl:mt-22 w-full'>
 
      <h1 className='text-center font-Poppins text-lg sm:text-xl md:text-2xl lg:text-3xl'>
-      Find Your Fit
+      Designed for You
      </h1>
 
     <div className='flex items-center justify-around w-full mt-3.5 sm:mt-4 md:mt-8 p-1.5 sm:p-3 gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-4 xl:gap-6 2xl:gap-10 overflow-x-auto'>

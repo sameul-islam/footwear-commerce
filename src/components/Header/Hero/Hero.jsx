@@ -23,7 +23,6 @@ const Hero = () => {
 
   return (
     <div className='p-1 md:p-2'>
-      <Link to="/" className=' cursor-pointer'>
         <div className='relative w-full mt-14 sm:mt-16 md:mt-20 lg:mt-26 xl:mt-0 -z-10 overflow-hidden'>
         <AnimatePresence mode='wait'>
            <motion.img
@@ -43,7 +42,7 @@ const Hero = () => {
          
          {/* Simple direction text */}
         <div className='mb-4 md:mb-8 xl:mb-12 text-center'>
-          <span className='border-b border-red-500/70 text-white/80 font-Lato md:text-xl lg:text-2xl'> SHOP NOW </span>
+        <span className=' text-white/70 font-Lato font-light md:text-xl lg:text-2xl border border-white/70 rounded-full py-1 px-2'> EXPLORE NOW </span> 
         </div>
 
   
@@ -56,7 +55,7 @@ const Hero = () => {
               animate={{
               backgroundColor:
               index === isSlide
-              ? "#dc2626"
+              ? "#2f3640"
               : "rgba(255,255,255,0.4)",
               scale: index === isSlide ? 1.4 : 1,
              }}
@@ -68,7 +67,7 @@ const Hero = () => {
              {/* Progress Bar */}
              <motion.div
                key={isSlide}
-               className="h-0.5 md:h-1 w-full bg-red-600"
+               className="h-0.5 md:h-1 w-full bg-[#7f8fa6]"
                initial={{ scaleX: 0 }}
                animate={{ scaleX: 1 }}
                transition={{ duration: 5, ease: "linear" }}
@@ -79,7 +78,7 @@ const Hero = () => {
 
         </div>
         
-        </Link>
+
     </div>
   )  
 }
