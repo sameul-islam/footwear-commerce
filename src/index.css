@@ -44,3 +44,17 @@
 .category-img:hover {
   border-radius: 50%;
 }
+
+
+/* Footer smooth accordion */
+.footer-accordion {
+     display: grid;
+     grid-template-rows: 0fr;
+     transition: grid-template-rows 0.45s ease;
+}
+.footer-accordion.open {
+     grid-template-rows: 1fr;
+}
+.footer-accordion-content {
+     overflow: hidden;
+}

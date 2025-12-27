@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
-import product1 from '../../assets/image/product1.avif'
-import product2 from '../../assets/image/product2.avif'
-import product3 from '../../assets/image/product3.avif'
-import product4 from '../../assets/image/product4.avif'
-import product5 from '../../assets/image/product5.avif'
-import product6 from '../../assets/image/product6.avif'
-import product7 from '../../assets/image/product7.avif'
-import product8 from '../../assets/image/product8.avif'
-import product9 from '../../assets/image/product9.webp'
-import product10 from '../../assets/image/product10.avif'
+import product1 from '../../assets/product/product (53).webp'
+import product2 from '../../assets/product/product (58).webp'
+import product3 from '../../assets/product/product (63).webp'
+import product4 from '../../assets/product/product (68).webp'
+import product5 from '../../assets/product/product (73).webp'
+import product6 from '../../assets/product/product (78).webp'
+import product7 from '../../assets/product/product (83).webp'
+import product8 from '../../assets/product/product (89).webp'
+import product9 from '../../assets/product/product (98).webp'
+import product10 from '../../assets/product/product (103).webp'
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
 
 
@@ -162,7 +162,8 @@ const BestSeller = () => {
            src={item.image}
            alt={item.title}
            onLoad={handleScroll}
-           className='h-60 md:h-70 xl:h-90 2xl:h-100 cursor-pointer rounded-2xl'
+           loading='lazy'
+           className='h-60 md:h-70 xl:h-90 2xl:h-100 cursor-pointer bg-gray-50 rounded-2xl'
            />
            <div className='flex flex-col p-2 pt-0'>
             <p className='font-Lato font-semibold'>{item.title}</p>

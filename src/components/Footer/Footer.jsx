@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { BsSend, BsTwitterX } from 'react-icons/bs';
 import { FaLinkedinIn, FaPinterestP, FaTiktok } from 'react-icons/fa';
 import { SiInstagram } from 'react-icons/si';
@@ -84,19 +85,30 @@ const categoryList = [
 
 
 const Footer = () => {
+    const [openCategory, setOpenCategory] = useState(null);
+
+    const handleToggle = (idx) => {
+      if (openCategory === idx) {
+        setOpenCategory(null);
+      } else {
+        setOpenCategory(idx);
+      }
+    }
+
   return (
     <div className='mt-16 md:mt-20 bg-[#1c1b1b] text-white w-full'>
 
       <div className=' flex flex-col lg:flex-row justify-around items-start p-5 md:p-10 mb-0 w-full'>
 
-        <div className='flex flex-col items-center justify-center pt-6 md:pt-10'>
+        <div className='flex flex-col items-center justify-center mx-auto pt-6 md:pt-10'>
             <p className='font-Poppins text-white/70 text-sm p-5'>SUBSCRIBE TO OUR EMAILS</p>
             <div className='flex items-center gap-5'>
-              <input type="text" className='text-white w-full font-Poppins  p-2 pr-8 border-0 focus:outline-none focus:ring-0 placeholder-white/80 border-b border-white/80' placeholder='Your email' /> <VscSend size={30} className='text-white/70 hover:text-white cursor-pointer transition duration-300 '/>
+              <input type="text" className='text-white w-full font-Poppins  p-2 pr-10 border-0 focus:outline-none focus:ring-0 placeholder-white/80 border-b border-white/80' placeholder='Your email' /> <VscSend size={30} className='text-white/70 hover:text-white cursor-pointer transition duration-300 '/>
             </div>
         </div>
 
-        <ul className='flex flex-col lg:flex-row w-[60%]  justify-evenly mt-10 '>
+       {/* Desktop part */}
+        <ul className='hidden lg:flex flex-col lg:flex-row w-[60%]  justify-evenly mt-10 '>
          {categoryList.map((category, idx) => (
           <li key={idx}>
           <h4 className='mb-4 font-Poppins text-white/90'>
@@ -116,6 +128,38 @@ const Footer = () => {
           </li>
          ))}
         </ul>
+
+                  {/* Mobile part */}
+
+          <div className='flex flex-col lg:hidden mt-8 w-full'>
+            {categoryList.map((category, idx) => (
+              <div key={idx} className='border-b border-white/20'>
+
+                 <div onClick={() => handleToggle(idx)} className='flex justify-between w-full p-3 cursor-pointer'>
+                   <h4 className='text-white/90 font-Lato'>
+                    {category.title}
+                   </h4>
+                   <span>{openCategory === idx ? <AiOutlineMinus/> : <AiOutlinePlus/>} </span>
+                 </div>
+
+                 <div className={`footer-accordion ${openCategory === idx ? 'open' : ''}`}>
+                  <div className='footer-accordion-content'>
+                 <ul className='flex flex-col gap-2 p-3'>
+                  {category.item.map((linkItem, i) => (
+                    <li key={i}>
+                     <a href={linkItem.link} className='text-white/70 hover:text-white text-xs'>
+                     {linkItem.label}
+                     </a>
+                    </li>
+                  ))}
+                 </ul>
+                  </div>
+                 </div>
+
+              </div>
+            ))}
+
+          </div>
 
       </div>
 
@@ -144,7 +188,7 @@ const Footer = () => {
       </div>
 
       <div className='w-[95%] justify-center items-center mx-auto border-t border-white/50 text-center font-Lato text-sm mt-5 p-5 pb-20 md:pb-5 text-white/80'>
-         @ 2025 The James, All Rights Reserved
+       © {new Date().getFullYear()} The James. All rights reserved.
       </div>
 
     </div>

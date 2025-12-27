@@ -46,3 +46,7 @@ Today, I worked on the Gender Section, Spotlight, Best Sellers, Philosophy, Snea
 ### Day 10 – December 26, 2025
 
 Today, I worked on creating the footer section of the website. However, some tasks for the mobile version are still pending.
+
+### Day 11 – December 27, 2025
+
+Today, the homepage of this website has been largely completed. However, any remaining issues or missing elements will be addressed leter as needed. The footer section has been fully finalized today, and several product images have also been downloaded.

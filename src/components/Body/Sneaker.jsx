@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
-import product1 from '../../assets/image/sneaker1.avif'
-import product2 from '../../assets/image/sneaker2.avif'
-import product3 from '../../assets/image/sneaker3.avif'
-import product4 from '../../assets/image/sneaker4.avif'
-import product5 from '../../assets/image/sneaker5.avif'
-import product6 from '../../assets/image/sneaker6.avif'
-import product7 from '../../assets/image/sneaker7.avif'
-import product8 from '../../assets/image/sneaker8.avif'
-import product9 from '../../assets/image/sneaker9.avif'
-import product10 from '../../assets/image/sneaker10.avif'
+import product1 from '../../assets/product/product (6).webp'
+import product2 from '../../assets/product/product (11).webp'
+import product3 from '../../assets/product/product (13).webp'
+import product4 from '../../assets/product/product (18).webp'
+import product5 from '../../assets/product/product (23).webp'
+import product6 from '../../assets/product/product (28).webp'
+import product7 from '../../assets/product/product (33).webp'
+import product8 from '../../assets/product/product (38).webp'
+import product9 from '../../assets/product/product (43).webp'
+import product10 from '../../assets/product/product (48).webp'
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
 
 
@@ -153,6 +153,7 @@ const Sneaker = () => {
            src={item.image}
            alt={item.title}
            onLoad={handleScroll}
+           loading='lazy'
            className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl'
            />
            {/* <div className='flex flex-col p-2 pt-0'>

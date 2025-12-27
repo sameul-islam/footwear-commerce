@@ -120,6 +120,7 @@ const Collection = () => {
         src={item.image}
         alt={item.title}
         onLoad={handleScroll}
+        loading='lazy'
         className='h-65 sm:h-70 md:h-105 lg:h-115 xl:h-125 2xl:h-128 cursor-pointer rounded-xl md:rounded-2xl'
         />
         <span className='absolute font-Lato bottom-4 left-4 px-3 py-1 text-xs tracking-widest uppercase text-white/90 backdrop-blur-xs bg-black/20 rounded'>
