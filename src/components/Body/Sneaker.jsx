@@ -154,7 +154,7 @@ const Sneaker = () => {
            alt={item.title}
            onLoad={handleScroll}
            loading='lazy'
-           className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl'
+           className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl bg-gray-50'
            />
            {/* <div className='flex flex-col p-2 pt-0'>
             <p className='font-Lato font-semibold'>{item.title}</p>

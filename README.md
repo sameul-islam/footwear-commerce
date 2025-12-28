@@ -50,3 +50,7 @@ Today, I worked on creating the footer section of the website. However, some tas
 ### Day 11 – December 27, 2025
 
 Today, the homepage of this website has been largely completed. However, any remaining issues or missing elements will be addressed leter as needed. The footer section has been fully finalized today, and several product images have also been downloaded.
+
+### Day 12 – December 28, 2025
+
+Today, I completely redesigned the Gender and Spotlight secrtions. Additionally, I started creating an object file for the upcoming Product page. The work is not yet finished, as the image matching task is still pending.
