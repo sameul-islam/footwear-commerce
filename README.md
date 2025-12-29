@@ -55,6 +55,6 @@ Today, the homepage of this website has been largely completed. However, any rem
 
 Today, I completely redesigned the Gender and Spotlight secrtions. Additionally, I started creating an object file for the upcoming Product page. The work is not yet finished, as the image matching task is still pending.
 
-### Day 12 – December 28, 2025
+### Day 13 – December 29, 2025
 
 Today, I carefully structured my product data in a clean and scalable way and properly matched all product images with the data Structure.  I also refactored the Best Seller and Sneaker sections by removing the old static image logic and directly connecting them to the central product data object.  This ensures that these sections are fully backend-ready and consistently linked with the main product data, making the system more maintainable, scalable, and suitable for real-world business use.
