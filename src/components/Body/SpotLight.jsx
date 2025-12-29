@@ -77,8 +77,8 @@ const Spotlight = () => {
                      border border-white/80 rounded-full flex items-center justify-center"
         >
           {/* dots */}
-          <div className="absolute -left-1 w-1 h-1 bg-white rounded-full" />
-          <div className="absolute -right-1 w-1 h-1 bg-white rounded-full" />
+          <div className="absolute -left-1 w-1.5 h-1.5 bg-white rounded-full" />
+          <div className="absolute -right-1 w-1.5 h-1.5 bg-white rounded-full" />
         </motion.div>
 
     {/* 

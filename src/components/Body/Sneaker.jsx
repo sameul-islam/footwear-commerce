@@ -1,90 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import product1 from '../../assets/product/product (6).webp'
-import product2 from '../../assets/product/product (11).webp'
-import product3 from '../../assets/product/product (13).webp'
-import product4 from '../../assets/product/product (18).webp'
-import product5 from '../../assets/product/product (23).webp'
-import product6 from '../../assets/product/product (28).webp'
-import product7 from '../../assets/product/product (33).webp'
-import product8 from '../../assets/product/product (38).webp'
-import product9 from '../../assets/product/product (43).webp'
-import product10 from '../../assets/product/product (48).webp'
+import { products } from '../../data/productData';
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
 
 
-const product = [
-  {
-    id: 1,
-    image: product1,
-    title: 'Summer Collection',
-    category: "Men's Shoes",
-    mrp: "MRP: $20.00"
-  },
-  {
-    id: 2,
-    image: product2,
-    title: 'Autumn Essentials',
-    category: "Men's Shoes",
-    mrp: "MRP: $22.00"
-  },
-  {
-    id: 3,
-    image: product3,
-    title: 'cortez SE',
-    category: "Women's Shoes",
-    mrp: "MRP: $19.00"
-  },
-  {
-    id: 4,
-    image: product4,
-    title: 'Shox Ride 2 Premium',
-    category: "Men's Shoes",
-    mrp: "MRP: $12.50"
-  },
-  {
-    id: 5,
-    image: product5,
-    title: 'Air Max Moto 2K',
-    category: "Men's Shoes",
-    mrp: "MRP: $19.00"
-  },
-  {
-    id: 6,
-    image: product6,
-    title: 'cortez Leather',
-    category: "Women's Shoes",
-    mrp: "MRP: $15.00"
-  },
-  {
-    id: 7,
-    image: product7,
-    title: 'Pegasus Premium',
-    category: "Women's Shoes",
-    mrp: "MRP: $17.00"
-  },
-  {
-    id: 8,
-    image: product8,
-    title: 'Summer Collection',
-    category: "Men's Shoes",
-    mrp: "MRP: $20.00"
-  },
-  {
-    id: 9,
-    image: product9,
-    title: 'Autumn Essentials',
-    category: "Men's Shoes",
-    mrp: "MRP: $22.00"
-  },
-  {
-    id: 10,
-    image: product10,
-    title: 'cortez SE',
-    category: "Women's Shoes",
-    mrp: "MRP: $19.00"
-  }
-
-];
 
 const Sneaker = () => {
        const scrollRef = useRef(null);
@@ -124,6 +42,9 @@ const Sneaker = () => {
           left: -scrollRef.current.clientWidth
         })
        }
+     
+      //  Product
+        const sneakerProducts = products.filter((item) => item.type === 'sneakers')
 
   return (
     <section className='mt-8 md:mt-14'>
@@ -146,12 +67,12 @@ const Sneaker = () => {
          onKeyDown={handleKeyDown}
          tabIndex={0}
          className='flex flex-row p-0.5 overflow-x-auto scroll-smooth no-scrollbar focus:outline-none'>
-         {product.map((item) => (
+         {sneakerProducts.map((item) => (
            <div key={item.id} className='shrink-0 p-1 md:p-2'>
    
            <img
-           src={item.image}
-           alt={item.title}
+           src={item.images[0]}
+           alt={item.name}
            onLoad={handleScroll}
            loading='lazy'
            className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl bg-gray-50'

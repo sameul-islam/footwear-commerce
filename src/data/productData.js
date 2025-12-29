@@ -3,117 +3,113 @@
 // ========================
 
 // Product 1
-import product1_img1 from "../../assets/products/women/product1/img1.jpg";
-import product1_img2 from "../../assets/products/women/product1/img2.jpg";
-import product1_img3 from "../../assets/products/women/product1/img3.jpg";
-import product1_img4 from "../../assets/products/women/product1/img4.jpg";
-import product1_img5 from "../../assets/products/women/product1/img5.jpg";
+import product1_img1 from "../assets/products/women/product1/img1.webp";
+import product1_img2 from "../assets/products/women/product1/img2.webp";
+import product1_img3 from "../assets/products/women/product1/img3.webp";
+import product1_img4 from "../assets/products/women/product1/img4.webp";
+import product1_img5 from "../assets/products/women/product1/img5.webp";
 
 // Product 2
-import product2_img1 from "../../assets/products/women/product2/img1.jpg";
-import product2_img2 from "../../assets/products/women/product2/img2.jpg";
-import product2_img3 from "../../assets/products/women/product2/img3.jpg";
-import product2_img4 from "../../assets/products/women/product2/img4.jpg";
-import product2_img5 from "../../assets/products/women/product2/img5.jpg";
+import product2_img1 from "../assets/products/women/product2/img1.webp";
+import product2_img2 from "../assets/products/women/product2/img2.webp";
+import product2_img3 from "../assets/products/women/product2/img3.webp";
+import product2_img4 from "../assets/products/women/product2/img4.webp";
+import product2_img5 from "../assets/products/women/product2/img5.webp";
 
 // Product 3
-import product3_img1 from "../../assets/products/women/product3/img1.jpg";
-import product3_img2 from "../../assets/products/women/product3/img2.jpg";
-import product3_img3 from "../../assets/products/women/product3/img3.jpg";
-import product3_img4 from "../../assets/products/women/product3/img4.jpg";
-import product3_img5 from "../../assets/products/women/product3/img5.jpg";
+import product3_img1 from "../assets/products/women/product3/img1.webp";
+import product3_img2 from "../assets/products/women/product3/img2.webp";
+import product3_img3 from "../assets/products/women/product3/img3.webp";
+import product3_img4 from "../assets/products/women/product3/img4.webp";
+import product3_img5 from "../assets/products/women/product3/img5.webp";
 
 // Product 4
-import product4_img1 from "../../assets/products/women/product4/img1.jpg";
-import product4_img2 from "../../assets/products/women/product4/img2.jpg";
-import product4_img3 from "../../assets/products/women/product4/img3.jpg";
-import product4_img4 from "../../assets/products/women/product4/img4.jpg";
-import product4_img5 from "../../assets/products/women/product4/img5.jpg";
+import product4_img1 from "../assets/products/women/product4/img1.webp";
+import product4_img2 from "../assets/products/women/product4/img2.webp";
+import product4_img3 from "../assets/products/women/product4/img3.webp";
+import product4_img4 from "../assets/products/women/product4/img4.webp";
+import product4_img5 from "../assets/products/women/product4/img5.webp";
 
 // Product 5
-import product5_img1 from "../../assets/products/women/product5/img1.jpg";
-import product5_img2 from "../../assets/products/women/product5/img2.jpg";
-import product5_img3 from "../../assets/products/women/product5/img3.jpg";
-import product5_img4 from "../../assets/products/women/product5/img4.jpg";
-import product5_img5 from "../../assets/products/women/product5/img5.jpg";
+import product5_img1 from "../assets/products/women/product5/img1.webp";
+import product5_img2 from "../assets/products/women/product5/img2.webp";
+import product5_img3 from "../assets/products/women/product5/img3.webp";
+import product5_img4 from "../assets/products/women/product5/img4.webp";
+import product5_img5 from "../assets/products/women/product5/img5.webp";
 
 // ========================
 // Men 
 // ========================
 
 // Product 6
-import product6_img1 from "../../assets/products/men/product6/img1.jpg";
-import product6_img2 from "../../assets/products/men/product6/img2.jpg";
-import product6_img3 from "../../assets/products/men/product6/img3.jpg";
-import product6_img4 from "../../assets/products/men/product6/img4.jpg";
-import product6_img5 from "../../assets/products/men/product6/img5.jpg";
+import product6_img1 from "../assets/products/men/product6/img1.webp";
+import product6_img2 from "../assets/products/men/product6/img2.webp";
+import product6_img3 from "../assets/products/men/product6/img3.webp";
+import product6_img4 from "../assets/products/men/product6/img4.webp";
+import product6_img5 from "../assets/products/men/product6/img5.webp";
 
 // Product 7
-import product7_img1 from "../../assets/products/men/product7/img1.jpg";
-import product7_img2 from "../../assets/products/men/product7/img2.jpg";
-import product7_img3 from "../../assets/products/men/product7/img3.jpg";
-import product7_img4 from "../../assets/products/men/product7/img4.jpg";
-import product7_img5 from "../../assets/products/men/product7/img5.jpg";
+import product7_img1 from "../assets/products/men/product7/img1.webp";
+import product7_img2 from "../assets/products/men/product7/img2.webp";
+import product7_img3 from "../assets/products/men/product7/img3.webp";
+import product7_img4 from "../assets/products/men/product7/img4.webp";
+import product7_img5 from "../assets/products/men/product7/img5.webp";
 
 // Product 8
-import product8_img1 from "../../assets/products/men/product8/img1.jpg";
-import product8_img2 from "../../assets/products/men/product8/img2.jpg";
-import product8_img3 from "../../assets/products/men/product8/img3.jpg";
-import product8_img4 from "../../assets/products/men/product8/img4.jpg";
-import product8_img5 from "../../assets/products/men/product8/img5.jpg";
+import product8_img1 from "../assets/products/men/product8/img1.webp";
+import product8_img2 from "../assets/products/men/product8/img2.webp";
+import product8_img3 from "../assets/products/men/product8/img3.webp";
+import product8_img4 from "../assets/products/men/product8/img4.webp";
 
 // Product 9
-import product9_img1 from "../../assets/products/men/product9/img1.jpg";
-import product9_img2 from "../../assets/products/men/product9/img2.jpg";
-import product9_img3 from "../../assets/products/men/product9/img3.jpg";
-import product9_img4 from "../../assets/products/men/product9/img4.jpg";
-import product9_img5 from "../../assets/products/men/product9/img5.jpg";
+import product9_img1 from "../assets/products/men/product9/img1.webp";
+import product9_img2 from "../assets/products/men/product9/img2.webp";
+import product9_img3 from "../assets/products/men/product9/img3.webp";
+import product9_img4 from "../assets/products/men/product9/img4.webp";
+import product9_img5 from "../assets/products/men/product9/img5.webp";
 
 // Product 10
-import product10_img1 from "../../assets/products/men/product10/img1.jpg";
-import product10_img2 from "../../assets/products/men/product10/img2.jpg";
-import product10_img3 from "../../assets/products/men/product10/img3.jpg";
-import product10_img4 from "../../assets/products/men/product10/img4.jpg";
-import product10_img5 from "../../assets/products/men/product10/img5.jpg";
+import product10_img1 from "../assets/products/men/product10/img1.webp";
+import product10_img2 from "../assets/products/men/product10/img2.webp";
+import product10_img3 from "../assets/products/men/product10/img3.webp";
+import product10_img4 from "../assets/products/men/product10/img4.webp";
 
 // ========================
 // Kids 
 // ========================
 
 // Product 11
-import product11_img1 from "../../assets/products/kids/product11/img1.jpg";
-import product11_img2 from "../../assets/products/kids/product11/img2.jpg";
-import product11_img3 from "../../assets/products/kids/product11/img3.jpg";
-import product11_img4 from "../../assets/products/kids/product11/img4.jpg";
-import product11_img5 from "../../assets/products/kids/product11/img5.jpg";
+import product11_img1 from "../assets/products/kids/product11/img1.webp";
+import product11_img2 from "../assets/products/kids/product11/img2.webp";
+import product11_img3 from "../assets/products/kids/product11/img3.webp";
+import product11_img4 from "../assets/products/kids/product11/img4.webp";
+import product11_img5 from "../assets/products/kids/product11/img5.webp";
 
 // Product 12
-import product12_img1 from "../../assets/products/kids/product12/img1.jpg";
-import product12_img2 from "../../assets/products/kids/product12/img2.jpg";
-import product12_img3 from "../../assets/products/kids/product12/img3.jpg";
-import product12_img4 from "../../assets/products/kids/product12/img4.jpg";
-import product12_img5 from "../../assets/products/kids/product12/img5.jpg";
+import product12_img1 from "../assets/products/kids/product12/img1.webp";
+import product12_img2 from "../assets/products/kids/product12/img2.webp";
+import product12_img3 from "../assets/products/kids/product12/img3.webp";
+import product12_img4 from "../assets/products/kids/product12/img4.webp";
+import product12_img5 from "../assets/products/kids/product12/img5.webp";
 
 // Product 13
-import product13_img1 from "../../assets/products/kids/product13/img1.jpg";
-import product13_img2 from "../../assets/products/kids/product13/img2.jpg";
-import product13_img3 from "../../assets/products/kids/product13/img3.jpg";
-import product13_img4 from "../../assets/products/kids/product13/img4.jpg";
-import product13_img5 from "../../assets/products/kids/product13/img5.jpg";
+import product13_img1 from "../assets/products/kids/product13/img1.webp";
+import product13_img2 from "../assets/products/kids/product13/img2.webp";
+import product13_img3 from "../assets/products/kids/product13/img3.webp";
 
 // Product 14
-import product14_img1 from "../../assets/products/kids/product14/img1.jpg";
-import product14_img2 from "../../assets/products/kids/product14/img2.jpg";
-import product14_img3 from "../../assets/products/kids/product14/img3.jpg";
-import product14_img4 from "../../assets/products/kids/product14/img4.jpg";
-import product14_img5 from "../../assets/products/kids/product14/img5.jpg";
+import product14_img1 from "../assets/products/kids/product14/img1.webp";
+import product14_img2 from "../assets/products/kids/product14/img2.webp";
+import product14_img3 from "../assets/products/kids/product14/img3.webp";
+import product14_img4 from "../assets/products/kids/product14/img4.webp";
+import product14_img5 from "../assets/products/kids/product14/img5.webp";
 
 // Product 15
-import product15_img1 from "../../assets/products/kids/product15/img1.jpg";
-import product15_img2 from "../../assets/products/kids/product15/img2.jpg";
-import product15_img3 from "../../assets/products/kids/product15/img3.jpg";
-import product15_img4 from "../../assets/products/kids/product15/img4.jpg";
-import product15_img5 from "../../assets/products/kids/product15/img5.jpg";
+import product15_img1 from "../assets/products/kids/product15/img1.webp";
+import product15_img2 from "../assets/products/kids/product15/img2.webp";
+import product15_img3 from "../assets/products/kids/product15/img3.webp";
+import product15_img4 from "../assets/products/kids/product15/img4.webp";
+import product15_img5 from "../assets/products/kids/product15/img5.webp";
 
 
 
@@ -122,74 +118,70 @@ import product15_img5 from "../../assets/products/kids/product15/img5.jpg";
 // ========================
 
 // Product 16
-import product16_img1 from "../../assets/products/kids/product16/img1.jpg";
-import product16_img2 from "../../assets/products/kids/product16/img2.jpg";
-import product16_img3 from "../../assets/products/kids/product16/img3.jpg";
-import product16_img4 from "../../assets/products/kids/product16/img4.jpg";
-import product16_img5 from "../../assets/products/kids/product16/img5.jpg";
+import product16_img1 from "../assets/products/kids/product16/img1.webp";
+import product16_img2 from "../assets/products/kids/product16/img2.webp";
+import product16_img3 from "../assets/products/kids/product16/img3.webp";
+import product16_img4 from "../assets/products/kids/product16/img4.webp";
 
 // Product 17
-import product17_img1 from "../../assets/products/kids/product17/img1.jpg";
-import product17_img2 from "../../assets/products/kids/product17/img2.jpg";
-import product17_img3 from "../../assets/products/kids/product17/img3.jpg";
-import product17_img4 from "../../assets/products/kids/product17/img4.jpg";
-import product17_img5 from "../../assets/products/kids/product17/img5.jpg";
+import product17_img1 from "../assets/products/kids/product17/img1.webp";
+import product17_img2 from "../assets/products/kids/product17/img2.webp";
+import product17_img3 from "../assets/products/kids/product17/img3.webp";
+import product17_img4 from "../assets/products/kids/product17/img4.webp";
 
 // Product 18
-import product18_img1 from "../../assets/products/kids/product18/img1.jpg";
-import product18_img2 from "../../assets/products/kids/product18/img2.jpg";
-import product18_img3 from "../../assets/products/kids/product18/img3.jpg";
-import product18_img4 from "../../assets/products/kids/product18/img4.jpg";
-import product18_img5 from "../../assets/products/kids/product18/img5.jpg";
+import product18_img1 from "../assets/products/kids/product18/img1.webp";
+import product18_img2 from "../assets/products/kids/product18/img2.webp";
+import product18_img3 from "../assets/products/kids/product18/img3.webp";
+import product18_img4 from "../assets/products/kids/product18/img4.webp";
+import product18_img5 from "../assets/products/kids/product18/img5.webp";
 
 // Product 19
-import product19_img1 from "../../assets/products/kids/product19/img1.jpg";
-import product19_img2 from "../../assets/products/kids/product19/img2.jpg";
-import product19_img3 from "../../assets/products/kids/product19/img3.jpg";
-import product19_img4 from "../../assets/products/kids/product19/img4.jpg";
-import product19_img5 from "../../assets/products/kids/product19/img5.jpg";
+import product19_img1 from "../assets/products/kids/product19/img1.webp";
+import product19_img2 from "../assets/products/kids/product19/img2.webp";
+import product19_img3 from "../assets/products/kids/product19/img3.webp";
+import product19_img4 from "../assets/products/kids/product19/img4.webp";
+import product19_img5 from "../assets/products/kids/product19/img5.webp";
 
 // Product 20
-import product20_img1 from "../../assets/products/kids/product20/img1.jpg";
-import product20_img2 from "../../assets/products/kids/product20/img2.jpg";
-import product20_img3 from "../../assets/products/kids/product20/img3.jpg";
-import product20_img4 from "../../assets/products/kids/product20/img4.jpg";
-import product20_img5 from "../../assets/products/kids/product20/img5.jpg";
+import product20_img1 from "../assets/products/kids/product20/img1.webp";
+import product20_img2 from "../assets/products/kids/product20/img2.webp";
+import product20_img3 from "../assets/products/kids/product20/img3.webp";
+import product20_img4 from "../assets/products/kids/product20/img4.webp";
+import product20_img5 from "../assets/products/kids/product20/img5.webp";
 
 // Product 21
-import product21_img1 from "../../assets/products/kids/product21/img1.jpg";
-import product21_img2 from "../../assets/products/kids/product21/img2.jpg";
-import product21_img3 from "../../assets/products/kids/product21/img3.jpg";
-import product21_img4 from "../../assets/products/kids/product21/img4.jpg";
-import product21_img5 from "../../assets/products/kids/product21/img5.jpg";
+import product21_img1 from "../assets/products/kids/product21/img1.webp";
+import product21_img2 from "../assets/products/kids/product21/img2.webp";
+import product21_img3 from "../assets/products/kids/product21/img3.webp";
 
 // Product 22
-import product22_img1 from "../../assets/products/kids/product22/img1.jpg";
-import product22_img2 from "../../assets/products/kids/product22/img2.jpg";
-import product22_img3 from "../../assets/products/kids/product22/img3.jpg";
-import product22_img4 from "../../assets/products/kids/product22/img4.jpg";
-import product22_img5 from "../../assets/products/kids/product22/img5.jpg";
+import product22_img1 from "../assets/products/kids/product22/img1.webp";
+import product22_img2 from "../assets/products/kids/product22/img2.webp";
+import product22_img3 from "../assets/products/kids/product22/img3.webp";
+import product22_img4 from "../assets/products/kids/product22/img4.webp";
+import product22_img5 from "../assets/products/kids/product22/img5.webp";
 
 // Product 23
-import product23_img1 from "../../assets/products/kids/product23/img1.jpg";
-import product23_img2 from "../../assets/products/kids/product23/img2.jpg";
-import product23_img3 from "../../assets/products/kids/product23/img3.jpg";
-import product23_img4 from "../../assets/products/kids/product23/img4.jpg";
-import product23_img5 from "../../assets/products/kids/product23/img5.jpg";
+import product23_img1 from "../assets/products/kids/product23/img1.webp";
+import product23_img2 from "../assets/products/kids/product23/img2.webp";
+import product23_img3 from "../assets/products/kids/product23/img3.webp";
+import product23_img4 from "../assets/products/kids/product23/img4.webp";
+import product23_img5 from "../assets/products/kids/product23/img5.webp";
 
 // Product 24
-import product24_img1 from "../../assets/products/kids/product24/img1.jpg";
-import product24_img2 from "../../assets/products/kids/product24/img2.jpg";
-import product24_img3 from "../../assets/products/kids/product24/img3.jpg";
-import product24_img4 from "../../assets/products/kids/product24/img4.jpg";
-import product24_img5 from "../../assets/products/kids/product24/img5.jpg";
+import product24_img1 from "../assets/products/kids/product24/img1.webp";
+import product24_img2 from "../assets/products/kids/product24/img2.webp";
+import product24_img3 from "../assets/products/kids/product24/img3.webp";
+import product24_img4 from "../assets/products/kids/product24/img4.webp";
+import product24_img5 from "../assets/products/kids/product24/img5.webp";
 
 // Product 25
-import product25_img1 from "../../assets/products/kids/product25/img1.jpg";
-import product25_img2 from "../../assets/products/kids/product25/img2.jpg";
-import product25_img3 from "../../assets/products/kids/product25/img3.jpg";
-import product25_img4 from "../../assets/products/kids/product25/img4.jpg";
-import product25_img5 from "../../assets/products/kids/product25/img5.jpg";
+import product25_img1 from "../assets/products/kids/product25/img1.webp";
+import product25_img2 from "../assets/products/kids/product25/img2.webp";
+import product25_img3 from "../assets/products/kids/product25/img3.webp";
+import product25_img4 from "../assets/products/kids/product25/img4.webp";
+import product25_img5 from "../assets/products/kids/product25/img5.webp";
 
 
 // ========================
@@ -197,204 +189,274 @@ import product25_img5 from "../../assets/products/kids/product25/img5.jpg";
 // ========================
 
 // Product 26
-import product26_img1 from "../../assets/products/women/product26/img1.jpg";
-import product26_img2 from "../../assets/products/women/product26/img2.jpg";
-import product26_img3 from "../../assets/products/women/product26/img3.jpg";
-import product26_img4 from "../../assets/products/women/product26/img4.jpg";
-import product26_img5 from "../../assets/products/women/product26/img5.jpg";
+import product26_img1 from "../assets/products/women/product26/img1.webp";
+import product26_img2 from "../assets/products/women/product26/img2.webp";
+import product26_img3 from "../assets/products/women/product26/img3.webp";
+import product26_img4 from "../assets/products/women/product26/img4.webp";
+import product26_img5 from "../assets/products/women/product26/img5.webp";
 
 // Product 27
-import product27_img1 from "../../assets/products/women/product27/img1.jpg";
-import product27_img2 from "../../assets/products/women/product27/img2.jpg";
-import product27_img3 from "../../assets/products/women/product27/img3.jpg";
-import product27_img4 from "../../assets/products/women/product27/img4.jpg";
-import product27_img5 from "../../assets/products/women/product27/img5.jpg";
+import product27_img1 from "../assets/products/women/product27/img1.webp";
+import product27_img2 from "../assets/products/women/product27/img2.webp";
+import product27_img3 from "../assets/products/women/product27/img3.webp";
+import product27_img4 from "../assets/products/women/product27/img4.webp";
+import product27_img5 from "../assets/products/women/product27/img5.webp";
 
 // Product 28
-import product28_img1 from "../../assets/products/women/product28/img1.jpg";
-import product28_img2 from "../../assets/products/women/product28/img2.jpg";
-import product28_img3 from "../../assets/products/women/product28/img3.jpg";
-import product28_img4 from "../../assets/products/women/product28/img4.jpg";
-import product28_img5 from "../../assets/products/women/product28/img5.jpg";
+import product28_img1 from "../assets/products/women/product28/img1.webp";
+import product28_img2 from "../assets/products/women/product28/img2.webp";
+import product28_img3 from "../assets/products/women/product28/img3.webp";
+import product28_img4 from "../assets/products/women/product28/img4.webp";
+import product28_img5 from "../assets/products/women/product28/img5.webp";
 
 // Product 29
-import product29_img1 from "../../assets/products/women/product29/img1.jpg";
-import product29_img2 from "../../assets/products/women/product29/img2.jpg";
-import product29_img3 from "../../assets/products/women/product29/img3.jpg";
-import product29_img4 from "../../assets/products/women/product29/img4.jpg";
-import product29_img5 from "../../assets/products/women/product29/img5.jpg";
+import product29_img1 from "../assets/products/women/product29/img1.webp";
+import product29_img2 from "../assets/products/women/product29/img2.webp";
+import product29_img3 from "../assets/products/women/product29/img3.webp";
+import product29_img4 from "../assets/products/women/product29/img4.webp";
+import product29_img5 from "../assets/products/women/product29/img5.webp";
 
 // Product 30
-import product30_img1 from "../../assets/products/women/product30/img1.jpg";
-import product30_img2 from "../../assets/products/women/product30/img2.jpg";
-import product30_img3 from "../../assets/products/women/product30/img3.jpg";
-import product30_img4 from "../../assets/products/women/product30/img4.jpg";
-import product30_img5 from "../../assets/products/women/product30/img5.jpg";
+import product30_img1 from "../assets/products/women/product30/img1.webp";
+import product30_img2 from "../assets/products/women/product30/img2.webp";
+import product30_img3 from "../assets/products/women/product30/img3.webp";
+import product30_img4 from "../assets/products/women/product30/img4.webp";
+import product30_img5 from "../assets/products/women/product30/img5.webp";
 
 // ========================
 // Men 
 // ========================
 
 // Product 31
-import product31_img1 from "../../assets/products/men/product31/img1.jpg";
-import product31_img2 from "../../assets/products/men/product31/img2.jpg";
-import product31_img3 from "../../assets/products/men/product31/img3.jpg";
-import product31_img4 from "../../assets/products/men/product31/img4.jpg";
-import product31_img5 from "../../assets/products/men/product31/img5.jpg";
+import product31_img1 from "../assets/products/men/product31/img1.webp";
+import product31_img2 from "../assets/products/men/product31/img2.webp";
+import product31_img3 from "../assets/products/men/product31/img3.webp";
+import product31_img4 from "../assets/products/men/product31/img4.webp";
+import product31_img5 from "../assets/products/men/product31/img5.webp";
 
 // Product 32
-import product32_img1 from "../../assets/products/men/product32/img1.jpg";
-import product32_img2 from "../../assets/products/men/product32/img2.jpg";
-import product32_img3 from "../../assets/products/men/product32/img3.jpg";
-import product32_img4 from "../../assets/products/men/product32/img4.jpg";
-import product32_img5 from "../../assets/products/men/product32/img5.jpg";
+import product32_img1 from "../assets/products/men/product32/img1.webp";
+import product32_img2 from "../assets/products/men/product32/img2.webp";
+import product32_img3 from "../assets/products/men/product32/img3.webp";
+import product32_img4 from "../assets/products/men/product32/img4.webp";
+import product32_img5 from "../assets/products/men/product32/img5.webp";
 
 // Product 33
-import product33_img1 from "../../assets/products/men/product33/img1.jpg";
-import product33_img2 from "../../assets/products/men/product33/img2.jpg";
-import product33_img3 from "../../assets/products/men/product33/img3.jpg";
-import product33_img4 from "../../assets/products/men/product33/img4.jpg";
-import product33_img5 from "../../assets/products/men/product33/img5.jpg";
+import product33_img1 from "../assets/products/men/product33/img1.webp";
+import product33_img2 from "../assets/products/men/product33/img2.webp";
+import product33_img3 from "../assets/products/men/product33/img3.webp";
+import product33_img4 from "../assets/products/men/product33/img4.webp";
+import product33_img5 from "../assets/products/men/product33/img5.webp";
 
 // Product 34
-import product34_img1 from "../../assets/products/men/product34/img1.jpg";
-import product34_img2 from "../../assets/products/men/product34/img2.jpg";
-import product34_img3 from "../../assets/products/men/product34/img3.jpg";
-import product34_img4 from "../../assets/products/men/product34/img4.jpg";
-import product34_img5 from "../../assets/products/men/product34/img5.jpg";
+import product34_img1 from "../assets/products/men/product34/img1.webp";
+import product34_img2 from "../assets/products/men/product34/img2.webp";
+import product34_img3 from "../assets/products/men/product34/img3.webp";
+import product34_img4 from "../assets/products/men/product34/img4.webp";
+import product34_img5 from "../assets/products/men/product34/img5.webp";
 
 // Product 35
-import product35_img1 from "../../assets/products/men/product35/img1.jpg";
-import product35_img2 from "../../assets/products/men/product35/img2.jpg";
-import product35_img3 from "../../assets/products/men/product35/img3.jpg";
-import product35_img4 from "../../assets/products/men/product35/img4.jpg";
-import product35_img5 from "../../assets/products/men/product35/img5.jpg";
+import product35_img1 from "../assets/products/men/product35/img1.webp";
+import product35_img2 from "../assets/products/men/product35/img2.webp";
+import product35_img3 from "../assets/products/men/product35/img3.webp";
+import product35_img4 from "../assets/products/men/product35/img4.webp";
+import product35_img5 from "../assets/products/men/product35/img5.webp";
 
 // ========================
 // Kids
 // ========================
 
 // Product 36
-import product36_img1 from "../../assets/products/kids/product36/img1.jpg";
-import product36_img2 from "../../assets/products/kids/product36/img2.jpg";
-import product36_img3 from "../../assets/products/kids/product36/img3.jpg";
-import product36_img4 from "../../assets/products/kids/product36/img4.jpg";
-import product36_img5 from "../../assets/products/kids/product36/img5.jpg";
+import product36_img1 from "../assets/products/kids/product36/img1.webp";
+import product36_img2 from "../assets/products/kids/product36/img2.webp";
+import product36_img3 from "../assets/products/kids/product36/img3.webp";
+import product36_img4 from "../assets/products/kids/product36/img4.webp";
+import product36_img5 from "../assets/products/kids/product36/img5.webp";
 
 // Product 37
-import product37_img1 from "../../assets/products/kids/product37/img1.jpg";
-import product37_img2 from "../../assets/products/kids/product37/img2.jpg";
-import product37_img3 from "../../assets/products/kids/product37/img3.jpg";
-import product37_img4 from "../../assets/products/kids/product37/img4.jpg";
-import product37_img5 from "../../assets/products/kids/product37/img5.jpg";
+import product37_img1 from "../assets/products/kids/product37/img1.webp";
+import product37_img2 from "../assets/products/kids/product37/img2.webp";
+import product37_img3 from "../assets/products/kids/product37/img3.webp";
+import product37_img4 from "../assets/products/kids/product37/img4.webp";
+import product37_img5 from "../assets/products/kids/product37/img5.webp";
 
 // Product 38
-import product38_img1 from "../../assets/products/kids/product38/img1.jpg";
-import product38_img2 from "../../assets/products/kids/product38/img2.jpg";
-import product38_img3 from "../../assets/products/kids/product38/img3.jpg";
-import product38_img4 from "../../assets/products/kids/product38/img4.jpg";
-import product38_img5 from "../../assets/products/kids/product38/img5.jpg";
+import product38_img1 from "../assets/products/kids/product38/img1.webp";
+import product38_img2 from "../assets/products/kids/product38/img2.webp";
+import product38_img3 from "../assets/products/kids/product38/img3.webp";
+import product38_img4 from "../assets/products/kids/product38/img4.webp";
+import product38_img5 from "../assets/products/kids/product38/img5.webp";
 
 // Product 39
-import product39_img1 from "../../assets/products/kids/product39/img1.jpg";
-import product39_img2 from "../../assets/products/kids/product39/img2.jpg";
-import product39_img3 from "../../assets/products/kids/product39/img3.jpg";
-import product39_img4 from "../../assets/products/kids/product39/img4.jpg";
-import product39_img5 from "../../assets/products/kids/product39/img5.jpg";
+import product39_img1 from "../assets/products/kids/product39/img1.webp";
+import product39_img2 from "../assets/products/kids/product39/img2.webp";
+import product39_img3 from "../assets/products/kids/product39/img3.webp";
+import product39_img4 from "../assets/products/kids/product39/img4.webp";
+import product39_img5 from "../assets/products/kids/product39/img5.webp";
 
 // Product 40
-import product40_img1 from "../../assets/products/kids/product40/img1.jpg";
-import product40_img2 from "../../assets/products/kids/product40/img2.jpg";
-import product40_img3 from "../../assets/products/kids/product40/img3.jpg";
-import product40_img4 from "../../assets/products/kids/product40/img4.jpg";
-import product40_img5 from "../../assets/products/kids/product40/img5.jpg";
+import product40_img1 from "../assets/products/kids/product40/img1.webp";
+import product40_img2 from "../assets/products/kids/product40/img2.webp";
+import product40_img3 from "../assets/products/kids/product40/img3.webp";
+import product40_img4 from "../assets/products/kids/product40/img4.webp";
+import product40_img5 from "../assets/products/kids/product40/img5.webp";
 
 // ========================
 // Women 
 // ========================
 
 // Product 41
-import product41_img1 from "../../assets/products/women/product41/img1.jpg";
-import product41_img2 from "../../assets/products/women/product41/img2.jpg";
-import product41_img3 from "../../assets/products/women/product41/img3.jpg";
-import product41_img4 from "../../assets/products/women/product41/img4.jpg";
-import product41_img5 from "../../assets/products/women/product41/img5.jpg";
+import product41_img1 from "../assets/products/women/product41/img1.webp";
+import product41_img2 from "../assets/products/women/product41/img2.webp";
+import product41_img3 from "../assets/products/women/product41/img3.webp";
+import product41_img4 from "../assets/products/women/product41/img4.webp";
+import product41_img5 from "../assets/products/women/product41/img5.webp";
 
 // Product 42
-import product42_img1 from "../../assets/products/women/product42/img1.jpg";
-import product42_img2 from "../../assets/products/women/product42/img2.jpg";
-import product42_img3 from "../../assets/products/women/product42/img3.jpg";
-import product42_img4 from "../../assets/products/women/product42/img4.jpg";
-import product42_img5 from "../../assets/products/women/product42/img5.jpg";
+import product42_img1 from "../assets/products/women/product42/img1.webp";
+import product42_img2 from "../assets/products/women/product42/img2.webp";
+import product42_img3 from "../assets/products/women/product42/img3.webp";
+import product42_img4 from "../assets/products/women/product42/img4.webp";
+import product42_img5 from "../assets/products/women/product42/img5.webp";
 
 // Product 43
-import product43_img1 from "../../assets/products/women/product43/img1.jpg";
-import product43_img2 from "../../assets/products/women/product43/img2.jpg";
-import product43_img3 from "../../assets/products/women/product43/img3.jpg";
-import product43_img4 from "../../assets/products/women/product43/img4.jpg";
-import product43_img5 from "../../assets/products/women/product43/img5.jpg";
+import product43_img1 from "../assets/products/women/product43/img1.webp";
+import product43_img2 from "../assets/products/women/product43/img2.webp";
+import product43_img3 from "../assets/products/women/product43/img3.webp";
+import product43_img4 from "../assets/products/women/product43/img4.webp";
+import product43_img5 from "../assets/products/women/product43/img5.webp";
 
 // Product 44
-import product44_img1 from "../../assets/products/women/product44/img1.jpg";
-import product44_img2 from "../../assets/products/women/product44/img2.jpg";
-import product44_img3 from "../../assets/products/women/product44/img3.jpg";
-import product44_img4 from "../../assets/products/women/product44/img4.jpg";
-import product44_img5 from "../../assets/products/women/product44/img5.jpg";
+import product44_img1 from "../assets/products/women/product44/img1.webp";
+import product44_img2 from "../assets/products/women/product44/img2.webp";
+import product44_img3 from "../assets/products/women/product44/img3.webp";
+import product44_img4 from "../assets/products/women/product44/img4.webp";
+import product44_img5 from "../assets/products/women/product44/img5.webp";
 
 // Product 45
-import product45_img1 from "../../assets/products/women/product45/img1.jpg";
-import product45_img2 from "../../assets/products/women/product45/img2.jpg";
-import product45_img3 from "../../assets/products/women/product45/img3.jpg";
-import product45_img4 from "../../assets/products/women/product45/img4.jpg";
-import product45_img5 from "../../assets/products/women/product45/img5.jpg";
+import product45_img1 from "../assets/products/women/product45/img1.webp";
+import product45_img2 from "../assets/products/women/product45/img2.webp";
+import product45_img3 from "../assets/products/women/product45/img3.webp";
+import product45_img4 from "../assets/products/women/product45/img4.webp";
+import product45_img5 from "../assets/products/women/product45/img5.webp";
 
 // ========================
 // Men 
 // ========================
 
 // Product 46
-import product46_img1 from "../../assets/products/men/product46/img1.jpg";
-import product46_img2 from "../../assets/products/men/product46/img2.jpg";
-import product46_img3 from "../../assets/products/men/product46/img3.jpg";
-import product46_img4 from "../../assets/products/men/product46/img4.jpg";
-import product46_img5 from "../../assets/products/men/product46/img5.jpg";
+import product46_img1 from "../assets/products/men/product46/img1.webp";
+import product46_img2 from "../assets/products/men/product46/img2.webp";
+import product46_img3 from "../assets/products/men/product46/img3.webp";
+import product46_img4 from "../assets/products/men/product46/img4.webp";
+import product46_img5 from "../assets/products/men/product46/img5.webp";
 
 // Product 47
-import product47_img1 from "../../assets/products/men/product47/img1.jpg";
-import product47_img2 from "../../assets/products/men/product47/img2.jpg";
-import product47_img3 from "../../assets/products/men/product47/img3.jpg";
-import product47_img4 from "../../assets/products/men/product47/img4.jpg";
-import product47_img5 from "../../assets/products/men/product47/img5.jpg";
+import product47_img1 from "../assets/products/men/product47/img1.webp";
+import product47_img2 from "../assets/products/men/product47/img2.webp";
+import product47_img3 from "../assets/products/men/product47/img3.webp";
+import product47_img4 from "../assets/products/men/product47/img4.webp";
+import product47_img5 from "../assets/products/men/product47/img5.webp";
 
 // Product 48
-import product48_img1 from "../../assets/products/men/product48/img1.jpg";
-import product48_img2 from "../../assets/products/men/product48/img2.jpg";
-import product48_img3 from "../../assets/products/men/product48/img3.jpg";
-import product48_img4 from "../../assets/products/men/product48/img4.jpg";
-import product48_img5 from "../../assets/products/men/product48/img5.jpg";
+import product48_img1 from "../assets/products/men/product48/img1.webp";
+import product48_img2 from "../assets/products/men/product48/img2.webp";
+import product48_img3 from "../assets/products/men/product48/img3.webp";
+import product48_img4 from "../assets/products/men/product48/img4.webp";
+import product48_img5 from "../assets/products/men/product48/img5.webp";
 
 // Product 49
-import product49_img1 from "../../assets/products/men/product49/img1.jpg";
-import product49_img2 from "../../assets/products/men/product49/img2.jpg";
-import product49_img3 from "../../assets/products/men/product49/img3.jpg";
-import product49_img4 from "../../assets/products/men/product49/img4.jpg";
-import product49_img5 from "../../assets/products/men/product49/img5.jpg";
+import product49_img1 from "../assets/products/men/product49/img1.webp";
+import product49_img2 from "../assets/products/men/product49/img2.webp";
+import product49_img3 from "../assets/products/men/product49/img3.webp";
+import product49_img4 from "../assets/products/men/product49/img4.webp";
+import product49_img5 from "../assets/products/men/product49/img5.webp";
 
 // Product 50
-import product50_img1 from "../../assets/products/kids/product50/img1.jpg";
-import product50_img2 from "../../assets/products/kids/product50/img2.jpg";
-import product50_img3 from "../../assets/products/kids/product50/img3.jpg";
-import product50_img4 from "../../assets/products/kids/product50/img4.jpg";
-import product50_img5 from "../../assets/products/kids/product50/img5.jpg";
+import product50_img1 from "../assets/products/men/product50/img1.webp";
+import product50_img2 from "../assets/products/men/product50/img2.webp";
+import product50_img3 from "../assets/products/men/product50/img3.webp";
+import product50_img4 from "../assets/products/men/product50/img4.webp";
+import product50_img5 from "../assets/products/men/product50/img5.webp";
+
+// Product 51
+import product51_img1 from "../assets/products/men/product51/img1.webp";
+import product51_img2 from "../assets/products/men/product51/img2.webp";
+import product51_img3 from "../assets/products/men/product51/img3.webp";
+import product51_img4 from "../assets/products/men/product51/img4.webp";
+import product51_img5 from "../assets/products/men/product51/img5.webp";
+
+// Product 52
+import product52_img1 from "../assets/products/men/product52/img1.webp";
+import product52_img2 from "../assets/products/men/product52/img2.webp";
+import product52_img3 from "../assets/products/men/product52/img3.webp";
+import product52_img4 from "../assets/products/men/product52/img4.webp";
+import product52_img5 from "../assets/products/men/product52/img5.webp";
+
+// Product 53
+import product53_img1 from "../assets/products/men/product53/img1.webp";
+import product53_img2 from "../assets/products/men/product53/img2.webp";
+import product53_img3 from "../assets/products/men/product53/img3.webp";
+import product53_img4 from "../assets/products/men/product53/img4.webp";
+import product53_img5 from "../assets/products/men/product53/img5.webp";
+
+// Product 54
+import product54_img1 from "../assets/products/men/product54/img1.webp";
+import product54_img2 from "../assets/products/men/product54/img2.webp";
+import product54_img3 from "../assets/products/men/product54/img3.webp";
+import product54_img4 from "../assets/products/men/product54/img4.webp";
+
+// Product 55
+import product55_img1 from "../assets/products/men/product55/img1.webp";
+import product55_img2 from "../assets/products/men/product55/img2.webp";
+import product55_img3 from "../assets/products/men/product55/img3.webp";
+import product55_img4 from "../assets/products/men/product55/img4.webp";
+import product55_img5 from "../assets/products/men/product55/img5.webp";
+
+// Product 56
+import product56_img1 from "../assets/products/men/product56/img1.webp";
+import product56_img2 from "../assets/products/men/product56/img2.webp";
+import product56_img3 from "../assets/products/men/product56/img3.webp";
+import product56_img4 from "../assets/products/men/product56/img4.webp";
+import product56_img5 from "../assets/products/men/product56/img5.webp";
+
+// Product 57
+import product57_img1 from "../assets/products/men/product57/img1.webp";
+import product57_img2 from "../assets/products/men/product57/img2.webp";
+import product57_img3 from "../assets/products/men/product57/img3.webp";
+import product57_img4 from "../assets/products/men/product57/img4.webp";
+import product57_img5 from "../assets/products/men/product57/img5.webp";
+
+//===============
+// women
+//===============
+
+// Product 58
+import product58_img1 from "../assets/products/women/product58/img1.webp";
+import product58_img2 from "../assets/products/women/product58/img2.webp";
+import product58_img3 from "../assets/products/women/product58/img3.webp";
+import product58_img4 from "../assets/products/women/product58/img4.webp";
+import product58_img5 from "../assets/products/women/product58/img5.webp";
+
+// Product 59
+import product59_img1 from "../assets/products/women/product59/img1.webp";
+import product59_img2 from "../assets/products/women/product59/img2.webp";
+import product59_img3 from "../assets/products/women/product59/img3.webp";
+import product59_img4 from "../assets/products/women/product59/img4.webp";
+import product59_img5 from "../assets/products/women/product59/img5.webp";
+
+// Product 60
+import product60_img1 from "../assets/products/women/product60/img1.webp";
+import product60_img2 from "../assets/products/women/product60/img2.webp";
+import product60_img3 from "../assets/products/women/product60/img3.webp";
+import product60_img4 from "../assets/products/women/product60/img4.webp";
+import product60_img5 from "../assets/products/women/product60/img5.webp";
 
 
 
 
 
 
-// ========================
-// Products 1–10
-// ========================
 
 export const products = [
   {
@@ -538,13 +600,12 @@ export const products = [
       product8_img2,
       product8_img3,
       product8_img4,
-      product8_img5
     ]
   },
   {
     id: 9,
-    name: "Kids Fun Sneakers",
-    type: "sneakers",
+    name: "Kids Fun Canvas",
+    type: "canvas",
     category: "Kids",
     price: 90,
     colors: ["red", "blue", "yellow"],
@@ -574,7 +635,6 @@ export const products = [
       product10_img2,
       product10_img3,
       product10_img4,
-      product10_img5
     ]
   },
     {
@@ -588,29 +648,29 @@ export const products = [
     stock: 32,
     rating: 4.6,
     images: [
-      menSneaker11_1,
-      menSneaker11_2,
-      menSneaker11_3,
-      menSneaker11_4,
-      menSneaker11_5,
+      product11_img1,
+      product11_img2,
+      product11_img3,
+      product11_img4,
+      product11_img5,
     ],
   },
   {
     id: 12,
     name: "Daily Comfort Slip-On",
     category: "men",
-    type: "slip-on",
+    type: "sneakers",
     price: 3800,
     colors: ["brown", "navy"],
     sizes: [39, 40, 41, 42, 43],
     stock: 25,
     rating: 4.4,
     images: [
-      menSlipOn12_1,
-      menSlipOn12_2,
-      menSlipOn12_3,
-      menSlipOn12_4,
-      menSlipOn12_5,
+      product12_img1,
+      product12_img2,
+      product12_img3,
+      product12_img4,
+      product12_img5,
     ],
   },
   {
@@ -624,29 +684,27 @@ export const products = [
     stock: 18,
     rating: 4.7,
     images: [
-      menLoafer13_1,
-      menLoafer13_2,
-      menLoafer13_3,
-      menLoafer13_4,
-      menLoafer13_5,
+      product13_img1,
+      product13_img2,
+      product13_img3,
     ],
   },
   {
     id: 14,
     name: "Power Run Pro",
     category: "men",
-    type: "running",
+    type: "sneakers",
     price: 6900,
     colors: ["gray", "lime"],
     sizes: [40, 41, 42, 43, 44],
     stock: 40,
     rating: 4.8,
     images: [
-      menRunning14_1,
-      menRunning14_2,
-      menRunning14_3,
-      menRunning14_4,
-      menRunning14_5,
+      product14_img1,
+      product14_img2,
+      product14_img3,
+      product14_img4,
+      product14_img5,
     ],
   },
   {
@@ -660,11 +718,11 @@ export const products = [
     stock: 50,
     rating: 4.3,
     images: [
-      menCanvas15_1,
-      menCanvas15_2,
-      menCanvas15_3,
-      menCanvas15_4,
-      menCanvas15_5,
+      product15_img1,
+      product15_img2,
+      product15_img3,
+      product15_img4,
+      product15_img5,
     ],
   },
   {
@@ -678,11 +736,10 @@ export const products = [
     stock: 20,
     rating: 4.6,
     images: [
-      womenHeel16_1,
-      womenHeel16_2,
-      womenHeel16_3,
-      womenHeel16_4,
-      womenHeel16_5,
+      product16_img1,
+      product16_img2,
+      product16_img3,
+      product16_img4,
     ],
   },
   {
@@ -696,11 +753,10 @@ export const products = [
     stock: 28,
     rating: 4.7,
     images: [
-      womenTraining17_1,
-      womenTraining17_2,
-      womenTraining17_3,
-      womenTraining17_4,
-      womenTraining17_5,
+      product17_img1,
+      product17_img2,
+      product17_img3,
+      product17_img4,
     ],
   },
   {
@@ -714,11 +770,11 @@ export const products = [
     stock: 35,
     rating: 4.5,
     images: [
-      womenCasual18_1,
-      womenCasual18_2,
-      womenCasual18_3,
-      womenCasual18_4,
-      womenCasual18_5,
+      product18_img1,
+      product18_img2,
+      product18_img3,
+      product18_img4,
+      product18_img5,
     ],
   },
   {
@@ -732,11 +788,11 @@ export const products = [
     stock: 45,
     rating: 4.4,
     images: [
-      kidsRun19_1,
-      kidsRun19_2,
-      kidsRun19_3,
-      kidsRun19_4,
-      kidsRun19_5,
+      product19_img1,
+      product19_img2,
+      product19_img3,
+      product19_img4,
+      product19_img5,
     ],
   },
   {
@@ -750,11 +806,11 @@ export const products = [
     stock: 60,
     rating: 4.5,
     images: [
-      kidsFormal20_1,
-      kidsFormal20_2,
-      kidsFormal20_3,
-      kidsFormal20_4,
-      kidsFormal20_5,
+      product20_img1,
+      product20_img2,
+      product20_img3,
+      product20_img4,
+      product20_img5,
     ],
   },
 {
@@ -768,11 +824,9 @@ export const products = [
   stock: 30,
   rating: 4.7,
   images: [
-    menSneaker21_1,
-    menSneaker21_2,
-    menSneaker21_3,
-    menSneaker21_4,
-    menSneaker21_5,
+    product21_img1,
+    product21_img2,
+    product21_img3,
   ],
 },
 {
@@ -786,11 +840,11 @@ export const products = [
   stock: 22,
   rating: 4.8,
   images: [
-    menFormal22_1,
-    menFormal22_2,
-    menFormal22_3,
-    menFormal22_4,
-    menFormal22_5,
+    product22_img1,
+    product22_img2,
+    product22_img3,
+    product22_img4,
+    product22_img5,
   ],
 },
 {
@@ -804,11 +858,11 @@ export const products = [
   stock: 40,
   rating: 4.4,
   images: [
-    menCasual23_1,
-    menCasual23_2,
-    menCasual23_3,
-    menCasual23_4,
-    menCasual23_5,
+    product23_img1,
+    product23_img2,
+    product23_img3,
+    product23_img4,
+    product23_img5,
   ],
 },
 {
@@ -816,17 +870,18 @@ export const products = [
   name: "Extreme Trail Boot",
   category: "men",
   type: "boots",
+  isBestseller: true,
   price: 8800,
   colors: ["brown", "black"],
   sizes: [40, 41, 42, 43, 44],
   stock: 15,
   rating: 4.9,
   images: [
-    menBoot24_1,
-    menBoot24_2,
-    menBoot24_3,
-    menBoot24_4,
-    menBoot24_5,
+    product24_img1,
+    product24_img2,
+    product24_img3,
+    product24_img4,
+    product24_img5,
   ],
 },
 {
@@ -834,17 +889,18 @@ export const products = [
   name: "Light Run Max",
   category: "men",
   type: "running",
+  isBestseller: true,
   price: 6900,
   colors: ["white", "neon-green"],
   sizes: [40, 41, 42, 43, 44],
   stock: 35,
   rating: 4.8,
   images: [
-    menRunning25_1,
-    menRunning25_2,
-    menRunning25_3,
-    menRunning25_4,
-    menRunning25_5,
+    product25_img1,
+    product25_img2,
+    product25_img3,
+    product25_img4,
+    product25_img5,
   ],
 },
 {
@@ -852,17 +908,18 @@ export const products = [
   name: "Elegant Party Heel",
   category: "women",
   type: "heels",
+  isBestseller: true,
   price: 7900,
   colors: ["gold", "black"],
   sizes: [36, 37, 38, 39],
   stock: 18,
   rating: 4.7,
   images: [
-    womenHeel26_1,
-    womenHeel26_2,
-    womenHeel26_3,
-    womenHeel26_4,
-    womenHeel26_5,
+   product26_img1,
+   product26_img2,
+   product26_img3,
+   product26_img4,
+   product26_img5,
   ],
 },
 {
@@ -876,11 +933,11 @@ export const products = [
   stock: 34,
   rating: 4.6,
   images: [
-    womenSneaker27_1,
-    womenSneaker27_2,
-    womenSneaker27_3,
-    womenSneaker27_4,
-    womenSneaker27_5,
+    product27_img1,
+    product27_img2,
+    product27_img3,
+    product27_img4,
+    product27_img5,
   ],
 },
 {
@@ -888,17 +945,18 @@ export const products = [
   name: "Soft Comfort Sandal",
   category: "women",
   type: "sandals",
+  isBestseller: true,
   price: 3600,
   colors: ["beige", "tan"],
   sizes: [36, 37, 38, 39],
   stock: 45,
   rating: 4.5,
   images: [
-    womenSandal28_1,
-    womenSandal28_2,
-    womenSandal28_3,
-    womenSandal28_4,
-    womenSandal28_5,
+    product28_img1,
+    product28_img2,
+    product28_img3,
+    product28_img4,
+    product28_img5,
   ],
 },
 {
@@ -912,11 +970,11 @@ export const products = [
   stock: 50,
   rating: 4.6,
   images: [
-    kidsSneaker29_1,
-    kidsSneaker29_2,
-    kidsSneaker29_3,
-    kidsSneaker29_4,
-    kidsSneaker29_5,
+    product29_img1,
+    product29_img2,
+    product29_img3,
+    product29_img4,
+    product29_img5,
   ],
 },
 {
@@ -924,17 +982,18 @@ export const products = [
   name: "Kids Casual Slip",
   category: "kids",
   type: "slip-on",
+  isBestseller: true,
   price: 2600,
   colors: ["gray", "navy"],
   sizes: [28, 29, 30, 31],
   stock: 55,
   rating: 4.4,
   images: [
-    kidsSlip30_1,
-    kidsSlip30_2,
-    kidsSlip30_3,
-    kidsSlip30_4,
-    kidsSlip30_5,
+    product30_img1,
+    product30_img2,
+    product30_img3,
+    product30_img4,
+    product30_img5,
   ],
 },
 {
@@ -942,17 +1001,18 @@ export const products = [
   name: "Air Motion Pro",
   category: "men",
   type: "training",
+  isBestseller: true,
   price: 6700,
   colors: ["black", "orange"],
   sizes: [40, 41, 42, 43, 44],
   stock: 28,
   rating: 4.7,
   images: [
-    menTraining31_1,
-    menTraining31_2,
-    menTraining31_3,
-    menTraining31_4,
-    menTraining31_5,
+    product31_img1,
+    product31_img2,
+    product31_img3,
+    product31_img4,
+    product31_img5,
   ],
 },
 {
@@ -960,17 +1020,18 @@ export const products = [
   name: "Urban Canvas Low",
   category: "men",
   type: "canvas",
+  isBestseller: true,
   price: 3900,
   colors: ["white", "navy"],
   sizes: [39, 40, 41, 42, 43],
   stock: 46,
   rating: 4.5,
   images: [
-    menCanvas32_1,
-    menCanvas32_2,
-    menCanvas32_3,
-    menCanvas32_4,
-    menCanvas32_5,
+    product32_img1,
+    product32_img2,
+    product32_img3,
+    product32_img4,
+    product32_img5,
   ],
 },
 {
@@ -978,17 +1039,18 @@ export const products = [
   name: "Premium Leather Derby",
   category: "men",
   type: "formal",
+  isBestseller: true,
   price: 8200,
   colors: ["dark-brown", "black"],
   sizes: [40, 41, 42, 43, 44],
   stock: 20,
   rating: 4.9,
   images: [
-    menFormal33_1,
-    menFormal33_2,
-    menFormal33_3,
-    menFormal33_4,
-    menFormal33_5,
+    product33_img1,
+    product33_img2,
+    product33_img3,
+    product33_img4,
+    product33_img5,
   ],
 },
 {
@@ -996,17 +1058,18 @@ export const products = [
   name: "Women Active Run",
   category: "women",
   type: "running",
+  isBestseller: true,
   price: 6100,
   colors: ["purple", "white"],
   sizes: [36, 37, 38, 39, 40],
   stock: 32,
   rating: 4.6,
   images: [
-    womenRunning34_1,
-    womenRunning34_2,
-    womenRunning34_3,
-    womenRunning34_4,
-    womenRunning34_5,
+    product34_img1,
+    product34_img2,
+    product34_img3,
+    product34_img4,
+    product34_img5,
   ],
 },
 {
@@ -1020,11 +1083,11 @@ export const products = [
   stock: 50,
   rating: 4.4,
   images: [
-    womenCasual35_1,
-    womenCasual35_2,
-    womenCasual35_3,
-    womenCasual35_4,
-    womenCasual35_5,
+    product35_img1,
+    product35_img2,
+    product35_img3,
+    product35_img4,
+    product35_img5,
   ],
 },
 {
@@ -1032,17 +1095,18 @@ export const products = [
   name: "Luxury Strap Sandal",
   category: "women",
   type: "sandals",
+  isBestseller: true,
   price: 4800,
   colors: ["gold", "tan"],
   sizes: [36, 37, 38, 39],
   stock: 27,
   rating: 4.7,
   images: [
-    womenSandal36_1,
-    womenSandal36_2,
-    womenSandal36_3,
-    womenSandal36_4,
-    womenSandal36_5,
+    product36_img1,
+    product36_img2,
+    product36_img3,
+    product36_img4,
+    product36_img5,
   ],
 },
 {
@@ -1056,11 +1120,11 @@ export const products = [
   stock: 60,
   rating: 4.5,
   images: [
-    kidsFormal37_1,
-    kidsFormal37_2,
-    kidsFormal37_3,
-    kidsFormal37_4,
-    kidsFormal37_5,
+    product37_img1,
+    product37_img2,
+    product37_img3,
+    product37_img4,
+    product37_img5,
   ],
 },
 {
@@ -1074,11 +1138,11 @@ export const products = [
   stock: 48,
   rating: 4.6,
   images: [
-    kidsRunning38_1,
-    kidsRunning38_2,
-    kidsRunning38_3,
-    kidsRunning38_4,
-    kidsRunning38_5,
+    product38_img1,
+    product38_img2,
+    product38_img3,
+    product38_img4,
+    product38_img5,
   ],
 },
 {
@@ -1092,11 +1156,11 @@ export const products = [
   stock: 70,
   rating: 4.4,
   images: [
-    kidsSlip39_1,
-    kidsSlip39_2,
-    kidsSlip39_3,
-    kidsSlip39_4,
-    kidsSlip39_5,
+    product39_img1,
+    product39_img2,
+    product39_img3,
+    product39_img4,
+    product39_img5,
   ],
 },
 {
@@ -1110,11 +1174,11 @@ export const products = [
   stock: 55,
   rating: 4.5,
   images: [
-    kidsCanvas40_1,
-    kidsCanvas40_2,
-    kidsCanvas40_3,
-    kidsCanvas40_4,
-    kidsCanvas40_5,
+    product40_img1,
+    product40_img2,
+    product40_img3,
+    product40_img4,
+    product40_img5,
   ],
 },
 {
@@ -1128,11 +1192,11 @@ export const products = [
   stock: 26,
   rating: 4.8,
   images: [
-    menTraining41_1,
-    menTraining41_2,
-    menTraining41_3,
-    menTraining41_4,
-    menTraining41_5,
+    product41_img1,
+    product41_img2,
+    product41_img3,
+    product41_img4,
+    product41_img5,
   ],
 },
 {
@@ -1146,11 +1210,11 @@ export const products = [
   stock: 38,
   rating: 4.5,
   images: [
-    menSlip42_1,
-    menSlip42_2,
-    menSlip42_3,
-    menSlip42_4,
-    menSlip42_5,
+    product42_img1,
+    product42_img2,
+    product42_img3,
+    product42_img4,
+    product42_img5,
   ],
 },
 {
@@ -1164,11 +1228,11 @@ export const products = [
   stock: 18,
   rating: 4.9,
   images: [
-    menBoot43_1,
-    menBoot43_2,
-    menBoot43_3,
-    menBoot43_4,
-    menBoot43_5,
+    product43_img1,
+    product43_img2,
+    product43_img3,
+    product43_img4,
+    product43_img5,
   ],
 },
 {
@@ -1182,11 +1246,11 @@ export const products = [
   stock: 29,
   rating: 4.7,
   images: [
-    womenSneaker44_1,
-    womenSneaker44_2,
-    womenSneaker44_3,
-    womenSneaker44_4,
-    womenSneaker44_5,
+    product44_img1,
+    product44_img2,
+    product44_img3,
+    product44_img4,
+    product44_img5,
   ],
 },
 {
@@ -1200,11 +1264,11 @@ export const products = [
   stock: 52,
   rating: 4.4,
   images: [
-    womenCasual45_1,
-    womenCasual45_2,
-    womenCasual45_3,
-    womenCasual45_4,
-    womenCasual45_5,
+    product45_img1,
+    product45_img2,
+    product45_img3,
+    product45_img4,
+    product45_img5,
   ],
 },
 {
@@ -1218,11 +1282,11 @@ export const products = [
   stock: 33,
   rating: 4.6,
   images: [
-    womenTraining46_1,
-    womenTraining46_2,
-    womenTraining46_3,
-    womenTraining46_4,
-    womenTraining46_5,
+    product46_img1,
+    product46_img2,
+    product46_img3,
+    product46_img4,
+    product46_img5,
   ],
 },
 {
@@ -1236,11 +1300,11 @@ export const products = [
   stock: 65,
   rating: 4.6,
   images: [
-    kidsSneaker47_1,
-    kidsSneaker47_2,
-    kidsSneaker47_3,
-    kidsSneaker47_4,
-    kidsSneaker47_5,
+    product47_img1,
+    product47_img2,
+    product47_img3,
+    product47_img4,
+    product47_img5,
   ],
 },
 {
@@ -1254,11 +1318,11 @@ export const products = [
   stock: 72,
   rating: 4.5,
   images: [
-    kidsSandal48_1,
-    kidsSandal48_2,
-    kidsSandal48_3,
-    kidsSandal48_4,
-    kidsSandal48_5,
+    product48_img1,
+    product48_img2,
+    product48_img3,
+    product48_img4,
+    product48_img5,
   ],
 },
 {
@@ -1272,11 +1336,11 @@ export const products = [
   stock: 58,
   rating: 4.4,
   images: [
-    kidsCanvas49_1,
-    kidsCanvas49_2,
-    kidsCanvas49_3,
-    kidsCanvas49_4,
-    kidsCanvas49_5,
+    product49_img1,
+    product49_img2,
+    product49_img3,
+    product49_img4,
+    product49_img5,
   ],
 },
 {
@@ -1290,12 +1354,191 @@ export const products = [
   stock: 80,
   rating: 4.6,
   images: [
-    kidsSlip50_1,
-    kidsSlip50_2,
-    kidsSlip50_3,
-    kidsSlip50_4,
-    kidsSlip50_5,
+    product50_img1,
+    product50_img2,
+    product50_img3,
+    product50_img4,
+    product50_img5,
   ],
 },
+{
+  id: 51,
+  name: "Men Easy Walk Slip",
+  category: "men",
+  type: "slip-on",
+  price: 2400,
+  colors: ["gray", "black"],
+  sizes: [27, 28, 29, 30],
+  stock: 80,
+  rating: 4.6,
+  images: [
+    product51_img1,
+    product51_img2,
+    product51_img3,
+    product51_img4,
+    product51_img5,
+  ],
+},
+{
+  id: 52,
+  name: "Men Easy Walk Slip",
+  category: "men",
+  type: "slip-on",
+  price: 2400,
+  colors: ["gray", "black"],
+  sizes: [27, 28, 29, 30],
+  stock: 80,
+  rating: 4.6,
+  images: [
+    product52_img1,
+    product52_img2,
+    product52_img3,
+    product52_img4,
+    product52_img5,
+  ],
+},
+{
+  id: 53,
+  name: "Mens Easy Walk Slip",
+  category: "men",
+  type: "slip-on",
+  price: 2400,
+  colors: ["gray", "black"],
+  sizes: [27, 28, 29, 30],
+  stock: 80,
+  rating: 4.6,
+  images: [
+    product53_img1,
+    product53_img2,
+    product53_img3,
+    product53_img4,
+    product53_img5,
+  ],
+},
+{
+  id: 54,
+  name: "Mens Easy Walk Slip",
+  category: "men",
+  type: "slip-on",
+  price: 2400,
+  colors: ["gray", "black"],
+  sizes: [27, 28, 29, 30],
+  stock: 80,
+  rating: 4.6,
+  images: [
+    product54_img1,
+    product54_img2,
+    product54_img3,
+    product54_img4,
+  ],
+},
+  {
+    id: 55,
+    name: "Classic Canvas",
+    type: "casual",
+    category: "Men",
+    price: 120,
+    colors: ["blue", "white", "grey"],
+    sizes: [38, 39, 40, 41, 42],
+    stock: 30,
+    rating: 4.5,
+    images: [
+      product55_img1,
+      product55_img2,
+      product55_img3,
+      product55_img4,
+      product55_img5
+    ]
+  },
+    {
+    id: 56,
+    name: "Classic Canvas",
+    type: "casual",
+    category: "Men",
+    price: 120,
+    colors: ["blue", "white", "grey"],
+    sizes: [38, 39, 40, 41, 42],
+    stock: 30,
+    rating: 4.5,
+    images: [
+      product56_img1,
+      product56_img2,
+      product56_img3,
+      product56_img4,
+      product56_img5
+    ]
+  },
+    {
+    id: 57,
+    name: "Classic Canvas",
+    type: "casual",
+    category: "Men",
+    price: 120,
+    colors: ["blue", "white", "grey"],
+    sizes: [38, 39, 40, 41, 42],
+    stock: 30,
+    rating: 4.5,
+    images: [
+      product57_img1,
+      product57_img2,
+      product57_img3,
+      product57_img4,
+      product57_img5
+    ]
+  },
+    {
+    id: 58,
+    name: "Women Active Trainer",
+    category: "women",
+    type: "training",
+    price: 5600,
+    colors: ["pink", "white"],
+    sizes: [36, 37, 38, 39, 40],
+    stock: 28,
+    rating: 4.7,
+    images: [
+      product58_img1,
+      product58_img2,
+      product58_img3,
+      product58_img4,
+      product58_img5
+    ],
+  },
+    {
+    id: 59,
+    name: "Women Active Trainer",
+    category: "women",
+    type: "training",
+    price: 5600,
+    colors: ["pink", "white"],
+    sizes: [36, 37, 38, 39, 40],
+    stock: 28,
+    rating: 4.7,
+    images: [
+      product59_img1,
+      product59_img2,
+      product59_img3,
+      product59_img4,
+      product59_img5
+    ],
+  },
+    {
+    id: 60,
+    name: "Women Active Trainer",
+    category: "women",
+    type: "training",
+    price: 5600,
+    colors: ["pink", "white"],
+    sizes: [36, 37, 38, 39, 40],
+    stock: 28,
+    rating: 4.7,
+    images: [
+      product60_img1,
+      product60_img2,
+      product60_img3,
+      product60_img4,
+      product60_img5
+    ],
+  },
 
 ];
