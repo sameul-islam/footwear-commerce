@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { products } from '../../data/productData';
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
+import { useSelector } from 'react-redux';
+import { selectSneakers } from '../../features/products/productsSlice';
 
 
 
@@ -44,12 +45,12 @@ const Sneaker = () => {
        }
      
       //  Product
-        const sneakerProducts = products.filter((item) => item.type === 'sneakers')
+        const sneakerProducts = useSelector(selectSneakers).slice(0, 10);
 
   return (
     <section className='mt-8 md:mt-14'>
 
-    <h1 class="font-Poppins text-xl md:text-2xl lg:text-3xl text-center">
+    <h1 className="font-Poppins text-xl md:text-2xl lg:text-3xl text-center">
       Crafted to Move
     </h1>
 
@@ -71,17 +72,12 @@ const Sneaker = () => {
            <div key={item.id} className='shrink-0 p-1 md:p-2'>
    
            <img
-           src={item.images[0]}
+           src={item.variants?.[0]?.images?.[0] || "placeholder.webp"}
            alt={item.name}
            onLoad={handleScroll}
            loading='lazy'
            className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl bg-gray-50'
            />
-           {/* <div className='flex flex-col p-2 pt-0'>
-            <p className='font-Lato font-semibold'>{item.title}</p>
-            <p className='font-Poppins text-sm text-gray-500'>{item.category}</p>
-            <p className='font-Poppins font-semibold'>{item.mrp}</p>
-           </div> */}
            </div>
          ))}
          </div>

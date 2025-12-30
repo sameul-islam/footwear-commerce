@@ -58,3 +58,7 @@ Today, I completely redesigned the Gender and Spotlight secrtions. Additionally,
 ### Day 13 – December 29, 2025
 
 Today, I carefully structured my product data in a clean and scalable way and properly matched all product images with the data Structure.  I also refactored the Best Seller and Sneaker sections by removing the old static image logic and directly connecting them to the central product data object.  This ensures that these sections are fully backend-ready and consistently linked with the main product data, making the system more maintainable, scalable, and suitable for real-world business use.
+
+### Day 14 – December 30, 2025
+
+Today, I completely revamped my product objects and prepared the backend structure fully. I also fully set up Redux Toolkit, ensuring it is ready for managing product state efficiently. Additionally, I updated the Best Seller and Sneaker sections to fetch and display products directly from the Redux Toolkit store. Overall, I dedicated 14 hours of work today to accomplish these tasks.

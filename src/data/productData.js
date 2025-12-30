@@ -459,1086 +459,3625 @@ import product60_img5 from "../assets/products/women/product60/img5.webp";
 
 
 export const products = [
-  {
-    id: 1,
-    name: "Air Zoom Elite",
-    type: "sneakers",          
-    category: "Men",             
-    price: 150,
-    colors: ["black", "white", "red"],
-    sizes: [38, 39, 40, 41, 42, 43],
-    stock: 50,
-    rating: 4.8,
-    images: [
-      product1_img1,
-      product1_img2,
-      product1_img3,
-      product1_img4,
-      product1_img5
-    ]
-  },
-  {
-    id: 2,
-    name: "Classic Canvas",
-    type: "casual",
-    category: "Men",
-    price: 120,
-    colors: ["blue", "white", "grey"],
-    sizes: [38, 39, 40, 41, 42],
-    stock: 30,
-    rating: 4.5,
-    images: [
-      product2_img1,
-      product2_img2,
-      product2_img3,
-      product2_img4,
-      product2_img5
-    ]
-  },
-  {
-    id: 3,
-    name: "Slip-On Comfort",
-    type: "slip-on",
-    category: "Women",
-    price: 110,
-    colors: ["black", "pink", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 40,
-    rating: 4.7,
-    images: [
-      product3_img1,
-      product3_img2,
-      product3_img3,
-      product3_img4,
-      product3_img5
-    ]
-  },
-  {
-    id: 4,
-    name: "Low-Heel Boots",
-    type: "boots",
-    category: "Women",
-    price: 200,
-    colors: ["brown", "black"],
-    sizes: [36, 37, 38, 39, 40, 41],
-    stock: 25,
-    rating: 4.9,
-    images: [
-      product4_img1,
-      product4_img2,
-      product4_img3,
-      product4_img4,
-      product4_img5
-    ]
-  },
-  {
-    id: 5,
-    name: "Running Pro X",
-    type: "running",
-    category: "Men",
-    price: 170,
-    colors: ["grey", "red", "black"],
-    sizes: [38, 39, 40, 41, 42, 43],
-    stock: 35,
-    rating: 4.8,
-    images: [
-      product5_img1,
-      product5_img2,
-      product5_img3,
-      product5_img4,
-      product5_img5
-    ]
-  },
-  {
-    id: 6,
-    name: "Training Flex",
-    type: "training",
-    category: "Women",
-    price: 140,
-    colors: ["black", "blue", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 40,
-    rating: 4.6,
-    images: [
-      product6_img1,
-      product6_img2,
-      product6_img3,
-      product6_img4,
-      product6_img5
-    ]
-  },
-  {
-    id: 7,
-    name: "Canvas Comfort",
-    type: "canvas",
-    category: "Men",
-    price: 100,
-    colors: ["white", "grey", "navy"],
-    sizes: [38, 39, 40, 41, 42],
-    stock: 45,
-    rating: 4.5,
-    images: [
-      product7_img1,
-      product7_img2,
-      product7_img3,
-      product7_img4,
-      product7_img5
-    ]
-  },
-  {
-    id: 8,
-    name: "High-End Sneakers",
-    type: "sneakers",
-    category: "Women",
-    price: 250,
-    colors: ["gold", "black", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 15,
-    rating: 5.0,
-    images: [
-      product8_img1,
-      product8_img2,
-      product8_img3,
-      product8_img4,
-    ]
-  },
-  {
-    id: 9,
-    name: "Kids Fun Canvas",
-    type: "canvas",
-    category: "Kids",
-    price: 90,
-    colors: ["red", "blue", "yellow"],
-    sizes: [28, 29, 30, 31, 32],
-    stock: 50,
-    rating: 4.7,
-    images: [
-      product9_img1,
-      product9_img2,
-      product9_img3,
-      product9_img4,
-      product9_img5
-    ]
-  },
-  {
-    id: 10,
-    name: "Kids Canvas Slip-On",
-    type: "canvas",
-    category: "Kids",
-    price: 85,
-    colors: ["pink", "blue", "white"],
-    sizes: [28, 29, 30, 31, 32],
-    stock: 45,
-    rating: 4.6,
-    images: [
-      product10_img1,
-      product10_img2,
-      product10_img3,
-      product10_img4,
-    ]
-  },
-    {
-    id: 11,
-    name: "Urban Street Sneaker",
-    category: "men",
-    type: "sneakers",
-    price: 5200,
-    colors: ["black", "white"],
-    sizes: [40, 41, 42, 43, 44],
-    stock: 32,
-    rating: 4.6,
-    images: [
-      product11_img1,
-      product11_img2,
-      product11_img3,
-      product11_img4,
-      product11_img5,
-    ],
-  },
-  {
-    id: 12,
-    name: "Daily Comfort Slip-On",
-    category: "men",
-    type: "sneakers",
-    price: 3800,
-    colors: ["brown", "navy"],
-    sizes: [39, 40, 41, 42, 43],
-    stock: 25,
-    rating: 4.4,
-    images: [
-      product12_img1,
-      product12_img2,
-      product12_img3,
-      product12_img4,
-      product12_img5,
-    ],
-  },
-  {
-    id: 13,
-    name: "Classic Leather Loafer",
-    category: "men",
-    type: "loafers",
-    price: 6100,
-    colors: ["dark-brown", "black"],
-    sizes: [40, 41, 42, 43],
-    stock: 18,
-    rating: 4.7,
-    images: [
-      product13_img1,
-      product13_img2,
-      product13_img3,
-    ],
-  },
-  {
-    id: 14,
-    name: "Power Run Pro",
-    category: "men",
-    type: "sneakers",
-    price: 6900,
-    colors: ["gray", "lime"],
-    sizes: [40, 41, 42, 43, 44],
-    stock: 40,
-    rating: 4.8,
-    images: [
-      product14_img1,
-      product14_img2,
-      product14_img3,
-      product14_img4,
-      product14_img5,
-    ],
-  },
-  {
-    id: 15,
-    name: "Canvas Flex Shoe",
-    category: "men",
-    type: "canvas",
-    price: 3100,
-    colors: ["blue", "off-white"],
-    sizes: [39, 40, 41, 42],
-    stock: 50,
-    rating: 4.3,
-    images: [
-      product15_img1,
-      product15_img2,
-      product15_img3,
-      product15_img4,
-      product15_img5,
-    ],
-  },
-  {
-    id: 16,
-    name: "Elegant Heel Walk",
-    category: "women",
-    type: "heels",
-    price: 7200,
-    colors: ["red", "black"],
-    sizes: [36, 37, 38, 39],
-    stock: 20,
-    rating: 4.6,
-    images: [
-      product16_img1,
-      product16_img2,
-      product16_img3,
-      product16_img4,
-    ],
-  },
-  {
-    id: 17,
-    name: "Women Active Trainer",
-    category: "women",
-    type: "training",
-    price: 5600,
-    colors: ["pink", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 28,
-    rating: 4.7,
-    images: [
-      product17_img1,
-      product17_img2,
-      product17_img3,
-      product17_img4,
-    ],
-  },
-  {
-    id: 18,
-    name: "Soft Walk Flat",
-    category: "women",
-    type: "casual",
-    price: 3400,
-    colors: ["beige", "black"],
-    sizes: [36, 37, 38, 39],
-    stock: 35,
-    rating: 4.5,
-    images: [
-      product18_img1,
-      product18_img2,
-      product18_img3,
-      product18_img4,
-      product18_img5,
-    ],
-  },
-  {
-    id: 19,
-    name: "Kids Fun Runner",
-    category: "kids",
-    type: "running",
-    price: 2800,
-    colors: ["blue", "yellow"],
-    sizes: [28, 29, 30, 31, 32],
-    stock: 45,
-    rating: 4.4,
-    images: [
-      product19_img1,
-      product19_img2,
-      product19_img3,
-      product19_img4,
-      product19_img5,
-    ],
-  },
-  {
-    id: 20,
-    name: "Kids School Shoe",
-    category: "kids",
-    type: "formal",
-    price: 2600,
-    colors: ["black"],
-    sizes: [29, 30, 31, 32, 33],
-    stock: 60,
-    rating: 4.5,
-    images: [
-      product20_img1,
-      product20_img2,
-      product20_img3,
-      product20_img4,
-      product20_img5,
-    ],
-  },
+  // Product 1
 {
-  id: 21,
+  id: "air-zoom-elite",
+  sku: "AZE-MEN-001",
+  slug: "air-zoom-elite-men-running-sneakers",
+
+  name: "Air Zoom Elite",
+  brand: "Aero",
+
+  gender: "men",
+  category: "running",
+  productType: "sneakers",
+
+  price: {
+    original: 150,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.8,
+  reviewsCount: 214,
+
+  description: {
+    short: "Lightweight performance sneakers built for speed, comfort, and endurance.",
+    long: "Air Zoom Elite is engineered for runners who demand precision, breathability, and responsive cushioning. Designed with a streamlined silhouette and advanced sole technology, it delivers elite performance for daily training and long-distance runs.",
+    features: [
+      "Breathable engineered mesh upper",
+      "High-rebound responsive cushioning",
+      "Lightweight sole to reduce fatigue",
+      "Enhanced grip for road and track running"
+    ],
+    fitAndSizing: [
+      "True to size",
+      "Regular fit",
+      "Suitable for daily training"
+    ],
+    materials: [
+      "Engineered mesh upper",
+      "Foam midsole",
+      "Durable rubber outsole"
+    ],
+    careInstructions: [
+      "Do not machine wash",
+      "Clean with soft dry cloth",
+      "Avoid prolonged water exposure"
+    ]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product1_img1, product1_img2, product1_img3, product1_img4, product1_img5],
+      stockBySize: { 38: 8, 39: 10, 40: 12, 41: 10, 42: 6, 43: 4 }
+    },
+    {
+      color: "white",
+      images: [product1_img1, product1_img2, product1_img3, product1_img4, product1_img5],
+      stockBySize: { 38: 6, 39: 8, 40: 10, 41: 8, 42: 5, 43: 3 }
+    },
+    {
+      color: "red",
+      images: [product1_img1, product1_img2, product1_img3, product1_img4, product1_img5],
+      stockBySize: { 38: 4, 39: 6, 40: 8, 41: 6, 42: 3, 43: 2 }
+    }
+  ],
+
+  availability: "inStock",
+
+  shippingInfo: {
+    freeShipping: true,
+    estimatedDelivery: "3-5 business days"
+  },
+
+  returnPolicy: "14-day easy return",
+  warranty: "6-month manufacturing warranty",
+
+  tags: ["premium", "running", "lightweight"],
+  flags: {
+    isBestseller: false,
+    isFeatured: true
+  },
+
+  meta: {
+    title: "Air Zoom Elite - Premium Men's Running Sneakers",
+    description: "High-performance running sneakers engineered for speed, comfort, and durability."
+  },
+
+  createdAt: "2025-01-12",
+  updatedAt: "2025-01-22"
+}
+,
+
+// Product 2
+
+{
+  id: "classic-canvas",
+  sku: "CC-MEN-002",
+  slug: "classic-canvas-men-casual-shoes",
+
+  name: "Classic Canvas",
+  brand: "Aero",
+
+  gender: "men",
+  category: "casual",
+  productType: "canvas",
+
+  price: {
+    original: 120,
+    sale: 99,
+    currency: "USD"
+  },
+
+  rating: 4.5,
+  reviewsCount: 156,
+
+  description: {
+    short: "Timeless canvas shoes designed for everyday comfort.",
+    long: "Classic Canvas blends minimal design with durable construction, making it the perfect companion for everyday wear. Lightweight, breathable, and versatile for all casual settings.",
+    features: [
+      "Durable canvas upper",
+      "Breathable inner lining",
+      "Flexible rubber sole"
+    ],
+    fitAndSizing: ["True to size", "Comfort fit"],
+    materials: ["Canvas fabric", "Rubber outsole"],
+    careInstructions: ["Hand clean only", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "blue",
+      images: [product2_img1, product2_img2, product2_img3, product2_img4, product2_img5],
+      stockBySize: { 38: 6, 39: 7, 40: 8, 41: 5, 42: 4 }
+    },
+    {
+      color: "white",
+      images: [product2_img1, product2_img2, product2_img3, product2_img4, product2_img5],
+      stockBySize: { 38: 5, 39: 6, 40: 7, 41: 5, 42: 3 }
+    }
+  ],
+
+  availability: "limited",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["casual", "daily-wear"],
+  flags: { isBestseller: true, isFeatured: false },
+
+  meta: {
+    title: "Classic Canvas – Men's Casual Shoes",
+    description: "Comfortable everyday canvas shoes with timeless design."
+  },
+
+  createdAt: "2025-01-15",
+  updatedAt: "2025-01-22"
+},
+
+// Product 3
+
+{
+  id: "slip-on-comfort",
+  sku: "SOC-WOM-003",
+  slug: "slip-on-comfort-women-casual-shoes",
+
+  name: "Slip-On Comfort",
+  brand: "Aero",
+
+  gender: "women",
+  category: "casual",
+  productType: "slip-on",
+
+  price: {
+    original: 110,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.7,
+  reviewsCount: 132,
+
+  description: {
+    short: "Easy-wear slip-on shoes made for all-day comfort.",
+    long: "Slip-On Comfort is designed for women who prioritize convenience and softness. The flexible build and cushioned sole make it perfect for daily movement.",
+    features: [
+      "Slip-on design",
+      "Soft cushioned footbed",
+      "Lightweight construction"
+    ],
+    fitAndSizing: ["True to size", "Relaxed fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Do not soak"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product3_img1, product3_img2, product3_img3, product3_img4, product3_img5],
+      stockBySize: { 36: 6, 37: 7, 38: 8, 39: 6, 40: 5 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["comfort", "easy-wear"],
+  flags: { isBestseller: true, isFeatured: false },
+
+  meta: {
+    title: "Slip-On Comfort - Women's Casual Shoes",
+    description: "Comfort-focused slip-on shoes for effortless everyday wear."
+  },
+
+  createdAt: "2025-01-18",
+  updatedAt: "2025-01-22"
+},
+
+// Product 4
+
+{
+  id: "low-heel-boots",
+  sku: "LHB-WOM-004",
+  slug: "low-heel-boots-women-fashion-boots",
+
+  name: "Low-Heel Boots",
+  brand: "Aero",
+
+  gender: "women",
+  category: "fashion",
+  productType: "boots",
+
+  price: {
+    original: 200,
+    sale: 180,
+    currency: "USD"
+  },
+
+  rating: 4.9,
+  reviewsCount: 98,
+
+  description: {
+    short: "Elegant low-heel boots crafted for style and comfort.",
+    long: "Low-Heel Boots combine refined aesthetics with everyday comfort. Ideal for winter and formal casual wear.",
+    features: [
+      "Low-heel support",
+      "Warm inner lining",
+      "Premium leather-like finish"
+    ],
+    fitAndSizing: ["True to size", "Secure ankle fit"],
+    materials: ["Synthetic leather", "Rubber sole"],
+    careInstructions: ["Use leather cleaner", "Store in dry place"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product4_img1, product4_img2, product4_img3, product4_img4, product4_img5],
+      stockBySize: { 36: 3, 37: 4, 38: 5, 39: 4, 40: 3, 41: 2 }
+    }
+  ],
+
+  availability: "limited",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "4-6 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["boots", "winter", "premium"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Low-Heel Boots - Women's Premium Fashion Boots",
+    description: "Stylish and comfortable low-heel boots for modern women."
+  },
+
+  createdAt: "2025-01-20",
+  updatedAt: "2025-01-22"
+},
+
+// Product 5
+
+{
+  id: "running-pro-x",
+  sku: "RPX-MEN-005",
+  slug: "running-pro-x-men-performance-running-shoes",
+
+  name: "Running Pro X",
+  brand: "Aero",
+
+  gender: "men",
+  category: "performance",
+  productType: "running",
+
+  price: {
+    original: 170,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.8,
+  reviewsCount: 187,
+
+  description: {
+    short: "Elite-level performance running shoes.",
+    long: "Running Pro X is built for athletes who push limits. Engineered for speed, durability, and stability.",
+    features: [
+      "Performance-grade cushioning",
+      "Breathable lightweight build",
+      "High-traction sole"
+    ],
+    fitAndSizing: ["True to size", "Performance fit"],
+    materials: ["Mesh upper", "Foam midsole", "Rubber outsole"],
+    careInstructions: ["Spot clean only", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product5_img1, product5_img2, product5_img3, product5_img4, product5_img5],
+      stockBySize: { 38: 7, 39: 8, 40: 9, 41: 7, 42: 6, 43: 4 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["running", "performance", "elite"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Running Pro X - Men's Performance Running Shoes",
+    description: "High-performance running shoes built for serious athletes."
+  },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// Product 6
+
+{
+  id: "training-flex",
+  sku: "TF-WOM-006",
+  slug: "training-flex-women-training-shoes",
+
+  name: "Training Flex",
+  brand: "Aero",
+
+  gender: "women",
+  category: "training",
+  productType: "training",
+
+  price: {
+    original: 140,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.6,
+  reviewsCount: 89,
+
+  description: {
+    short: "Flexible training shoes designed for dynamic workouts.",
+    long: "Training Flex provides optimum flexibility, support, and cushioning for women who train hard. Breathable upper and lightweight sole ensure comfort during intense workouts.",
+    features: [
+      "Breathable mesh upper",
+      "Lightweight responsive sole",
+      "Flexible design for multi-directional movement"
+    ],
+    fitAndSizing: ["True to size", "Snug fit recommended"],
+    materials: ["Mesh upper", "Foam midsole", "Rubber outsole"],
+    careInstructions: ["Wipe clean", "Do not soak"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product6_img1, product6_img2, product6_img3, product6_img4, product6_img5],
+      stockBySize: { 36: 8, 37: 8, 38: 8, 39: 8, 40: 8 }
+    },
+    {
+      color: "blue",
+      images: [product6_img1, product6_img2, product6_img3, product6_img4, product6_img5],
+      stockBySize: { 36: 8, 37: 8, 38: 8, 39: 8, 40: 8 }
+    },
+    {
+      color: "white",
+      images: [product6_img1, product6_img2, product6_img3, product6_img4, product6_img5],
+      stockBySize: { 36: 8, 37: 8, 38: 8, 39: 8, 40: 8 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["training", "performance", "flexible"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Training Flex - Women's Flexible Training Shoes",
+    description: "Lightweight and flexible training shoes for dynamic workouts."
+  },
+
+  createdAt: "2025-01-23",
+  updatedAt: "2025-01-23"
+},
+
+// Product 7
+
+{
+  id: "canvas-comfort",
+  sku: "CC-MEN-007",
+  slug: "canvas-comfort-men-casual-shoes",
+
+  name: "Canvas Comfort",
+  brand: "Aero",
+
+  gender: "men",
+  category: "casual",
+  productType: "canvas",
+
+  price: {
+    original: 100,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.5,
+  reviewsCount: 75,
+
+  description: {
+    short: "Classic canvas shoes crafted for everyday comfort.",
+    long: "Canvas Comfort is designed for men seeking simplicity, durability, and lightweight comfort for daily wear. Perfect for casual outings and versatile styling.",
+    features: ["Durable canvas upper", "Breathable lining", "Flexible rubber sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas fabric", "Rubber sole"],
+    careInstructions: ["Hand clean only", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product7_img1, product7_img2, product7_img3, product7_img4, product7_img5],
+      stockBySize: { 38: 9, 39: 9, 40: 9, 41: 9, 42: 9 }
+    },
+    {
+      color: "grey",
+      images: [product7_img1, product7_img2, product7_img3, product7_img4, product7_img5],
+      stockBySize: { 38: 9, 39: 9, 40: 9, 41: 9, 42: 9 }
+    },
+    {
+      color: "navy",
+      images: [product7_img1, product7_img2, product7_img3, product7_img4, product7_img5],
+      stockBySize: { 38: 9, 39: 9, 40: 9, 41: 9, 42: 9 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["casual", "daily-wear", "lightweight"],
+  flags: { isBestseller: false, isFeatured: false },
+
+  meta: {
+    title: "Canvas Comfort - Men's Casual Shoes",
+    description: "Lightweight canvas shoes built for everyday comfort."
+  },
+
+  createdAt: "2025-01-24",
+  updatedAt: "2025-01-24"
+},
+
+// Product 8
+
+{
+  id: "high-end-sneakers",
+  sku: "HES-WOM-008",
+  slug: "high-end-sneakers-women-premium-sneakers",
+
+  name: "High-End Sneakers",
+  brand: "Aero",
+
+  gender: "women",
+  category: "premium",
+  productType: "sneakers",
+
+  price: {
+    original: 250,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 5.0,
+  reviewsCount: 34,
+
+  description: {
+    short: "Premium sneakers with unmatched style and performance.",
+    long: "High-End Sneakers are crafted for women who demand luxury, style, and cutting-edge comfort. Sleek design with metallic accents ensures you stand out while enjoying ultimate cushioning.",
+    features: [
+      "Metallic accent detailing",
+      "Breathable premium mesh upper",
+      "Enhanced cushioning sole",
+      "Lightweight and durable"
+    ],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Premium mesh upper", "Foam midsole", "Rubber outsole"],
+    careInstructions: ["Wipe with soft cloth", "Avoid water exposure"]
+  },
+
+  variants: [
+    {
+      color: "gold",
+      images: [product8_img1, product8_img2, product8_img3, product8_img4],
+      stockBySize: { 36: 3, 37: 3, 38: 3, 39: 3, 40: 3 }
+    },
+    {
+      color: "black",
+      images: [product8_img1, product8_img2, product8_img3, product8_img4],
+      stockBySize: { 36: 3, 37: 3, 38: 3, 39: 3, 40: 3 }
+    },
+    {
+      color: "white",
+      images: [product8_img1, product8_img2, product8_img3, product8_img4],
+      stockBySize: { 36: 3, 37: 3, 38: 3, 39: 3, 40: 3 }
+    }
+  ],
+
+  availability: "limited",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "4-6 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["premium", "sneakers", "fashion"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "High-End Sneakers - Women's Premium Sneakers",
+    description: "Luxury sneakers for ultimate style and comfort."
+  },
+
+  createdAt: "2025-01-25",
+  updatedAt: "2025-01-25"
+},
+
+// Product 9
+
+{
+  id: "kids-fun-canvas",
+  sku: "KFC-KIDS-009",
+  slug: "kids-fun-canvas-kids-casual-shoes",
+
+  name: "Kids Fun Canvas",
+  brand: "Aero",
+
+  gender: "kids",
+  category: "kids",
+  productType: "canvas",
+
+  price: {
+    original: 90,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.7,
+  reviewsCount: 48,
+
+  description: {
+    short: "Colorful canvas shoes for playful kids.",
+    long: "Kids Fun Canvas brings comfort, fun, and durability for everyday adventures. Lightweight and flexible construction makes running and playing effortless.",
+    features: ["Colorful canvas upper", "Flexible rubber sole", "Breathable lining"],
+    fitAndSizing: ["True to size", "Comfort fit"],
+    materials: ["Canvas fabric", "Rubber sole"],
+    careInstructions: ["Hand wash only", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "red",
+      images: [product9_img1, product9_img2, product9_img3, product9_img4, product9_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10, 32: 10 }
+    },
+    {
+      color: "blue",
+      images: [product9_img1, product9_img2, product9_img3, product9_img4, product9_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10, 32: 10 }
+    },
+    {
+      color: "yellow",
+      images: [product9_img1, product9_img2, product9_img3, product9_img4, product9_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10, 32: 10 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["kids", "casual", "fun"],
+  flags: { isBestseller: false, isFeatured: false },
+
+  meta: {
+    title: "Kids Fun Canvas - Casual Shoes for Kids",
+    description: "Colorful, lightweight, and fun canvas shoes for children."
+  },
+
+  createdAt: "2025-01-26",
+  updatedAt: "2025-01-26"
+},
+
+// Product 10
+
+{
+  id: "kids-canvas-slip-on",
+  sku: "KCS-KIDS-010",
+  slug: "kids-canvas-slip-on-casual-shoes",
+
+  name: "Kids Canvas Slip-On",
+  brand: "Aero",
+
+  gender: "kids",
+  category: "kids",
+  productType: "canvas",
+
+  price: {
+    original: 85,
+    sale: null,
+    currency: "USD"
+  },
+
+  rating: 4.6,
+  reviewsCount: 52,
+
+  description: {
+    short: "Easy-wear slip-on shoes for kids.",
+    long: "Kids Canvas Slip-On combines convenience and comfort for young feet. Lightweight and flexible, perfect for school and playtime.",
+    features: ["Slip-on design", "Lightweight canvas upper", "Flexible sole"],
+    fitAndSizing: ["True to size", "Comfort fit"],
+    materials: ["Canvas fabric", "Rubber sole"],
+    careInstructions: ["Hand wash only", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      images: [product10_img1, product10_img2, product10_img3, product10_img4],
+      stockBySize: { 28: 9, 29: 9, 30: 9, 31: 9, 32: 9 }
+    },
+    {
+      color: "blue",
+      images: [product10_img1, product10_img2, product10_img3, product10_img4],
+      stockBySize: { 28: 9, 29: 9, 30: 9, 31: 9, 32: 9 }
+    },
+    {
+      color: "white",
+      images: [product10_img1, product10_img2, product10_img3, product10_img4],
+      stockBySize: { 28: 9, 29: 9, 30: 9, 31: 9, 32: 9 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["kids", "casual", "easy-wear"],
+  flags: { isBestseller: false, isFeatured: false },
+
+  meta: {
+    title: "Kids Canvas Slip-On - Casual Shoes for Kids",
+    description: "Lightweight and easy-wear slip-on canvas shoes for children."
+  },
+
+  createdAt: "2025-01-27",
+  updatedAt: "2025-01-27"
+},
+
+// Product 11
+
+{
+  id: "urban-street-sneaker",
+  sku: "USS-MEN-011",
+  slug: "urban-street-sneaker-men-premium-sneakers",
+
+  name: "Urban Street Sneaker",
+  brand: "Aero",
+
+  gender: "men",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: {
+    original: 5200,
+    sale: null,
+    currency: "BDT"
+  },
+
+  rating: 4.6,
+  reviewsCount: 120,
+
+  description: {
+    short: "Modern street sneakers built for style and comfort.",
+    long: "Urban Street Sneaker offers contemporary design with maximum comfort for everyday wear. Durable sole and premium upper ensures long-lasting performance.",
+    features: [
+      "Premium leather & textile upper",
+      "Durable rubber outsole",
+      "Padded collar and tongue for comfort"
+    ],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Textile", "Rubber sole"],
+    careInstructions: ["Wipe clean with damp cloth", "Avoid soaking in water"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product11_img1, product11_img2, product11_img3, product11_img4, product11_img5],
+      stockBySize: { 40: 6, 41: 6, 42: 6, 43: 7, 44: 7 }
+    },
+    {
+      color: "white",
+      images: [product11_img1, product11_img2, product11_img3, product11_img4, product11_img5],
+      stockBySize: { 40: 6, 41: 6, 42: 6, 43: 7, 44: 7 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["sneakers", "street-style", "men"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Urban Street Sneaker - Men's Premium Sneakers",
+    description: "Stylish and durable street sneakers for men."
+  },
+
+  createdAt: "2025-01-28",
+  updatedAt: "2025-01-28"
+},
+
+// Product 12
+
+{
+  id: "daily-comfort-slip-on",
+  sku: "DCS-MEN-012",
+  slug: "daily-comfort-slip-on-men-sneakers",
+
+  name: "Daily Comfort Slip-On",
+  brand: "Aero",
+
+  gender: "men",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: {
+    original: 3800,
+    sale: null,
+    currency: "BDT"
+  },
+
+  rating: 4.4,
+  reviewsCount: 85,
+
+  description: {
+    short: "Effortless slip-on sneakers for daily use.",
+    long: "Daily Comfort Slip-On provides easy wear and all-day comfort. Soft lining and flexible sole make it ideal for casual activities.",
+    features: [
+      "Slip-on design",
+      "Soft cushioned insole",
+      "Lightweight flexible sole"
+    ],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Synthetic sole"],
+    careInstructions: ["Wipe clean with damp cloth", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "brown",
+      images: [product12_img1, product12_img2, product12_img3, product12_img4, product12_img5],
+      stockBySize: { 39: 5, 40: 5, 41: 5, 42: 5, 43: 5 }
+    },
+    {
+      color: "navy",
+      images: [product12_img1, product12_img2, product12_img3, product12_img4, product12_img5],
+      stockBySize: { 39: 5, 40: 5, 41: 5, 42: 5, 43: 5 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["sneakers", "slip-on", "men"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Daily Comfort Slip-On - Men's Sneakers",
+    description: "Easy-to-wear slip-on sneakers for men."
+  },
+
+  createdAt: "2025-01-29",
+  updatedAt: "2025-01-29"
+},
+
+// Product 13
+
+{
+  id: "classic-leather-loafer",
+  sku: "CLL-MEN-013",
+  slug: "classic-leather-loafer-men-loafers",
+
+  name: "Classic Leather Loafer",
+  brand: "Aero",
+
+  gender: "men",
+  category: "loafers",
+  productType: "loafers",
+
+  price: {
+    original: 6100,
+    sale: null,
+    currency: "BDT"
+  },
+
+  rating: 4.7,
+  reviewsCount: 60,
+
+  description: {
+    short: "Elegant leather loafers for formal and casual wear.",
+    long: "Classic Leather Loafer combines sophistication and comfort. Premium leather upper and durable sole make it suitable for work or casual outings.",
+    features: [
+      "Genuine leather upper",
+      "Flexible rubber outsole",
+      "Padded footbed for comfort"
+    ],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Rubber sole"],
+    careInstructions: ["Polish regularly", "Avoid water exposure"]
+  },
+
+  variants: [
+    {
+      color: "dark-brown",
+      images: [product13_img1, product13_img2, product13_img3],
+      stockBySize: { 40: 4, 41: 4, 42: 5, 43: 5 }
+    },
+    {
+      color: "black",
+      images: [product13_img1, product13_img2, product13_img3],
+      stockBySize: { 40: 4, 41: 4, 42: 5, 43: 5 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "4-6 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["loafers", "leather", "men"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Classic Leather Loafer - Men's Loafers",
+    description: "Premium leather loafers for formal and casual occasions."
+  },
+
+  createdAt: "2025-01-30",
+  updatedAt: "2025-01-30"
+},
+
+// Product 14
+
+{
+  id: "power-run-pro",
+  sku: "PRP-MEN-014",
+  slug: "power-run-pro-men-performance-sneakers",
+
+  name: "Power Run Pro",
+  brand: "Aero",
+
+  gender: "men",
+  category: "performance",
+  productType: "sneakers",
+
+  price: {
+    original: 6900,
+    sale: null,
+    currency: "BDT"
+  },
+
+  rating: 4.8,
+  reviewsCount: 95,
+
+  description: {
+    short: "High-performance sneakers designed for runners.",
+    long: "Power Run Pro delivers superior cushioning, support, and traction for professional and casual runners. Lightweight design improves speed and agility.",
+    features: [
+      "Responsive midsole cushioning",
+      "Breathable upper mesh",
+      "Durable traction sole"
+    ],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Foam midsole", "Rubber outsole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product14_img1, product14_img2, product14_img3, product14_img4, product14_img5],
+      stockBySize: { 40: 8, 41: 8, 42: 8, 43: 8, 44: 8 }
+    },
+    {
+      color: "lime",
+      images: [product14_img1, product14_img2, product14_img3, product14_img4, product14_img5],
+      stockBySize: { 40: 8, 41: 8, 42: 8, 43: 8, 44: 8 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["sneakers", "performance", "men"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Power Run Pro - Men's Performance Sneakers",
+    description: "High-performance running sneakers for men."
+  },
+
+  createdAt: "2025-01-31",
+  updatedAt: "2025-01-31"
+},
+
+// Product 15
+
+{
+  id: "canvas-flex-shoe",
+  sku: "CFS-MEN-015",
+  slug: "canvas-flex-shoe-men-casual-canvas",
+
+  name: "Canvas Flex Shoe",
+  brand: "Aero",
+
+  gender: "men",
+  category: "canvas",
+  productType: "canvas",
+
+  price: {
+    original: 3100,
+    sale: null,
+    currency: "BDT"
+  },
+
+  rating: 4.3,
+  reviewsCount: 70,
+
+  description: {
+    short: "Comfortable casual canvas shoes for everyday wear.",
+    long: "Canvas Flex Shoe is lightweight and breathable, designed for men who prefer casual comfort with modern styling. Flexible sole ensures easy movement.",
+    features: ["Breathable canvas upper", "Flexible rubber sole", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas", "Rubber sole"],
+    careInstructions: ["Hand wash only", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "blue",
+      images: [product15_img1, product15_img2, product15_img3, product15_img4, product15_img5],
+      stockBySize: { 39: 10, 40: 10, 41: 10, 42: 10 }
+    },
+    {
+      color: "off-white",
+      images: [product15_img1, product15_img2, product15_img3, product15_img4, product15_img5],
+      stockBySize: { 39: 10, 40: 10, 41: 10, 42: 10 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["canvas", "casual", "men"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Canvas Flex Shoe - Men's Casual Canvas Shoes",
+    description: "Lightweight and comfortable canvas shoes for men."
+  },
+
+  createdAt: "2025-02-01",
+  updatedAt: "2025-02-01"
+},
+
+// Product 16
+
+{
+  id: "elegant-heel-walk",
+  sku: "EHW-WOM-016",
+  slug: "elegant-heel-walk-women-heels",
+
+  name: "Elegant Heel Walk",
+  brand: "Aero",
+
+  gender: "women",
+  category: "heels",
+  productType: "heels",
+
+  price: { original: 7200, sale: null, currency: "BDT" },
+
+  rating: 4.6,
+  reviewsCount: 40,
+
+  description: {
+    short: "Sophisticated heels designed for elegance and comfort.",
+    long: "Elegant Heel Walk combines modern design with ergonomic support. Perfect for parties, office, or casual events with premium materials.",
+    features: ["Genuine leather upper", "Cushioned insole", "Non-slip rubber outsole"],
+    fitAndSizing: ["True to size", "Slim fit"],
+    materials: ["Leather", "Rubber sole"],
+    careInstructions: ["Polish regularly", "Avoid moisture"]
+  },
+
+  variants: [
+    {
+      color: "red",
+      images: [product16_img1, product16_img2, product16_img3, product16_img4],
+      stockBySize: { 36: 5, 37: 5, 38: 5, 39: 5 }
+    },
+    {
+      color: "black",
+      images: [product16_img1, product16_img2, product16_img3, product16_img4],
+      stockBySize: { 36: 5, 37: 5, 38: 5, 39: 5 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["heels", "women", "premium"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Elegant Heel Walk - Women's Premium Heels",
+    description: "Premium stylish heels for women, elegant and comfortable."
+  },
+
+  createdAt: "2025-02-02",
+  updatedAt: "2025-02-02"
+},
+
+// Product 17
+
+{
+  id: "women-active-trainer",
+  sku: "WAT-WOM-017",
+  slug: "women-active-trainer-women-training-shoes",
+
+  name: "Women Active Trainer",
+  brand: "Aero",
+
+  gender: "women",
+  category: "training",
+  productType: "training",
+
+  price: { original: 5600, sale: null, currency: "BDT" },
+
+  rating: 4.7,
+  reviewsCount: 55,
+
+  description: {
+    short: "Dynamic training shoes designed for optimal performance.",
+    long: "Women Active Trainer provides superior cushioning, stability, and breathability. Ideal for gym, running, and active workouts.",
+    features: ["Lightweight design", "Breathable mesh upper", "Shock-absorbing midsole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh", "Foam", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      images: [product17_img1, product17_img2, product17_img3, product17_img4],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 5, 40: 5 }
+    },
+    {
+      color: "white",
+      images: [product17_img1, product17_img2, product17_img3, product17_img4],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 5, 40: 5 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["training", "women", "sports"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Women Active Trainer - Women's Training Shoes",
+    description: "High-performance training shoes for women."
+  },
+
+  createdAt: "2025-02-03",
+  updatedAt: "2025-02-03"
+},
+
+//  Product 18
+
+{
+  id: "soft-walk-flat",
+  sku: "SWF-WOM-018",
+  slug: "soft-walk-flat-women-casual-shoes",
+
+  name: "Soft Walk Flat",
+  brand: "Aero",
+
+  gender: "women",
+  category: "casual",
+  productType: "flat",
+
+  price: { original: 3400, sale: null, currency: "BDT" },
+
+  rating: 4.5,
+  reviewsCount: 70,
+
+  description: {
+    short: "Comfortable flats for everyday casual wear.",
+    long: "Soft Walk Flat provides cushioning and all-day comfort with a stylish casual design. Breathable material keeps feet relaxed all day.",
+    features: ["Breathable upper", "Soft cushioned insole", "Lightweight sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Textile", "Rubber sole"],
+    careInstructions: ["Hand wash", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "beige",
+      images: [product18_img1, product18_img2, product18_img3, product18_img4, product18_img5],
+      stockBySize: { 36: 9, 37: 9, 38: 9, 39: 8 }
+    },
+    {
+      color: "black",
+      images: [product18_img1, product18_img2, product18_img3, product18_img4, product18_img5],
+      stockBySize: { 36: 9, 37: 9, 38: 9, 39: 8 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["casual", "women", "flats"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Soft Walk Flat - Women's Casual Flats",
+    description: "Lightweight and comfortable casual flats for women."
+  },
+
+  createdAt: "2025-02-04",
+  updatedAt: "2025-02-04"
+},
+
+// Product 19
+
+{
+  id: "kids-fun-runner",
+  sku: "KFR-KIDS-019",
+  slug: "kids-fun-runner-kids-running-shoes",
+
+  name: "Kids Fun Runner",
+  brand: "Aero",
+
+  gender: "kids",
+  category: "running",
+  productType: "running",
+
+  price: { original: 2800, sale: null, currency: "BDT" },
+
+  rating: 4.4,
+  reviewsCount: 50,
+
+  description: {
+    short: "Fun and comfortable running shoes for kids.",
+    long: "Kids Fun Runner is designed for active children with cushioned insoles and lightweight soles. Vibrant colors make them appealing to kids.",
+    features: ["Breathable upper", "Lightweight sole", "Cushioned insole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Textile", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "blue",
+      images: [product19_img1, product19_img2, product19_img3, product19_img4, product19_img5],
+      stockBySize: { 28: 9, 29: 9, 30: 9, 31: 9, 32: 9 }
+    },
+    {
+      color: "yellow",
+      images: [product19_img1, product19_img2, product19_img3, product19_img4, product19_img5],
+      stockBySize: { 28: 9, 29: 9, 30: 9, 31: 9, 32: 9 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["running", "kids", "sports"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids Fun Runner - Kids Running Shoes",
+    description: "Lightweight and fun running shoes for kids."
+  },
+
+  createdAt: "2025-02-05",
+  updatedAt: "2025-02-05"
+},
+
+// Product 20
+
+{
+  id: "kids-school-shoe",
+  sku: "KSS-KIDS-020",
+  slug: "kids-school-shoe-kids-formal-shoes",
+
+  name: "Kids School Shoe",
+  brand: "Aero",
+
+  gender: "kids",
+  category: "formal",
+  productType: "formal",
+
+  price: { original: 2600, sale: null, currency: "BDT" },
+
+  rating: 4.5,
+  reviewsCount: 65,
+
+  description: {
+    short: "Durable and comfortable school shoes for kids.",
+    long: "Kids School Shoe offers superior support and durability for everyday school use. Soft insole and firm sole ensures comfort and stability.",
+    features: ["Genuine leather upper", "Non-slip rubber sole", "Cushioned insole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Rubber sole"],
+    careInstructions: ["Polish regularly", "Wipe clean"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product20_img1, product20_img2, product20_img3, product20_img4, product20_img5],
+      stockBySize: { 29: 12, 30: 12, 31: 12, 32: 12, 33: 12 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["formal", "kids", "school"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Kids School Shoe - Kids Formal Shoes",
+    description: "Durable and comfortable formal shoes for kids."
+  },
+
+  createdAt: "2025-02-06",
+  updatedAt: "2025-02-06"
+},
+
+// Product 21
+
+{
+  id: "pro-street-high-sneaker",
+  sku: "PSHS-MEN-021",
+  slug: "pro-street-high-sneaker-men-sneakers",
+
   name: "Pro Street High Sneaker",
-  category: "men",
-  type: "sneakers",
-  price: 6400,
-  colors: ["black", "gray"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 30,
+  brand: "Aero",
+
+  gender: "men",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: { original: 6400, sale: null, currency: "BDT" },
+
   rating: 4.7,
-  images: [
-    product21_img1,
-    product21_img2,
-    product21_img3,
+  reviewsCount: 75,
+
+  description: {
+    short: "High-top sneakers for urban street performance.",
+    long: "Pro Street High Sneaker combines edgy style with maximum comfort. Durable outsole and padded collar support everyday city life and street performance.",
+    features: ["High-top design", "Padded collar and tongue", "Durable rubber outsole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Textile", "Rubber sole"],
+    careInstructions: ["Wipe clean with damp cloth", "Avoid soaking"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product21_img1, product21_img2, product21_img3],
+      stockBySize: { 40: 6, 41: 6, 42: 6, 43: 6, 44: 6 }
+    },
+    {
+      color: "gray",
+      images: [product21_img1, product21_img2, product21_img3],
+      stockBySize: { 40: 6, 41: 6, 42: 6, 43: 6, 44: 6 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["sneakers", "men", "high-top"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Pro Street High Sneaker - Men's Premium Sneakers",
+    description: "High-top sneakers combining style and comfort for men."
+  },
+
+  createdAt: "2025-02-07",
+  updatedAt: "2025-02-07"
 },
+
+// Product 22
+
 {
-  id: 22,
+  id: "classic-office-formal",
+  sku: "COF-MEN-022",
+  slug: "classic-office-formal-men-formal-shoes",
+
   name: "Classic Office Formal",
-  category: "men",
-  type: "formal",
-  price: 7200,
-  colors: ["black", "brown"],
-  sizes: [40, 41, 42, 43],
-  stock: 22,
+  brand: "Aero",
+
+  gender: "men",
+  category: "formal",
+  productType: "formal",
+
+  price: { original: 7200, sale: null, currency: "BDT" },
+
   rating: 4.8,
-  images: [
-    product22_img1,
-    product22_img2,
-    product22_img3,
-    product22_img4,
-    product22_img5,
+  reviewsCount: 50,
+
+  description: {
+    short: "Premium formal shoes for office and special occasions.",
+    long: "Classic Office Formal delivers sophistication with comfort. Made with fine leather and ergonomic design, perfect for professional settings.",
+    features: ["Genuine leather upper", "Padded footbed", "Non-slip rubber sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Rubber sole"],
+    careInstructions: ["Polish regularly", "Avoid moisture"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product22_img1, product22_img2, product22_img3, product22_img4, product22_img5],
+      stockBySize: { 40: 5, 41: 5, 42: 6, 43: 6 }
+    },
+    {
+      color: "brown",
+      images: [product22_img1, product22_img2, product22_img3, product22_img4, product22_img5],
+      stockBySize: { 40: 5, 41: 5, 42: 6, 43: 6 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "4-6 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["formal", "office", "men"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Classic Office Formal - Men's Premium Formal Shoes",
+    description: "Sophisticated formal shoes for men, perfect for office and events."
+  },
+
+  createdAt: "2025-02-08",
+  updatedAt: "2025-02-08"
 },
+
+// Product 23
+
 {
-  id: 23,
+  id: "urban-casual-walk",
+  sku: "UCW-MEN-023",
+  slug: "urban-casual-walk-men-casual-shoes",
+
   name: "Urban Casual Walk",
-  category: "men",
-  type: "casual",
-  price: 4200,
-  colors: ["olive", "white"],
-  sizes: [39, 40, 41, 42, 43],
-  stock: 40,
+  brand: "Aero",
+
+  gender: "men",
+  category: "casual",
+  productType: "casual",
+
+  price: { original: 4200, sale: null, currency: "BDT" },
+
   rating: 4.4,
-  images: [
-    product23_img1,
-    product23_img2,
-    product23_img3,
-    product23_img4,
-    product23_img5,
+  reviewsCount: 45,
+
+  description: {
+    short: "Stylish casual shoes for everyday city walking.",
+    long: "Urban Casual Walk is lightweight, comfortable, and stylish. Ideal for men who want casual comfort with a modern aesthetic.",
+    features: ["Breathable upper", "Lightweight sole", "Soft cushioned insole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Textile", "Rubber sole"],
+    careInstructions: ["Hand wash", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "olive",
+      images: [product23_img1, product23_img2, product23_img3, product23_img4, product23_img5],
+      stockBySize: { 39: 8, 40: 8, 41: 8, 42: 8, 43: 8 }
+    },
+    {
+      color: "white",
+      images: [product23_img1, product23_img2, product23_img3, product23_img4, product23_img5],
+      stockBySize: { 39: 8, 40: 8, 41: 8, 42: 8, 43: 8 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["casual", "men", "urban"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Urban Casual Walk - Men's Casual Shoes",
+    description: "Comfortable and stylish casual shoes for men."
+  },
+
+  createdAt: "2025-02-09",
+  updatedAt: "2025-02-09"
 },
+
+// Product 24
+
 {
-  id: 24,
+  id: "extreme-trail-boot",
+  sku: "ETB-MEN-024",
+  slug: "extreme-trail-boot-men-boots",
+
   name: "Extreme Trail Boot",
-  category: "men",
-  type: "boots",
-  isBestseller: true,
-  price: 8800,
-  colors: ["brown", "black"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 15,
+  brand: "Aero",
+
+  gender: "men",
+  category: "boots",
+  productType: "boots",
+
+  price: { original: 8800, sale: null, currency: "BDT" },
+
   rating: 4.9,
-  images: [
-    product24_img1,
-    product24_img2,
-    product24_img3,
-    product24_img4,
-    product24_img5,
+  reviewsCount: 35,
+
+  description: {
+    short: "Durable boots for rugged terrains and outdoor adventures.",
+    long: "Extreme Trail Boot provides superior grip, support, and durability for tough outdoor activities. Premium leather and reinforced sole ensure longevity.",
+    features: ["Water-resistant leather upper", "Reinforced toe and heel", "Durable rubber sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Avoid water immersion"]
+  },
+
+  variants: [
+    {
+      color: "brown",
+      images: [product24_img1, product24_img2, product24_img3, product24_img4, product24_img5],
+      stockBySize: { 40: 3, 41: 3, 42: 3, 43: 3, 44: 3 }
+    },
+    {
+      color: "black",
+      images: [product24_img1, product24_img2, product24_img3, product24_img4, product24_img5],
+      stockBySize: { 40: 3, 41: 3, 42: 3, 43: 3, 44: 3 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "5-7 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "12-month warranty",
+
+  tags: ["boots", "men", "outdoor"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Extreme Trail Boot - Men's Premium Outdoor Boots",
+    description: "Rugged and durable boots for men designed for tough terrains."
+  },
+
+  createdAt: "2025-02-10",
+  updatedAt: "2025-02-10"
 },
+
+// Product 25
+
 {
-  id: 25,
+  id: "light-run-max",
+  sku: "LRM-MEN-025",
+  slug: "light-run-max-men-running-shoes",
+
   name: "Light Run Max",
-  category: "men",
-  type: "running",
-  isBestseller: true,
-  price: 6900,
-  colors: ["white", "neon-green"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 35,
+  brand: "Aero",
+
+  gender: "men",
+  category: "running",
+  productType: "running",
+
+  price: { original: 6900, sale: null, currency: "BDT" },
+
   rating: 4.8,
-  images: [
-    product25_img1,
-    product25_img2,
-    product25_img3,
-    product25_img4,
-    product25_img5,
+  reviewsCount: 60,
+
+  description: {
+    short: "Lightweight and responsive running shoes for men.",
+    long: "Light Run Max ensures optimal performance with cushioned sole and breathable upper. Designed for runners seeking speed and comfort.",
+    features: ["Responsive midsole", "Breathable mesh upper", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Foam midsole", "Rubber outsole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product25_img1, product25_img2, product25_img3, product25_img4, product25_img5],
+      stockBySize: { 40: 7, 41: 7, 42: 7, 43: 7, 44: 7 }
+    },
+    {
+      color: "neon-green",
+      images: [product25_img1, product25_img2, product25_img3, product25_img4, product25_img5],
+      stockBySize: { 40: 7, 41: 7, 42: 7, 43: 7, 44: 7 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["running", "men", "performance"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Light Run Max - Men's Premium Running Shoes",
+    description: "High-performance running shoes for men."
+  },
+
+  createdAt: "2025-02-11",
+  updatedAt: "2025-02-11"
 },
+
+// Product 26
+
 {
-  id: 26,
+  id: "elegant-party-heel",
+  sku: "EPH-WOM-026",
+  slug: "elegant-party-heel-women-heels",
+
   name: "Elegant Party Heel",
-  category: "women",
-  type: "heels",
-  isBestseller: true,
-  price: 7900,
-  colors: ["gold", "black"],
-  sizes: [36, 37, 38, 39],
-  stock: 18,
+  brand: "Aero",
+
+  gender: "women",
+  category: "heels",
+  productType: "heels",
+
+  price: { original: 7900, sale: null, currency: "BDT" },
+
   rating: 4.7,
-  images: [
-   product26_img1,
-   product26_img2,
-   product26_img3,
-   product26_img4,
-   product26_img5,
+  reviewsCount: 40,
+
+  description: {
+    short: "Glamorous heels perfect for parties and special events.",
+    long: "Elegant Party Heel combines luxury with comfort. Shiny upper, cushioned insole, and stable heel make it perfect for extended wear.",
+    features: ["Gold/Black shiny upper", "Cushioned insole", "Sturdy heel"],
+    fitAndSizing: ["True to size", "Slim fit"],
+    materials: ["Synthetic leather", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Avoid water immersion"]
+  },
+
+  variants: [
+    {
+      color: "gold",
+      images: [product26_img1, product26_img2, product26_img3, product26_img4, product26_img5],
+      stockBySize: { 36: 4, 37: 4, 38: 5, 39: 5 }
+    },
+    {
+      color: "black",
+      images: [product26_img1, product26_img2, product26_img3, product26_img4, product26_img5],
+      stockBySize: { 36: 4, 37: 4, 38: 5, 39: 5 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["heels", "women", "party"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Elegant Party Heel - Women's Premium Heels",
+    description: "Luxury heels for women, perfect for parties and special occasions."
+  },
+
+  createdAt: "2025-02-12",
+  updatedAt: "2025-02-12"
 },
+
+// Product 27
+
 {
-  id: 27,
+  id: "women-flex-sneaker",
+  sku: "WFS-WOM-027",
+  slug: "women-flex-sneaker-women-sneakers",
+
   name: "Women Flex Sneaker",
-  category: "women",
-  type: "sneakers",
-  price: 5400,
-  colors: ["white", "pink"],
-  sizes: [36, 37, 38, 39, 40],
-  stock: 34,
+  brand: "Aero",
+
+  gender: "women",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: { original: 5400, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product27_img1,
-    product27_img2,
-    product27_img3,
-    product27_img4,
-    product27_img5,
+  reviewsCount: 55,
+
+  description: {
+    short: "Stylish and comfortable sneakers for active women.",
+    long: "Women Flex Sneaker delivers maximum comfort and flexibility for daily wear or workouts. Breathable material keeps feet cool during activity.",
+    features: ["Breathable mesh upper", "Flexible sole", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product27_img1, product27_img2, product27_img3, product27_img4, product27_img5],
+      stockBySize: { 36: 7, 37: 7, 38: 7, 39: 7, 40: 6 }
+    },
+    {
+      color: "pink",
+      images: [product27_img1, product27_img2, product27_img3, product27_img4, product27_img5],
+      stockBySize: { 36: 7, 37: 7, 38: 7, 39: 7, 40: 6 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["sneakers", "women", "flex"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Women Flex Sneaker - Women's Premium Sneakers",
+    description: "Flexible and stylish sneakers for active women."
+  },
+
+  createdAt: "2025-02-13",
+  updatedAt: "2025-02-13"
 },
+
+// Product 28
+
 {
-  id: 28,
+  id: "soft-comfort-sandal",
+  sku: "SCS-WOM-028",
+  slug: "soft-comfort-sandal-women-sandals",
+
   name: "Soft Comfort Sandal",
-  category: "women",
-  type: "sandals",
-  isBestseller: true,
-  price: 3600,
-  colors: ["beige", "tan"],
-  sizes: [36, 37, 38, 39],
-  stock: 45,
+  brand: "Aero",
+
+  gender: "women",
+  category: "sandals",
+  productType: "sandals",
+
+  price: { original: 3600, sale: null, currency: "BDT" },
+
   rating: 4.5,
-  images: [
-    product28_img1,
-    product28_img2,
-    product28_img3,
-    product28_img4,
-    product28_img5,
+  reviewsCount: 60,
+
+  description: {
+    short: "Lightweight sandals designed for comfort and style.",
+    long: "Soft Comfort Sandal offers all-day comfort with soft cushioning and adjustable straps. Ideal for casual outings and summer wear.",
+    features: ["Adjustable straps", "Soft cushioned footbed", "Lightweight sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "beige",
+      images: [product28_img1, product28_img2, product28_img3, product28_img4, product28_img5],
+      stockBySize: { 36: 10, 37: 10, 38: 12, 39: 13 }
+    },
+    {
+      color: "tan",
+      images: [product28_img1, product28_img2, product28_img3, product28_img4, product28_img5],
+      stockBySize: { 36: 10, 37: 10, 38: 12, 39: 13 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["sandals", "women", "summer"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Soft Comfort Sandal - Women's Premium Sandals",
+    description: "Lightweight and comfortable sandals for women."
+  },
+
+  createdAt: "2025-02-14",
+  updatedAt: "2025-02-14"
 },
+
+// product 29
+
 {
-  id: 29,
+  id: "kids-sport-sneaker",
+  sku: "KSS-KIDS-029",
+  slug: "kids-sport-sneaker-kids-sneakers",
+
   name: "Kids Sport Sneaker",
-  category: "kids",
-  type: "sneakers",
-  price: 3100,
-  colors: ["red", "blue"],
-  sizes: [28, 29, 30, 31, 32],
-  stock: 50,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: { original: 3100, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product29_img1,
-    product29_img2,
-    product29_img3,
-    product29_img4,
-    product29_img5,
+  reviewsCount: 35,
+
+  description: {
+    short: "Durable and comfortable sneakers for active kids.",
+    long: "Kids Sport Sneaker is designed for durability, support, and comfort. Lightweight sole and breathable upper help kids stay active all day.",
+    features: ["Breathable upper", "Cushioned insole", "Durable outsole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Textile", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "red",
+      images: [product29_img1, product29_img2, product29_img3, product29_img4, product29_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10, 32: 10 }
+    },
+    {
+      color: "blue",
+      images: [product29_img1, product29_img2, product29_img3, product29_img4, product29_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10, 32: 10 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["sneakers", "kids", "sport"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids Sport Sneaker - Premium Kids Sneakers",
+    description: "Comfortable and durable sneakers for active kids."
+  },
+
+  createdAt: "2025-02-15",
+  updatedAt: "2025-02-15"
 },
+
+// Product 30
+
 {
-  id: 30,
+  id: "kids-casual-slip",
+  sku: "KCS-KIDS-030",
+  slug: "kids-casual-slip-kids-slip-on",
+
   name: "Kids Casual Slip",
-  category: "kids",
-  type: "slip-on",
-  isBestseller: true,
-  price: 2600,
-  colors: ["gray", "navy"],
-  sizes: [28, 29, 30, 31],
-  stock: 55,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2600, sale: null, currency: "BDT" },
+
   rating: 4.4,
-  images: [
-    product30_img1,
-    product30_img2,
-    product30_img3,
-    product30_img4,
-    product30_img5,
+  reviewsCount: 40,
+
+  description: {
+    short: "Easy-to-wear slip-on shoes for casual kids outings.",
+    long: "Kids Casual Slip provides comfort and convenience with elastic upper and cushioned sole. Perfect for school and casual play.",
+    features: ["Elastic upper", "Cushioned footbed", "Durable sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Textile", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product30_img1, product30_img2, product30_img3, product30_img4, product30_img5],
+      stockBySize: { 28: 14, 29: 14, 30: 14, 31: 13 }
+    },
+    {
+      color: "navy",
+      images: [product30_img1, product30_img2, product30_img3, product30_img4, product30_img5],
+      stockBySize: { 28: 14, 29: 14, 30: 14, 31: 13 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["slip-on", "kids", "casual"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Kids Casual Slip - Premium Kids Slip-On Shoes",
+    description: "Comfortable slip-on shoes for casual kids outings."
+  },
+
+  createdAt: "2025-02-16",
+  updatedAt: "2025-02-16"
 },
+
+// Product 31
+
 {
-  id: 31,
+  id: "air-motion-pro",
+  sku: "AMP-MEN-031",
+  slug: "air-motion-pro-men-training",
+
   name: "Air Motion Pro",
-  category: "men",
-  type: "training",
-  isBestseller: true,
-  price: 6700,
-  colors: ["black", "orange"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 28,
+  brand: "Aero",
+
+  gender: "men",
+  category: "training",
+  productType: "training",
+
+  price: { original: 6700, sale: null, currency: "BDT" },
+
   rating: 4.7,
-  images: [
-    product31_img1,
-    product31_img2,
-    product31_img3,
-    product31_img4,
-    product31_img5,
+  reviewsCount: 60,
+
+  description: {
+    short: "High-performance training shoes for men.",
+    long: "Air Motion Pro ensures maximum comfort and support during workouts. Breathable mesh and flexible sole optimize movement.",
+    features: ["Breathable mesh upper", "Shock-absorbing sole", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product31_img1, product31_img2, product31_img3, product31_img4, product31_img5],
+      stockBySize: { 40: 6, 41: 6, 42: 6, 43: 5, 44: 5 }
+    },
+    {
+      color: "orange",
+      images: [product31_img1, product31_img2, product31_img3, product31_img4, product31_img5],
+      stockBySize: { 40: 6, 41: 6, 42: 6, 43: 5, 44: 5 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["training", "men", "performance"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Air Motion Pro - Men's Premium Training Shoes",
+    description: "High-performance training shoes designed for men."
+  },
+
+  createdAt: "2025-02-17",
+  updatedAt: "2025-02-17"
 },
+
+// Product 32
+
 {
-  id: 32,
+  id: "urban-canvas-low",
+  sku: "UCL-MEN-032",
+  slug: "urban-canvas-low-men-canvas",
+
   name: "Urban Canvas Low",
-  category: "men",
-  type: "canvas",
-  isBestseller: true,
-  price: 3900,
-  colors: ["white", "navy"],
-  sizes: [39, 40, 41, 42, 43],
-  stock: 46,
+  brand: "Aero",
+
+  gender: "men",
+  category: "canvas",
+  productType: "canvas",
+
+  price: { original: 3900, sale: null, currency: "BDT" },
+
   rating: 4.5,
-  images: [
-    product32_img1,
-    product32_img2,
-    product32_img3,
-    product32_img4,
-    product32_img5,
+  reviewsCount: 45,
+
+  description: {
+    short: "Stylish low-top canvas shoes for everyday wear.",
+    long: "Urban Canvas Low provides casual style with all-day comfort. Lightweight sole and breathable upper make it perfect for urban wear.",
+    features: ["Canvas upper", "Lightweight sole", "Breathable design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product32_img1, product32_img2, product32_img3, product32_img4, product32_img5],
+      stockBySize: { 39: 9, 40: 9, 41: 9, 42: 9, 43: 10 }
+    },
+    {
+      color: "navy",
+      images: [product32_img1, product32_img2, product32_img3, product32_img4, product32_img5],
+      stockBySize: { 39: 9, 40: 9, 41: 9, 42: 9, 43: 10 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["canvas", "men", "casual"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Urban Canvas Low - Men's Premium Canvas Shoes",
+    description: "Low-top canvas shoes perfect for casual urban style."
+  },
+
+  createdAt: "2025-02-18",
+  updatedAt: "2025-02-18"
 },
+
+// Product 33
+
 {
-  id: 33,
+  id: "premium-leather-derby",
+  sku: "PLD-MEN-033",
+  slug: "premium-leather-derby-men-formal",
+
   name: "Premium Leather Derby",
-  category: "men",
-  type: "formal",
-  isBestseller: true,
-  price: 8200,
-  colors: ["dark-brown", "black"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 20,
+  brand: "Aero",
+
+  gender: "men",
+  category: "formal",
+  productType: "formal",
+
+  price: { original: 8200, sale: null, currency: "BDT" },
+
   rating: 4.9,
-  images: [
-    product33_img1,
-    product33_img2,
-    product33_img3,
-    product33_img4,
-    product33_img5,
+  reviewsCount: 35,
+
+  description: {
+    short: "Classic leather derby shoes for men.",
+    long: "Premium Leather Derby delivers elegance and comfort for formal occasions. Soft leather upper and cushioned footbed ensures long-lasting wear.",
+    features: ["Genuine leather upper", "Cushioned footbed", "Rubber outsole for grip"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Polish regularly"]
+  },
+
+  variants: [
+    {
+      color: "dark-brown",
+      images: [product33_img1, product33_img2, product33_img3, product33_img4, product33_img5],
+      stockBySize: { 40: 4, 41: 4, 42: 4, 43: 4, 44: 4 }
+    },
+    {
+      color: "black",
+      images: [product33_img1, product33_img2, product33_img3, product33_img4, product33_img5],
+      stockBySize: { 40: 4, 41: 4, 42: 4, 43: 4, 44: 4 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["formal", "men", "leather"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Premium Leather Derby - Men's Formal Shoes",
+    description: "Classic leather derby shoes combining elegance and comfort."
+  },
+
+  createdAt: "2025-02-19",
+  updatedAt: "2025-02-19"
 },
+
+// Product 34
+
 {
-  id: 34,
+  id: "women-active-run",
+  sku: "WAR-WOM-034",
+  slug: "women-active-run-women-running",
+
   name: "Women Active Run",
-  category: "women",
-  type: "running",
-  isBestseller: true,
-  price: 6100,
-  colors: ["purple", "white"],
-  sizes: [36, 37, 38, 39, 40],
-  stock: 32,
+  brand: "Aero",
+
+  gender: "women",
+  category: "running",
+  productType: "running",
+
+  price: { original: 6100, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product34_img1,
-    product34_img2,
-    product34_img3,
-    product34_img4,
-    product34_img5,
+  reviewsCount: 50,
+
+  description: {
+    short: "Premium running shoes for active women.",
+    long: "Women Active Run ensures comfort, support, and style during running sessions. Breathable mesh upper with flexible sole for optimal performance.",
+    features: ["Breathable upper", "Shock-absorbing sole", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "purple",
+      images: [product34_img1, product34_img2, product34_img3, product34_img4, product34_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 7, 40: 7 }
+    },
+    {
+      color: "white",
+      images: [product34_img1, product34_img2, product34_img3, product34_img4, product34_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 7, 40: 7 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["running", "women", "active"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Women Active Run - Women's Premium Running Shoes",
+    description: "Comfortable and stylish running shoes for women."
+  },
+
+  createdAt: "2025-02-20",
+  updatedAt: "2025-02-20"
 },
+
+// Product 35
+
 {
-  id: 35,
+  id: "soft-step-flats",
+  sku: "SSF-WOM-035",
+  slug: "soft-step-flats-women-casual",
+
   name: "Soft Step Flats",
-  category: "women",
-  type: "casual",
-  price: 3400,
-  colors: ["beige", "black"],
-  sizes: [36, 37, 38, 39],
-  stock: 50,
+  brand: "Aero",
+
+  gender: "women",
+  category: "casual",
+  productType: "flats",
+
+  price: { original: 3400, sale: null, currency: "BDT" },
+
   rating: 4.4,
-  images: [
-    product35_img1,
-    product35_img2,
-    product35_img3,
-    product35_img4,
-    product35_img5,
+  reviewsCount: 45,
+
+  description: {
+    short: "Comfortable flats for everyday use.",
+    long: "Soft Step Flats provide lightweight comfort and style for daily wear. Cushioned insole and soft upper ensure all-day comfort.",
+    features: ["Cushioned footbed", "Soft upper", "Non-slip sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "beige",
+      images: [product35_img1, product35_img2, product35_img3, product35_img4, product35_img5],
+      stockBySize: { 36: 12, 37: 12, 38: 13, 39: 13 }
+    },
+    {
+      color: "black",
+      images: [product35_img1, product35_img2, product35_img3, product35_img4, product35_img5],
+      stockBySize: { 36: 12, 37: 12, 38: 13, 39: 13 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["flats", "women", "casual"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Soft Step Flats - Women's Casual Flats",
+    description: "Lightweight and comfortable flats for women."
+  },
+
+  createdAt: "2025-02-21",
+  updatedAt: "2025-02-21"
 },
+
+// Product 36
+
 {
-  id: 36,
+  id: "luxury-strap-sandal",
+  sku: "LSS-WOM-036",
+  slug: "luxury-strap-sandal-women-sandals",
+
   name: "Luxury Strap Sandal",
-  category: "women",
-  type: "sandals",
-  isBestseller: true,
-  price: 4800,
-  colors: ["gold", "tan"],
-  sizes: [36, 37, 38, 39],
-  stock: 27,
+  brand: "Aero",
+
+  gender: "women",
+  category: "sandals",
+  productType: "sandals",
+
+  price: { original: 4800, sale: null, currency: "BDT" },
+
   rating: 4.7,
-  images: [
-    product36_img1,
-    product36_img2,
-    product36_img3,
-    product36_img4,
-    product36_img5,
+  reviewsCount: 38,
+
+  description: {
+    short: "Elegant sandals with luxury strap design.",
+    long: "Luxury Strap Sandal combines style and comfort for women. Adjustable straps ensure perfect fit and durability for everyday or party wear.",
+    features: ["Adjustable straps", "Soft footbed", "Non-slip sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gold",
+      images: [product36_img1, product36_img2, product36_img3, product36_img4, product36_img5],
+      stockBySize: { 36: 7, 37: 7, 38: 7, 39: 6 }
+    },
+    {
+      color: "tan",
+      images: [product36_img1, product36_img2, product36_img3, product36_img4, product36_img5],
+      stockBySize: { 36: 7, 37: 7, 38: 7, 39: 6 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["sandals", "women", "luxury"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Luxury Strap Sandal - Women's Premium Sandals",
+    description: "Elegant and comfortable luxury strap sandals for women."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 37
+
 {
-  id: 37,
+  id: "kids-school-comfort",
+  sku: "KSC-KIDS-037",
+  slug: "kids-school-comfort-kids-formal",
+
   name: "Kids School Comfort",
-  category: "kids",
-  type: "formal",
-  price: 2900,
-  colors: ["black"],
-  sizes: [29, 30, 31, 32, 33],
-  stock: 60,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "formal",
+  productType: "formal",
+
+  price: { original: 2900, sale: null, currency: "BDT" },
+
   rating: 4.5,
-  images: [
-    product37_img1,
-    product37_img2,
-    product37_img3,
-    product37_img4,
-    product37_img5,
+  reviewsCount: 42,
+
+  description: {
+    short: "Comfortable formal shoes for school kids.",
+    long: "Kids School Comfort ensures durability and comfort throughout the school day. Soft padded insole and reinforced toe provide long-lasting wear.",
+    features: ["Padded insole", "Reinforced toe", "Non-slip sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product37_img1, product37_img2, product37_img3, product37_img4, product37_img5],
+      stockBySize: { 29: 12, 30: 12, 31: 12, 32: 12, 33: 12 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["formal", "kids", "school"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids School Comfort - Kids Premium Formal Shoes",
+    description: "Durable and comfortable formal shoes for school kids."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+//  Product 38
+
 {
-  id: 38,
+  id: "kids-outdoor-runner",
+  sku: "KOR-KIDS-038",
+  slug: "kids-outdoor-runner-kids-running",
+
   name: "Kids Outdoor Runner",
-  category: "kids",
-  type: "running",
-  price: 3300,
-  colors: ["blue", "lime"],
-  sizes: [28, 29, 30, 31, 32],
-  stock: 48,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "running",
+  productType: "running",
+
+  price: { original: 3300, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product38_img1,
-    product38_img2,
-    product38_img3,
-    product38_img4,
-    product38_img5,
+  reviewsCount: 36,
+
+  description: {
+    short: "Durable and lightweight running shoes for kids.",
+    long: "Kids Outdoor Runner provides superior grip and comfort for active kids. Breathable mesh upper and cushioned sole ensure safe outdoor activity.",
+    features: ["Breathable mesh upper", "Cushioned sole", "Non-slip outsole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "blue",
+      images: [product38_img1, product38_img2, product38_img3, product38_img4, product38_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 9, 32: 9 }
+    },
+    {
+      color: "lime",
+      images: [product38_img1, product38_img2, product38_img3, product38_img4, product38_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 9, 32: 9 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["running", "kids", "outdoor"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids Outdoor Runner - Premium Running Shoes for Kids",
+    description: "Comfortable and durable running shoes designed for kids."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 39
+
 {
-  id: 39,
+  id: "kids-easy-slip",
+  sku: "KES-KIDS-039",
+  slug: "kids-easy-slip-kids-slip-on",
+
   name: "Kids Easy Slip",
-  category: "kids",
-  type: "slip-on",
-  price: 2500,
-  colors: ["gray", "red"],
-  sizes: [27, 28, 29, 30],
-  stock: 70,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2500, sale: null, currency: "BDT" },
+
   rating: 4.4,
-  images: [
-    product39_img1,
-    product39_img2,
-    product39_img3,
-    product39_img4,
-    product39_img5,
+  reviewsCount: 40,
+
+  description: {
+    short: "Simple and comfortable slip-on shoes for kids.",
+    long: "Kids Easy Slip makes getting ready effortless for children. Soft upper and flexible sole ensure comfort all day long.",
+    features: ["Easy slip-on", "Flexible sole", "Soft upper"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product39_img1, product39_img2, product39_img3, product39_img4, product39_img5],
+      stockBySize: { 27: 12, 28: 12, 29: 12, 30: 12 }
+    },
+    {
+      color: "red",
+      images: [product39_img1, product39_img2, product39_img3, product39_img4, product39_img5],
+      stockBySize: { 27: 12, 28: 12, 29: 12, 30: 12 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["slip-on", "kids", "casual"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Kids Easy Slip - Premium Slip-On Shoes for Kids",
+    description: "Comfortable and easy-to-wear slip-on shoes for children."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 40
+
 {
-  id: 40,
+  id: "classic-kids-canvas",
+  sku: "CKC-KIDS-040",
+  slug: "classic-kids-canvas-kids-canvas",
+
   name: "Classic Kids Canvas",
-  category: "kids",
-  type: "canvas",
-  price: 2800,
-  colors: ["white", "sky-blue"],
-  sizes: [28, 29, 30, 31],
-  stock: 55,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "canvas",
+  productType: "canvas",
+
+  price: { original: 2800, sale: null, currency: "BDT" },
+
   rating: 4.5,
-  images: [
-    product40_img1,
-    product40_img2,
-    product40_img3,
-    product40_img4,
-    product40_img5,
+  reviewsCount: 38,
+
+  description: {
+    short: "Durable canvas shoes for kids.",
+    long: "Classic Kids Canvas provides comfort and durability for everyday use. Breathable canvas upper with non-slip sole makes it perfect for active kids.",
+    features: ["Canvas upper", "Non-slip sole", "Lightweight"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product40_img1, product40_img2, product40_img3, product40_img4, product40_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10 }
+    },
+    {
+      color: "sky-blue",
+      images: [product40_img1, product40_img2, product40_img3, product40_img4, product40_img5],
+      stockBySize: { 28: 10, 29: 10, 30: 10, 31: 10 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "2-4 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "3-month warranty",
+
+  tags: ["canvas", "kids", "casual"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Classic Kids Canvas - Premium Canvas Shoes for Kids",
+    description: "Durable and comfortable canvas shoes designed for children."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 41
+
 {
-  id: 41,
+  id: "elite-power-trainer",
+  sku: "EPT-MEN-041",
+  slug: "elite-power-trainer-men-training",
+
   name: "Elite Power Trainer",
-  category: "men",
-  type: "training",
-  price: 7100,
-  colors: ["black", "red"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 26,
+  brand: "Aero",
+
+  gender: "men",
+  category: "training",
+  productType: "training",
+
+  price: { original: 7100, sale: null, currency: "BDT" },
+
   rating: 4.8,
-  images: [
-    product41_img1,
-    product41_img2,
-    product41_img3,
-    product41_img4,
-    product41_img5,
+  reviewsCount: 52,
+
+  description: {
+    short: "High-performance training shoes for men.",
+    long: "Elite Power Trainer is designed for peak performance during workouts. Lightweight, cushioned sole ensures stability and comfort for all training activities.",
+    features: ["Cushioned sole", "Breathable mesh", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product41_img1, product41_img2, product41_img3, product41_img4, product41_img5],
+      stockBySize: { 40: 5, 41: 5, 42: 5, 43: 5, 44: 6 }
+    },
+    {
+      color: "red",
+      images: [product41_img1, product41_img2, product41_img3, product41_img4, product41_img5],
+      stockBySize: { 40: 5, 41: 5, 42: 5, 43: 5, 44: 6 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["training", "men", "premium"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Elite Power Trainer - Men's Premium Training Shoes",
+    description: "High-performance training shoes for men designed for comfort and stability."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 42
+
 {
-  id: 42,
+  id: "minimal-slip-comfort",
+  sku: "MSC-MEN-042",
+  slug: "minimal-slip-comfort-men-slip-on",
+
   name: "Minimal Slip Comfort",
-  category: "men",
-  type: "slip-on",
-  price: 4500,
-  colors: ["black", "tan"],
-  sizes: [39, 40, 41, 42, 43],
-  stock: 38,
+  brand: "Aero",
+
+  gender: "men",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 4500, sale: null, currency: "BDT" },
+
   rating: 4.5,
-  images: [
-    product42_img1,
-    product42_img2,
-    product42_img3,
-    product42_img4,
-    product42_img5,
+  reviewsCount: 36,
+
+  description: {
+    short: "Easy slip-on shoes with maximum comfort.",
+    long: "Minimal Slip Comfort offers a sleek, minimalist design with maximum comfort. Perfect for casual wear and quick on/off use.",
+    features: ["Easy slip-on", "Soft insole", "Flexible sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product42_img1, product42_img2, product42_img3, product42_img4, product42_img5],
+      stockBySize: { 39: 8, 40: 8, 41: 8, 42: 7, 43: 7 }
+    },
+    {
+      color: "tan",
+      images: [product42_img1, product42_img2, product42_img3, product42_img4, product42_img5],
+      stockBySize: { 39: 8, 40: 8, 41: 8, 42: 7, 43: 7 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["slip-on", "men", "casual"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Minimal Slip Comfort - Men's Premium Slip-On Shoes",
+    description: "Sleek and comfortable slip-on shoes for casual wear."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 43
+
 {
-  id: 43,
+  id: "urban-trek-boot",
+  sku: "UTB-MEN-043",
+  slug: "urban-trek-boot-men-boots",
+
   name: "Urban Trek Boot",
-  category: "men",
-  type: "boots",
-  price: 9200,
-  colors: ["brown", "dark-gray"],
-  sizes: [40, 41, 42, 43, 44],
-  stock: 18,
+  brand: "Aero",
+
+  gender: "men",
+  category: "boots",
+  productType: "boots",
+
+  price: { original: 9200, sale: null, currency: "BDT" },
+
   rating: 4.9,
-  images: [
-    product43_img1,
-    product43_img2,
-    product43_img3,
-    product43_img4,
-    product43_img5,
+  reviewsCount: 44,
+
+  description: {
+    short: "Rugged and durable trekking boots for men.",
+    long: "Urban Trek Boot is designed for adventure and outdoor activities. Reinforced sole and premium materials ensure long-lasting durability and comfort.",
+    features: ["Reinforced sole", "Water-resistant", "Cushioned insole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Leather upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "brown",
+      images: [product43_img1, product43_img2, product43_img3, product43_img4, product43_img5],
+      stockBySize: { 40: 4, 41: 4, 42: 4, 43: 3, 44: 3 }
+    },
+    {
+      color: "dark-gray",
+      images: [product43_img1, product43_img2, product43_img3, product43_img4, product43_img5],
+      stockBySize: { 40: 4, 41: 4, 42: 4, 43: 3, 44: 3 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["boots", "men", "trekking"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Urban Trek Boot - Men's Premium Trekking Boots",
+    description: "Durable and rugged trekking boots designed for men."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 44
+
 {
-  id: 44,
+  id: "women-luxe-sneaker",
+  sku: "WLS-WOM-044",
+  slug: "women-luxe-sneaker-women-sneakers",
+
   name: "Women Luxe Sneaker",
-  category: "women",
-  type: "sneakers",
-  price: 6800,
-  colors: ["white", "rose"],
-  sizes: [36, 37, 38, 39, 40],
-  stock: 29,
+  brand: "Aero",
+
+  gender: "women",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: { original: 6800, sale: null, currency: "BDT" },
+
   rating: 4.7,
-  images: [
-    product44_img1,
-    product44_img2,
-    product44_img3,
-    product44_img4,
-    product44_img5,
+  reviewsCount: 40,
+
+  description: {
+    short: "Premium stylish sneakers for women.",
+    long: "Women Luxe Sneaker combines fashion with performance. Soft cushioned insole and breathable upper make it perfect for daily wear or casual outings.",
+    features: ["Cushioned insole", "Breathable upper", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product44_img1, product44_img2, product44_img3, product44_img4, product44_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 5 }
+    },
+    {
+      color: "rose",
+      images: [product44_img1, product44_img2, product44_img3, product44_img4, product44_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 5 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["sneakers", "women", "premium"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Women Luxe Sneaker - Women's Premium Sneakers",
+    description: "Stylish and comfortable sneakers designed for women."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 45
+
 {
-  id: 45,
+  id: "daily-comfort-walk",
+  sku: "DCW-WOM-045",
+  slug: "daily-comfort-walk-women-casual",
+
   name: "Daily Comfort Walk",
-  category: "women",
-  type: "casual",
-  price: 3700,
-  colors: ["gray", "beige"],
-  sizes: [36, 37, 38, 39],
-  stock: 52,
+  brand: "Aero",
+
+  gender: "women",
+  category: "casual",
+  productType: "casual",
+
+  price: { original: 3700, sale: null, currency: "BDT" },
+
   rating: 4.4,
-  images: [
-    product45_img1,
-    product45_img2,
-    product45_img3,
-    product45_img4,
-    product45_img5,
+  reviewsCount: 35,
+
+  description: {
+    short: "Comfortable everyday casual shoes for women.",
+    long: "Daily Comfort Walk offers cushioned support and breathable design for all-day comfort. Perfect for errands, casual outings, and daily wear.",
+    features: ["Cushioned insole", "Breathable upper", "Lightweight"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product45_img1, product45_img2, product45_img3, product45_img4, product45_img5],
+      stockBySize: { 36: 13, 37: 13, 38: 13, 39: 13 }
+    },
+    {
+      color: "beige",
+      images: [product45_img1, product45_img2, product45_img3, product45_img4, product45_img5],
+      stockBySize: { 36: 13, 37: 13, 38: 13, 39: 13 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["casual", "women", "comfortable"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Daily Comfort Walk - Women's Casual Shoes",
+    description: "Comfortable and lightweight casual shoes for everyday use."
+  },
+
+  createdAt: "2025-02-22",
+  updatedAt: "2025-02-22"
 },
+
+// Product 46
+
 {
-  id: 46,
+  id: "women-flex-trainer",
+  sku: "WFT-WOM-046",
+  slug: "women-flex-trainer-women-training",
+
   name: "Women Flex Trainer",
-  category: "women",
-  type: "training",
-  price: 6200,
-  colors: ["black", "mint"],
-  sizes: [36, 37, 38, 39, 40],
-  stock: 33,
+  brand: "Aero",
+
+  gender: "women",
+  category: "training",
+  productType: "training",
+
+  price: { original: 6200, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product46_img1,
-    product46_img2,
-    product46_img3,
-    product46_img4,
-    product46_img5,
+  reviewsCount: 30,
+
+  description: {
+    short: "Premium training shoes designed for women.",
+    long: "Women Flex Trainer provides superior comfort and support for all types of workouts. Breathable mesh and cushioned sole ensure all-day stability.",
+    features: ["Cushioned sole", "Breathable mesh", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Mesh upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product46_img1, product46_img2, product46_img3, product46_img4, product46_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 7, 39: 7, 40: 7 }
+    },
+    {
+      color: "mint",
+      images: [product46_img1, product46_img2, product46_img3, product46_img4, product46_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 7, 39: 7, 40: 7 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["training", "women", "premium"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Women Flex Trainer - Premium Training Shoes",
+    description: "Stylish and comfortable training shoes for women designed for all workouts."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 47
+
 {
-  id: 47,
+  id: "kids-everyday-sneaker",
+  sku: "KES-KID-047",
+  slug: "kids-everyday-sneaker-kids-sneakers",
+
   name: "Kids Everyday Sneaker",
-  category: "kids",
-  type: "sneakers",
-  price: 3000,
-  colors: ["blue", "yellow"],
-  sizes: [28, 29, 30, 31, 32],
-  stock: 65,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "sneakers",
+  productType: "sneakers",
+
+  price: { original: 3000, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product47_img1,
-    product47_img2,
-    product47_img3,
-    product47_img4,
-    product47_img5,
+  reviewsCount: 40,
+
+  description: {
+    short: "Comfortable and playful sneakers for kids.",
+    long: "Kids Everyday Sneaker is designed for comfort and fun. Perfect for school and playgrounds, with cushioned sole and lightweight design.",
+    features: ["Lightweight design", "Cushioned sole", "Durable materials"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "blue",
+      images: [product47_img1, product47_img2, product47_img3, product47_img4, product47_img5],
+      stockBySize: { 28: 13, 29: 13, 30: 13, 31: 13, 32: 13 }
+    },
+    {
+      color: "yellow",
+      images: [product47_img1, product47_img2, product47_img3, product47_img4, product47_img5],
+      stockBySize: { 28: 13, 29: 13, 30: 13, 31: 13, 32: 13 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["kids", "sneakers", "comfortable"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids Everyday Sneaker - Comfortable Sneakers",
+    description: "Playful and comfortable sneakers designed for daily use by kids."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 48
+
 {
-  id: 48,
+  id: "kids-soft-sandal",
+  sku: "KSS-KID-048",
+  slug: "kids-soft-sandal-kids-sandals",
+
   name: "Kids Soft Sandal",
-  category: "kids",
-  type: "sandals",
-  price: 2200,
-  colors: ["navy", "orange"],
-  sizes: [27, 28, 29, 30],
-  stock: 72,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "sandals",
+  productType: "sandals",
+
+  price: { original: 2200, sale: null, currency: "BDT" },
+
   rating: 4.5,
-  images: [
-    product48_img1,
-    product48_img2,
-    product48_img3,
-    product48_img4,
-    product48_img5,
+  reviewsCount: 28,
+
+  description: {
+    short: "Lightweight and soft sandals for kids.",
+    long: "Kids Soft Sandal is designed for comfort and safety. Soft straps and cushioned footbed provide perfect support for little feet.",
+    features: ["Soft straps", "Cushioned footbed", "Lightweight design"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "navy",
+      images: [product48_img1, product48_img2, product48_img3, product48_img4, product48_img5],
+      stockBySize: { 27: 14, 28: 14, 29: 14, 30: 15 }
+    },
+    {
+      color: "orange",
+      images: [product48_img1, product48_img2, product48_img3, product48_img4, product48_img5],
+      stockBySize: { 27: 14, 28: 14, 29: 14, 30: 15 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["kids", "sandals", "comfortable"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids Soft Sandal - Comfortable Kids Sandals",
+    description: "Soft, lightweight sandals designed for kids' daily use."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 49
+
 {
-  id: 49,
+  id: "kids-canvas-street",
+  sku: "KCS-KID-049",
+  slug: "kids-canvas-street-kids-canvas",
+
   name: "Kids Canvas Street",
-  category: "kids",
-  type: "canvas",
-  price: 2600,
-  colors: ["white", "red"],
-  sizes: [28, 29, 30, 31],
-  stock: 58,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "canvas",
+  productType: "canvas",
+
+  price: { original: 2600, sale: null, currency: "BDT" },
+
   rating: 4.4,
-  images: [
-    product49_img1,
-    product49_img2,
-    product49_img3,
-    product49_img4,
-    product49_img5,
+  reviewsCount: 25,
+
+  description: {
+    short: "Classic canvas shoes for kids.",
+    long: "Kids Canvas Street offers durable and stylish canvas shoes for everyday wear. Comfortable fit and lightweight design for active kids.",
+    features: ["Durable canvas", "Lightweight design", "Flexible sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [product49_img1, product49_img2, product49_img3, product49_img4, product49_img5],
+      stockBySize: { 28: 15, 29: 15, 30: 14, 31: 14 }
+    },
+    {
+      color: "red",
+      images: [product49_img1, product49_img2, product49_img3, product49_img4, product49_img5],
+      stockBySize: { 28: 15, 29: 15, 30: 14, 31: 14 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["kids", "canvas", "stylish"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Kids Canvas Street - Durable Kids Canvas Shoes",
+    description: "Stylish and durable canvas shoes for kids' everyday wear."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 50
+
 {
-  id: 50,
+  id: "kids-easy-walk-slip",
+  sku: "KEWS-KID-050",
+  slug: "kids-easy-walk-slip-kids-slip-on",
+
   name: "Kids Easy Walk Slip",
-  category: "kids",
-  type: "slip-on",
-  price: 2400,
-  colors: ["gray", "black"],
-  sizes: [27, 28, 29, 30],
-  stock: 80,
+  brand: "Aero",
+
+  gender: "kids",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2400, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product50_img1,
-    product50_img2,
-    product50_img3,
-    product50_img4,
-    product50_img5,
+  reviewsCount: 30,
+
+  description: {
+    short: "Easy slip-on shoes for kids.",
+    long: "Kids Easy Walk Slip is perfect for quick on/off wear. Lightweight and cushioned for all-day comfort.",
+    features: ["Lightweight design", "Cushioned sole", "Easy slip-on"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product50_img1, product50_img2, product50_img3, product50_img4, product50_img5],
+      stockBySize: { 27: 15, 28: 15, 29: 15, 30: 15 }
+    },
+    {
+      color: "black",
+      images: [product50_img1, product50_img2, product50_img3, product50_img4, product50_img5],
+      stockBySize: { 27: 15, 28: 15, 29: 15, 30: 15 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["kids", "slip-on", "comfortable"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Kids Easy Walk Slip - Comfortable Kids Slip-On Shoes",
+    description: "Lightweight and cushioned slip-on shoes for kids."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 51
+
 {
-  id: 51,
+  id: "men-easy-walk-slip-gray",
+  sku: "MEWS-MEN-051",
+  slug: "men-easy-walk-slip-gray-men-slip-on",
+
   name: "Men Easy Walk Slip",
-  category: "men",
-  type: "slip-on",
-  price: 2400,
-  colors: ["gray", "black"],
-  sizes: [27, 28, 29, 30],
-  stock: 80,
+  brand: "Aero",
+
+  gender: "men",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2400, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product51_img1,
-    product51_img2,
-    product51_img3,
-    product51_img4,
-    product51_img5,
+  reviewsCount: 22,
+
+  description: {
+    short: "Comfortable slip-on shoes for men.",
+    long: "Men Easy Walk Slip provides effortless wear with a cushioned sole and lightweight design. Perfect for daily activities and casual outings.",
+    features: ["Cushioned sole", "Lightweight", "Easy slip-on"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product51_img1, product51_img2, product51_img3, product51_img4, product51_img5],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    },
+    {
+      color: "black",
+      images: [product51_img1, product51_img2, product51_img3, product51_img4, product51_img5],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "slip-on", "comfortable"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Men Easy Walk Slip - Comfortable Slip-On Shoes",
+    description: "Stylish and easy slip-on shoes for men for daily comfort."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 52
+
 {
-  id: 52,
-  name: "Men Easy Walk Slip",
-  category: "men",
-  type: "slip-on",
-  price: 2400,
-  colors: ["gray", "black"],
-  sizes: [27, 28, 29, 30],
-  stock: 80,
+  id: "men-easy-walk-slip-black",
+  sku: "MEWS-MEN-052",
+  slug: "men-easy-walk-slip-black-men-slip-on",
+
+  name: "Men Easy Walk Slip - Black Edition",
+  brand: "Aero",
+
+  gender: "men",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2400, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product52_img1,
-    product52_img2,
-    product52_img3,
-    product52_img4,
-    product52_img5,
+  reviewsCount: 18,
+
+  description: {
+    short: "Sleek black slip-on shoes for men.",
+    long: "Men Easy Walk Slip - Black Edition offers the same comfort and easy wear in a sleek black design, perfect for casual outings and daily wear.",
+    features: ["Cushioned sole", "Lightweight", "Easy slip-on"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [product52_img1, product52_img2, product52_img3, product52_img4, product52_img5],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "slip-on", "black edition"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Men Easy Walk Slip Black - Comfortable Slip-On Shoes",
+    description: "Comfortable and sleek black slip-on shoes for men."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 53
+
 {
-  id: 53,
-  name: "Mens Easy Walk Slip",
-  category: "men",
-  type: "slip-on",
-  price: 2400,
-  colors: ["gray", "black"],
-  sizes: [27, 28, 29, 30],
-  stock: 80,
+  id: "mens-easy-walk-slip-sport",
+  sku: "MEWS-MEN-053",
+  slug: "mens-easy-walk-slip-sport-men-slip-on",
+
+  name: "Mens Easy Walk Slip - Sport Edition",
+  brand: "Aero",
+
+  gender: "men",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2400, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product53_img1,
-    product53_img2,
-    product53_img3,
-    product53_img4,
-    product53_img5,
+  reviewsCount: 20,
+
+  description: {
+    short: "Sporty slip-on shoes for men.",
+    long: "Mens Easy Walk Slip - Sport Edition combines casual comfort with sporty design. Lightweight, cushioned, and perfect for active use.",
+    features: ["Cushioned sole", "Sporty design", "Lightweight"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product53_img1, product53_img2, product53_img3, product53_img4, product53_img5],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    },
+    {
+      color: "black",
+      images: [product53_img1, product53_img2, product53_img3, product53_img4, product53_img5],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "slip-on", "sport edition"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Mens Easy Walk Slip Sport - Comfortable Slip-On Shoes",
+    description: "Sporty and comfortable slip-on shoes for men."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
+
+// Product 54
+
 {
-  id: 54,
-  name: "Mens Easy Walk Slip",
-  category: "men",
-  type: "slip-on",
-  price: 2400,
-  colors: ["gray", "black"],
-  sizes: [27, 28, 29, 30],
-  stock: 80,
+  id: "mens-easy-walk-slip-premium",
+  sku: "MEWS-MEN-054",
+  slug: "mens-easy-walk-slip-premium-men-slip-on",
+
+  name: "Mens Easy Walk Slip - Premium Edition",
+  brand: "Aero",
+
+  gender: "men",
+  category: "slip-on",
+  productType: "slip-on",
+
+  price: { original: 2400, sale: null, currency: "BDT" },
+
   rating: 4.6,
-  images: [
-    product54_img1,
-    product54_img2,
-    product54_img3,
-    product54_img4,
+  reviewsCount: 15,
+
+  description: {
+    short: "Premium casual slip-on shoes for men.",
+    long: "Mens Easy Walk Slip - Premium Edition delivers high comfort with a classic design. Perfect for daily wear, lightweight, and cushioned.",
+    features: ["Cushioned sole", "Premium finish", "Lightweight"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [product54_img1, product54_img2, product54_img3, product54_img4],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    },
+    {
+      color: "black",
+      images: [product54_img1, product54_img2, product54_img3, product54_img4],
+      stockBySize: { 27: 20, 28: 20, 29: 20, 30: 20 }
+    }
   ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "slip-on", "premium edition"],
+  flags: { isBestseller: false, isFeatured: true },
+
+  meta: {
+    title: "Mens Easy Walk Slip Premium - Comfortable Slip-On Shoes",
+    description: "Premium slip-on shoes for men with classic design and comfort."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
 },
-  {
-    id: 55,
-    name: "Classic Canvas",
-    type: "casual",
-    category: "Men",
-    price: 120,
-    colors: ["blue", "white", "grey"],
-    sizes: [38, 39, 40, 41, 42],
-    stock: 30,
-    rating: 4.5,
-    images: [
-      product55_img1,
-      product55_img2,
-      product55_img3,
-      product55_img4,
-      product55_img5
-    ]
+
+// Product 55
+
+{
+  id: "classic-canvas-men",
+  sku: "CC-MEN-055",
+  slug: "classic-canvas-men-casual",
+
+  name: "Classic Canvas",
+  brand: "Aero",
+
+  gender: "men",
+  category: "casual",
+  productType: "casual",
+
+  price: { original: 120, sale: null, currency: "BDT" },
+
+  rating: 4.5,
+  reviewsCount: 35,
+
+  description: {
+    short: "Classic canvas shoes for men.",
+    long: "Classic Canvas provides timeless style and comfort. Lightweight, durable canvas material ideal for casual wear.",
+    features: ["Durable canvas", "Lightweight", "Flexible sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
   },
+
+  variants: [
     {
-    id: 56,
-    name: "Classic Canvas",
-    type: "casual",
-    category: "Men",
-    price: 120,
-    colors: ["blue", "white", "grey"],
-    sizes: [38, 39, 40, 41, 42],
-    stock: 30,
-    rating: 4.5,
-    images: [
-      product56_img1,
-      product56_img2,
-      product56_img3,
-      product56_img4,
-      product56_img5
-    ]
-  },
+      color: "blue",
+      images: [product55_img1, product55_img2, product55_img3, product55_img4, product55_img5],
+      stockBySize: { 38: 6, 39: 6, 40: 6, 41: 6, 42: 6 }
+    },
     {
-    id: 57,
-    name: "Classic Canvas",
-    type: "casual",
-    category: "Men",
-    price: 120,
-    colors: ["blue", "white", "grey"],
-    sizes: [38, 39, 40, 41, 42],
-    stock: 30,
-    rating: 4.5,
-    images: [
-      product57_img1,
-      product57_img2,
-      product57_img3,
-      product57_img4,
-      product57_img5
-    ]
-  },
+      color: "white",
+      images: [product55_img1, product55_img2, product55_img3, product55_img4, product55_img5],
+      stockBySize: { 38: 6, 39: 6, 40: 6, 41: 6, 42: 6 }
+    },
     {
-    id: 58,
-    name: "Women Active Trainer",
-    category: "women",
-    type: "training",
-    price: 5600,
-    colors: ["pink", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 28,
-    rating: 4.7,
-    images: [
-      product58_img1,
-      product58_img2,
-      product58_img3,
-      product58_img4,
-      product58_img5
-    ],
+      color: "grey",
+      images: [product55_img1, product55_img2, product55_img3, product55_img4, product55_img5],
+      stockBySize: { 38: 6, 39: 6, 40: 6, 41: 6, 42: 6 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "canvas", "classic"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Classic Canvas - Timeless Canvas Shoes for Men",
+    description: "Durable and stylish canvas shoes perfect for casual everyday wear."
   },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
+},
+
+//  Product 56
+
+{
+  id: "classic-canvas-blue",
+  sku: "CC-MEN-056",
+  slug: "classic-canvas-blue-men-casual",
+
+  name: "Classic Canvas - Blue Edition",
+  brand: "Aero",
+
+  gender: "men",
+  category: "casual",
+  productType: "canvas",
+
+  price: { original: 120, sale: null, currency: "BDT" },
+
+  rating: 4.5,
+  reviewsCount: 20,
+
+  description: {
+    short: "Timeless canvas shoes for men in blue.",
+    long: "Classic Canvas - Blue Edition provides comfortable and stylish footwear for everyday use. Durable, lightweight canvas material ensures long-lasting wear.",
+    features: ["Durable canvas", "Lightweight", "Flexible sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
     {
-    id: 59,
-    name: "Women Active Trainer",
-    category: "women",
-    type: "training",
-    price: 5600,
-    colors: ["pink", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 28,
-    rating: 4.7,
-    images: [
-      product59_img1,
-      product59_img2,
-      product59_img3,
-      product59_img4,
-      product59_img5
-    ],
-  },
+      color: "blue",
+      images: [product56_img1, product56_img2, product56_img3, product56_img4, product56_img5],
+      stockBySize: { 38: 6, 39: 6, 40: 6, 41: 6, 42: 6 }
+    },
     {
-    id: 60,
-    name: "Women Active Trainer",
-    category: "women",
-    type: "training",
-    price: 5600,
-    colors: ["pink", "white"],
-    sizes: [36, 37, 38, 39, 40],
-    stock: 28,
-    rating: 4.7,
-    images: [
-      product60_img1,
-      product60_img2,
-      product60_img3,
-      product60_img4,
-      product60_img5
-    ],
+      color: "white",
+      images: [product56_img1, product56_img2, product56_img3, product56_img4, product56_img5],
+      stockBySize: { 38: 6, 39: 6, 40: 6, 41: 6, 42: 6 }
+    },
+    {
+      color: "grey",
+      images: [product56_img1, product56_img2, product56_img3, product56_img4, product56_img5],
+      stockBySize: { 38: 6, 39: 6, 40: 6, 41: 6, 42: 6 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "canvas", "classic"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Classic Canvas Blue - Timeless Canvas Shoes for Men",
+    description: "Durable and stylish canvas shoes for men in blue."
   },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
+},
+
+// Product 57
+
+{
+  id: "classic-canvas-grey",
+  sku: "CC-MEN-057",
+  slug: "classic-canvas-grey-men-casual",
+
+  name: "Classic Canvas - Grey Edition",
+  brand: "Aero",
+
+  gender: "men",
+  category: "casual",
+  productType: "canvas",
+
+  price: { original: 120, sale: null, currency: "BDT" },
+
+  rating: 4.5,
+  reviewsCount: 18,
+
+  description: {
+    short: "Classic canvas shoes for men in grey.",
+    long: "Classic Canvas - Grey Edition ensures everyday comfort with a timeless style. Lightweight, durable canvas provides flexible and stylish wear.",
+    features: ["Durable canvas", "Lightweight", "Flexible sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Canvas upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "blue",
+      images: [product57_img1, product57_img2, product57_img3, product57_img4, product57_img5],
+      stockBySize: { 38: 10, 39: 10, 40: 10, 41: 10, 42: 10 }
+    },
+    {
+      color: "white",
+      images: [product57_img1, product57_img2, product57_img3, product57_img4, product57_img5],
+      stockBySize: { 38: 10, 39: 10, 40: 10, 41: 10, 42: 10 }
+    },
+    {
+      color: "grey",
+      images: [product57_img1, product57_img2, product57_img3, product57_img4, product57_img5],
+      stockBySize: { 38: 10, 39: 10, 40: 10, 41: 10, 42: 10 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["men", "canvas", "classic"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Classic Canvas Grey - Timeless Canvas Shoes for Men",
+    description: "Durable and stylish canvas shoes for men in grey."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
+},
+
+// Product 58
+
+{
+  id: "women-active-trainer-pink",
+  sku: "WAT-WOM-058",
+  slug: "women-active-trainer-pink-women-training",
+
+  name: "Women Active Trainer - Pink Edition",
+  brand: "Aero",
+
+  gender: "women",
+  category: "training",
+  productType: "training",
+
+  price: { original: 5600, sale: null, currency: "BDT" },
+
+  rating: 4.7,
+  reviewsCount: 28,
+
+  description: {
+    short: "Active training shoes for women in pink.",
+    long: "Women Active Trainer - Pink Edition offers lightweight support and comfort for workouts and active lifestyles. Durable and stylish for all-day wear.",
+    features: ["Lightweight", "Breathable", "Cushioned sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      images: [product58_img1, product58_img2, product58_img3, product58_img4, product58_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 4 }
+    },
+    {
+      color: "white",
+      images: [product58_img1, product58_img2, product58_img3, product58_img4, product58_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 4 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["women", "training", "active"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Women Active Trainer Pink - Comfortable Training Shoes",
+    description: "Lightweight and stylish active trainer shoes for women."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
+},
+
+// Product 59
+
+{
+  id: "women-active-trainer-white",
+  sku: "WAT-WOM-059",
+  slug: "women-active-trainer-white-women-training",
+
+  name: "Women Active Trainer - White Edition",
+  brand: "Aero",
+
+  gender: "women",
+  category: "training",
+  productType: "training",
+
+  price: { original: 5600, sale: null, currency: "BDT" },
+
+  rating: 4.7,
+  reviewsCount: 28,
+
+  description: {
+    short: "Active training shoes for women in white.",
+    long: "Women Active Trainer - White Edition offers lightweight support and comfort for workouts and active lifestyles. Durable and stylish for all-day wear.",
+    features: ["Lightweight", "Breathable", "Cushioned sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      images: [product59_img1, product59_img2, product59_img3, product59_img4, product59_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 4 }
+    },
+    {
+      color: "white",
+      images: [product59_img1, product59_img2, product59_img3, product59_img4, product59_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 4 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["women", "training", "active"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Women Active Trainer White - Comfortable Training Shoes",
+    description: "Lightweight and stylish active trainer shoes for women."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
+},
+
+// Product 60
+
+{
+  id: "women-active-trainer-premium",
+  sku: "WAT-WOM-060",
+  slug: "women-active-trainer-premium-women-training",
+
+  name: "Women Active Trainer - Premium Edition",
+  brand: "Aero",
+
+  gender: "women",
+  category: "training",
+  productType: "training",
+
+  price: { original: 5600, sale: null, currency: "BDT" },
+
+  rating: 4.7,
+  reviewsCount: 28,
+
+  description: {
+    short: "Premium active trainer shoes for women.",
+    long: "Women Active Trainer - Premium Edition delivers ultimate comfort and durability for workouts. Sleek design, cushioned sole, and all-day wear ready.",
+    features: ["Premium finish", "Lightweight", "Breathable", "Cushioned sole"],
+    fitAndSizing: ["True to size", "Regular fit"],
+    materials: ["Synthetic upper", "Rubber sole"],
+    careInstructions: ["Wipe clean", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "pink",
+      images: [product60_img1, product60_img2, product60_img3, product60_img4, product60_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 4 }
+    },
+    {
+      color: "white",
+      images: [product60_img1, product60_img2, product60_img3, product60_img4, product60_img5],
+      stockBySize: { 36: 6, 37: 6, 38: 6, 39: 6, 40: 4 }
+    }
+  ],
+
+  availability: "inStock",
+  shippingInfo: { freeShipping: true, estimatedDelivery: "3-5 business days" },
+  returnPolicy: "14-day easy return",
+  warranty: "6-month warranty",
+
+  tags: ["women", "training", "premium"],
+  flags: { isBestseller: true, isFeatured: true },
+
+  meta: {
+    title: "Women Active Trainer Premium - Stylish & Comfortable Training Shoes",
+    description: "Premium active trainer shoes for women with cushioned sole and all-day comfort."
+  },
+
+  createdAt: "2025-02-23",
+  updatedAt: "2025-02-23"
+}
 
 ];

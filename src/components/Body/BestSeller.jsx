@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { products } from '../../data/productData';
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
+import { useSelector } from 'react-redux';
+import { selectBestSellers } from '../../features/products/productsSlice';
 
 
 
@@ -43,20 +44,20 @@ const BestSeller = () => {
         })
        }
     
-      //  product
-       const bestSellers = products.filter((item) => item.isBestseller)
+       // Products
+      const bestSellers = useSelector(selectBestSellers).slice(0, 10);
 
   return (
     <section className='mt-8 md:mt-14'>
-     <div class="w-full flex justify-center pb-8 relative">
+     <div className="w-full flex justify-center pb-8 relative">
     
 
-    <h1 class="font-Poppins text-xl md:text-2xl lg:text-3xl absolute left-1/2 transform -translate-x-1/2">
+    <h1 className="font-Poppins text-xl md:text-2xl lg:text-3xl absolute left-1/2 transform -translate-x-1/2">
       Our Bestsellers
     </h1>
 
 
-    <span class="absolute right-5 md:right-20 font-Poppins text-xs md:text-sm text-gray-800 hover:text-gray-500 border-b border-gray-400 cursor-pointer transition duration-300">
+    <span className="absolute right-5 md:right-20 font-Poppins text-xs md:text-sm text-gray-800 hover:text-gray-500 border-b border-gray-400 cursor-pointer transition duration-300">
       View All
     </span>
 
@@ -80,7 +81,7 @@ const BestSeller = () => {
            <div key={item.id} className='shrink-0 p-1 md:p-2'>
    
            <img
-           src={item.images[0]}
+           src={item.variants?.[0]?.images?.[0] || "placeholder.webp"}
            alt={item.name}
            onLoad={handleScroll}
            loading='lazy'
