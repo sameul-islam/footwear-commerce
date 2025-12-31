@@ -17,7 +17,7 @@ const Hero = () => {
     useEffect(() => {
          const interval = setInterval (() => {
             setisSlide((prev) => (prev + 1) % slideImage.length)
-         }, 5000);
+         }, 7000);
          return () => clearInterval(interval)
     }, []);
 
@@ -70,7 +70,7 @@ const Hero = () => {
                className="h-0.5 md:h-1 w-full bg-[#7f8fa6]"
                initial={{ scaleX: 0 }}
                animate={{ scaleX: 1 }}
-               transition={{ duration: 5, ease: "linear" }}
+               transition={{ duration: 7, ease: "linear" }}
                style={{ transformOrigin: "left" }}
               />
             </div>
