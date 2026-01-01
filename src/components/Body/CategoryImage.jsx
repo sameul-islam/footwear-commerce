@@ -8,7 +8,7 @@ const image = [
   {
     id: 1,
     img: Image1,
-    category: "KIDS"
+    category: "ELITE"
 
   },
   {

@@ -29,7 +29,7 @@ const Hero = () => {
            key={isSlide}
            src={slideImage[isSlide]} 
            alt="slideImage" 
-           className='w-full hero-image-xs hero-image h-[30vh] sm:h-[40vh] md:h-[55vh] lg:h-[70vh] xl:h-[80vh] 2xl:h-[83vh] object-cover rounded-t-xl md:rounded-t-2xl'
+           className='w-full hero-image-xs hero-image h-[30vh] sm:h-[40vh] md:h-[55vh] lg:h-[70vh] xl:h-[80vh] 2xl:h-[83vh] object-cover rounded-t-xl md:rounded-t-2xl rounded-b-sm md:rounded-b-md'
            initial={{ opacity: 0, scale: 1.05 }}
            animate={{ opacity: 1, scale: 1 }}
            exit={{ opacity: 0, scale: 0.98 }}
@@ -42,7 +42,7 @@ const Hero = () => {
          
          {/* Simple direction text */}
         <div className='mb-4 md:mb-8 xl:mb-12 text-center'>
-        <span className=' text-white/70 font-Lato font-light md:text-xl lg:text-2xl border border-white/70 rounded-full py-1 px-2'> EXPLORE NOW </span> 
+        <span className=' text-white/70 font-Lato md:text-xl lg:text-2xl'>Scroll to explore</span> 
         </div>
 
   
