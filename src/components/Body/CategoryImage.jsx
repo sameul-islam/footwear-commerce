@@ -8,23 +8,23 @@ const image = [
   {
     id: 1,
     img: Image1,
-    category: "ELITE"
+    category: "Sneakers"
 
   },
   {
     id: 2,
     img: Image2,
-    category: "MEN"
+    category: "Men"
   },
   {
     id: 3,
     img: Image3,
-    category: "WOMEN"
+    category: "Women"
   },
   {
     id: 4,
     img: Image4,
-    category: "FEATURED"
+    category: "Featured"
   },
 ];
 
