@@ -3,28 +3,32 @@ import Image1 from '../../assets/image/categoryImage1.webp'
 import Image2 from '../../assets/image/categoryImage2.webp'
 import Image3 from '../../assets/image/categoryImage3.webp'
 import Image4 from '../../assets/image/categoryImage4.webp'
+import { Link } from 'react-router-dom'
 
 const image = [
   {
     id: 1,
     img: Image1,
-    category: "Sneakers"
-
+    category: "Sneakers",
+    link: "/sneakers"
   },
   {
     id: 2,
     img: Image2,
-    category: "Men"
+    category: "Men",
+    link: "/men"
   },
   {
     id: 3,
     img: Image3,
-    category: "Women"
+    category: "Women",
+    link: "/women"
   },
   {
     id: 4,
     img: Image4,
-    category: "Featured"
+    category: "Featured",
+    link: "/featured"
   },
 ];
 
@@ -42,9 +46,9 @@ const CategoryImage = () => {
           loading='lazy'
           className='h-75 sm:h-90 md:h-130 lg:h-140 xl:h-150 w-full object-cover transform'
           />
-          <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-1 px-2 text-white hover:text-gray-700 text-sm font-Lato border-2 cursor-pointer rounded-full hover:bg-white transition duration-300 whitespace-nowrap'>
+       <Link to={item.link}>  <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-1 px-2 text-white hover:text-gray-700 text-sm font-Lato border-2 cursor-pointer rounded-full hover:bg-white transition duration-300 whitespace-nowrap'>
             {item.category}
-          </span>
+          </span> </Link> 
           </div>
         ))}
       </div>

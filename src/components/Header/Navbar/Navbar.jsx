@@ -111,9 +111,9 @@ const Navbar = () => {
       {/* Desktop Nav Part */}
      <div className='bg-white hidden xl:flex backdrop-blur-3xl justify-center items-center shadow-sm w-full text-[#2f3542] z-50'>
 
-      <div className=' cursor-pointer'>
+     <Link to="/" className=' cursor-pointer'>
         <img src={logo} alt="logo" />
-       </div>
+        </Link> 
 
          <div className=''>
           {/* TopUtility Row */}
@@ -203,9 +203,9 @@ const Navbar = () => {
 
          <div className='relative flex w-full justify-evenly'>
   
-          <div>
+         <Link to="/" className=' cursor-pointer'>
             <img src={logo} alt="logo" className='h-20 cursor-pointer' />
-          </div>
+          </Link> 
 
          <div onMouseLeave={() => setActiveMenu(null)}>
            {/* Menu Row */}
@@ -278,9 +278,9 @@ const Navbar = () => {
            </div>
           </div>
            
-            <div>
+            <Link to="/">
               <img src={logo} alt="logo" className='h-12 sm:h-14 md:h-16 lg:h-18'/>
-            </div>
+            </Link>
 
             <div className='flex items-center gap-5 md:gap-7 lg:gap-10'>
             <div>

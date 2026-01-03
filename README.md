@@ -62,3 +62,7 @@ Today, I carefully structured my product data in a clean and scalable way and pr
 ### Day 14 – December 30, 2025
 
 Today, I completely revamped my product objects and prepared the backend structure fully. I also fully set up Redux Toolkit, ensuring it is ready for managing product state efficiently. Additionally, I updated the Best Seller and Sneaker sections to fetch and display products directly from the Redux Toolkit store. Overall, I dedicated 14 hours of work today to accomplish these tasks.
+
+### Day 15 – January 3, 2026
+
+Today, I completed about half of the main product page. I also connected it from the homepage using the router.

@@ -165,7 +165,7 @@ const Footer = () => {
 
 
 
-      <div className='flex gap-4 md:gap-5 mt-5 md:mt-0 items-center justify-center lg:items-start lg:justify-start sm:p-8 md:p-20'>
+      <div className='flex gap-4 md:gap-5 mt-5 md:mt-0 items-center justify-center lg:items-start lg:justify-start sm:p-8 md:p-14 xl:p-12 xl:pl-30 2xl:pl-50'>
 
         <div className='inline-flex justify-center items-center cursor-pointer p-2 border rounded-full border-white/70 hover:border-white transition'>
         <SiInstagram  className='text-white/80 hover:text-white text-xl md:text-2xl transition'/>

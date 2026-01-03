@@ -49,6 +49,10 @@ import { createSlice, createSelector } from "@reduxjs/toolkit";
 import { products } from "../../data/productData";
 
 const initialState = {
+  allProducts: products,
+  filteredProducts: products,
+  viewMode: 3,
+
   products: products,
 
   filters: {
@@ -105,7 +109,14 @@ const productsSlice = createSlice ({
     resetFilters(state) {
       state.filters = initialState.filters;
       state.sortBy = "default";
-    }
+    },
+
+
+
+
+    setViewMode: (state, action) => {
+      state.viewMode = action.payload;
+    },
 
   }
 });
@@ -113,6 +124,9 @@ const productsSlice = createSlice ({
 export const { setGender, setProductType, setPriceRange, toggleSize, toggleColor, setRating, setAvailability, setSortBy, resetFilters } = productsSlice.actions;
 
 export default productsSlice.reducer;
+
+export const selectViewMode = (state) => state.products.viewMode;
+export const { setViewMode } = productsSlice.actions;
 
 
 
