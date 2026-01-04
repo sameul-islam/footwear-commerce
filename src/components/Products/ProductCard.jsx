@@ -24,7 +24,7 @@ const ProductCard = ({ product, view }) => {
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (
           <span className="absolute top-3 left-3 z-10 hidden md:block 
-            rounded-full bg-black/80 px-3 py-1 text-xs font-semibold text-white">
+            rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white">
             {isBestSeller ? "BEST SELLER" : "FEATURED"}
           </span>
         )}
@@ -51,7 +51,7 @@ const ProductCard = ({ product, view }) => {
           transition-transform duration-300 
           hidden md:block bg-white/95 backdrop-blur-md">
 
-          <div className="grid grid-cols-4 gap-2 p-3">
+          <div className="grid grid-cols-4 gap-1 p-3">
             {["40", "41", "42", "43"].map((size) => (
               <button
                 key={size}
