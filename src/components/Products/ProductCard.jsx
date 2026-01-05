@@ -15,17 +15,18 @@ const ProductCard = ({ product, view }) => {
 
 
 
+
   return (
-    <div className="group relative w-full cursor-pointer">
+    <div className="group relative w-[95%] mx-auto mt-10 md:mt-20 cursor-pointer">
 
       {/* IMAGE WRAPPER */}
-      <div className="relative aspect-4/5 overflow-hidden rounded-xl bg-gray-100">
+      <div className="relative overflow-hidden bg-[#f4f4f5]">
 
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (
-          <span className="absolute top-3 left-3 z-10 hidden md:block 
-            rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white">
-            {isBestSeller ? "BEST SELLER" : "FEATURED"}
+          <span className="absolute top-3 left-3 z-10 hidden md:block font-semibold
+             text-xs text-gray-500">
+            {isBestSeller ? "Best Seller" : "Featured"}
           </span>
         )}
 
@@ -46,18 +47,17 @@ const ProductCard = ({ product, view }) => {
         />
 
         {/* SIZE SELECTOR (Desktop Hover only) */}
-        <div className="absolute bottom-0 left-0 right-0 
+        <div className="absolute bottom-1 left-1 right-1 
           translate-y-full group-hover:translate-y-0 
           transition-transform duration-300 
-          hidden md:block bg-white/95 backdrop-blur-md">
+          hidden md:block">
 
-          <div className="grid grid-cols-4 gap-1 p-3">
+          <div className="">
             {["40", "41", "42", "43"].map((size) => (
               <button
                 key={size}
-                className="rounded-md border border-gray-300 
-                  py-1 text-sm font-medium 
-                  hover:bg-black hover:text-white transition"
+                className="
+                  p-1 text-xs text-gray-500 font-semibold font-Lora"
               >
                 {size}
               </button>
@@ -66,23 +66,21 @@ const ProductCard = ({ product, view }) => {
         </div>
 
         {/* MOBILE PLUS ICON */}
-        <div className="absolute bottom-3 right-3 z-10 flex md:hidden 
-          h-9 w-9 items-center justify-center 
-          rounded-full bg-black text-white">
-          <FiPlus />
+        <div className="absolute bottom-3 right-3 z-10 flex md:hidden">
+          <FiPlus size={14}/>
         </div>
       </div>
 
       {/* PRODUCT INFO */}
-      <div className="mt-3 flex items-start justify-between gap-3">
+      <div className="mt-3 px-3 flex flex-col md:flex-row items-start justify-between gap-1">
         <div>
-          <h3 className="text-sm font-semibold text-gray-900 leading-tight">
+          <h3 className="text-xs md:text-sm font-semibold font-Lato text-gray-900 leading-tight">
             {name}
           </h3>
           <p className="text-xs text-gray-500">{category}</p>
         </div>
 
-        <span className="text-sm font-semibold text-gray-900 whitespace-nowrap">
+        <span className="text-xs md:text-sm font-semibold font-PT text-gray-600 whitespace-nowrap">
           ${displayPrice}
         </span>
       </div>
