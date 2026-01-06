@@ -4,14 +4,14 @@ import { products } from "../../data/productData";
 const initialState = {
   allProducts: products,
   filteredProducts: products,
-  viewMode: 3,
+  viewMode: 2,
 
   products: products,
 
   filters: {
     gender: null,
     productType: null,
-    priceRange: [0, 1000],
+    priceRange: [0, 100000],
     sizes: [],
     colors: [],
     rating: null,
@@ -63,7 +63,6 @@ const productsSlice = createSlice ({
       state.filters = initialState.filters;
       state.sortBy = "default";
     },
-
 
 
 

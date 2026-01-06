@@ -20,11 +20,11 @@ const ProductCard = ({ product, view }) => {
     <div className="group relative w-[95%] mx-auto mt-10 md:mt-20 cursor-pointer">
 
       {/* IMAGE WRAPPER */}
-      <div className="relative overflow-hidden bg-[#f4f4f5]">
+      <div className="relative overflow-hidden bg-[#f4f4f5] -z-10">
 
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (
-          <span className="absolute top-3 left-3 z-10 hidden md:block font-semibold
+          <span className="absolute top-3 left-3 hidden md:block font-semibold
              text-xs text-gray-500">
             {isBestSeller ? "Best Seller" : "Featured"}
           </span>

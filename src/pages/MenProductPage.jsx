@@ -5,16 +5,27 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { setViewMode, selectViewMode } from '../features/products/productsSlice'
 import ProductGrid from '../components/Products/ProductGrid'
+import { useIsMobile } from '../components/Products/mobileView'
 
 const MenProductPage = () => {
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
+    const isMobile = useIsMobile();
+
+    // const changeView = () => {
+    //   dispatch(setViewMode(viewMode === 3 ? 1 : viewMode + 1))
+    // }
 
     const changeView = () => {
-      dispatch(setViewMode(viewMode === 4 ? 1 : viewMode + 1));
-    };  
+      if (isMobile) {
+        dispatch(setViewMode(viewMode === 2 ? 1 : 2));
+      } else {
+        dispatch(setViewMode(viewMode === 3 ? 1 : viewMode + 1));
+      }
+    };
 
     const products = useSelector(state => state.products.filteredProducts);
+
 
 
   return (
