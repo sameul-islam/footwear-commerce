@@ -1,5 +1,6 @@
 import { createSlice, createSelector } from "@reduxjs/toolkit";
 import { products } from "../../data/productData";
+import { flatten, unique } from "./filterUtils";
 
 const initialState = {
   allProducts: products,
@@ -19,6 +20,7 @@ const initialState = {
   },
 
   sortBy: "default",
+
 };
 
 const productsSlice = createSlice ({
@@ -182,3 +184,37 @@ export const selectProductBySlug = slug =>
   createSelector([selectProducts],
     products => products.find(p => p.slug === slug)
   );
+
+
+  
+
+
+  const selectAllProducts = (state) => state.products.allProducts;
+
+  export const selectFilterOptions = createSelector([selectAllProducts],(products) => {
+    // const genders = unique(products.map(p => p.gender));
+
+    const productTypes = unique(products.map(p => p.productType));
+
+    const prices = products.map(p => p.price.original);
+
+    const priceRange = {
+      min: Math.min(...prices),
+      max: Math.max(...prices)
+    };
+
+    const colors = unique(flatten(products.map(p => p.variants.map(v => v.color))));
+
+    const sizes = unique(flatten(products.map(p => p.variants.map(v => Object.keys(v.stockBySize).filter(size => v.stockBySize[size] > 0 ))))).sort((a, b) => a - b);
+
+    // const ratings =unique(products.map(p => Math.floor(p.rating))).sort((a, b) => b - a);
+
+    const availability = unique(products.map(p => p.availability));
+
+    const flags = unique(flatten(products.map(p => Object.keys(p.flags || {}).filter(key => p.flags[key]))));
+
+    return {
+      productTypes, priceRange, colors, sizes, availability, flags, 
+    };
+
+  });

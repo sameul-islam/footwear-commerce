@@ -17,10 +17,10 @@ const ProductCard = ({ product, view }) => {
 
 
   return (
-    <div className="group relative w-[95%] mx-auto mt-10 md:mt-20 cursor-pointer">
+    <div className="group relative cursor-pointer py-2">
 
       {/* IMAGE WRAPPER */}
-      <div className="relative overflow-hidden bg-[#f4f4f5] -z-10">
+      <div className="relative overflow-hidden rounded-md md:rounded-xl bg-[#f4f4f5] -z-10">
 
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (
@@ -34,6 +34,7 @@ const ProductCard = ({ product, view }) => {
         <img
           src={mainImage}
           alt={name}
+          loading="lazy"
           className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
         />
 
@@ -41,6 +42,7 @@ const ProductCard = ({ product, view }) => {
         <img
           src={hoverImage}
           alt={name}
+          loading="lazy"
           className="absolute inset-0 h-full w-full object-cover 
             opacity-0 transition-opacity duration-500 
             group-hover:opacity-100"
@@ -66,9 +68,9 @@ const ProductCard = ({ product, view }) => {
         </div>
 
         {/* MOBILE PLUS ICON */}
-        <div className="absolute bottom-3 right-3 z-10 flex md:hidden">
+        {/* <div className="absolute bottom-3 right-3 z-10 flex md:hidden">
           <FiPlus size={14}/>
-        </div>
+        </div> */}
       </div>
 
       {/* PRODUCT INFO */}

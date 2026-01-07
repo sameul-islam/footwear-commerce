@@ -9,7 +9,7 @@ const ProductGrid = ({ products }) => {
 
   return (
     <div
-      className={`grid ${gridMap[viewMode]}`}
+      className={`grid ${gridMap[viewMode]} gap-1 p-1 md:gap-2 md:p-2`}
     >
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
