@@ -66,3 +66,7 @@ Today, I completely revamped my product objects and prepared the backend structu
 ### Day 15 – January 3, 2026
 
 Today, I completed about half of the main product page. I also connected it from the homepage using the router.
+
+### Day 16 – January 7, 2026
+
+I made significant changes to the product slice and fully prepared the Men Product Page. While some design elements are still missing, all filters and logical funcitonalities are fully implemented and working correctly.
