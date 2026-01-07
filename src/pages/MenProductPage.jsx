@@ -3,7 +3,7 @@ import { BsSliders2 } from 'react-icons/bs'
 import { MdGridView } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { setViewMode, selectViewMode, selectFeaturedProducts, selectFilteredProducts } from '../features/products/productsSlice'
+import { setViewMode, selectViewMode, selectMenProducts } from '../features/products/productsSlice'
 import ProductGrid from '../components/Products/ProductGrid'
 import { useIsMobile } from '../components/Products/mobileView'
 import FilterDrawer from '../components/Products/FilterDrawer/FilterDrawer'
@@ -29,7 +29,7 @@ const MenProductPage = () => {
       }
     };
 
-    const products = useSelector(selectFilteredProducts);
+    const products = useSelector(selectMenProducts);
 
 
 
