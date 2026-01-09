@@ -9,12 +9,12 @@ const FlagsFilter = () => {
   const { flags } = useSelector(selectFilterOptions);
 
   return (
-    <FilterSection title="Special">
+    <FilterSection title="SPECIAL">
       <div className="flex flex-wrap gap-2">
         {flags.map(flag => (
           <button
             key={flag}
-            className="px-3 py-1 border rounded text-sm font-Outfit bg-gray-100 hover:bg-green-500 hover:text-white transition"
+            className="px-3 py-1 border border-gray-300 rounded-br-md rounded-tl-md rounded-bl-lg rounded-tr-xl text-sm font-Outfit hover:bg-gray-700 hover:text-gray-50 transition"
             onClick={() => dispatch(setSortBy(flag))}
           >
             {flag.replace("is", "")}

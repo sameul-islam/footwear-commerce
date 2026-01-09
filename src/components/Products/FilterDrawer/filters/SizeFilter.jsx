@@ -10,14 +10,14 @@ const SizeFilter = () => {
   const selectedSizes = useSelector(state => state.products.filters.sizes);
 
   return (
-    <FilterSection title="Sizes">
+    <FilterSection title="SIZE">
       <div className="flex flex-wrap gap-2">
         {sizes.map(size => (
           <button
             key={size}
             className={`
-              px-2 py-1 border rounded text-sm font-Outfit
-              ${selectedSizes.includes(size) ? "bg-green-500 text-white border-green-500" : "border-gray-300 text-gray-700"}
+              px-2 py-1 border rounded-full rounded-tr-none text-sm font-Lora font-semibold
+              ${selectedSizes.includes(size) ? "bg-black/70 text-gray-50 border-gray-900" : "border-gray-300 text-gray-600"}
               transition
             `}
             onClick={() => dispatch(toggleSize(size))}

@@ -6,7 +6,7 @@ const FilterSection = ({ title, children }) => {
       <h3 className='text-sm font-semibold text-gray-800 mb-3 font-Outfit'>
         {title}
       </h3>
-      <div className='space-y-2'>
+      <div className='space-y-2 space-x-2'>
         {children}
       </div>
     </div>

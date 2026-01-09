@@ -10,9 +10,9 @@ import FilterDrawer from '../components/Products/FilterDrawer/FilterDrawer'
 import ProductTypeFilter from '../components/Products/FilterDrawer/filters/ProductTypeFilter'
 import PriceRangeFilter from '../components/Products/FilterDrawer/filters/PriceRangeFilter'
 import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter'
-import AvailabilityFilter from '../components/Products/FilterDrawer/filters/AvailabilityFilter'
 import FlagsFilter from '../components/Products/FilterDrawer/filters/FlagsFilter'
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
+import banner from '../assets/image/menbanner.jpg'
 
 const MenProductPage = () => {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -40,9 +40,14 @@ const MenProductPage = () => {
       <div className=' bg-[#7FAE8C] w-full p-5 flex items-center justify-center font-Libre text-white'>
         <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>Men</span>
       </div>
+
+      {/* banner */}
+      <div className='w-full'>
+        <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full' />
+      </div>
   
       {/* Filter & Grid view */}
-      <div className='flex w-[92%] mx-auto rounded-full bg-gray-50 border-t border-b border-gray-100 items-center justify-between mt-2 md:mt-5 p-2 md:p-4 px-3 lg:px-8 mb-10 md:mb-20'>
+      <div className='flex w-[92%] mx-auto rounded-full bg-gray-50 border-t border-b border-gray-100 items-center justify-between mt-2 md:mt-5 p-2 md:p-4 px-3 lg:px-8 mb-5'>
          <div onClick={() => setIsFilterOpen(true)} className='flex items-center gap-1 md:gap-2 cursor-pointer'>
           <span className='md:border border-gray-500 rounded-full p-2'> <BsSliders2 className='text-gray-700'/></span> <span className='font-Outfit font-semibold text-gray-700'>FILTER & SORT</span> <span className='text-gray-500 font-Lato text-sm'>(50 products)</span>
          </div>
@@ -56,6 +61,17 @@ const MenProductPage = () => {
 
      <ProductGrid products={products}/>
 
+     {/* bottom part */}
+     <div className='my-8 text-center max-w-5xl mx-auto'>
+      <h1 className='text-3xl md:text-5xl font-Outfit text-gray-600 font-extralight'>Explore others collections</h1>
+       <div className='grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center p-10 font-Unna'>
+        <Link to='/women' className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Womens </Link>
+        <Link to="/sneakers" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Sneakers</Link>
+        <Link to="/bestsellers" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>BestSellers</Link>
+        <Link to="/featureds" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Featureds</Link>
+       </div>
+     </div>
+
     
     {/* Filter Drawer */}
     <FilterDrawer isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)}>
@@ -63,7 +79,6 @@ const MenProductPage = () => {
       <PriceRangeFilter/>
       <SizeFilter/>
       <ColorFilter/>
-      <AvailabilityFilter/>
       <FlagsFilter/>
     </FilterDrawer>
   

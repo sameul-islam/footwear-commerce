@@ -20,7 +20,7 @@ const ProductCard = ({ product, view }) => {
     <div className="group relative cursor-pointer py-2">
 
       {/* IMAGE WRAPPER */}
-      <div className="relative overflow-hidden rounded-md md:rounded-xl bg-[#f4f4f5] -z-10">
+      <div className="relative overflow-hidden rounded-md md:rounded-xl border border-gray-100 -z-10">
 
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (
@@ -35,7 +35,7 @@ const ProductCard = ({ product, view }) => {
           src={mainImage}
           alt={name}
           loading="lazy"
-          className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+          className="h-full w-full object-cover transition-opacity duration-700 group-hover:opacity-0"
         />
 
         {/* HOVER IMAGE (index 4) */}
@@ -44,14 +44,14 @@ const ProductCard = ({ product, view }) => {
           alt={name}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover 
-            opacity-0 transition-opacity duration-500 
+            opacity-0 transition-opacity duration-700 
             group-hover:opacity-100"
         />
 
         {/* SIZE SELECTOR (Desktop Hover only) */}
         <div className="absolute bottom-1 left-1 right-1 
           translate-y-full group-hover:translate-y-0 
-          transition-transform duration-300 
+          transition-transform duration-500 
           hidden md:block">
 
           <div className="">

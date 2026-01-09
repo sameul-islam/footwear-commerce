@@ -10,14 +10,14 @@ const ProductTypeFilter = () => {
   const selectedType = useSelector(state => state.products.filters.productType);
 
   return (
-    <FilterSection title="Product Type">
+    <FilterSection title="MATERIAL">
       {productTypes.map(type => (
         <button
           key={type}
           className={`
-            px-3 py-1 rounded-full border
-            ${selectedType === type ? "bg-green-500 text-white" : "border-gray-300 text-gray-700"}
-            text-sm font-Outfit font-semibold
+            px-3 py-1 rounded-xs border
+            ${selectedType === type ? "bg-black/70 text-gray-50" : "border-gray-300 text-gray-600"}
+            text-sm font-Outfit md:font-semibold
             transition
           `}
           onClick={() => dispatch(setProductType(selectedType === type ? null : type))}

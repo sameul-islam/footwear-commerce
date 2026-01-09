@@ -64,17 +64,20 @@
 import React from 'react'
 import ImageWomen from '../../assets/image/women.webp'
 import ImageMen from '../../assets/image/men.webp'
+import { Link } from 'react-router-dom';
 
 const genderImage = [
   {
     id: 1,
     category: "Women",
-    image: ImageWomen
+    image: ImageWomen,
+    link: '/women'
   },
   {
     id: 2,
     category: "Men",
-    image: ImageMen
+    image: ImageMen,
+    link: '/men'
   },
 ];
 
@@ -92,12 +95,12 @@ const Gender = () => {
             key={item.id}
             className="w-full md:w-1/2 overflow-hidden rounded-xl sm:rounded-2xl cursor-pointer"
           >
-            <img
+          <Link to={item.link}>  <img
               src={item.image}
               alt={item.category}
               loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-            />
+              className="w-full h-full object-cover transition-transform duration-1500 ease-linear hover:scale-110"
+            /> </Link>
           </div>
         ))}
       </div>

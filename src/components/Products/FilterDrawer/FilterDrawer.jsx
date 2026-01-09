@@ -25,7 +25,7 @@ const FilterDrawer = ({ isOpen, onClose, children }) => {
           transition={{ type: "tween", duration: 0.35 }}
           >
             {/* Header */}
-            <div className='flex items-center justify-between px-5 py-4 border-b border-gray-400'>
+            <div className='flex items-center justify-between px-5 py-4 border-b-2 border-[#7FAE8C]'>
               <h2 className='text-lg text-gray-600 font-semibold font-Outfit'>
                 Filter & Sort
               </h2>
@@ -54,7 +54,7 @@ const FilterDrawer = ({ isOpen, onClose, children }) => {
           transition={{ type: "tween", duration: 0.35 }}
           >
             {/* Header */}
-            <div className='flex items-center justify-between px-5 py-4 border-b border-gray-400'>
+            <div className='flex items-center justify-between px-5 py-4 border-b-2 border-[#7FAE8C]'>
               <h2 className='text-lg text-gray-600 font-semibold font-Outfit'>
                 Filter & Sort
               </h2>

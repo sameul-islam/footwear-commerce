@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import FilterSection from "../FilterSection";
 import { selectFilterOptions, setPriceRange } from "../../../../features/products/productsSlice";
+import { MdOutlineCompareArrows } from "react-icons/md";
 
 const PriceRangeFilter = () => {
   const dispatch = useDispatch();
@@ -25,24 +26,24 @@ const PriceRangeFilter = () => {
   };
 
   return (
-    <FilterSection title="Price">
-      <div className="flex items-center gap-2">
+    <FilterSection title="SORT BY PRICE">
+      <div className="flex items-center gap-2 font-Libre text-gray-600">
         <input
           type="number"
           name="min"
           placeholder="Min"
           value={range[0] === null ? "" : range[0]}
           onChange={handleChange}
-          className="border p-1 rounded w-1/2"
+          className="border border-gray-300 rounded-tl-2xl rounded-br-2xl p-1 px-3 w-1/2"
         />
-        <span>-</span>
+        <span><MdOutlineCompareArrows size={20}/></span>
         <input
           type="number"
           name="max"
           placeholder="Max"
           value={range[1] === null ? "" : range[1]}
           onChange={handleChange}
-          className="border p-1 rounded w-1/2"
+          className="border border-gray-300 rounded-tl-2xl rounded-br-2xl p-1 px-3 w-1/2"
         />
       </div>
     </FilterSection>

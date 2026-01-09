@@ -10,15 +10,15 @@ const ColorFilter = () => {
   const selectedColors = useSelector(state => state.products.filters.colors);
 
   return (
-    <FilterSection title="Colors">
+    <FilterSection title="COLORS">
       <div className="flex flex-wrap gap-2">
         {colors.map(color => (
           <button
             key={color}
             className={`
-              w-6 h-6 rounded-full border 
-              ${selectedColors.includes(color) ? "border-green-500" : "border-gray-300"}
-              transition
+              w-6 h-6 border-2 p-1 
+              ${selectedColors.includes(color) ? "border-gray-900 rounded-lg" : "border-gray-100"}
+              transition duration-500
             `}
             style={{ backgroundColor: color }}
             onClick={() => dispatch(toggleColor(color))}
