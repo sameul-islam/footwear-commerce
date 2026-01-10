@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
 import { useSelector } from 'react-redux';
 import { selectBestSellers } from '../../features/products/productsSlice';
+import { Link } from 'react-router-dom';
 
 
 
@@ -57,9 +58,9 @@ const BestSeller = () => {
     </h1>
 
 
-    <span className="absolute right-5 md:right-20 font-Poppins text-xs md:text-sm text-gray-800 hover:text-gray-500 border-b border-gray-400 cursor-pointer transition duration-300">
+    <Link to="/bestsellers" className="absolute right-5 md:right-20 font-Poppins text-xs md:text-sm text-gray-800 hover:text-gray-500 border-b border-gray-400 cursor-pointer transition duration-300">
       View All
-    </span>
+    </Link>
 
   </div>
 

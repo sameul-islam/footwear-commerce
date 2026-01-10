@@ -1,7 +1,7 @@
 import React from "react";
 import { FiPlus } from "react-icons/fi";
 
-const ProductCard = ({ product, view }) => {
+const ProductCard = ({ product }) => {
   const { name, category, price, variants } = product;
 
   const primaryImages = variants?.[0]?.images || [];
@@ -21,7 +21,7 @@ const ProductCard = ({ product, view }) => {
     <div className="group relative cursor-pointer py-2">
 
       {/* IMAGE WRAPPER */}
-      <div className="relative overflow-hidden rounded-md md:rounded-xl border border-gray-100 -z-10">
+      <div className="relative overflow-hidden rounded-md md:rounded-xl bg-gray-50 border border-gray-100 -z-10">
 
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (

@@ -28,7 +28,7 @@ const image = [
     id: 4,
     img: Image4,
     category: "Featured",
-    link: "/featured"
+    link: "/featureds"
   },
 ];
 

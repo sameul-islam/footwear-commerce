@@ -17,6 +17,7 @@ const initialState = {
     colors: [],
     availability: null,
     flags: [],
+    gender: null,
   },
 
   sortBy: "default",
@@ -55,6 +56,10 @@ const productsSlice = createSlice ({
       state.filters.flags.includes(flag) ? state.filters.flags = state.filters.flags.filter(f => f !== flag) : state.filters.flags.push(flag);
     },
 
+    setGender(state, action) {
+      state.filters.gender = action.payload;
+    },
+
     setSortBy(state, action) {
       state.sortBy = action.payload;
     },
@@ -71,7 +76,7 @@ const productsSlice = createSlice ({
   }
 });
 
-export const { setProductType, setPriceRange, toggleSize, toggleColor,toggleFlag, setAvailability, setSortBy, resetFilters, setViewMode } = productsSlice.actions;
+export const { setProductType, setPriceRange, toggleSize, toggleColor,toggleFlag,setGender, setAvailability, setSortBy, resetFilters, setViewMode } = productsSlice.actions;
 
 export default productsSlice.reducer;
 
@@ -81,15 +86,17 @@ export const selectViewMode = (state) => state.products.viewMode;
 // Filters and sorts products for UI rendering. Applies all active filters (type, price, size, color, availability) and returns the final product list shown in ProductGrid.  ( Making filtering )
 const selectProducts = state => state.products.products;
 const selectFilters = state => state.products.filters;
-const selectSortBy = state => state.products.sortBy;
 
 export const selectFilteredProducts = createSelector(
-  [selectProducts, selectFilters, selectSortBy],
-  (products, filters, sortBy) => {
+  [selectProducts, selectFilters],
+  (products, filters) => {
     let result = [...products];
 
     if (filters.productType)
       result = result.filter(p => p.productType === filters.productType);
+
+    if (filters.gender)
+      result = result.filter(p => p.gender === filters.gender);
 
     result = result.filter(p =>
       p.price.original >= filters.priceRange[0] &&
@@ -107,18 +114,6 @@ export const selectFilteredProducts = createSelector(
       result = result.filter(p =>
         p.variants.some(v => filters.colors.includes(v.color))
       );
-
-    if (filters.availability)
-      result = result.filter(p => p.availability === filters.availability);
-
-    if (sortBy === "price-low")
-      result.sort((a, b) => a.price.original - b.price.original);
-
-    if (sortBy === "price-high")
-      result.sort((a, b) => b.price.original - a.price.original);
-
-    if (filters.flags.length)
-      result = result.filter(p => filters.flags.some(f => p.flags[f]));
 
     return result;
   }
@@ -151,10 +146,6 @@ export const selectBestSellers = createSelector(
   products => products.filter(p => p.flags.isBestseller)
 );
 
-export const selectProductBySlug = slug =>
-  createSelector([selectFilteredProducts],
-    products => products.find(p => p.slug === slug)
-  );
 
 
   
@@ -177,18 +168,10 @@ export const selectProductBySlug = slug =>
 
     const sizes = unique(flatten(products.map(p => p.variants.map(v => Object.keys(v.stockBySize).filter(size => v.stockBySize[size] > 0 ))))).sort((a, b) => a - b);
 
-    const availability = unique(products.map(p => p.availability));
-
-    const flags = unique(flatten(products.map(p => Object.keys(p.flags || {}).filter(key => p.flags[key]))));
-
-    const sortOptions = [
-      { label: "Default", value: "default" },
-      { label: "Price Low → High", value: "price-low" },
-      { label: "Price High → Low", value: "price-high" },
-    ]
+    const genders = unique(products.map(p => p.gender));
 
     return {
-      productTypes, priceRange, colors, sizes, availability, flags, sortOptions
+      productTypes, priceRange, colors, sizes, genders
     };
 
   });

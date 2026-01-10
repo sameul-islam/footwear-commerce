@@ -1013,15 +1013,15 @@ export const products = [
 // Product 9
 
 {
-  id: "kids-fun-canvas",
-  sku: "KFC-KIDS-009",
-  slug: "kids-fun-canvas-kids-casual-shoes",
+  id: "women-fun-canvas",
+  sku: "KFC-WOMEN-009",
+  slug: "women-fun-canvas-kids-casual-shoes",
 
-  name: "Kids Fun Canvas",
+  name: "Women Fun Canvas",
   brand: "Aero",
 
-  gender: "kids",
-  category: "kids",
+  gender: "women",
+  category: "women",
   productType: "canvas",
 
   price: {
@@ -1035,7 +1035,7 @@ export const products = [
 
   description: {
     short: "Colorful canvas shoes for playful kids.",
-    long: "Kids Fun Canvas brings comfort, fun, and durability for everyday adventures. Lightweight and flexible construction makes running and playing effortless.",
+    long: "women Fun Canvas brings comfort, fun, and durability for everyday adventures. Lightweight and flexible construction makes running and playing effortless.",
     features: ["Colorful canvas upper", "Flexible rubber sole", "Breathable lining"],
     fitAndSizing: ["True to size", "Comfort fit"],
     materials: ["Canvas fabric", "Rubber sole"],
@@ -1065,12 +1065,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["kids", "casual", "fun"],
+  tags: ["women", "casual", "fun"],
   flags: { isBestseller: false, isFeatured: false },
 
   meta: {
-    title: "Kids Fun Canvas - Casual Shoes for Kids",
-    description: "Colorful, lightweight, and fun canvas shoes for children."
+    title: "Women Fun Canvas - Casual Shoes for Kids",
+    description: "Colorful, lightweight, and fun canvas shoes for Women."
   },
 
   createdAt: "2025-01-26",
@@ -1080,15 +1080,15 @@ export const products = [
 // Product 10
 
 {
-  id: "kids-canvas-slip-on",
-  sku: "KCS-KIDS-010",
-  slug: "kids-canvas-slip-on-casual-shoes",
+  id: "women-canvas-slip-on",
+  sku: "WOMEN-KIDS-010",
+  slug: "women-canvas-slip-on-casual-shoes",
 
-  name: "Kids Canvas Slip-On",
+  name: "women Canvas Slip-On",
   brand: "Aero",
 
-  gender: "kids",
-  category: "kids",
+  gender: "women",
+  category: "women",
   productType: "canvas",
 
   price: {
@@ -1101,8 +1101,8 @@ export const products = [
   reviewsCount: 52,
 
   description: {
-    short: "Easy-wear slip-on shoes for kids.",
-    long: "Kids Canvas Slip-On combines convenience and comfort for young feet. Lightweight and flexible, perfect for school and playtime.",
+    short: "Easy-wear slip-on shoes for womens.",
+    long: "Womens Canvas Slip-On combines convenience and comfort for young feet. Lightweight and flexible, perfect for school and playtime.",
     features: ["Slip-on design", "Lightweight canvas upper", "Flexible sole"],
     fitAndSizing: ["True to size", "Comfort fit"],
     materials: ["Canvas fabric", "Rubber sole"],
@@ -1132,12 +1132,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["kids", "casual", "easy-wear"],
+  tags: ["woemns", "casual", "easy-wear"],
   flags: { isBestseller: false, isFeatured: false },
 
   meta: {
-    title: "Kids Canvas Slip-On - Casual Shoes for Kids",
-    description: "Lightweight and easy-wear slip-on canvas shoes for children."
+    title: "Womens Canvas Slip-On - Casual Shoes for Womens",
+    description: "Lightweight and easy-wear slip-on canvas shoes for womens."
   },
 
   createdAt: "2025-01-27",
@@ -1647,14 +1647,14 @@ export const products = [
 // Product 19
 
 {
-  id: "kids-fun-runner",
-  sku: "KFR-KIDS-019",
-  slug: "kids-fun-runner-kids-running-shoes",
+  id: "womens-fun-runner",
+  sku: "KFR-WOMENS-019",
+  slug: "womens-fun-runner-kids-running-shoes",
 
-  name: "Kids Fun Runner",
+  name: "Womens Fun Runner",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "running",
   productType: "running",
 
@@ -1664,8 +1664,8 @@ export const products = [
   reviewsCount: 50,
 
   description: {
-    short: "Fun and comfortable running shoes for kids.",
-    long: "Kids Fun Runner is designed for active children with cushioned insoles and lightweight soles. Vibrant colors make them appealing to kids.",
+    short: "Fun and comfortable running shoes for womens.",
+    long: "Womens Fun Runner is designed for active girls with cushioned insoles and lightweight soles. Vibrant colors make them appealing to kids.",
     features: ["Breathable upper", "Lightweight sole", "Cushioned insole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Textile", "Rubber sole"],
@@ -1690,12 +1690,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["running", "kids", "sports"],
+  tags: ["running", "womens", "sports"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids Fun Runner - Kids Running Shoes",
-    description: "Lightweight and fun running shoes for kids."
+    title: "Womens Fun Runner - Kids Running Shoes",
+    description: "Lightweight and fun running shoes for womens."
   },
 
   createdAt: "2025-02-05",
@@ -1705,14 +1705,14 @@ export const products = [
 // Product 20
 
 {
-  id: "kids-school-shoe",
-  sku: "KSS-KIDS-020",
-  slug: "kids-school-shoe-kids-formal-shoes",
+  id: "womens-school-shoe",
+  sku: "KSS-WOMENS-020",
+  slug: "womens-school-shoe-womens-formal-shoes",
 
-  name: "Kids School Shoe",
+  name: "Womens School Shoe",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "formal",
   productType: "formal",
 
@@ -1722,8 +1722,8 @@ export const products = [
   reviewsCount: 65,
 
   description: {
-    short: "Durable and comfortable school shoes for kids.",
-    long: "Kids School Shoe offers superior support and durability for everyday school use. Soft insole and firm sole ensures comfort and stability.",
+    short: "Durable and comfortable school shoes for womens.",
+    long: "Womens School Shoe offers superior support and durability for everyday school use. Soft insole and firm sole ensures comfort and stability.",
     features: ["Genuine leather upper", "Non-slip rubber sole", "Cushioned insole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Leather", "Rubber sole"],
@@ -1743,12 +1743,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["formal", "kids", "school"],
+  tags: ["formal", "womens", "school"],
   flags: { isBestseller: true, isFeatured: true },
 
   meta: {
-    title: "Kids School Shoe - Kids Formal Shoes",
-    description: "Durable and comfortable formal shoes for kids."
+    title: "Womens School Shoe - Womens Formal Shoes",
+    description: "Durable and comfortable formal shoes for womens."
   },
 
   createdAt: "2025-02-06",
@@ -2222,14 +2222,14 @@ export const products = [
 // product 29
 
 {
-  id: "kids-sport-sneaker",
-  sku: "KSS-KIDS-029",
-  slug: "kids-sport-sneaker-kids-sneakers",
+  id: "womens-sport-sneaker",
+  sku: "KSS-WOMENS-029",
+  slug: "womens-sport-sneaker-womens-sneakers",
 
-  name: "Kids Sport Sneaker",
+  name: "Womens Sport Sneaker",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "sneakers",
   productType: "sneakers",
 
@@ -2239,8 +2239,8 @@ export const products = [
   reviewsCount: 35,
 
   description: {
-    short: "Durable and comfortable sneakers for active kids.",
-    long: "Kids Sport Sneaker is designed for durability, support, and comfort. Lightweight sole and breathable upper help kids stay active all day.",
+    short: "Durable and comfortable sneakers for active womens.",
+    long: "Womens Sport Sneaker is designed for durability, support, and comfort. Lightweight sole and breathable upper help womens stay active all day.",
     features: ["Breathable upper", "Cushioned insole", "Durable outsole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Textile", "Rubber sole"],
@@ -2265,12 +2265,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["sneakers", "kids", "sport"],
+  tags: ["sneakers", "womens", "sport"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids Sport Sneaker - Premium Kids Sneakers",
-    description: "Comfortable and durable sneakers for active kids."
+    title: "Womens Sport Sneaker - Premium Womens Sneakers",
+    description: "Comfortable and durable sneakers for active womens."
   },
 
   createdAt: "2025-02-15",
@@ -2280,14 +2280,14 @@ export const products = [
 // Product 30
 
 {
-  id: "kids-casual-slip",
-  sku: "KCS-KIDS-030",
-  slug: "kids-casual-slip-kids-slip-on",
+  id: "womens-casual-slip",
+  sku: "KCS-WOMENS-030",
+  slug: "womens-casual-slip-womens-slip-on",
 
-  name: "Kids Casual Slip",
+  name: "womens Casual Slip",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "slip-on",
   productType: "slip-on",
 
@@ -2297,8 +2297,8 @@ export const products = [
   reviewsCount: 40,
 
   description: {
-    short: "Easy-to-wear slip-on shoes for casual kids outings.",
-    long: "Kids Casual Slip provides comfort and convenience with elastic upper and cushioned sole. Perfect for school and casual play.",
+    short: "Easy-to-wear slip-on shoes for casual Womens outings.",
+    long: "Womens Casual Slip provides comfort and convenience with elastic upper and cushioned sole. Perfect for school and casual play.",
     features: ["Elastic upper", "Cushioned footbed", "Durable sole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Textile", "Rubber sole"],
@@ -2327,8 +2327,8 @@ export const products = [
   flags: { isBestseller: true, isFeatured: true },
 
   meta: {
-    title: "Kids Casual Slip - Premium Kids Slip-On Shoes",
-    description: "Comfortable slip-on shoes for casual kids outings."
+    title: "Womens Casual Slip - Premium Womens Slip-On Shoes",
+    description: "Comfortable slip-on shoes for casual womens outings."
   },
 
   createdAt: "2025-02-16",
@@ -2686,14 +2686,14 @@ export const products = [
 // Product 37
 
 {
-  id: "kids-school-comfort",
-  sku: "KSC-KIDS-037",
-  slug: "kids-school-comfort-kids-formal",
+  id: "women-school-comfort",
+  sku: "KSC-WOMENS-037",
+  slug: "womens-school-comfort-womens-formal",
 
-  name: "Kids School Comfort",
+  name: "Womens School Comfort",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "formal",
   productType: "formal",
 
@@ -2703,8 +2703,8 @@ export const products = [
   reviewsCount: 42,
 
   description: {
-    short: "Comfortable formal shoes for school kids.",
-    long: "Kids School Comfort ensures durability and comfort throughout the school day. Soft padded insole and reinforced toe provide long-lasting wear.",
+    short: "Comfortable formal shoes for school womens.",
+    long: "Womens School Comfort ensures durability and comfort throughout the school day. Soft padded insole and reinforced toe provide long-lasting wear.",
     features: ["Padded insole", "Reinforced toe", "Non-slip sole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Synthetic upper", "Rubber sole"],
@@ -2724,12 +2724,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["formal", "kids", "school"],
+  tags: ["formal", "womens", "school"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids School Comfort - Kids Premium Formal Shoes",
-    description: "Durable and comfortable formal shoes for school kids."
+    title: "Womens School Comfort - Womens Premium Formal Shoes",
+    description: "Durable and comfortable formal shoes for school womens."
   },
 
   createdAt: "2025-02-22",
@@ -2739,14 +2739,14 @@ export const products = [
 //  Product 38
 
 {
-  id: "kids-outdoor-runner",
-  sku: "KOR-KIDS-038",
+  id: "womens-outdoor-runner",
+  sku: "KOR-WOMENS-038",
   slug: "kids-outdoor-runner-kids-running",
 
-  name: "Kids Outdoor Runner",
+  name: "Womens Outdoor Runner",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "running",
   productType: "running",
 
@@ -2756,8 +2756,8 @@ export const products = [
   reviewsCount: 36,
 
   description: {
-    short: "Durable and lightweight running shoes for kids.",
-    long: "Kids Outdoor Runner provides superior grip and comfort for active kids. Breathable mesh upper and cushioned sole ensure safe outdoor activity.",
+    short: "Durable and lightweight running shoes for womens.",
+    long: "Womens Outdoor Runner provides superior grip and comfort for active womens. Breathable mesh upper and cushioned sole ensure safe outdoor activity.",
     features: ["Breathable mesh upper", "Cushioned sole", "Non-slip outsole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Mesh upper", "Rubber sole"],
@@ -2782,12 +2782,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["running", "kids", "outdoor"],
+  tags: ["running", "womens", "outdoor"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids Outdoor Runner - Premium Running Shoes for Kids",
-    description: "Comfortable and durable running shoes designed for kids."
+    title: "Womens Outdoor Runner - Premium Running Shoes for womens",
+    description: "Comfortable and durable running shoes designed for womens."
   },
 
   createdAt: "2025-02-22",
@@ -2797,14 +2797,14 @@ export const products = [
 // Product 39
 
 {
-  id: "kids-easy-slip",
-  sku: "KES-KIDS-039",
-  slug: "kids-easy-slip-kids-slip-on",
+  id: "men-easy-slip",
+  sku: "KES-MENS-039",
+  slug: "mens-easy-slip-mens-slip-on",
 
-  name: "Kids Easy Slip",
+  name: "Mens Easy Slip",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "men",
   category: "slip-on",
   productType: "slip-on",
 
@@ -2814,8 +2814,8 @@ export const products = [
   reviewsCount: 40,
 
   description: {
-    short: "Simple and comfortable slip-on shoes for kids.",
-    long: "Kids Easy Slip makes getting ready effortless for children. Soft upper and flexible sole ensure comfort all day long.",
+    short: "Simple and comfortable slip-on shoes for mens.",
+    long: "Mens Easy Slip makes getting ready effortless for mens. Soft upper and flexible sole ensure comfort all day long.",
     features: ["Easy slip-on", "Flexible sole", "Soft upper"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Synthetic upper", "Rubber sole"],
@@ -2840,12 +2840,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["slip-on", "kids", "casual"],
+  tags: ["slip-on", "mens", "casual"],
   flags: { isBestseller: true, isFeatured: true },
 
   meta: {
-    title: "Kids Easy Slip - Premium Slip-On Shoes for Kids",
-    description: "Comfortable and easy-to-wear slip-on shoes for children."
+    title: "Mens Easy Slip - Premium Slip-On Shoes for mens",
+    description: "Comfortable and easy-to-wear slip-on shoes for mens."
   },
 
   createdAt: "2025-02-22",
@@ -2855,14 +2855,14 @@ export const products = [
 // Product 40
 
 {
-  id: "classic-kids-canvas",
-  sku: "CKC-KIDS-040",
-  slug: "classic-kids-canvas-kids-canvas",
+  id: "classic-mens-canvas",
+  sku: "CKC-MENS-040",
+  slug: "classic-mens-canvas-mens-canvas",
 
-  name: "Classic Kids Canvas",
+  name: "Classic Mens Canvas",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "men",
   category: "canvas",
   productType: "canvas",
 
@@ -2872,8 +2872,8 @@ export const products = [
   reviewsCount: 38,
 
   description: {
-    short: "Durable canvas shoes for kids.",
-    long: "Classic Kids Canvas provides comfort and durability for everyday use. Breathable canvas upper with non-slip sole makes it perfect for active kids.",
+    short: "Durable canvas shoes for mens.",
+    long: "Classic mens Canvas provides comfort and durability for everyday use. Breathable canvas upper with non-slip sole makes it perfect for active mens.",
     features: ["Canvas upper", "Non-slip sole", "Lightweight"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Canvas upper", "Rubber sole"],
@@ -2898,12 +2898,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "3-month warranty",
 
-  tags: ["canvas", "kids", "casual"],
+  tags: ["canvas", "mens", "casual"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Classic Kids Canvas - Premium Canvas Shoes for Kids",
-    description: "Durable and comfortable canvas shoes designed for children."
+    title: "Classic mens Canvas - Premium Canvas Shoes for Mens",
+    description: "Durable and comfortable canvas shoes designed for mens."
   },
 
   createdAt: "2025-02-22",
@@ -3261,14 +3261,14 @@ export const products = [
 // Product 47
 
 {
-  id: "kids-everyday-sneaker",
-  sku: "KES-KID-047",
-  slug: "kids-everyday-sneaker-kids-sneakers",
+  id: "womens-everyday-sneaker",
+  sku: "KES-WOMEN-047",
+  slug: "womens-everyday-sneaker-women-sneakers",
 
-  name: "Kids Everyday Sneaker",
+  name: "Womens Everyday Sneaker",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "sneakers",
   productType: "sneakers",
 
@@ -3278,8 +3278,8 @@ export const products = [
   reviewsCount: 40,
 
   description: {
-    short: "Comfortable and playful sneakers for kids.",
-    long: "Kids Everyday Sneaker is designed for comfort and fun. Perfect for school and playgrounds, with cushioned sole and lightweight design.",
+    short: "Comfortable and playful sneakers for womens.",
+    long: "Womens Everyday Sneaker is designed for comfort and fun. Perfect for school and playgrounds, with cushioned sole and lightweight design.",
     features: ["Lightweight design", "Cushioned sole", "Durable materials"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Synthetic upper", "Rubber sole"],
@@ -3304,12 +3304,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "6-month warranty",
 
-  tags: ["kids", "sneakers", "comfortable"],
+  tags: ["womens", "sneakers", "comfortable"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids Everyday Sneaker - Comfortable Sneakers",
-    description: "Playful and comfortable sneakers designed for daily use by kids."
+    title: "Womens Everyday Sneaker - Comfortable Sneakers",
+    description: "Playful and comfortable sneakers designed for daily use by womens."
   },
 
   createdAt: "2025-02-23",
@@ -3319,14 +3319,14 @@ export const products = [
 // Product 48
 
 {
-  id: "kids-soft-sandal",
-  sku: "KSS-KID-048",
-  slug: "kids-soft-sandal-kids-sandals",
+  id: "womens-soft-sandal",
+  sku: "KSS-WOMEN-048",
+  slug: "womens-soft-sandal-womens-sandals",
 
-  name: "Kids Soft Sandal",
+  name: "Womens Soft Sandal",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "sandals",
   productType: "sandals",
 
@@ -3336,8 +3336,8 @@ export const products = [
   reviewsCount: 28,
 
   description: {
-    short: "Lightweight and soft sandals for kids.",
-    long: "Kids Soft Sandal is designed for comfort and safety. Soft straps and cushioned footbed provide perfect support for little feet.",
+    short: "Lightweight and soft sandals for womens.",
+    long: "Womens Soft Sandal is designed for comfort and safety. Soft straps and cushioned footbed provide perfect support for little feet.",
     features: ["Soft straps", "Cushioned footbed", "Lightweight design"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Synthetic upper", "Rubber sole"],
@@ -3362,12 +3362,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "6-month warranty",
 
-  tags: ["kids", "sandals", "comfortable"],
+  tags: ["womens", "sandals", "comfortable"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids Soft Sandal - Comfortable Kids Sandals",
-    description: "Soft, lightweight sandals designed for kids' daily use."
+    title: "Womens Soft Sandal - Comfortable Womens Sandals",
+    description: "Soft, lightweight sandals designed for womens' daily use."
   },
 
   createdAt: "2025-02-23",
@@ -3377,14 +3377,14 @@ export const products = [
 // Product 49
 
 {
-  id: "kids-canvas-street",
-  sku: "KCS-KID-049",
-  slug: "kids-canvas-street-kids-canvas",
+  id: "womens-canvas-street",
+  sku: "KCS-WOMENS-049",
+  slug: "womens-canvas-street-womens-canvas",
 
-  name: "Kids Canvas Street",
+  name: "Womens Canvas Street",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "women",
   category: "canvas",
   productType: "canvas",
 
@@ -3394,8 +3394,8 @@ export const products = [
   reviewsCount: 25,
 
   description: {
-    short: "Classic canvas shoes for kids.",
-    long: "Kids Canvas Street offers durable and stylish canvas shoes for everyday wear. Comfortable fit and lightweight design for active kids.",
+    short: "Classic canvas shoes for womens.",
+    long: "Womens Canvas Street offers durable and stylish canvas shoes for everyday wear. Comfortable fit and lightweight design for active womens.",
     features: ["Durable canvas", "Lightweight design", "Flexible sole"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Canvas upper", "Rubber sole"],
@@ -3420,12 +3420,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "6-month warranty",
 
-  tags: ["kids", "canvas", "stylish"],
+  tags: ["womens", "canvas", "stylish"],
   flags: { isBestseller: false, isFeatured: true },
 
   meta: {
-    title: "Kids Canvas Street - Durable Kids Canvas Shoes",
-    description: "Stylish and durable canvas shoes for kids' everyday wear."
+    title: "Womens Canvas Street - Durable Womens Canvas Shoes",
+    description: "Stylish and durable canvas shoes for womens' everyday wear."
   },
 
   createdAt: "2025-02-23",
@@ -3435,14 +3435,14 @@ export const products = [
 // Product 50
 
 {
-  id: "kids-easy-walk-slip",
-  sku: "KEWS-KID-050",
-  slug: "kids-easy-walk-slip-kids-slip-on",
+  id: "mens-easy-walk-slip",
+  sku: "KEWS-MEN-050",
+  slug: "mens-easy-walk-slip-mens-slip-on",
 
-  name: "Kids Easy Walk Slip",
+  name: "Mens Easy Walk Slip",
   brand: "Aero",
 
-  gender: "kids",
+  gender: "men",
   category: "slip-on",
   productType: "slip-on",
 
@@ -3452,8 +3452,8 @@ export const products = [
   reviewsCount: 30,
 
   description: {
-    short: "Easy slip-on shoes for kids.",
-    long: "Kids Easy Walk Slip is perfect for quick on/off wear. Lightweight and cushioned for all-day comfort.",
+    short: "Easy slip-on shoes for womens.",
+    long: "Womens Easy Walk Slip is perfect for quick on/off wear. Lightweight and cushioned for all-day comfort.",
     features: ["Lightweight design", "Cushioned sole", "Easy slip-on"],
     fitAndSizing: ["True to size", "Regular fit"],
     materials: ["Synthetic upper", "Rubber sole"],
@@ -3478,12 +3478,12 @@ export const products = [
   returnPolicy: "14-day easy return",
   warranty: "6-month warranty",
 
-  tags: ["kids", "slip-on", "comfortable"],
+  tags: ["womens", "slip-on", "comfortable"],
   flags: { isBestseller: true, isFeatured: true },
 
   meta: {
-    title: "Kids Easy Walk Slip - Comfortable Kids Slip-On Shoes",
-    description: "Lightweight and cushioned slip-on shoes for kids."
+    title: "Womens Easy Walk Slip - Comfortable womens Slip-On Shoes",
+    description: "Lightweight and cushioned slip-on shoes for womens."
   },
 
   createdAt: "2025-02-23",

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsSliders2 } from 'react-icons/bs'
 import { MdGridView, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md'
 import { Link } from 'react-router-dom'
@@ -10,15 +10,23 @@ import FilterDrawer from '../components/Products/FilterDrawer/FilterDrawer'
 import ProductTypeFilter from '../components/Products/FilterDrawer/filters/ProductTypeFilter'
 import PriceRangeFilter from '../components/Products/FilterDrawer/filters/PriceRangeFilter'
 import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter'
-import FlagsFilter from '../components/Products/FilterDrawer/filters/FlagsFilter'
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
-import banner from '../assets/image/menbanner.jpg'
+import banner from '../assets/image/womenbanner.jpg'
+import Loader from '../components/Loader/Loader'
 
 const WomenProductPage = () => {
+    const [loading, setLoading] = useState(true);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
     const isMobile = useIsMobile();
+
+
+
+    useEffect(() => { 
+      const timer = setTimeout(() => setLoading(false), 1500);
+      return () => clearTimeout(timer);
+    }, []);
 
 
     const changeView = () => {
@@ -36,17 +44,19 @@ const WomenProductPage = () => {
 
 
   return (
-    <div className='w-full mt-15 md:mt-20 lg:mt-24 xl:mt-2'>
+     <>
+      { loading ? (<Loader/>) : (
+    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-2'>
       
       {/* header */}
-      <div className=' bg-[#7FAE8C] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-2xl '>
+      <div className=' bg-[#7FAE8C] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-xl md:rounded-t-2xl '>
         <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>Women</span>
       </div>
 
       {/* banner */}
       <div className='w-[99%] mx-auto'>
-        <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-2xl' />
-      </div>
+        <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-xl md:rounded-b-2xl' />
+      </div> 
   
       {/* Filter & Grid view */}
       <div className='flex w-[92%] mx-auto rounded-full bg-gray-50 border-t border-b border-gray-100 items-center justify-between mt-2 md:mt-5 p-2 md:p-4 px-3 lg:px-8 mb-5'>
@@ -81,10 +91,13 @@ const WomenProductPage = () => {
       <PriceRangeFilter/>
       <SizeFilter/>
       <ColorFilter/>
-      <FlagsFilter/>
     </FilterDrawer>
   
     </div>
+
+    )}
+
+    </>
   )
 }
 

@@ -3,7 +3,7 @@ import { BsSliders2 } from 'react-icons/bs'
 import { MdGridView, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { setViewMode, selectViewMode, selectMenProducts } from '../features/products/productsSlice'
+import { setViewMode, selectViewMode, selectSneakers, selectBestSellers } from '../features/products/productsSlice'
 import ProductGrid from '../components/Products/ProductGrid'
 import { useIsMobile } from '../components/Products/mobileView'
 import FilterDrawer from '../components/Products/FilterDrawer/FilterDrawer'
@@ -11,10 +11,10 @@ import ProductTypeFilter from '../components/Products/FilterDrawer/filters/Produ
 import PriceRangeFilter from '../components/Products/FilterDrawer/filters/PriceRangeFilter'
 import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter'
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
-import banner from '../assets/image/menbanner.jpg'
 import Loader from '../components/Loader/Loader'
+import GenderFilter from '../components/Products/FilterDrawer/filters/GenderFilter'
 
-const MenProductPage = () => {
+const BestsellersProductPage = () => {
     const [loading, setLoading] = useState(true);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const MenProductPage = () => {
       }
     };
 
-    const products = useSelector(selectMenProducts);
+    const products = useSelector(selectBestSellers);
     
     const qty = products.length;
 
@@ -49,13 +49,8 @@ const MenProductPage = () => {
     <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-2'>
       
       {/* header */}
-      <div className=' bg-[#7FAE8C] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-xl md:rounded-t-2xl '>
-        <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>Men</span>
-      </div>
-
-      {/* banner */}
-      <div className='w-[99%] mx-auto'>
-        <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-xl md:rounded-b-2xl' />
+      <div className=' bg-[#7FAE8C] w-full p-5 flex items-center justify-center font-Libre text-white '>
+        <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>BestSellers</span>
       </div>
   
       {/* Filter & Grid view */}
@@ -78,8 +73,8 @@ const MenProductPage = () => {
       <h1 className='text-3xl md:text-5xl font-Outfit text-gray-600 font-extralight'>Explore others collections</h1>
        <div className='grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center p-10 font-Unna'>
         <Link to='/women' className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Womens </Link>
+        <Link to="/men" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Mens</Link>
         <Link to="/sneakers" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Sneakers</Link>
-        <Link to="/bestsellers" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>BestSellers</Link>
         <Link to="/featureds" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Featureds</Link>
        </div>
      </div>
@@ -87,6 +82,7 @@ const MenProductPage = () => {
     
     {/* Filter Drawer */}
     <FilterDrawer isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)}>
+      <GenderFilter/>
       <ProductTypeFilter/>
       <PriceRangeFilter/>
       <SizeFilter/>
@@ -100,4 +96,4 @@ const MenProductPage = () => {
   )
 }
 
-export default MenProductPage
+export default BestsellersProductPage

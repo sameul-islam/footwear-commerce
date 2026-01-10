@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from '../components/Header/Hero/Hero'
 import Collection from '../components/Body/Collection'
 import BrandStatement from '../components/Body/BrandStatement'
@@ -8,10 +8,20 @@ import SpotLight from '../components/Body/SpotLight'
 import Sneaker from '../components/Body/Sneaker'
 import CategoryImage from '../components/Body/CategoryImage'
 import CraftSection from '../components/Body/CraftSection'
+import Loader from '../components/Loader/Loader'
 
 
 const Home = () => {
+   const [loading, setLoading] = useState(true);
+
+   useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+   }, []);
+
   return (
+    <>
+    {loading ? (<Loader/>) : (
     <div>
       <Hero/>
       <CraftSection/>
@@ -23,6 +33,8 @@ const Home = () => {
       <Collection/>
       <BrandStatement/>
     </div>
+    )}
+    </>
   )
 }
 

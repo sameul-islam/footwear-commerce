@@ -70,3 +70,7 @@ Today, I completed about half of the main product page. I also connected it from
 ### Day 16 – January 7, 2026
 
 I made significant changes to the product slice and fully prepared the Men Product Page. While some design elements are still missing, all filters and logical funcitonalities are fully implemented and working correctly.
+
+### Day 17 – January 10, 2026
+
+Today, I created several product pages, such as Sneakers, Women, Featured, and Best Sellers. I built these product pages and connected various links to them. Along with that, I implemented a loader file and also integrated a Chat AI.
