@@ -7,6 +7,7 @@ const ProductCard = ({ product, view }) => {
   const primaryImages = variants?.[0]?.images || [];
   const mainImage = primaryImages[0];
   const hoverImage = primaryImages[4] || primaryImages[1] || primaryImages[0];
+  const sizes = variants?.[0]?.stockBySize
 
   const isBestSeller = product?.flags?.isBestSeller;
   const isFeatured = product?.flags?.isFeatured;
@@ -54,15 +55,15 @@ const ProductCard = ({ product, view }) => {
           transition-transform duration-500 
           hidden md:block">
 
-          <div className="">
-            {["40", "41", "42", "43"].map((size) => (
-              <button
+          <div className="flex px-2">
+            {Object.keys(sizes || {}).map((size) => (
+              <div
                 key={size}
                 className="
-                  p-1 text-xs text-gray-500 font-semibold font-Lora"
+                  p-1 text-xs text-[#5d3321] opacity-75 font-semibold font-Lora"
               >
-                {size}
-              </button>
+               {size}
+              </div>
             ))}
           </div>
         </div>

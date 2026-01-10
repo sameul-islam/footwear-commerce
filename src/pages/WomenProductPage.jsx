@@ -3,7 +3,7 @@ import { BsSliders2 } from 'react-icons/bs'
 import { MdGridView, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { setViewMode, selectViewMode, selectMenProducts } from '../features/products/productsSlice'
+import { setViewMode, selectViewMode, selectWomenProducts } from '../features/products/productsSlice'
 import ProductGrid from '../components/Products/ProductGrid'
 import { useIsMobile } from '../components/Products/mobileView'
 import FilterDrawer from '../components/Products/FilterDrawer/FilterDrawer'
@@ -14,7 +14,7 @@ import FlagsFilter from '../components/Products/FilterDrawer/filters/FlagsFilter
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
 import banner from '../assets/image/menbanner.jpg'
 
-const MenProductPage = () => {
+const WomenProductPage = () => {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
@@ -29,9 +29,9 @@ const MenProductPage = () => {
       }
     };
 
-    const products = useSelector(selectMenProducts);
+    const products = useSelector(selectWomenProducts);
     
-    const qty = useSelector(selectMenProducts).length;
+    const qty = useSelector(selectWomenProducts).length;
 
 
 
@@ -40,7 +40,7 @@ const MenProductPage = () => {
       
       {/* header */}
       <div className=' bg-[#7FAE8C] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-2xl '>
-        <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>Men</span>
+        <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>Women</span>
       </div>
 
       {/* banner */}
@@ -67,7 +67,7 @@ const MenProductPage = () => {
      <div className='my-8 text-center max-w-5xl mx-auto'>
       <h1 className='text-3xl md:text-5xl font-Outfit text-gray-600 font-extralight'>Explore others collections</h1>
        <div className='grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center p-10 font-Unna'>
-        <Link to='/women' className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Womens </Link>
+        <Link to='/men' className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Mens </Link>
         <Link to="/sneakers" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Sneakers</Link>
         <Link to="/bestsellers" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>BestSellers</Link>
         <Link to="/featureds" className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Featureds</Link>
@@ -88,4 +88,4 @@ const MenProductPage = () => {
   )
 }
 
-export default MenProductPage
+export default WomenProductPage

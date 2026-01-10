@@ -4,6 +4,7 @@ import Navbar from './components/Header/Navbar/Navbar'
 import Home from './pages/Home'
 import Footer from './components/Footer/Footer'
 import MenProductPage from './pages/MenProductPage'
+import WomenProductPage from './pages/WomenProductPage'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
             <Routes>
              <Route path='/' element={<Home/>}/>
              <Route path='/men' element={<MenProductPage/>} />
+             <Route path='/women' element={<WomenProductPage/>} />
             </Routes>
             <Footer/>
       </div>
