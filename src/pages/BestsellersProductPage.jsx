@@ -13,6 +13,37 @@ import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
 import Loader from '../components/Loader/Loader'
 import GenderFilter from '../components/Products/FilterDrawer/filters/GenderFilter'
+import { motion } from 'framer-motion'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+
+
+const faqData = [
+  {
+    question: "Why are these products bestsellers?",
+    answer: "These products have consistently received excellent reviews and repeat purchases from our customers. They combine premium quality, comfort, and style, making them a preferred choice for everyday wear, casual outings, or special occasions. Popularity reflects customer trust and satisfaction in both durability and design."
+  },
+  {
+    question: "Are these bestsellers true to size?",
+    answer: "Yes, our BestSellers are generally true to size. If you're between sizes, we recommend choosing the larger size for optimal comfort. Each product is carefully designed to provide the perfect fit while maintaining long-lasting support and minimizing discomfort, even during extended wear."
+  },
+  {
+    question: "Can I trust the quality of these items?",
+    answer: "Absolutely. Each bestseller undergoes strict quality checks to ensure materials, construction, and finishes meet our premium standards. From stitching to cushioning and from leather quality to sole durability, every detail is verified so you can enjoy both comfort and longevity in every product."
+  },
+  {
+    question: "Do these products come in multiple colors or styles?",
+    answer: "Yes, our BestSellers collection often includes a variety of colors and style variations to suit different tastes. Whether you prefer classic neutrals, bold statement colors, or timeless designs, there's a BestSeller for every preference. All options maintain the high quality and craftsmanship that make them popular."
+  },
+  {
+    question: "What is the return or exchange policy for these items?",
+    answer: "Unused items from our BestSellers collection can be returned or exchanged within the standard return window. Our process is simple and customer-friendly, ensuring peace of mind. Support staff is available to guide you through returns, exchanges, or replacements, making shopping both safe and enjoyable."
+  },
+  {
+    question: "Are these products suitable for gifting?",
+    answer: "Yes, BestSellers make excellent gifts due to their popularity, quality, and universal appeal. Each product is packaged with care and designed to impress. Whether it's a birthday, holiday, or special occasion, gifting from our BestSellers collection guarantees delight and satisfaction."
+  },
+];
+
 
 const BestsellersProductPage = () => {
     const [loading, setLoading] = useState(true);
@@ -20,6 +51,10 @@ const BestsellersProductPage = () => {
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
     const isMobile = useIsMobile();
+    const [activeFAQ, setActiveFAQ] = useState(null);
+    const toggleFAQ = (index) => {
+     setActiveFAQ(activeFAQ === index ? null : index);
+     };
 
 
     useEffect(() => {
@@ -67,6 +102,49 @@ const BestsellersProductPage = () => {
      {/* Product Image */}
 
      <ProductGrid products={products}/>
+
+     {/* FAQ  */}
+          <motion.div className='w-full max-w-5xl mx-auto my-10 px-4 md:px-0' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <h2 className='text-2xl md:text-3xl font-Outfit text-gray-700 text-center mb-4'>
+              BESTSELLERS COLLECTION
+              </h2>
+              <p className='text-center text-gray-600 text-sm md:text-base mb-8'>
+              Discover our most popular and loved products in the BestSellers collection. These items are chosen by our customers for their superior quality, timeless style, and exceptional comfort. Whether you're shopping for shoes, sneakers, or trending essentials, our BestSellers guarantee satisfaction, reliability, and style for everyday use or special occasions. 
+              </p>
+     
+              <div className="space-y-4 max-w-3xl mx-auto">
+                {faqData.map((item, index) => (
+                   <motion.div
+                     key={index}
+                     initial={{ opacity: 0, y: 10 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                     className="border-b border-gray-200"
+                    >
+                     <button
+                    className="w-full text-left p-4 flex justify-between items-center font-Outfit font-semibold text-gray-700 hover:bg-gray-50 transition"
+                    onClick={() => toggleFAQ(index)}
+                    >
+                    {item.question}
+                      <span className="ml-2">{activeFAQ === index ? <AiOutlineMinus/> : <AiOutlinePlus/>}</span>
+                     </button>
+                      <motion.div
+                       className="overflow-hidden px-4 text-gray-600"
+                       initial={{ height: 0, opacity: 0 }}
+                       animate={{ height: activeFAQ === index ? "auto" : 0, opacity:  activeFAQ === index ? 1 : 0 }}
+                       transition={{ duration: 0.4, ease: "easeInOut" }}
+                      >
+                 <div className="py-2">
+                 {item.answer}
+                </div>
+              </motion.div>
+     
+         </motion.div>
+       ))}
+     </div>
+     
+      </motion.div>
+     
 
      {/* bottom part */}
      <div className='my-8 text-center max-w-5xl mx-auto'>

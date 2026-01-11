@@ -13,6 +13,38 @@ import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
 import banner from '../assets/image/womenbanner.jpg'
 import Loader from '../components/Loader/Loader'
+import { motion } from 'framer-motion'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+
+
+const faqData = [
+  {
+    question: "Are these shoes true to size?",
+    answer: "Yes, our women's shoes generally fit true to size. If you are between sizes, we recommend selecting the slightly larger size for optimal comfort. Each shoe is designed with ergonomic support to contour naturally to the shape of your foot, ensuring stability, reducing pressure points, and preventing discomfort during extended wear."
+  },
+  {
+    question: "Can I wear them all day comfortably?",
+    answer: "Absolutely. These shoes are crafted for long hours of wear without compromising on style or comfort. With cushioned insoles, flexible yet supportive soles, and breathable materials, they keep your feet fresh and comfortable whether you're at work, running errands, or enjoying a night out."
+  },
+  {
+    question: "What materials are used in these shoes?",
+    answer: "Our shoes are made from premium materials including soft full-grain leather, vegan leather options, breathable mesh, and durable rubber soles. The combination ensures long-lasting wear, aesthetic appeal, and ultimate comfort. Every material is carefully selected to provide support, flexibility, and an elegant look suitable for different occasions."
+  },
+  {
+    question: "Do these shoes come in multiple colors?",
+    answer: "Yes, every style is offered in a variety of colors, from classic neutrals to bold, fashionable hues. Each color palette is designed to complement the shoe's style, allowing you to match them seamlessly with your wardrobe while maintaining the elegance and premium feel of the collection."
+  },
+  {
+    question: "How do I care for these shoes?",
+    answer: "To maintain the beauty and longevity of your shoes, clean them gently with a soft cloth or brush. For leather shoes, use appropriate leather conditioner occasionally to keep them supple. Store them in a cool, dry place, and avoid excessive exposure to moisture. Proper care ensures that your shoes remain stylish and durable for years to come."
+  },
+  {
+    question: "Can I return or exchange if needed?",
+    answer: "Yes, you can return or exchange shoes that are unused and in their original packaging within the standard return window. Our hassle-free process is designed to give you peace of mind, and our customer support team is always available to guide you through returns, exchanges, or replacements promptly and efficiently."
+  },
+];
+
+
 
 const WomenProductPage = () => {
     const [loading, setLoading] = useState(true);
@@ -20,6 +52,10 @@ const WomenProductPage = () => {
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
     const isMobile = useIsMobile();
+    const [activeFAQ, setActiveFAQ] = useState(null);
+    const toggleFAQ = (index) => {
+     setActiveFAQ(activeFAQ === index ? null : index);
+     };
 
 
 
@@ -39,7 +75,7 @@ const WomenProductPage = () => {
 
     const products = useSelector(selectWomenProducts);
     
-    const qty = useSelector(selectWomenProducts).length;
+    const qty = products.length;
 
 
 
@@ -72,6 +108,50 @@ const WomenProductPage = () => {
      {/* Product Image */}
 
      <ProductGrid products={products}/>
+
+
+      {/* FAQ  */}
+     <motion.div className='w-full max-w-5xl mx-auto my-10 px-4 md:px-0' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+         <h2 className='text-2xl md:text-3xl font-Outfit text-gray-700 text-center mb-4'>
+         WOMEN'S SHOES
+         </h2>
+         <p className='text-center text-gray-600 text-sm md:text-base mb-8'>
+         Discover the perfect combination of style, comfort, and elegance with our curated collection of women's shoes. Designed for every occasion—from professional settings to casual outings and weekend adventures—our shoes prioritize comfort, support, and high-quality materials, ensuring your feet look and feel amazing all day long. 
+         </p>
+
+         <div className="space-y-4 max-w-3xl mx-auto">
+           {faqData.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="border-b border-gray-200"
+               >
+                <button
+               className="w-full text-left p-4 flex justify-between items-center font-Outfit font-semibold text-gray-700 hover:bg-gray-50 transition"
+               onClick={() => toggleFAQ(index)}
+               >
+               {item.question}
+                 <span className="ml-2">{activeFAQ === index ? <AiOutlineMinus/> : <AiOutlinePlus/>}</span>
+                </button>
+                 <motion.div
+                  className="overflow-hidden px-4 text-gray-600"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: activeFAQ === index ? "auto" : 0, opacity:  activeFAQ === index ? 1 : 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                 >
+            <div className="py-2">
+            {item.answer}
+           </div>
+         </motion.div>
+
+    </motion.div>
+  ))}
+</div>
+
+ </motion.div>
+
 
      {/* bottom part */}
      <div className='my-8 text-center max-w-5xl mx-auto'>

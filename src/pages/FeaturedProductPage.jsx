@@ -13,6 +13,37 @@ import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
 import Loader from '../components/Loader/Loader'
 import GenderFilter from '../components/Products/FilterDrawer/filters/GenderFilter'
+import { motion } from 'framer-motion'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+
+
+const faqData = [
+  {
+    question: "What makes these products featured?",
+    answer: "These items are handpicked based on innovation, design, and popularity. Each product showcases unique features or trends that set it apart, whether it's an exclusive material, cutting-edge design, or exceptional functionality. Our Featured Collection highlights the very best, giving you access to products that are stylish, premium, and ahead of the curve."
+  },
+  {
+    question: "Are these featured products high quality?",
+    answer: "Absolutely. Every item in the Featured Collection undergoes strict quality control to ensure it meets our high standards. From materials to finishing details, stitching, durability, and comfort, each product is designed to deliver a premium experience, ensuring long-lasting satisfaction and reliability."
+  },
+  {
+    question: "Do these featured products come in multiple sizes or colors?",
+    answer: "Yes, wherever applicable, our Featured products are offered in a variety of sizes and colors. We carefully curate the options to ensure style and versatility, allowing customers to choose according to their personal taste and needs while maintaining the high-quality standard of the collection."
+  },
+  {
+    question: "Can these products be gifted?",
+    answer: "Certainly. Featured items are perfect for gifting due to their unique design, premium quality, and universal appeal. Whether it’s for birthdays, holidays, or special occasions, gifting from our Featured Collection ensures a stylish and memorable experience for the recipient."
+  },
+  {
+    question: "What is the return or exchange policy for featured items?",
+    answer: "Unused featured products in their original packaging can be returned or exchanged within the standard return window. Our process is customer-friendly and designed to make shopping risk-free. Support staff is available to assist with exchanges, replacements, or returns to ensure a smooth and hassle-free experience."
+  },
+  {
+    question: "Are these products suitable for daily use?",
+    answer: "Yes, depending on the type of product, our Featured Collection items are designed for both style and functionality. Many are versatile enough for daily wear, offering comfort, durability, and aesthetic appeal. Each product balances trendiness with practical usability, ensuring it looks great while performing well."
+  },
+];
+
 
 const FeaturedProductPage = () => {
     const [loading, setLoading] = useState(true);
@@ -20,6 +51,10 @@ const FeaturedProductPage = () => {
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
     const isMobile = useIsMobile();
+    const [activeFAQ, setActiveFAQ] = useState(null);
+    const toggleFAQ = (index) => {
+     setActiveFAQ(activeFAQ === index ? null : index);
+    };
 
 
     useEffect(() => {
@@ -67,6 +102,49 @@ const FeaturedProductPage = () => {
      {/* Product Image */}
 
      <ProductGrid products={products}/>
+
+      {/* FAQ  */}
+          <motion.div className='w-full max-w-5xl mx-auto my-10 px-4 md:px-0' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <h2 className='text-2xl md:text-3xl font-Outfit text-gray-700 text-center mb-4'>
+              FEATURED COLLECTION
+              </h2>
+              <p className='text-center text-gray-600 text-sm md:text-base mb-8'>
+             Explore our Featured Collection—carefully curated to highlight standout products that combine style, quality, and innovation. Each item is selected for its uniqueness, trending design, and exceptional craftsmanship. Perfect for those looking to elevate their wardrobe with products that are both fashionable and functional, our Featured Collection ensures premium comfort, style, and long-lasting appeal. 
+              </p>
+     
+              <div className="space-y-4 max-w-3xl mx-auto">
+                {faqData.map((item, index) => (
+                   <motion.div
+                     key={index}
+                     initial={{ opacity: 0, y: 10 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.5, delay: index * 0.1 }}
+                     className="border-b border-gray-200"
+                    >
+                     <button
+                    className="w-full text-left p-4 flex justify-between items-center font-Outfit font-semibold text-gray-700 hover:bg-gray-50 transition"
+                    onClick={() => toggleFAQ(index)}
+                    >
+                    {item.question}
+                      <span className="ml-2">{activeFAQ === index ? <AiOutlineMinus/> : <AiOutlinePlus/>}</span>
+                     </button>
+                      <motion.div
+                       className="overflow-hidden px-4 text-gray-600"
+                       initial={{ height: 0, opacity: 0 }}
+                       animate={{ height: activeFAQ === index ? "auto" : 0, opacity:  activeFAQ === index ? 1 : 0 }}
+                       transition={{ duration: 0.4, ease: "easeInOut" }}
+                      >
+                 <div className="py-2">
+                 {item.answer}
+                </div>
+              </motion.div>
+     
+         </motion.div>
+       ))}
+     </div>
+     
+      </motion.div>
+     
 
      {/* bottom part */}
      <div className='my-8 text-center max-w-5xl mx-auto'>

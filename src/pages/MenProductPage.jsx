@@ -13,6 +13,38 @@ import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
 import banner from '../assets/image/menbanner.jpg'
 import Loader from '../components/Loader/Loader'
+import { motion } from 'framer-motion'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+
+
+
+
+const faqData = [
+  { 
+    question: "Are these shoes true to size?", 
+    answer: "Yes, most of our shoes fit true to size. If you are between two sizes, we recommend choosing the slightly larger size for optimal comfort. Our shoes are designed with ergonomic foot support, ensuring they conform naturally to your foot shape, reducing pressure points and allowing you to move comfortably throughout the day. This approach minimizes blisters and keeps your feet fatigue-free even during long wear." 
+  },
+  { 
+    question: "Can I wear them daily?", 
+    answer: "Absolutely. These shoes are crafted for daily use with a perfect balance of comfort, support, and durability. Whether you are walking, commuting, or spending long hours on your feet, they provide responsive cushioning and breathable materials that maintain freshness. The lightweight construction ensures effortless movement while maintaining a polished look for casual or semi-formal outfits." 
+  },
+  { 
+    question: "What materials are used?", 
+    answer: "We use only premium materials, including full-grain leather, engineered mesh, and high-density rubber soles. The leather offers natural durability and elegance, mesh provides ventilation to keep your feet cool, and the soles ensure excellent grip and long-lasting wear. Every material is handpicked to combine comfort, aesthetics, and longevity, delivering a premium experience that evolves beautifully over time." 
+  },
+  { 
+    question: "Do these shoes come in multiple colors?", 
+    answer: "Yes, each style comes in a thoughtfully curated range of colors. We ensure each color complements the design, allowing you to match the shoes with various outfits. Whether you prefer classic neutrals or bold statement colors, our selection accommodates different personal styles while maintaining the premium quality and elegance of our collection." 
+  },
+  { 
+    question: "How can I return if not satisfied?", 
+    answer: "If you are not completely satisfied with your purchase, you can return unused shoes in their original packaging within the standard return window. Our return process is straightforward and hassle-free, designed to give you confidence while shopping. Customer support is available to guide you through the steps, ensuring a smooth experience whether you need a replacement, exchange, or refund." 
+  },
+];
+
+
+
+
 
 const MenProductPage = () => {
     const [loading, setLoading] = useState(true);
@@ -20,6 +52,10 @@ const MenProductPage = () => {
     const dispatch = useDispatch();
     const viewMode = useSelector(selectViewMode);
     const isMobile = useIsMobile();
+    const [activeFAQ, setActiveFAQ] = useState(null);
+    const toggleFAQ = (index) => {
+      setActiveFAQ(activeFAQ === index ? null : index);
+    };
 
 
     useEffect(() => {
@@ -73,8 +109,50 @@ const MenProductPage = () => {
 
      <ProductGrid products={products}/>
 
+     {/* FAQ  */}
+     <motion.div className='w-full max-w-5xl mx-auto my-10 px-4 md:px-0' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+         <h2 className='text-2xl md:text-3xl font-Outfit text-gray-700 text-center mb-4'>
+         MEN'S SHOES
+         </h2>
+         <p className='text-center text-gray-600 text-sm md:text-base mb-8'>
+          Find your perfect blend of style and comfort with our collection of men's shoes for any occasion. From business casual days to meeting up with friends after work to taking on your favorite trail, our men's shoes provide the ultimate in sustainable support for every step of your day—and look incredible while doing so. 
+         </p>
+
+         <div className="space-y-4 max-w-3xl mx-auto">
+           {faqData.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="border-b border-gray-200"
+               >
+                <button
+               className="w-full text-left p-4 flex justify-between items-center font-Outfit font-semibold text-gray-700 hover:bg-gray-50 transition"
+               onClick={() => toggleFAQ(index)}
+               >
+               {item.question}
+                 <span className="ml-2">{activeFAQ === index ? <AiOutlineMinus/> : <AiOutlinePlus/>}</span>
+                </button>
+                 <motion.div
+                  className="overflow-hidden px-4 text-gray-600"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: activeFAQ === index ? "auto" : 0, opacity:  activeFAQ === index ? 1 : 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                 >
+            <div className="py-2">
+            {item.answer}
+           </div>
+         </motion.div>
+
+    </motion.div>
+  ))}
+</div>
+
+ </motion.div>
+
      {/* bottom part */}
-     <div className='my-8 text-center max-w-5xl mx-auto'>
+     <div className='mt-14 text-center max-w-5xl mx-auto'>
       <h1 className='text-3xl md:text-5xl font-Outfit text-gray-600 font-extralight'>Explore others collections</h1>
        <div className='grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center p-10 font-Unna'>
         <Link to='/women' className='text-gray-50 border border-gray-800 py-1.5 px-3 rounded-md bg-black/70 cursor-pointer hover:bg-gray-200 hover:text-gray-700 transition duration-500'>Womens </Link>

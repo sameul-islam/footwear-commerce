@@ -74,3 +74,7 @@ I made significant changes to the product slice and fully prepared the Men Produ
 ### Day 17 – January 10, 2026
 
 Today, I created several product pages, such as Sneakers, Women, Featured, and Best Sellers. I built these product pages and connected various links to them. Along with that, I implemented a loader file and also integrated a Chat AI.
+
+### Day 18 – January 11, 2026
+
+Today, I have mostly completed the AI integration for the chat feature. Essentially, the system now has various user questions, and answers are provided based on those questions. Although the AI integration itself isn't fully implemented due to it not being free, the system is fully functional and usable at this stage. Additionally, I have added FAQs to the different product pages. This was the main focus of today's work.

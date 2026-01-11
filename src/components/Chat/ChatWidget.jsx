@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiSend } from "react-icons/fi";
 import ChatMessage from "./ChatMessage";
 import TypingIndicator from "./TypingIndicator";
 import { IoChatboxEllipses, IoSendOutline } from "react-icons/io5";
 import logo from '../../assets/image/logo.webp'
 import { RiCloseLargeLine } from "react-icons/ri";
+import { suggestedQuestions } from "./suggestedQuestions";
 
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,7 @@ const ChatWidget = () => {
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [currentSuggestions, setCurrentSuggestions] = useState(suggestedQuestions.slice(0, 4));
 
   const messagesEndRef = useRef(null);
 
@@ -27,8 +28,8 @@ const ChatWidget = () => {
 
   const handleSend = () => {
     if (!input.trim()) return;
-    const newMessage = { id: Date.now(), type: "user", text: input };
-    setMessages([...messages, newMessage]);
+    const userMessage = { id: Date.now(), type: "user", text: input };
+    setMessages(prev => [...prev, userMessage]);
     setInput("");
     setIsTyping(true);
 
@@ -39,6 +40,22 @@ const ChatWidget = () => {
         { id: Date.now() + 1, type: "ai", text: "This is a placeholder AI reply." },
       ]);
       setIsTyping(false);
+    }, 1200);
+  };
+
+  const handleSuggestionClick = (id) => {
+    const selected = suggestedQuestions.find(q => q.id === id);
+    if (!selected) return;
+
+    setMessages(prev => [...prev, { id: Date.now(), type: "user", text: selected.question }]);
+    setIsTyping(true);
+
+    setTimeout(() => {
+      setMessages(prev => [...prev, { id: Date.now() + 1, type: "ai", text: selected.answer }])
+      setIsTyping(false);
+  
+    const nextSuggestions = suggestedQuestions.filter(q => selected.next.includes(q.id));
+    if (nextSuggestions.length) setCurrentSuggestions(nextSuggestions);
     }, 1200);
   };
 
@@ -75,8 +92,23 @@ const ChatWidget = () => {
               {messages.map(msg => (
                 <ChatMessage key={msg.id} message={msg} />
               ))}
-              {isTyping && <TypingIndicator />}
+
+
+              {isTyping && (
+                <div className="flex justify-start">
+                  <TypingIndicator/>
+                </div>
+              )}
               <div ref={messagesEndRef} />
+            </div>
+
+            {/* Suggested Questions */}
+            <div className="p-2 flex flex-wrap gap-2 border-t border-gray-200 bg-gray-50">
+              {currentSuggestions.map(sq => (
+                <button key={sq.id} onClick={() => handleSuggestionClick(sq.id)} className="bg-[#579569] text-white px-3 py-1 rounded-lg text-sm hover:bg-[#148b36] transition">
+                   {sq.question}
+                </button>
+              ))}
             </div>
 
             {/* Input */}
