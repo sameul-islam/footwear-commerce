@@ -164,16 +164,14 @@ MEN: {
       ]
     },
     {
-      title: "Shop By Size",
+      title: "Collections",
       items: [
-        { label: "👟 39", href: "#" },
-        { label: "👟 40", href: "#" },
-        { label: "👟 41", href: "#" },
-        { label: "👟 42", href: "#" },
-        { label: "👟 43", href: "#" },
-        { label: "👟 44", href: "#" },
-        { label: "👟 45", href: "#" },
-        { label: "👟 46", href: "#" }
+        { label: "New Arrivals", href: "#" },
+        { label: "Best Sellers", href: "#" },
+        { label: "Editor's Choice", href: "#" },
+        { label: "Limited Edition", href: "#" },
+        { label: "Seasonal Picks", href: "#" },
+        { label: "Online Exclusive", href: "#" }
       ]
     },
     {

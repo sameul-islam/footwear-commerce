@@ -10,6 +10,7 @@ import ChatWidget from './components/Chat/ChatWidget'
 import SneakersProductPage from './pages/SneakersProductPage'
 import BestsellersProductPage from './pages/BestsellersProductPage'
 import FeaturedProductPage from './pages/FeaturedProductPage'
+import SearchResultsPage from './pages/searchquery/SearchResultsPage'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
              <Route path='/sneakers' element={<SneakersProductPage/>} />
              <Route path='/bestsellers' element={<BestsellersProductPage/>} />
              <Route path='/featureds' element={<FeaturedProductPage/>} />
+             <Route path='/search' element={<SearchResultsPage/>} />
             </Routes>
             <Footer/>
       </div>

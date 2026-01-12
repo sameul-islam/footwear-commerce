@@ -8,7 +8,7 @@ import { RiMenu2Line, RiUser6Line } from 'react-icons/ri';
 import { TbSlashes } from 'react-icons/tb';
 import { HiOutlineLanguage } from 'react-icons/hi2';
 import {motion, AnimatePresence, easeIn } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FiHome, FiSearch, FiUser } from 'react-icons/fi';
 import { BiCart } from 'react-icons/bi';
 import { IoMdMenu } from 'react-icons/io';
@@ -105,6 +105,14 @@ const Navbar = () => {
     exit: {opacity: 0, y: 20, transition: {duration: 0.2 }}
   };
 
+  // Search filter logic
+
+  const navigate = useNavigate();
+
+  const handleSearchClick = () => {
+    navigate('/search');
+  }
+
 
   return (
     <nav>
@@ -134,7 +142,7 @@ const Navbar = () => {
               
             <div className='flex gap-2 p-8 pt-0'>
               <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-black transition duration-300'>
-                <LuSearch size={22} className='font-semibold'/>
+                <LuSearch size={22} className='font-semibold' onClick={handleSearchClick}/>
               </div>
 
               <div className='border-l border-gray-300 p-2  cursor-pointer  hover:text-black transition duration-300'>
@@ -247,7 +255,7 @@ const Navbar = () => {
 
             <div className='flex gap-2 p-6'>
               <div className='border-l border-gray-300 p-2 cursor-pointer hover:text-black transition duration-300'>
-                <LuSearch size={22} className='font-semibold'/>
+                <LuSearch size={22} className='font-semibold' onClick={handleSearchClick}/>
               </div>
               <div className='border-l border-r border-gray-300 p-2'>
                 <div className='relative'>
@@ -274,7 +282,7 @@ const Navbar = () => {
            </div>
 
            <div>
-            <FiSearch className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
+            <FiSearch className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8' onClick={handleSearchClick}/>
            </div>
           </div>
            
@@ -306,16 +314,16 @@ const Navbar = () => {
 
          <div className='flex items-center justify-between w-full bg-white px-5 py-3 sm:px-8 sm:py-4'>
 
-           <div className='flex flex-col items-center justify-center'>
+           <Link to='/' className='flex flex-col items-center justify-center'>
            <FiHome className='h-6 w-6 sm:h-7 sm:w-7'/> <span className='font-Lato text-xs font-semibold'>Home</span>
-           </div>
+           </Link>
 
            <div className='flex flex-col items-center justify-center'onClick={() => setMobileMenuOpen(true)}>
            <VscMenu className='h-6 w-6 sm:h-7 sm:w-7'/> <span className='font-Lato text-xs font-semibold'>Menu</span>
            </div>
 
            <div className='flex flex-col items-center justify-center'>
-           <LuSearch className='h-6 w-6 sm:h-7 sm:w-7'/> <span className='font-Lato text-xs font-semibold'>Search</span>
+           <LuSearch className='h-6 w-6 sm:h-7 sm:w-7' onClick={handleSearchClick}/> <span className='font-Lato text-xs font-semibold'>Search</span>
            </div>
 
             <div className='flex flex-col items-center justify-center relative'>

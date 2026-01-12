@@ -22,6 +22,8 @@ const initialState = {
 
   sortBy: "default",
 
+  searchQuery: "",
+
 };
 
 const productsSlice = createSlice ({
@@ -73,10 +75,14 @@ const productsSlice = createSlice ({
       state.viewMode = action.payload;
     },
 
+    setSearchQuery(state, action) {
+      state.searchQuery = action.payload.toLowerCase();
+    }
+
   }
 });
 
-export const { setProductType, setPriceRange, toggleSize, toggleColor,toggleFlag,setGender, setAvailability, setSortBy, resetFilters, setViewMode } = productsSlice.actions;
+export const { setProductType, setPriceRange, toggleSize, toggleColor,toggleFlag,setGender, setAvailability, setSortBy, resetFilters, setViewMode, setSearchQuery } = productsSlice.actions;
 
 export default productsSlice.reducer;
 
@@ -175,3 +181,19 @@ export const selectBestSellers = createSelector(
     };
 
   });
+
+
+
+  // SEARCH LOGIC 
+
+  const selectSearchQuery = state => state.products.searchQuery;
+
+  export const selectSearchedProducts = createSelector(
+    [selectFilteredProducts, selectSearchQuery],(products, query) => {
+      if (!query) return products;
+
+      return products.filter(p => 
+        p.name.toLowerCase().includes(query) || p.brand.toLowerCase().includes(query) || p.category.toLowerCase().includes(query) || p.productType.toLowerCase().includes(query) || p.tags.some(tag => tag.toLowerCase().includes(query))
+      );
+    }
+  );
