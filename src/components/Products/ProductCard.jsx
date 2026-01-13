@@ -1,5 +1,6 @@
 import React from "react";
 import { FiPlus } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
   const { name, category, price, variants } = product;
@@ -14,11 +15,16 @@ const ProductCard = ({ product }) => {
 
   const displayPrice = price.sale ?? price.original;
 
+  // Product detail
+
+  const navigate = useNavigate();
+
+
 
 
 
   return (
-    <div className="group relative cursor-pointer py-2">
+    <div onClick={() => navigate(`/product/${product.slug}`)} className="group relative cursor-pointer py-2">
 
       {/* IMAGE WRAPPER */}
       <div className="relative overflow-hidden rounded-md md:rounded-xl bg-gray-50 border border-gray-100 -z-10">

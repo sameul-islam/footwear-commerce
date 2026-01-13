@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from 'react-icons/lia'
 import { useSelector } from 'react-redux';
 import { selectSneakers } from '../../features/products/productsSlice';
+import { Link } from 'react-router-dom';
 
 
 
@@ -70,7 +71,7 @@ const Sneaker = () => {
          className='flex flex-row p-0.5 overflow-x-auto scroll-smooth no-scrollbar focus:outline-none'>
          {sneakerProducts.map((item) => (
            <div key={item.id} className='shrink-0 p-1 md:p-2'>
-   
+            <Link to={`/product/${item.slug}`}>
            <img
            src={item.variants?.[0]?.images?.[0] || "placeholder.webp"}
            alt={item.name}
@@ -78,6 +79,7 @@ const Sneaker = () => {
            loading='lazy'
            className='h-60 md:h-85 xl:h-108 2xl:h-120 cursor-pointer rounded-2xl bg-gray-50'
            />
+           </Link>
            </div>
          ))}
          </div>

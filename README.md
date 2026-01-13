@@ -82,3 +82,7 @@ Today, I have mostly completed the AI integration for the chat feature. Essentia
 ### Day 19 – January 12, 2026
 
 Today, I created a dedicated Search page and implemented all the necessary designs and functionality.
+
+### Day 20 – January 13, 2026
+
+Today, I created the product details page. I've completed about 50% of it, but there is still alot of work left to do.

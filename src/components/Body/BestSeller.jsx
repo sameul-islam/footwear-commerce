@@ -80,7 +80,7 @@ const BestSeller = () => {
          className='flex flex-row p-0.5 overflow-x-auto scroll-smooth no-scrollbar focus:outline-none'>
          {bestSellers.map((item) => (
            <div key={item.id} className='shrink-0 p-1 md:p-2'>
-   
+           <Link to={`/product/${item.slug}`}>
            <img
            src={item.variants?.[0]?.images?.[0] || "placeholder.webp"}
            alt={item.name}
@@ -88,6 +88,7 @@ const BestSeller = () => {
            loading='lazy'
            className='h-60 md:h-70 xl:h-90 2xl:h-100 cursor-pointer bg-gray-50 rounded-2xl'
            />
+           </Link>
 
            </div>
          ))}

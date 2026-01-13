@@ -157,7 +157,7 @@ export const selectBestSellers = createSelector(
   
 
 //  Generates available filter options for the filter UI. Used to display product types, price range, colors, sizes.  availability and flags in the filter sidebar/drawer. (That means just make options , Don't filtering)
-  const selectAllProducts = (state) => state.products.products;
+  export const selectAllProducts = (state) => state.products.products;
 
   export const selectFilterOptions = createSelector([selectAllProducts],(products) => {
 
