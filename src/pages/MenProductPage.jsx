@@ -11,7 +11,7 @@ import ProductTypeFilter from '../components/Products/FilterDrawer/filters/Produ
 import PriceRangeFilter from '../components/Products/FilterDrawer/filters/PriceRangeFilter'
 import ColorFilter from '../components/Products/FilterDrawer/filters/ColorFilter'
 import SizeFilter from '../components/Products/FilterDrawer/filters/SizeFilter'
-import banner from '../assets/image/menbanner.jpg'
+import banner from '../assets/image/menbanner.png'
 import Loader from '../components/Loader/Loader'
 import { motion } from 'framer-motion'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'

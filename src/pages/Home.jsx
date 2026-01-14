@@ -7,7 +7,6 @@ import Gender from '../components/Body/Gender'
 import SpotLight from '../components/Body/SpotLight'
 import Sneaker from '../components/Body/Sneaker'
 import CategoryImage from '../components/Body/CategoryImage'
-import CraftSection from '../components/Body/CraftSection'
 import Loader from '../components/Loader/Loader'
 
 
@@ -24,7 +23,6 @@ const Home = () => {
     {loading ? (<Loader/>) : (
     <div>
       <Hero/>
-      <CraftSection/>
       <CategoryImage/>
       <Sneaker/>
       <Gender/>
