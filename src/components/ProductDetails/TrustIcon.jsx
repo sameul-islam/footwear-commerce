@@ -29,7 +29,7 @@ const icons = [
 
 const TrustIcon = () => {
   return (
-   <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-1 mt-4">
+   <div className="w-full grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 space-y-1 space-x-1 mt-4">
       {icons.map((item, idx) => (
         <div
           key={idx}

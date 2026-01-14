@@ -4,16 +4,18 @@ import AddToCart from "./AddToCart";
 import RatingStars from "./RatingStars";
 import { GoVerified } from "react-icons/go";
 import TrustIcon from "./TrustIcon";
+import ProductDescription from "./ProductDescription";
+import { Link } from "react-router-dom";
 
 const ProductInfo = ({ product, activeVariant, setActiveVariant }) => {
   const [selectedSize, setSelectedSize] = useState(null);
 
   return (
-    <div className="w-1/2 h-screen items-center overflow-y-scroll no-scrollbar">
-      <div className="max-w-lg mx-auto py-10 flex flex-col">
+    <div className=" w-full md:w-1/2 md:h-screen items-center md:overflow-y-scroll no-scrollbar">
+      <div className=" w-[94%] sm:max-w-xl md:max-w-xs lg:max-w-md xl:max-w-lg mx-auto py-10 flex flex-col">
 
       {/* Product Name */}
-      <span className="text-xs font-Lora font-semibold uppercase mb-2">{product.gender}</span>
+      <Link to={`/${product.gender}`} className="text-xs font-Lora cursor-pointer underline font-semibold uppercase mb-2">{product.gender}</Link>
       <h1 className="font-IM text-2xl text-black mb-1">{product.name}</h1>
 
       {/* reviews & ratings */}
@@ -24,7 +26,7 @@ const ProductInfo = ({ product, activeVariant, setActiveVariant }) => {
         {product.price.original} {product.price.currency}
       </p>
 
-      <p className="text-sm font-Unna mb-6 text-[#791b1b] flex items-center gap-1"><GoVerified/> Honest Pricing Guide <span className="border-b border-[#791b1b] cursor-pointer hover:text-[#d08585] hover:border-[#d08585] border-dashed transition font-semibold">Learn More</span></p>
+      <p className="text-sm font-Unna mb-6 text-[#791b1b] flex items-center gap-1"><GoVerified/> Honest Pricing Guide <span className="cursor-pointer hover:text-[#d08585] underline transition font-semibold">Learn More</span></p>
 
       {/* Variant Selector */}
       <VariantSelector
@@ -46,6 +48,8 @@ const ProductInfo = ({ product, activeVariant, setActiveVariant }) => {
 
       <TrustIcon/>
 
+      {/* Product Detail */}
+      <ProductDescription description={product.description}/>
 
      </div>
     </div>

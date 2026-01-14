@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TfiMinus, TfiPlus } from "react-icons/tfi";
 
-const CustomCursor = ({ isHovering, fullscreen }) => {
+const CustomCursor = ({ isHovering }) => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const CustomCursor = ({ isHovering, fullscreen }) => {
   }, []);
 
 
-  const Icon = fullscreen ? <TfiMinus /> : isHovering ? <TfiPlus /> : null;
+  const Icon = isHovering ? <TfiPlus size={30}/> : null;
 
   if (!Icon) return null; 
 
@@ -26,7 +26,7 @@ const CustomCursor = ({ isHovering, fullscreen }) => {
         transform: "translate(-50%, -50%)",
       }}
     >
-      <TfiPlus size={30}/>
+      {Icon}
     </div>
   );
 };

@@ -86,3 +86,7 @@ Today, I created a dedicated Search page and implemented all the necessary desig
 ### Day 20 – January 13, 2026
 
 Today, I created the product details page. I've completed about 50% of it, but there is still alot of work left to do.
+
+### Day 21 – January 14, 2026
+
+Today, I worked on the Product Detail Page. I completed the Product Info section and made it mobile responsive. Additionally, I implemented the Recommended Products section.

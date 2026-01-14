@@ -16,8 +16,8 @@ const ProductImagesGallery = ({ product }) => {
   };
 
   return (
-    <div className="w-1/2 h-screen flex flex-col overflow-y-scroll no-scrollbar bg-[#f5f5f5] border border-gray-100">
-      <CustomCursor isHovering={isHovering} fullscreen={fullscreen}/>
+    <div className="hidden w-1/2 h-screen md:flex flex-col overflow-y-scroll no-scrollbar bg-[#f5f5f5] border border-gray-100">
+      <CustomCursor isHovering={isHovering}/>
 
       {/* Images column */}
       {activeVariant.images.map((img, index) => (
@@ -25,6 +25,7 @@ const ProductImagesGallery = ({ product }) => {
           key={index}
           src={img}
           alt={`${product.name} ${index}`}
+          loading="lazy"
           className="cursor-none shadow-xs"
           onClick={() => handleImageClick(index)}
           onMouseEnter={() => setIsHovering(true)}
@@ -56,6 +57,7 @@ const ProductImagesGallery = ({ product }) => {
                   key={idx}
                   src={img}
                   alt={`${product.name} fullscreen ${idx}`}
+                  loading="lazy"
                   className="w-full h-full shadow-xs"
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
