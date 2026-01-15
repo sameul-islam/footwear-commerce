@@ -111,17 +111,17 @@ const Hero = () => {
 
   return (
     <div className='p-1 md:p-2 mb-3 md:mb-7 xl:mb-10 '>
-        <div className='relative w-full mt-14 sm:mt-16 md:mt-20 lg:mt-26 xl:mt-0 overflow-hidden'>
+        <div className='relative w-full mt-14 sm:mt-16 md:mt-20 lg:mt-26 xl:mt-20 overflow-hidden'>
         <AnimatePresence mode='wait'>
            <motion.img
            key={isSlide}
            src={slideImage[isSlide]} 
            alt="slideImage" 
            className='w-full h-[56vh] md:h-[70vh] xl:h-[85vh]  object-cover rounded-xl md:rounded-2xl'
-           initial={{ opacity: 0, scale: 1.05 }}
-           animate={{ opacity: 1, scale: 1 }}
-           exit={{ opacity: 0, scale: 0.98 }}
-           transition={{ duration: 0.7, ease: 'easeInOut' }}
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           exit={{ opacity: 0 }}
+           transition={{ duration: 0.5, ease: "easeInOut" }}
            />
         </AnimatePresence>
 
@@ -138,10 +138,10 @@ const Hero = () => {
 
         {/* CTA */}
         <div className="flex items-center md:items-end gap-2">
-        <Link to="/men" className="font-Outfit text-sm font-semibold text-white transition-all duration-300 border-2 border-white rounded-full py-1 px-2.5 hover:bg-white hover:text-gray-800 hover:border-gray-600">
+        <Link to="/men" className="font-Outfit text-sm font-semibold text-white transition-all duration-300 border-2 border-white rounded-full py-1 px-2.5 hover:bg-white hover:text-gray-800 hover:border-gray-200">
          SHOP MEN
         </Link>
-        <Link to="/women" className="text-sm font-Outfit font-semibold text-white transition-all duration-300 border-2 border-white rounded-full py-1 px-2.5 hover:bg-white hover:text-gray-800 hover:border-gray-600">
+        <Link to="/women" className="text-sm font-Outfit font-semibold text-white transition-all duration-300 border-2 border-white rounded-full py-1 px-2.5 hover:bg-white hover:text-gray-800 hover:border-gray-200">
         SHOP WOMEN
        </Link>
       </div>

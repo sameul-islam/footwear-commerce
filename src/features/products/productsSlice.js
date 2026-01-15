@@ -197,3 +197,23 @@ export const selectBestSellers = createSelector(
       );
     }
   );
+
+
+//  Navbar logic
+
+  export const selectNavDataByGender = (gender) => createSelector([selectAllProducts], (products) => {
+    const filtered = products.filter(p => p.gender === gender);
+
+    return {
+      categories: [...new Set(filtered.map(p => p.productType))],
+      brands: [...new Set(filtered.map(p => p.brand))],
+      colors: [...new Set(
+        filtered.flatMap(p => p.variants.map(v => v.color))
+      )],
+      collections: {
+        featured: filtered.filter(p => p.flags.isFeatured),
+        bestseller: filtered.filter(p => p.flags.isBestseller),
+        newArrivals: filtered.slice(0, 6)
+      }
+    };
+  });

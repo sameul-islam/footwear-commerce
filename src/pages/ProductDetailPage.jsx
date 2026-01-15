@@ -24,7 +24,7 @@ const ProductDetailPage = () => {
   return (
     <div>
       {/* Upper Part */}
-    <div className="flex flex-col md:flex-row min-h-screen mt-14 md:mt-20 xl:mt-0">
+    <div className="flex flex-col md:flex-row min-h-screen mt-14 md:mt-20 xl:mt-18">
       <ProductImagesGallery
         product={product}
         activeVariant={activeVariant}

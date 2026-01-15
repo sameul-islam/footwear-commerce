@@ -69,7 +69,7 @@ const SearchResultsPage = () => {
     <>
     {loading ? ( <Loader/> ) : (
 
-    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-2'>
+    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-30'>
 
       <SearchInput/>
 

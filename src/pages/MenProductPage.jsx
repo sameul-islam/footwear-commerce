@@ -82,7 +82,7 @@ const MenProductPage = () => {
     <>
     {loading ? ( <Loader/> ) : (
 
-    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-2'>
+    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-20'>
       
       {/* header */}
       <div className=' bg-[#7FAE8C] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-xl md:rounded-t-2xl '>
