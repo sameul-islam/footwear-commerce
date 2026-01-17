@@ -28,13 +28,13 @@ const MainDrawer = ({ isOpen, onClose, onOpenSubMenu }) => {
         exit={{ x: "-100%" }}
         transition={{ type: "tween", duration: 0.3 }}
       >
-        <div className="p-4 sm:p-5 border-b border-red-100 flex justify-between items-center">
+        <div className="p-4 sm:p-5 border-b border-gray-100 flex justify-between items-center">
           <h2 className="font-semibold text-lg sm:text-xl font-Playfair">Menu.</h2>
         <Link to="/">  <img src={logo} alt="logo" className="h-12 sm:h-14" /> </Link>
           <button
             onClick={onClose}
           >
-            <GrClose className="font-semibold text-red-500 cursor-pointer h-6 w-6 sm:h-7 sm:w-7"/>
+            <GrClose className="font-semibold text-gray-800 cursor-pointer h-6 w-6 sm:h-7 sm:w-7"/>
           </button>
         </div>
 
@@ -53,7 +53,7 @@ const MainDrawer = ({ isOpen, onClose, onOpenSubMenu }) => {
           </ul>
         </div>
 
-        <div className="flex flex-col bottom-4 items-center p-6 gap-5">
+        {/* <div className="flex flex-col bottom-4 items-center p-6 gap-5">
           <div className="font-Lato text-gray-600 pb-2 border-b border-red-100">
             Call Support free:(+880 1234-567890)
           </div>
@@ -68,7 +68,7 @@ const MainDrawer = ({ isOpen, onClose, onOpenSubMenu }) => {
               BN || EN  
            </div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );

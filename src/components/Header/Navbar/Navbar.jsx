@@ -490,7 +490,7 @@ const Navbar = () => {
         {/* Desktop Nav */}
 
          <div className='hidden xl:flex z-50'>
-        <motion.div   className='fixed top-0 w-full z-50 flex items-center shadow-sm transition-all duration-300 bg-white/85 backdrop-blur-lg hover:bg-white' >
+        <motion.div   className='fixed top-0 w-full xl:h-20 z-50 flex items-center shadow-sm transition-all duration-300 bg-white backdrop-blur-lg hover:bg-white' >
 
          <div className='relative flex w-full justify-between px-8'>
   
@@ -502,11 +502,11 @@ const Navbar = () => {
          
            {/* Menu Row */}
            <div>
-             <ul className='flex items-center text-sm font-semibold  gap-30 p-7 font-Outfit'>
+             <ul className='flex items-center text-xs font-semibold gap-30 font-Outfit px-15 py-5 bg-gray-50/45 border border-black/5 rounded-full'>
               {Menu.map((item) => (
               <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative z-50 cursor-pointer ${activeMenu === item.name ? 'text-black' : "text-[#2f3542]"} group`}>
                <a href={item.link}>   {item.name}
-                    <span className='absolute left-0 -bottom-1 h-0.5 w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/>  </a>
+                    <span className='absolute left-0 -bottom-px h-px w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/>  </a>
                 </li> 
               ))}
              </ul>
@@ -515,7 +515,8 @@ const Navbar = () => {
            {/* Menu Dropdown */}
            <AnimatePresence>
            {activeMenu && MENU_CONFIG[activeMenu] && (
-            <motion.div className='absolute top-full left-0 w-full bg-white backdrop-blur-3xl font-Lato shadow-md p-6 flex justify-evenly gap-8 z-50'initial="hidden" animate="visible" exit="exit" variants={dropdownVariants}>
+            <motion.div className='absolute top-full left-0 w-full bg-white font-Lato shadow-md p-6 flex justify-between gap-8 z-50'initial="hidden" animate="visible" exit="exit" variants={dropdownVariants}>
+              
               {MENU_CONFIG[activeMenu].columns.map((col, idx) => (
                 <div key={idx}>
                    <h4 className='font-semibold uppercase text-sm inline-block border-b border-gray-500 pb-0.5 mb-2'>
@@ -524,7 +525,7 @@ const Navbar = () => {
                    <ul>
                     {col.items.map((item, index) => (
                       <li key={index} className='py-1'>
-                        <a href={item.href} className=' text-[#57534d] hover:text-black cursor-pointer'>
+                        <a href={item.href} className=' text-[#57534d] font-Outfit hover:text-black cursor-pointer'>
                        {item.label}
                         </a>
                       </li>
@@ -532,6 +533,13 @@ const Navbar = () => {
                    </ul>                  
                 </div>
               ))}
+
+              {MENU_CONFIG[activeMenu].featuredImages.map((img, idx) => (
+                <div key={idx} className='gap-5'>
+                  <img src={img.src} alt={img.alt} className='h-100'/>
+                </div>
+              ))}
+              
             </motion.div>
            )}
            </AnimatePresence>

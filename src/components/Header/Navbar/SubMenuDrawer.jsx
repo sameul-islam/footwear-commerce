@@ -28,13 +28,13 @@ const SubMenuDrawer = ({ isOpen, onClose, onBack, menuName, onOpenItemList }) =>
         exit={{ x: "-100%" }}
         transition={{ type: "tween", duration: 0.3 }}
       >
-        <div className="p-4 sm:p-5 border-b border-red-100 flex justify-between items-center">
+        <div className="p-4 sm:p-5 border-b border-gray-100 flex justify-between items-center">
           <button onClick={onBack} className="flex items-center gap-0.5">
-            <MdOutlineArrowBackIosNew className="font-semibold text-red-500 cursor-pointer h-6 w-6 sm:h-7 sm:w-7"/><span className="font-Lato text-gray-400/80 text-md sm:text-lg">Back</span> 
+            <MdOutlineArrowBackIosNew className="font-semibold text-gray-800 cursor-pointer h-6 w-6 sm:h-7 sm:w-7"/><span className="font-Lato text-gray-400/80 text-md sm:text-lg">Back</span> 
             </button>
           <h2 className="font-semibold font-Lato text-lg sm:text-xl text-gray-700">{menuName}</h2>
           <button onClick={onClose}>
-           <GrClose className="font-semibold text-red-500 cursor-pointer h-6 w-6 sm:h-7 sm:w-7"/>
+           <GrClose className="font-semibold text-gray-800 cursor-pointer h-6 w-6 sm:h-7 sm:w-7"/>
           </button>
         </div>
 
