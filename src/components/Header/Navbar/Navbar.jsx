@@ -502,9 +502,9 @@ const Navbar = () => {
          
            {/* Menu Row */}
            <div>
-             <ul className='flex items-center text-xs font-semibold gap-30 font-Outfit px-15 py-5 bg-gray-50/45 border border-black/5 rounded-full'>
+             <ul className='flex items-center text-sm font-semibold gap-30 font-Outfit px-15 py-5 bg-gray-50/45 border border-black/5 rounded-full'>
               {Menu.map((item) => (
-              <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative z-50 cursor-pointer ${activeMenu === item.name ? 'text-black' : "text-[#2f3542]"} group`}>
+              <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative z-50 cursor-pointer ${activeMenu === item.name ? 'text-black' : "text-gray-700"} group`}>
                <a href={item.link}>   {item.name}
                     <span className='absolute left-0 -bottom-px h-px w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/>  </a>
                 </li> 
@@ -536,7 +536,7 @@ const Navbar = () => {
 
               {MENU_CONFIG[activeMenu].featuredImages.map((img, idx) => (
                 <div key={idx} className='gap-5'>
-                  <img src={img.src} alt={img.alt} className='h-100'/>
+                  <img src={img.src} alt={img.alt} className='h-70'/>
                 </div>
               ))}
               

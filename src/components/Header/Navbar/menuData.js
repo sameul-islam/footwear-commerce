@@ -396,85 +396,86 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 import menFeatured1 from "../../../assets/image/menfeatured1.jpg";
 import menFeatured2 from "../../../assets/image/menfeatured2.webp";
 import womenFeatured1 from "../../../assets/image/womenfeatured1.webp";
 import womenFeatured2 from "../../../assets/image/womenfeatured2.webp";
 
 export const Menu = [
-  { id: 1, name: "MEN", link: "men", type: "dropdown" },
-  { id: 2, name: "WOMEN", link: "women", type: "dropdown" },
-  { id: 3, name: "OUR STORY", link: "our-story", type: "link" }
+  { id: 1, name: "MEN", link: "/men", type: "dropdown" },
+  { id: 2, name: "WOMEN", link: "/women", type: "dropdown" },
+  { id: 3, name: "OUR STORY", link: "/our-story", type: "link" },
 ];
+
 
 export const MENU_CONFIG = {
   MEN: {
     columns: [
       {
-        title: "Shoes",
+        title: "Footwear",
         items: [
-          { label: "Running Shoes", href: "/men/running-shoes" },
-          { label: "Training Shoes", href: "/men/training-shoes" },
-          { label: "Casual Shoes", href: "/men/casual-shoes" },
-          { label: "Formal Shoes", href: "/men/formal-shoes" },
-          { label: "Sneakers", href: "/men/sneakers" },
-          { label: "Loafers", href: "/men/loafers" },
-          { label: "Slip-ons", href: "/men/slip-ons" },
-          { label: "Boots", href: "/men/boots" }
-        ]
-      },
-      {
-        title: "Sandals & Slippers",
-        items: [
-          { label: "Sports Sandals", href: "/men/sports-sandals" },
-          { label: "Casual Sandals", href: "/men/casual-sandals" },
-          { label: "Flip Flops", href: "/men/flip-flops" },
-          { label: "Beach Sandals", href: "/men/beach-sandals" },
-          { label: "Slides", href: "/men/slides" },
-          { label: "Comfort Sandals", href: "/men/comfort-sandals" }
-        ]
+          { label: "Running Shoes", href: "/collections/men/running" },
+          { label: "Training Shoes", href: "/collections/men/training" },
+          { label: "Casual Shoes", href: "/collections/men/casual" },
+          { label: "Formal Shoes", href: "/collections/men/formal" },
+          { label: "Sneakers", href: "/collections/men/sneakers" },
+          { label: "Loafers", href: "/collections/men/loafers" },
+          { label: "Slip-ons", href: "/collections/men/slip-ons" },
+          { label: "Boots", href: "/collections/men/boots" },
+        ],
       },
       {
         title: "Collections",
         items: [
-          { label: "New Arrivals", href: "/men/new-arrivals" },
-          { label: "Best Sellers", href: "/men/best-sellers" },
-          { label: "Editor's Choice", href: "/men/editors-choice" },
-          { label: "Limited Edition", href: "/men/limited-edition" },
-          { label: "Seasonal Picks", href: "/men/seasonal-picks" },
-          { label: "Online Exclusive", href: "/men/online-exclusive" }
-        ]
+          { label: "New Arrivals", href: "/collections/men/new-arrivals" },
+          { label: "Best Sellers", href: "/collections/men/best-sellers" },
+          { label: "Editor's Choice", href: "/collections/men/editors-choice" },
+          { label: "Limited Edition", href: "/collections/men/limited-edition" },
+          { label: "Seasonal Picks", href: "/collections/men/seasonal-picks" },
+          { label: "Online Exclusive", href: "/collections/men/online-exclusive" },
+        ],
       },
       {
         title: "Shop By Color",
         items: [
-          { label: "Black", href: "/men/color/black" },
-          { label: "Brown", href: "/men/color/brown" },
-          { label: "White", href: "/men/color/white" },
-          { label: "Tan", href: "/men/color/tan" },
-          { label: "Grey", href: "/men/color/grey" },
-          { label: "Navy", href: "/men/color/navy" },
-          { label: "Beige", href: "/men/color/beige" }
-        ]
+          { label: "Black", href: "/collections/men/color/black" },
+          { label: "Brown", href: "/collections/men/color/brown" },
+          { label: "White", href: "/collections/men/color/white" },
+          { label: "Tan", href: "/collections/men/color/tan" },
+          { label: "Grey", href: "/collections/men/color/grey" },
+          { label: "Navy", href: "/collections/men/color/navy" },
+          { label: "Beige", href: "/collections/men/color/beige" },
+        ],
       },
       {
         title: "Brands",
         items: [
-          { label: "Nike", href: "/men/brand/nike" },
-          { label: "Adidas", href: "/men/brand/adidas" },
-          { label: "Puma", href: "/men/brand/puma" },
-          { label: "Reebok", href: "/men/brand/reebok" },
-          { label: "Skechers", href: "/men/brand/skechers" },
-          { label: "New Balance", href: "/men/brand/new-balance" },
-          { label: "Converse", href: "/men/brand/converse" },
-          { label: "Bata", href: "/men/brand/bata" }
-        ]
-      }
+          { label: "Nike", href: "/collections/men/brand/nike" },
+          { label: "Adidas", href: "/collections/men/brand/adidas" },
+          { label: "Puma", href: "/collections/men/brand/puma" },
+          { label: "Reebok", href: "/collections/men/brand/reebok" },
+          { label: "Skechers", href: "/collections/men/brand/skechers" },
+          { label: "New Balance", href: "/collections/men/brand/new-balance" },
+          { label: "Converse", href: "/collections/men/brand/converse" },
+        ],
+      },
     ],
     featuredImages: [
-      { src: menFeatured1, href: "/men/featured-1", alt: "Featured Men Collection 1" },
-      { src: menFeatured2, href: "/men/featured-2", alt: "Featured Men Collection 2" }
-    ]
+      { src: menFeatured1, href: "/collections/men/running", alt: "Featured Men Collection 1" },
+      { src: menFeatured2, href: "/collections/men/sneakers", alt: "Featured Men Collection 2" },
+    ],
   },
 
   WOMEN: {
@@ -482,67 +483,68 @@ export const MENU_CONFIG = {
       {
         title: "Footwear",
         items: [
-          { label: "Heels", href: "/women/heels" },
-          { label: "Flats", href: "/women/flats" },
-          { label: "Sneakers", href: "/women/sneakers" },
-          { label: "Casual Shoes", href: "/women/casual-shoes" },
-          { label: "Boots", href: "/women/boots" },
-          { label: "Loafers", href: "/women/loafers" },
-          { label: "Slip-ons", href: "/women/slip-ons" },
-          { label: "Running Shoes", href: "/women/running-shoes" }
-        ]
-      },
-      {
-        title: "Sandals",
-        items: [
-          { label: "Wedges", href: "/women/wedges" },
-          { label: "Flat Sandals", href: "/women/flat-sandals" },
-          { label: "Party Sandals", href: "/women/party-sandals" },
-          { label: "Slides", href: "/women/slides" },
-          { label: "Comfort Sandals", href: "/women/comfort-sandals" },
-          { label: "Beach Sandals", href: "/women/beach-sandals" }
-        ]
+          { label: "Running Shoes", href: "/collections/women/running" },
+          { label: "Sneakers", href: "/collections/women/sneakers" },
+          { label: "Casual Shoes", href: "/collections/women/casual" },
+          { label: "Formal Shoes", href: "/collections/women/formal" },
+          { label: "Heels", href: "/collections/women/heels" },
+          { label: "Flats", href: "/collections/women/flats" },
+          { label: "Loafers", href: "/collections/women/loafers" },
+          { label: "Boots", href: "/collections/women/boots" },
+        ],
       },
       {
         title: "Collections",
         items: [
-          { label: "New Arrivals", href: "/women/new-arrivals" },
-          { label: "Best Sellers", href: "/women/best-sellers" },
-          { label: "Editor's Choice", href: "/women/editors-choice" },
-          { label: "Limited Edition", href: "/women/limited-edition" },
-          { label: "Seasonal Picks", href: "/women/seasonal-picks" },
-          { label: "Online Exclusive", href: "/women/online-exclusive" }
-        ]
+          { label: "New Arrivals", href: "/collections/women/new-arrivals" },
+          { label: "Best Sellers", href: "/collections/women/best-sellers" },
+          { label: "Editor's Choice", href: "/collections/women/editors-choice" },
+          { label: "Limited Edition", href: "/collections/women/limited-edition" },
+          { label: "Seasonal Picks", href: "/collections/women/seasonal-picks" },
+          { label: "Online Exclusive", href: "/collections/women/online-exclusive" },
+        ],
       },
       {
         title: "Shop By Color",
         items: [
-          { label: "Black", href: "/women/color/black" },
-          { label: "Beige", href: "/women/color/beige" },
-          { label: "White", href: "/women/color/white" },
-          { label: "Pink", href: "/women/color/pink" },
-          { label: "Red", href: "/women/color/red" },
-          { label: "Blue", href: "/women/color/blue" },
-          { label: "Brown", href: "/women/color/brown" }
-        ]
+          { label: "Black", href: "/collections/women/color/black" },
+          { label: "Beige", href: "/collections/women/color/beige" },
+          { label: "White", href: "/collections/women/color/white" },
+          { label: "Pink", href: "/collections/women/color/pink" },
+          { label: "Red", href: "/collections/women/color/red" },
+          { label: "Blue", href: "/collections/women/color/blue" },
+          { label: "Brown", href: "/collections/women/color/brown" },
+        ],
       },
       {
         title: "Brands",
         items: [
-          { label: "Nike", href: "/women/brand/nike" },
-          { label: "Adidas", href: "/women/brand/adidas" },
-          { label: "Puma", href: "/women/brand/puma" },
-          { label: "Reebok", href: "/women/brand/reebok" },
-          { label: "Skechers", href: "/women/brand/skechers" },
-          { label: "Converse", href: "/women/brand/converse" },
-          { label: "New Balance", href: "/women/brand/new-balance" },
-          { label: "Bata", href: "/women/brand/bata" }
-        ]
-      }
+          { label: "Nike", href: "/collections/women/brand/nike" },
+          { label: "Adidas", href: "/collections/women/brand/adidas" },
+          { label: "Puma", href: "/collections/women/brand/puma" },
+          { label: "Reebok", href: "/collections/women/brand/reebok" },
+          { label: "Skechers", href: "/collections/women/brand/skechers" },
+          { label: "Converse", href: "/collections/women/brand/converse" },
+          { label: "New Balance", href: "/collections/women/brand/new-balance" },
+        ],
+      },
     ],
     featuredImages: [
-      { src: womenFeatured1, href: "/women/featured-1", alt: "Featured Women Collection 1" },
-      { src: womenFeatured2, href: "/women/featured-2", alt: "Featured Women Collection 2" }
-    ]
-  }
+      { src: womenFeatured1, href: "/collections/women/running", alt: "Featured Women Collection 1" },
+      { src: womenFeatured2, href: "/collections/women/sneakers", alt: "Featured Women Collection 2" },
+    ],
+  },
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
