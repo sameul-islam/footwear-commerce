@@ -12,6 +12,7 @@ import BestsellersProductPage from './pages/BestsellersProductPage'
 import FeaturedProductPage from './pages/FeaturedProductPage'
 import SearchResultsPage from './pages/searchquery/SearchResultsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
+import CollectionPage from './pages/CollectionPage'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
              <Route path='/featureds' element={<FeaturedProductPage/>} />
              <Route path='/search' element={<SearchResultsPage/>} />
              <Route path='/product/:slug' element={<ProductDetailPage/>} />
+             <Route path='/collections/:gender/:productType' element={<CollectionPage/>} />
             </Routes>
             <Footer/>
       </div>

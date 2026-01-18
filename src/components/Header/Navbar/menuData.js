@@ -408,6 +408,146 @@
 
 
 
+// import menFeatured1 from "../../../assets/image/menfeatured1.jpg";
+// import menFeatured2 from "../../../assets/image/menfeatured2.webp";
+// import womenFeatured1 from "../../../assets/image/womenfeatured1.webp";
+// import womenFeatured2 from "../../../assets/image/womenfeatured2.webp";
+
+// export const Menu = [
+//   { id: 1, name: "MEN", link: "/men", type: "dropdown" },
+//   { id: 2, name: "WOMEN", link: "/women", type: "dropdown" },
+//   { id: 3, name: "OUR STORY", link: "/our-story", type: "link" },
+// ];
+
+
+// export const MENU_CONFIG = {
+//   MEN: {
+//     columns: [
+//       {
+//         title: "Footwear",
+//         items: [
+//           { label: "Running Shoes", href: "/collections/men/running" },
+//           { label: "Training Shoes", href: "/collections/men/training" },
+//           { label: "Casual Shoes", href: "/collections/men/casual" },
+//           { label: "Formal Shoes", href: "/collections/men/formal" },
+//           { label: "Sneakers", href: "/collections/men/sneakers" },
+//           { label: "Loafers", href: "/collections/men/loafers" },
+//           { label: "Slip-ons", href: "/collections/men/slip-ons" },
+//           { label: "Boots", href: "/collections/men/boots" },
+//         ],
+//       },
+//       {
+//         title: "Collections",
+//         items: [
+//           { label: "New Arrivals", href: "/collections/men/new-arrivals" },
+//           { label: "Best Sellers", href: "/collections/men/best-sellers" },
+//           { label: "Editor's Choice", href: "/collections/men/editors-choice" },
+//           { label: "Limited Edition", href: "/collections/men/limited-edition" },
+//           { label: "Seasonal Picks", href: "/collections/men/seasonal-picks" },
+//           { label: "Online Exclusive", href: "/collections/men/online-exclusive" },
+//         ],
+//       },
+//       {
+//         title: "Shop By Color",
+//         items: [
+//           { label: "Black", href: "/collections/men/color/black" },
+//           { label: "Brown", href: "/collections/men/color/brown" },
+//           { label: "White", href: "/collections/men/color/white" },
+//           { label: "Tan", href: "/collections/men/color/tan" },
+//           { label: "Grey", href: "/collections/men/color/grey" },
+//           { label: "Navy", href: "/collections/men/color/navy" },
+//           { label: "Beige", href: "/collections/men/color/beige" },
+//         ],
+//       },
+//       {
+//         title: "Brands",
+//         items: [
+//           { label: "Nike", href: "/collections/men/brand/nike" },
+//           { label: "Adidas", href: "/collections/men/brand/adidas" },
+//           { label: "Puma", href: "/collections/men/brand/puma" },
+//           { label: "Reebok", href: "/collections/men/brand/reebok" },
+//           { label: "Skechers", href: "/collections/men/brand/skechers" },
+//           { label: "New Balance", href: "/collections/men/brand/new-balance" },
+//           { label: "Converse", href: "/collections/men/brand/converse" },
+//         ],
+//       },
+//     ],
+//     featuredImages: [
+//       { src: menFeatured1, href: "/collections/men/running", alt: "Featured Men Collection 1" },
+//       { src: menFeatured2, href: "/collections/men/sneakers", alt: "Featured Men Collection 2" },
+//     ],
+//   },
+
+//   WOMEN: {
+//     columns: [
+//       {
+//         title: "Footwear",
+//         items: [
+//           { label: "Running Shoes", href: "/collections/women/running" },
+//           { label: "Sneakers", href: "/collections/women/sneakers" },
+//           { label: "Casual Shoes", href: "/collections/women/casual" },
+//           { label: "Formal Shoes", href: "/collections/women/formal" },
+//           { label: "Heels", href: "/collections/women/heels" },
+//           { label: "Flats", href: "/collections/women/flats" },
+//           { label: "Loafers", href: "/collections/women/loafers" },
+//           { label: "Boots", href: "/collections/women/boots" },
+//         ],
+//       },
+//       {
+//         title: "Collections",
+//         items: [
+//           { label: "New Arrivals", href: "/collections/women/new-arrivals" },
+//           { label: "Best Sellers", href: "/collections/women/best-sellers" },
+//           { label: "Editor's Choice", href: "/collections/women/editors-choice" },
+//           { label: "Limited Edition", href: "/collections/women/limited-edition" },
+//           { label: "Seasonal Picks", href: "/collections/women/seasonal-picks" },
+//           { label: "Online Exclusive", href: "/collections/women/online-exclusive" },
+//         ],
+//       },
+//       {
+//         title: "Shop By Color",
+//         items: [
+//           { label: "Black", href: "/collections/women/color/black" },
+//           { label: "Beige", href: "/collections/women/color/beige" },
+//           { label: "White", href: "/collections/women/color/white" },
+//           { label: "Pink", href: "/collections/women/color/pink" },
+//           { label: "Red", href: "/collections/women/color/red" },
+//           { label: "Blue", href: "/collections/women/color/blue" },
+//           { label: "Brown", href: "/collections/women/color/brown" },
+//         ],
+//       },
+//       {
+//         title: "Brands",
+//         items: [
+//           { label: "Nike", href: "/collections/women/brand/nike" },
+//           { label: "Adidas", href: "/collections/women/brand/adidas" },
+//           { label: "Puma", href: "/collections/women/brand/puma" },
+//           { label: "Reebok", href: "/collections/women/brand/reebok" },
+//           { label: "Skechers", href: "/collections/women/brand/skechers" },
+//           { label: "Converse", href: "/collections/women/brand/converse" },
+//           { label: "New Balance", href: "/collections/women/brand/new-balance" },
+//         ],
+//       },
+//     ],
+//     featuredImages: [
+//       { src: womenFeatured1, href: "/collections/women/running", alt: "Featured Women Collection 1" },
+//       { src: womenFeatured2, href: "/collections/women/sneakers", alt: "Featured Women Collection 2" },
+//     ],
+//   },
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
 import menFeatured1 from "../../../assets/image/menfeatured1.jpg";
 import menFeatured2 from "../../../assets/image/menfeatured2.webp";
 import womenFeatured1 from "../../../assets/image/womenfeatured1.webp";
@@ -424,127 +564,115 @@ export const MENU_CONFIG = {
   MEN: {
     columns: [
       {
-        title: "Footwear",
+        title: "Signature Footwear",
         items: [
-          { label: "Running Shoes", href: "/collections/men/running" },
-          { label: "Training Shoes", href: "/collections/men/training" },
-          { label: "Casual Shoes", href: "/collections/men/casual" },
-          { label: "Formal Shoes", href: "/collections/men/formal" },
-          { label: "Sneakers", href: "/collections/men/sneakers" },
-          { label: "Loafers", href: "/collections/men/loafers" },
-          { label: "Slip-ons", href: "/collections/men/slip-ons" },
-          { label: "Boots", href: "/collections/men/boots" },
+          { label: "Signature Sneakers", href: "/collections/men/sneakers" },
+          { label: "Performance Running", href: "/collections/men/running" },
+          { label: "Everyday Canvas", href: "/collections/men/canvas" },
+          { label: "Training", href: "/collections/men/training" },
+          { label: "Urban Boots", href: "/collections/men/boots" },
+          { label: "Limited Craft Series", href: "/collections/men/formal" },
         ],
       },
       {
-        title: "Collections",
+        title: "Curated Collections",
         items: [
-          { label: "New Arrivals", href: "/collections/men/new-arrivals" },
-          { label: "Best Sellers", href: "/collections/men/best-sellers" },
-          { label: "Editor's Choice", href: "/collections/men/editors-choice" },
-          { label: "Limited Edition", href: "/collections/men/limited-edition" },
-          { label: "Seasonal Picks", href: "/collections/men/seasonal-picks" },
-          { label: "Online Exclusive", href: "/collections/men/online-exclusive" },
+          { label: "Office Shoes", href: "/collections/men/office" },
+          { label: "Outdoor Gear", href: "/collections/men/outdoor" },
+          { label: "Performance Footwear", href: "/collections/men/performance" },
+          { label: "Hi-Top Shoes", href: "/collections/men/hi-top" },
+          { label: "Leather Collection", href: "/collections/men/leather" },
         ],
       },
       {
-        title: "Shop By Color",
+        title: "Designed For",
         items: [
-          { label: "Black", href: "/collections/men/color/black" },
-          { label: "Brown", href: "/collections/men/color/brown" },
-          { label: "White", href: "/collections/men/color/white" },
-          { label: "Tan", href: "/collections/men/color/tan" },
-          { label: "Grey", href: "/collections/men/color/grey" },
-          { label: "Navy", href: "/collections/men/color/navy" },
-          { label: "Beige", href: "/collections/men/color/beige" },
+          { label: "Everyday Movement", href: "/collections/men/everyday-movement" },
+          { label: "Performance & Training", href: "/collections/men/performance-training" },
+          { label: "Urban Lifestyle", href: "/collections/men/urban-lifestyle" },
+          { label: "Travel & Exploration", href: "/collections/men/travel-exploration" },
+          { label: "Smart & Refined", href: "/collections/men/smart-refined" },
         ],
       },
       {
-        title: "Brands",
+        title: "Craft & Philosophy",
         items: [
-          { label: "Nike", href: "/collections/men/brand/nike" },
-          { label: "Adidas", href: "/collections/men/brand/adidas" },
-          { label: "Puma", href: "/collections/men/brand/puma" },
-          { label: "Reebok", href: "/collections/men/brand/reebok" },
-          { label: "Skechers", href: "/collections/men/brand/skechers" },
-          { label: "New Balance", href: "/collections/men/brand/new-balance" },
-          { label: "Converse", href: "/collections/men/brand/converse" },
+          { label: "Our Craft", href: "/our-craft" },
+          { label: "Materials & Innovation", href: "/materials-innovation" },
+          { label: "Designed for Movement", href: "/designed-for-movement" },
+          { label: "Sustainability", href: "/sustainability" },
+          { label: "The Making Process", href: "/making-process" },
         ],
       },
     ],
     featuredImages: [
-      { src: menFeatured1, href: "/collections/men/running", alt: "Featured Men Collection 1" },
-      { src: menFeatured2, href: "/collections/men/sneakers", alt: "Featured Men Collection 2" },
+      {
+        src: menFeatured1,
+        href: "/collections/men/signature-sneakers",
+        alt: "Men Signature Footwear",
+      },
+      {
+        src: menFeatured2,
+        href: "/collections/men/limited-craft",
+        alt: "Men Limited Craft Series",
+      },
     ],
   },
-
   WOMEN: {
     columns: [
       {
-        title: "Footwear",
+        title: "Signature Footwear",
         items: [
-          { label: "Running Shoes", href: "/collections/women/running" },
-          { label: "Sneakers", href: "/collections/women/sneakers" },
-          { label: "Casual Shoes", href: "/collections/women/casual" },
-          { label: "Formal Shoes", href: "/collections/women/formal" },
-          { label: "Heels", href: "/collections/women/heels" },
-          { label: "Flats", href: "/collections/women/flats" },
-          { label: "Loafers", href: "/collections/women/loafers" },
-          { label: "Boots", href: "/collections/women/boots" },
+          { label: "Signature Sneakers", href: "/collections/women/sneakers" },
+          { label: "Performance Running", href: "/collections/women/running" },
+          { label: "Everyday Canvas", href: "/collections/women/canvas" },
+          { label: "Training", href: "/collections/women/training" },
+          { label: "Modern Heels", href: "/collections/women/heels" },
+          { label: "Limited Craft Series", href: "/collections/women/formal" },
         ],
       },
       {
-        title: "Collections",
+        title: "Curated Collections",
         items: [
           { label: "New Arrivals", href: "/collections/women/new-arrivals" },
+          { label: "Editor’s Selection", href: "/collections/women/editors-selection" },
           { label: "Best Sellers", href: "/collections/women/best-sellers" },
-          { label: "Editor's Choice", href: "/collections/women/editors-choice" },
+          { label: "Seasonal Drop", href: "/collections/women/seasonal-drop" },
           { label: "Limited Edition", href: "/collections/women/limited-edition" },
-          { label: "Seasonal Picks", href: "/collections/women/seasonal-picks" },
-          { label: "Online Exclusive", href: "/collections/women/online-exclusive" },
         ],
       },
       {
-        title: "Shop By Color",
+        title: "Designed For",
         items: [
-          { label: "Black", href: "/collections/women/color/black" },
-          { label: "Beige", href: "/collections/women/color/beige" },
-          { label: "White", href: "/collections/women/color/white" },
-          { label: "Pink", href: "/collections/women/color/pink" },
-          { label: "Red", href: "/collections/women/color/red" },
-          { label: "Blue", href: "/collections/women/color/blue" },
-          { label: "Brown", href: "/collections/women/color/brown" },
+          { label: "Everyday Movement", href: "/collections/women/everyday-movement" },
+          { label: "Active Performance", href: "/collections/women/active-performance" },
+          { label: "Urban Lifestyle", href: "/collections/women/urban-lifestyle" },
+          { label: "Travel & Exploration", href: "/collections/women/travel-exploration" },
+          { label: "Elegant & Refined", href: "/collections/women/elegant-refined" },
         ],
       },
       {
-        title: "Brands",
+        title: "Craft & Philosophy",
         items: [
-          { label: "Nike", href: "/collections/women/brand/nike" },
-          { label: "Adidas", href: "/collections/women/brand/adidas" },
-          { label: "Puma", href: "/collections/women/brand/puma" },
-          { label: "Reebok", href: "/collections/women/brand/reebok" },
-          { label: "Skechers", href: "/collections/women/brand/skechers" },
-          { label: "Converse", href: "/collections/women/brand/converse" },
-          { label: "New Balance", href: "/collections/women/brand/new-balance" },
+          { label: "Our Craft", href: "/our-craft" },
+          { label: "Materials & Innovation", href: "/materials-innovation" },
+          { label: "Designed for Movement", href: "/designed-for-movement" },
+          { label: "Sustainability", href: "/sustainability" },
+          { label: "The Making Process", href: "/making-process" },
         ],
       },
     ],
     featuredImages: [
-      { src: womenFeatured1, href: "/collections/women/running", alt: "Featured Women Collection 1" },
-      { src: womenFeatured2, href: "/collections/women/sneakers", alt: "Featured Women Collection 2" },
+      {
+        src: womenFeatured1,
+        href: "/collections/women/signature-sneakers",
+        alt: "Women Signature Footwear",
+      },
+      {
+        src: womenFeatured2,
+        href: "/collections/women/limited-craft",
+        alt: "Women Limited Craft Series",
+      },
     ],
   },
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
