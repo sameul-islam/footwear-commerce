@@ -548,6 +548,148 @@
 
 
 
+// import menFeatured1 from "../../../assets/image/menfeatured1.jpg";
+// import menFeatured2 from "../../../assets/image/menfeatured2.webp";
+// import womenFeatured1 from "../../../assets/image/womenfeatured1.webp";
+// import womenFeatured2 from "../../../assets/image/womenfeatured2.webp";
+
+// export const Menu = [
+//   { id: 1, name: "MEN", link: "/men", type: "dropdown" },
+//   { id: 2, name: "WOMEN", link: "/women", type: "dropdown" },
+//   { id: 3, name: "OUR STORY", link: "/our-story", type: "link" },
+// ];
+
+
+// export const MENU_CONFIG = {
+//   MEN: {
+//     columns: [
+//       {
+//         title: "Signature Footwear",
+//         items: [
+//           { label: "Signature Sneakers", href: "/collections/men/sneakers" },
+//           { label: "Performance Running", href: "/collections/men/running" },
+//           { label: "Everyday Canvas", href: "/collections/men/canvas" },
+//           { label: "Training", href: "/collections/men/training" },
+//           { label: "Urban Boots", href: "/collections/men/boots" },
+//           { label: "Limited Craft Series", href: "/collections/men/formal" },
+//         ],
+//       },
+//       {
+//         title: "Curated Collections",
+//         items: [
+//           { label: "Office Shoes", href: "/collections/men/office" },
+//           { label: "Outdoor Gear", href: "/collections/men/outdoor" },
+//           { label: "Performance Footwear", href: "/collections/men/performance" },
+//           { label: "Hi-Top Shoes", href: "/collections/men/hi-top" },
+//           { label: "Leather Collection", href: "/collections/men/leather" },
+//         ],
+//       },
+//       {
+//         title: "Designed For",
+//         items: [
+//           { label: "Everyday Movement", href: "/collections/men/everyday-movement" },
+//           { label: "Performance & Training", href: "/collections/men/performance-training" },
+//           { label: "Urban Lifestyle", href: "/collections/men/urban-lifestyle" },
+//           { label: "Travel & Exploration", href: "/collections/men/travel-exploration" },
+//           { label: "Smart & Refined", href: "/collections/men/smart-refined" },
+//         ],
+//       },
+//       {
+//         title: "Craft & Philosophy",
+//         items: [
+//           { label: "Our Craft", href: "/our-craft" },
+//           { label: "Materials & Innovation", href: "/materials-innovation" },
+//           { label: "Designed for Movement", href: "/designed-for-movement" },
+//           { label: "Sustainability", href: "/sustainability" },
+//           { label: "The Making Process", href: "/making-process" },
+//         ],
+//       },
+//     ],
+//     featuredImages: [
+//       {
+//         src: menFeatured1,
+//         href: "/collections/men/signature-sneakers",
+//         alt: "Men Signature Footwear",
+//       },
+//       {
+//         src: menFeatured2,
+//         href: "/collections/men/limited-craft",
+//         alt: "Men Limited Craft Series",
+//       },
+//     ],
+//   },
+//   WOMEN: {
+//     columns: [
+//       {
+//         title: "Signature Footwear",
+//         items: [
+//           { label: "Signature Sneakers", href: "/collections/women/sneakers" },
+//           { label: "Performance Running", href: "/collections/women/running" },
+//           { label: "Everyday Canvas", href: "/collections/women/canvas" },
+//           { label: "Training", href: "/collections/women/training" },
+//           { label: "Modern Heels", href: "/collections/women/heels" },
+//           { label: "Limited Craft Series", href: "/collections/women/formal" },
+//         ],
+//       },
+//       {
+//         title: "Curated Collections",
+//         items: [
+//           { label: "New Arrivals", href: "/collections/women/new-arrivals" },
+//           { label: "Editor’s Selection", href: "/collections/women/editors-selection" },
+//           { label: "Best Sellers", href: "/collections/women/best-sellers" },
+//           { label: "Seasonal Drop", href: "/collections/women/seasonal-drop" },
+//           { label: "Limited Edition", href: "/collections/women/limited-edition" },
+//         ],
+//       },
+//       {
+//         title: "Designed For",
+//         items: [
+//           { label: "Everyday Movement", href: "/collections/women/everyday-movement" },
+//           { label: "Active Performance", href: "/collections/women/active-performance" },
+//           { label: "Urban Lifestyle", href: "/collections/women/urban-lifestyle" },
+//           { label: "Travel & Exploration", href: "/collections/women/travel-exploration" },
+//           { label: "Elegant & Refined", href: "/collections/women/elegant-refined" },
+//         ],
+//       },
+//       {
+//         title: "Craft & Philosophy",
+//         items: [
+//           { label: "Our Craft", href: "/our-craft" },
+//           { label: "Materials & Innovation", href: "/materials-innovation" },
+//           { label: "Designed for Movement", href: "/designed-for-movement" },
+//           { label: "Sustainability", href: "/sustainability" },
+//           { label: "The Making Process", href: "/making-process" },
+//         ],
+//       },
+//     ],
+//     featuredImages: [
+//       {
+//         src: womenFeatured1,
+//         href: "/collections/women/signature-sneakers",
+//         alt: "Women Signature Footwear",
+//       },
+//       {
+//         src: womenFeatured2,
+//         href: "/collections/women/limited-craft",
+//         alt: "Women Limited Craft Series",
+//       },
+//     ],
+//   },
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import menFeatured1 from "../../../assets/image/menfeatured1.jpg";
 import menFeatured2 from "../../../assets/image/menfeatured2.webp";
 import womenFeatured1 from "../../../assets/image/womenfeatured1.webp";
@@ -559,119 +701,110 @@ export const Menu = [
   { id: 3, name: "OUR STORY", link: "/our-story", type: "link" },
 ];
 
-
 export const MENU_CONFIG = {
   MEN: {
     columns: [
       {
-        title: "Signature Footwear",
+        title: "Footwear Essentials",
         items: [
-          { label: "Signature Sneakers", href: "/collections/men/sneakers" },
-          { label: "Performance Running", href: "/collections/men/running" },
-          { label: "Everyday Canvas", href: "/collections/men/canvas" },
-          { label: "Training", href: "/collections/men/training" },
-          { label: "Urban Boots", href: "/collections/men/boots" },
-          { label: "Limited Craft Series", href: "/collections/men/formal" },
+          { label: "Sneakers", href: "/collections/men/sneakers" },
+          { label: "Running Shoes", href: "/collections/men/running" },
+          { label: "Training Shoes", href: "/collections/men/training" },
+          { label: "Canvas Shoes", href: "/collections/men/canvas" },
+          { label: "Formal Shoes", href: "/collections/men/formal" },
+          { label: "Boots", href: "/collections/men/boots" },
         ],
       },
       {
-        title: "Curated Collections",
+        title: "By Style",
         items: [
-          { label: "Office Shoes", href: "/collections/men/office" },
-          { label: "Outdoor Gear", href: "/collections/men/outdoor" },
-          { label: "Performance Footwear", href: "/collections/men/performance" },
-          { label: "Hi-Top Shoes", href: "/collections/men/hi-top" },
-          { label: "Leather Collection", href: "/collections/men/leather" },
+          { label: "Slip-On", href: "/collections/men/slip-on" },
+          { label: "Loafers", href: "/collections/men/loafers" },
+          { label: "Casual Wear", href: "/collections/men/casual" },
+          { label: "Performance Gear", href: "/collections/men/performance" },
         ],
       },
       {
-        title: "Designed For",
+        title: "Collections",
         items: [
-          { label: "Everyday Movement", href: "/collections/men/everyday-movement" },
-          { label: "Performance & Training", href: "/collections/men/performance-training" },
-          { label: "Urban Lifestyle", href: "/collections/men/urban-lifestyle" },
-          { label: "Travel & Exploration", href: "/collections/men/travel-exploration" },
-          { label: "Smart & Refined", href: "/collections/men/smart-refined" },
+          { label: "Best Sellers", href: "/bestsellers?gender=men" },
+          { label: "Featured Products", href: "/featureds?gender=men" },
+          { label: "New Arrivals", href: "/men" },
+          { label: "Premium Range", href: "/collections/men/premium" },
         ],
       },
       {
-        title: "Craft & Philosophy",
+        title: "Discover",
         items: [
-          { label: "Our Craft", href: "/our-craft" },
-          { label: "Materials & Innovation", href: "/materials-innovation" },
-          { label: "Designed for Movement", href: "/designed-for-movement" },
+          { label: "Our Craft", href: "/our-story" },
           { label: "Sustainability", href: "/sustainability" },
-          { label: "The Making Process", href: "/making-process" },
+          { label: "Size Guide", href: "/size-guide" },
         ],
       },
     ],
     featuredImages: [
       {
         src: menFeatured1,
-        href: "/collections/men/signature-sneakers",
-        alt: "Men Signature Footwear",
+        href: "/collections/men/sneakers",
+        alt: "Men's Sneakers Collection",
       },
       {
         src: menFeatured2,
-        href: "/collections/men/limited-craft",
-        alt: "Men Limited Craft Series",
+        href: "/collections/men/formal",
+        alt: "Men's Formal Collection",
       },
     ],
   },
   WOMEN: {
     columns: [
       {
-        title: "Signature Footwear",
+        title: "Footwear Essentials",
         items: [
-          { label: "Signature Sneakers", href: "/collections/women/sneakers" },
-          { label: "Performance Running", href: "/collections/women/running" },
-          { label: "Everyday Canvas", href: "/collections/women/canvas" },
-          { label: "Training", href: "/collections/women/training" },
-          { label: "Modern Heels", href: "/collections/women/heels" },
-          { label: "Limited Craft Series", href: "/collections/women/formal" },
+          { label: "Sneakers", href: "/collections/women/sneakers" },
+          { label: "Running Shoes", href: "/collections/women/running" },
+          { label: "Training Shoes", href: "/collections/women/training" },
+          { label: "Heels", href: "/collections/women/heels" },
+          { label: "Flats", href: "/collections/women/flats" },
+          { label: "Sandals", href: "/collections/women/sandals" },
         ],
       },
       {
-        title: "Curated Collections",
+        title: "By Style",
         items: [
-          { label: "New Arrivals", href: "/collections/women/new-arrivals" },
-          { label: "Editor’s Selection", href: "/collections/women/editors-selection" },
-          { label: "Best Sellers", href: "/collections/women/best-sellers" },
-          { label: "Seasonal Drop", href: "/collections/women/seasonal-drop" },
-          { label: "Limited Edition", href: "/collections/women/limited-edition" },
+          { label: "Slip-On", href: "/collections/women/slip-on" },
+          { label: "Boots", href: "/collections/women/boots" },
+          { label: "Canvas Shoes", href: "/collections/women/canvas" },
+          { label: "Casual Wear", href: "/collections/women/casual" },
         ],
       },
       {
-        title: "Designed For",
+        title: "Collections",
         items: [
-          { label: "Everyday Movement", href: "/collections/women/everyday-movement" },
-          { label: "Active Performance", href: "/collections/women/active-performance" },
-          { label: "Urban Lifestyle", href: "/collections/women/urban-lifestyle" },
-          { label: "Travel & Exploration", href: "/collections/women/travel-exploration" },
-          { label: "Elegant & Refined", href: "/collections/women/elegant-refined" },
+          { label: "Best Sellers", href: "/bestsellers?gender=women" },
+          { label: "Featured Products", href: "/featureds?gender=women" },
+          { label: "New Arrivals", href: "/women" },
+          { label: "Premium Collection", href: "/collections/women/premium" },
         ],
       },
       {
-        title: "Craft & Philosophy",
+        title: "Discover",
         items: [
-          { label: "Our Craft", href: "/our-craft" },
-          { label: "Materials & Innovation", href: "/materials-innovation" },
-          { label: "Designed for Movement", href: "/designed-for-movement" },
+          { label: "Our Craft", href: "/our-story" },
           { label: "Sustainability", href: "/sustainability" },
-          { label: "The Making Process", href: "/making-process" },
+          { label: "Size Guide", href: "/size-guide" },
         ],
       },
     ],
     featuredImages: [
       {
         src: womenFeatured1,
-        href: "/collections/women/signature-sneakers",
-        alt: "Women Signature Footwear",
+        href: "/collections/women/sneakers",
+        alt: "Women's Sneakers Collection",
       },
       {
         src: womenFeatured2,
-        href: "/collections/women/limited-craft",
-        alt: "Women Limited Craft Series",
+        href: "/collections/women/heels",
+        alt: "Women's Heels Collection",
       },
     ],
   },
