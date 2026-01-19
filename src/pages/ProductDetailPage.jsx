@@ -8,6 +8,7 @@ import ProductImagesGalleryMobile from "../components/ProductDetails/ProductImag
 import Spotlight from "../components/ProductDetails/SpotLight";
 import RecommendedProduct from "../components/ProductDetails/RecommendedProduct";
 import Reviews from "../components/ProductDetails/Reviews";
+import ProductGuidanceSection from "../components/ProductDetails/ProductGuidanceSection";
 
 const ProductDetailPage = () => {
   const { slug } = useParams();
@@ -40,6 +41,7 @@ const ProductDetailPage = () => {
     </div>
 
     {/* Lower Part */}
+    <ProductGuidanceSection/>
     <Spotlight/>
     <RecommendedProduct/>
     <Reviews/>

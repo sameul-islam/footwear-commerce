@@ -21,9 +21,7 @@ const categoryList = [
       { label: "FAQs", link: "#" },
       { label: "Track Your Order", link: "#" },
       { label: "Payment Methods", link: "#" },
-      { label: "Student Discount", link: "#" },
       { label: "Accessibility", link: "#" },
-      { label: "Report an Issue", link: "#" },
       { label: "Live Chat Support", link: "#" }
     ]
   },
@@ -43,8 +41,7 @@ const categoryList = [
       { label: "Gift Cards", link: "#" },
       { label: "Sustainable Products", link: "#" },
       { label: "Trending Now", link: "#" },
-      { label: "Shop by Collection", link: "#" },
-      { label: "Shop by Style", link: "#" }
+
     ]
   },
   {
@@ -57,11 +54,8 @@ const categoryList = [
       { label: "Sustainability", link: "#" },
       { label: "Innovation", link: "#" },
       { label: "Careers", link: "#" },
-      { label: "Press", link: "#" },
-      { label: "Investors", link: "#" },
       { label: "Affiliates", link: "#" },
       { label: "Wholesale", link: "#" },
-      { label: "Corporate Responsibility", link: "#" },
       { label: "Community", link: "#" },
       { label: "Events", link: "#" },
       { label: "Newsroom", link: "#" }

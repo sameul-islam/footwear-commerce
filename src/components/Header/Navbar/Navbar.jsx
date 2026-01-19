@@ -492,21 +492,21 @@ const Navbar = () => {
          <div className='hidden xl:flex z-50'>
         <motion.div   className='fixed top-0 w-full xl:h-20 z-50 flex items-center shadow-sm transition-all duration-300 bg-white backdrop-blur-lg hover:bg-white' >
 
-         <div className='relative flex w-full justify-between px-8'>
+         <div onMouseLeave={() => setActiveMenu(null)} className='relative flex w-full justify-between px-8'>
   
 
          <Link to="/" className=' cursor-pointer'>
             <img src={logo} alt="logo" className='h-18 cursor-pointer' />
           </Link> 
-         <div onMouseLeave={() => setActiveMenu(null)} className='flex items-center'>
+         <div className='flex items-center'>
          
            {/* Menu Row */}
            <div>
              <ul className='flex items-center text-sm font-semibold gap-30 font-Outfit px-15 py-4 bg-gray-50/45 border border-black/5 rounded-full'>
               {Menu.map((item) => (
               <li key={item.id}  onMouseEnter={() => setActiveMenu(item.name)} className={`relative z-50 cursor-pointer ${activeMenu === item.name ? 'text-black' : "text-gray-700"} group`}>
-               <a href={item.link}>   {item.name}
-                    <span className='absolute left-0 -bottom-px h-px w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/>  </a>
+               <Link to={item.link}>   {item.name}
+                    <span className='absolute left-0 -bottom-px h-px w-full bg-[#2f3542] scale-x-0 origin-right transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left'/>  </Link>
                 </li> 
               ))}
              </ul>
@@ -515,7 +515,7 @@ const Navbar = () => {
            {/* Menu Dropdown */}
            <AnimatePresence>
            {activeMenu && MENU_CONFIG[activeMenu] && (
-            <motion.div className='absolute top-full left-0 w-full bg-white font-Lato shadow-md p-6 flex justify-between gap-8 z-50'initial="hidden" animate="visible" exit="exit" variants={dropdownVariants}>
+            <motion.div className='absolute top-full left-0 w-full bg-white font-Lato shadow-md p-6 flex justify-evenly z-50'initial="hidden" animate="visible" exit="exit" variants={dropdownVariants}>
               
               {MENU_CONFIG[activeMenu].columns.map((col, idx) => (
                 <div key={idx}>
@@ -525,20 +525,26 @@ const Navbar = () => {
                    <ul>
                     {col.items.map((item, index) => (
                       <li key={index} className='py-1'>
-                        <a href={item.href} className=' text-[#57534d] font-Outfit hover:text-black cursor-pointer'>
+                        <Link to={item.href} className=' text-[#57534d] font-Outfit hover:text-black cursor-pointer'>
                        {item.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                    </ul>                  
                 </div>
               ))}
 
+              <div className='flex gap-2'>
               {MENU_CONFIG[activeMenu].featuredImages.map((img, idx) => (
-                <div key={idx} className='gap-5'>
-                  <img src={img.src} alt={img.alt} className='h-70'/>
-                </div>
+                <Link to={img.href} key={idx} className='relative overflow-hidden cursor-pointer group'>
+                  <img src={img.src} alt={img.alt} className='h-90 w-auto object-cover group-hover:scale-105 transition-transform duration-500'/>
+               
+                    <div className='absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300' />
+
+                  <span className='absolute bottom-4 left-4 text-white underline font-Playfair z-10'>{img.title}</span>
+                </Link>
               ))}
+              </div>
               
             </motion.div>
            )}

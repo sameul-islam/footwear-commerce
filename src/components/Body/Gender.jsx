@@ -99,7 +99,7 @@ const Gender = () => {
               src={item.image}
               alt={item.category}
               loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-1500 ease-linear hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-1000 ease-linear hover:scale-110"
             /> </Link>
           </div>
         ))}
