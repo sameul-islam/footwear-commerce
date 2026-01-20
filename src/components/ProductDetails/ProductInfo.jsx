@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import VariantSelector from "./VariantSelector";
 import AddToCart from "./AddToCart";
 import RatingStars from "./RatingStars";
@@ -6,9 +6,23 @@ import { GoVerified } from "react-icons/go";
 import TrustIcon from "./TrustIcon";
 import ProductDescription from "./ProductDescription";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { openCartDrawer } from "../../features/products/uiSlice";
 
 const ProductInfo = ({ product, activeVariant, setActiveVariant }) => {
   const [selectedSize, setSelectedSize] = useState(null);
+  const price = activeVariant.price || product.price;
+
+  useEffect(() => { 
+    if (activeVariant && activeVariant.stockBySize) {
+      const sizes = Object.keys(activeVariant.stockBySize);
+      if(sizes.length > 0) {
+        setSelectedSize(sizes[0]);
+      }
+    }
+  }, [activeVariant]);
+
+  const dispatch = useDispatch()
 
   return (
     <div className=" w-full md:w-1/2 md:h-screen items-center md:overflow-y-scroll no-scrollbar">
@@ -23,7 +37,7 @@ const ProductInfo = ({ product, activeVariant, setActiveVariant }) => {
 
       {/* Price */}
       <p className="text-xs font-semibold text-gray-900 mb-1">
-        {product.price.original} {product.price.currency}
+        {price.original} {price.currency}
       </p>
 
       <p className="text-sm font-Unna mb-6 text-[#791b1b] flex items-center gap-1"><GoVerified/> Honest Pricing Guide <span className="cursor-pointer hover:text-[#d08585] underline transition font-semibold">Learn More</span></p>
@@ -38,11 +52,15 @@ const ProductInfo = ({ product, activeVariant, setActiveVariant }) => {
       />
 
       {/* Add to Cart */}
+      {selectedSize && (
       <AddToCart
         product={product}
         activeVariant={activeVariant}
         selectedSize={selectedSize}
+        onOpenCartDrawer={() => dispatch(openCartDrawer())}
       />
+      )}
+
 
       {/* icons for trust information */}
 

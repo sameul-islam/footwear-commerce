@@ -3,8 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LiaTimesSolid } from "react-icons/lia";
 import CustomCursor from "./CustomCursor";
 
-const ProductImagesGallery = ({ product }) => {
-  const [activeVariant, setActiveVariant] = useState(product.variants[0]);
+const ProductImagesGallery = ({ product , activeVariant }) => {
   const [fullscreen, setFullscreen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
 

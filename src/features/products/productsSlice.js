@@ -198,3 +198,7 @@ export const selectBestSellers = createSelector(
     }
   );
 
+
+  // Product detail cart logic
+
+  export const selectProductBySlug = (slug) => createSelector([selectAllProducts],(products) => products.find(p => p.slug === slug));

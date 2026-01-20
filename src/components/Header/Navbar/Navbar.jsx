@@ -402,6 +402,11 @@ import MainDrawer from './MainDrawer';
 import SubMenuDrawer from './SubMenuDrawer';
 import ItemListDrawer from './ItemListDrawer';
 import { IoBagOutline } from 'react-icons/io5';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectCartQuantity } from '../../../features/products/cartSlice';
+import CartDrawer from '../../Cart/CartDrawer';
+import { closeCartDrawer, openCartDrawer, selectIsCartDrawerOpen } from '../../../features/products/uiSlice';
+
 
 
 
@@ -418,6 +423,11 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(null);
   const [itemListOpen, setItemListOpen] = useState(null);
+  // const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
+
+  // Cart Drawer logic
+  const dispatch = useDispatch();
+  const cartDrawerOpen = useSelector(selectIsCartDrawerOpen);
 
   const lastScrollY = useRef(0);
 
@@ -483,6 +493,10 @@ const Navbar = () => {
   const handleSearchClick = () => {
     navigate('/search');
   }
+
+  // Cart logic
+
+  const totalCartQuantity = useSelector(selectCartQuantity);
 
 
   return (
@@ -559,13 +573,16 @@ const Navbar = () => {
                 <BiUser size={22}/>
               </div>
               <div>
-                <div className='relative cursor-pointer'>
+                <div onClick={() => dispatch(openCartDrawer())} className='relative cursor-pointer'>
                 <IoBagOutline size={25}/>
+                {totalCartQuantity > 0 && (
+                  <>
                 <div className="absolute top-0 -right-0.5 h-2 w-2 rounded-full bg-red-900"/>
-
                 <div className="absolute top-1.5 pt-px right-1 left-1 text-red-950 text-xs font-Unna flex items-center justify-center">
-                  20
+                  {totalCartQuantity}
                 </div>
+                </>
+                )}
                 </div>
               </div>
             </div>
@@ -598,11 +615,13 @@ const Navbar = () => {
               <RiUser6Line className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
             </div>
 
-            <div className='relative'>
+            <div className='relative' onClick={() => dispatch(openCartDrawer())}>
               <BiCart className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
-              <div className="absolute -top-2 -right-1 h-4 w-4 rounded-full bg-[#2f3542] text-white text-xs flex items-center justify-center">
-                  2
+              {totalCartQuantity > 0 && (
+              <div className="absolute -top-2 -right-1 h-4 w-4 rounded-full bg-red-950 text-white text-xs flex items-center justify-center">
+                  {totalCartQuantity}
               </div>
+              )}
             </div>
             </div>
 
@@ -629,11 +648,13 @@ const Navbar = () => {
            <LuSearch className='h-6 w-6 sm:h-7 sm:w-7' onClick={handleSearchClick}/> <span className='font-Lato text-xs font-semibold'>Search</span>
            </div>
 
-            <div className='flex flex-col items-center justify-center relative'>
+            <div onClick={() => dispatch(openCartDrawer())} className='flex flex-col items-center justify-center relative'>
               <SlBag className='h-6 w-6 sm:h-7 sm:w-7'/><span className='font-Lato text-sm font-semibold'>Cart</span>
+              {totalCartQuantity > 0 && (
                  <div className="absolute top-1.5 sm:top-2 text-black text-xs font-bold flex items-center justify-center">
-                  2
+                  {totalCartQuantity}
                 </div>
+              )}
             </div>
 
             <div className='flex flex-col items-center justify-center'>
@@ -669,6 +690,8 @@ const Navbar = () => {
                 onBack={handleBackToSubMenu}
               />
 
+
+           <CartDrawer isOpen={cartDrawerOpen} onClose={() => dispatch(closeCartDrawer())} />
 
     </nav>
   )

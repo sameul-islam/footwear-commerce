@@ -1,25 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { selectAllProducts } from "../features/products/productsSlice";
+import { selectProductBySlug } from "../features/products/productsSlice";
 import ProductImagesGallery from "../components/ProductDetails/ProductImagesGallery";
 import ProductInfo from "../components/ProductDetails/ProductInfo";
 import ProductImagesGalleryMobile from "../components/ProductDetails/ProductImagesGalleryMobile";
 import Spotlight from "../components/ProductDetails/SpotLight";
 import RecommendedProduct from "../components/ProductDetails/RecommendedProduct";
-import Reviews from "../components/ProductDetails/Reviews";
 import ProductGuidanceSection from "../components/ProductDetails/ProductGuidanceSection";
 
 const ProductDetailPage = () => {
   const { slug } = useParams();
-  const products = useSelector(selectAllProducts);
-  const product = products.find((p) => p.slug === slug);
 
-  const [activeVariant, setActiveVariant] = useState(
-    product?.variants[0] || null
+  const product = useSelector(useMemo(() =>  selectProductBySlug(slug), [slug]));
+
+const [activeVariant, setActiveVariant] = useState(null);
+
+useEffect(() => {
+  if (product?.variants?.length) {
+    setActiveVariant(product.variants[0]);
+  }
+}, [product]);
+
+
+if (!product) {
+  return (
+    <section className="min-h-screen flex flex-col items-center justify-center">
+      <h1 className="text-2xl font-semibold">Product not available</h1>
+      <p className="text-gray-500 mt-2">
+        The product you are looking for no longer exists.
+      </p>
+    </section>
   );
+}
 
-  if (!product) return <div>Product not found</div>;
+ 
   if (!activeVariant) return <div>Loading...</div>;
 
   return (
@@ -31,7 +46,8 @@ const ProductDetailPage = () => {
         activeVariant={activeVariant}
         setActiveVariant={setActiveVariant}
       />
-      <ProductImagesGalleryMobile product={product}/>
+      <ProductImagesGalleryMobile product={product}  activeVariant={activeVariant}
+        setActiveVariant={setActiveVariant}/>
 
       <ProductInfo
         product={product}
@@ -44,7 +60,6 @@ const ProductDetailPage = () => {
     <ProductGuidanceSection/>
     <Spotlight/>
     <RecommendedProduct/>
-    <Reviews/>
 
     </div>
   );

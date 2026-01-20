@@ -34,18 +34,23 @@ const VariantSelector = ({
       </div>
       <div className="flex flex-wrap">
         {activeVariant &&
-          Object.keys(activeVariant.stockBySize).map((size) => (
-            <button
-              key={size}
-              className={`mr-2 mb-2 px-3 py-2 font-Outfit text-sm border border-gray-300 ${
-                selectedSize === size ? "bg-black text-white transition duration-300" : "text-gray-900"
-              }`}
-              disabled={activeVariant.stockBySize[size] === 0}
-              onClick={() => setSelectedSize(size)}
-            >
-              {size}
-            </button>
-          ))}
+         Object.keys(activeVariant.stockBySize).map((size) => {
+         const stock = activeVariant.stockBySize[size]; 
+         return (
+         <button
+          key={size}
+          disabled={stock === 0}
+          className={`mr-2 mb-2 px-3 py-2 font-Outfit text-sm border border-gray-300 ${
+            stock === 0
+             ? "bg-black opacity-40 cursor-not-allowed line-through text-white transition duration-300"
+             : "text-gray-900 cursor-pointer"
+         } ${selectedSize === size ? "bg-black text-white" : ""}`}
+         onClick={() => setSelectedSize(size)}
+         >
+         {size}
+      </button>
+       );
+      })}
       </div>
     </div>
   );

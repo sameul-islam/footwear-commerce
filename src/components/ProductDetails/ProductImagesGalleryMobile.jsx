@@ -1,13 +1,16 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LiaTimesSolid } from "react-icons/lia";
 
-const ProductImagesGalleryMobile = ({ product }) => {
-  const [activeVariant] = useState(product.variants[0]);
+const ProductImagesGalleryMobile = ({ product , activeVariant }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [fullscreen, setFullscreen] = useState(false);
 
   const scrollRef = useRef(null);
+
+  useEffect(()=> {
+    setActiveIndex(0);
+  }, [activeVariant]);
 
   // Horizontal scroll handler for dots
   const handleScroll = () => {

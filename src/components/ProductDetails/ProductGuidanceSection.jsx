@@ -4,7 +4,7 @@ import sampleImage from "../../assets/image/product-guidance.png"
 
 const ProductGuidanceSection = () => {
   return (
-    <div className="w-full px-3 xl:px-10 mt-10 md:mt-20 xl:mt-25 flex flex-col-reverse xl:flex-row items-center justify-between overflow-hidden">
+    <div className="w-full px-3 xl:px-10 mt-5 md:mt-20 xl:mt-25 flex flex-col-reverse xl:flex-row items-center justify-between overflow-hidden">
       
       {/* Left Text Section */}
       <div className="xl:w-1/2 p-6 md:p-12 flex flex-col gap-6">
