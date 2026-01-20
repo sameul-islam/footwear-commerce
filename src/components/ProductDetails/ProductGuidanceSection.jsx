@@ -9,7 +9,7 @@ const ProductGuidanceSection = () => {
       {/* Left Text Section */}
       <div className="xl:w-1/2 p-6 md:p-12 flex flex-col gap-6">
         <h2 className="text-2xl md:text-3xl font-Outfit text-gray-800">
-          How to Make the Most of Your Purchase
+          How to Make the Most of Your Purchases
         </h2>
 
         <ul className="flex flex-col gap-4">
@@ -22,7 +22,7 @@ const ProductGuidanceSection = () => {
           <li className="flex items-start gap-3">
             <AiOutlineUndo size={24} className="text-gray-700 mt-1" />
             <span className="text-gray-700 font-Outfit text-sm md:text-base">
-              Easy Returns & Exchanges: Return within 30 days if it doesn’t fit or meet your expectations.
+              Easy Returns & Exchanges: Return within 30 days if it doesn't fit or meet your expectations.
             </span>
           </li>
           <li className="flex items-start gap-3">
