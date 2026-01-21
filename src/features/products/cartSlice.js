@@ -35,7 +35,7 @@ const cartSlice = createSlice({
           currency: product.price.currency,
           variantColor: variant.color,
           size,
-          quantity,
+          quantity: safeQuantity,
           stock: variant.stockBySize[size],
         });
       }
@@ -50,7 +50,7 @@ const cartSlice = createSlice({
       const { id, quantity } = action.payload;
       const item = state.items.find(i => i.id === id);
       if (item) {
-        item.quantity = Math.min(quantity, item.stock);
+        item.quantity = Math.min(Math.max(1, quantity), item.stock);
       }
     },
 
@@ -63,14 +63,10 @@ const cartSlice = createSlice({
 export const { addToCart, removeFromCart, updateQuantity, clearCart } = cartSlice.actions;
 export default cartSlice.reducer;
 
-
 export const selectCartItems = state => state.cart.items;
 
-export const selectCartQuantity = state => state.cart.items.reduce((acc, item) => acc + item.quantity, 0);
+export const selectCartQuantity = state => 
+  state.cart.items.reduce((acc, item) => acc + item.quantity, 0);
 
 export const selectCartTotal = state =>
-  state.cart.items.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0
-  );
-
+  state.cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0);

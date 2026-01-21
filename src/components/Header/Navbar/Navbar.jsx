@@ -618,7 +618,7 @@ const Navbar = () => {
             <div className='relative' onClick={() => dispatch(openCartDrawer())}>
               <BiCart className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
               {totalCartQuantity > 0 && (
-              <div className="absolute -top-2 -right-1 h-4 w-4 rounded-full bg-red-950 text-white text-xs flex items-center justify-center">
+              <div className="absolute -top-2 -right-1 h-4 w-4 rounded-full bg-[#791b1b] text-white text-xs font-Unna font-semibold flex items-center justify-center">
                   {totalCartQuantity}
               </div>
               )}

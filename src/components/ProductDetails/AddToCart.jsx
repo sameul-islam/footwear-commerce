@@ -59,43 +59,108 @@
 
 
 
+// import React, { useState } from "react";
+// import { useDispatch } from "react-redux";
+// import { addToCart } from '../../features/products/cartSlice'
+
+// const AddToCart = ({ product, activeVariant, selectedSize, onOpenCartDrawer }) => {
+//   const dispatch = useDispatch();
+//   const [isAdding, setIsAdding] = useState(false);
+
+//   const handleAddToCart = () => {
+//     if (!selectedSize || isAdding) return;
+//     setIsAdding(true);
+
+//     dispatch(
+//       addToCart({
+//         id: product.id + selectedSize,
+//         name: product.name,
+//         image: activeVariant.images[0],
+//         color: activeVariant.color || "N/A",
+//         price: {
+//           original: activeVariant.price?.original || 0,
+//           currency: activeVariant.price?.currency || "$",
+//         },
+//         size: selectedSize,
+//         quantity: 1,
+//       })
+//     );
+
+//     onOpenCartDrawer?.();
+
+//     setTimeout(() => setIsAdding(false), 800);
+//   };
+
+//   return (
+//     <button
+//       onClick={handleAddToCart}
+//       disabled={isAdding}
+//       className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer font-Outfit text-sm transition duration-300 disabled:opacity-60"
+//     >
+//       {isAdding ? "ADDING..." : "ADD TO CART"}
+//     </button>
+//   );
+// };
+
+// export default AddToCart;
+
+
+
+
+
+
+
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addToCart } from '../../features/products/cartSlice'
+import { addToCart } from '../../features/products/cartSlice';
 
 const AddToCart = ({ product, activeVariant, selectedSize, onOpenCartDrawer }) => {
   const dispatch = useDispatch();
   const [isAdding, setIsAdding] = useState(false);
 
-  const handleAddToCart = () => {
+  const handleAddToCart = async () => {
     if (!selectedSize || isAdding) return;
+    
+    // Start adding state
     setIsAdding(true);
 
+    // Dispatch to cart with correct payload structure
     dispatch(
       addToCart({
-        id: product.id + selectedSize,
-        name: product.name,
-        image: activeVariant.images[0],
-        color: activeVariant.color || "N/A",
-        price: {
-          original: activeVariant.price?.original || 0,
-          currency: activeVariant.price?.currency || "$",
+        product: {
+          id: product.id,
+          name: product.name,
+          brand: product.brand,
+          price: product.price
+        },
+        variant: {
+          color: activeVariant.color || "N/A",
+          images: activeVariant.images,
+          price: activeVariant.price,
+          stockBySize: activeVariant.stockBySize
         },
         size: selectedSize,
-        quantity: 1,
+        quantity: 1
       })
     );
 
-    onOpenCartDrawer?.();
+    // Wait for 800ms to show "ADDING..." state
+    await new Promise(resolve => setTimeout(resolve, 800));
 
-    setTimeout(() => setIsAdding(false), 800);
+    // Stop adding state
+    setIsAdding(false);
+
+    // Wait a bit more, then open drawer
+    setTimeout(() => {
+      onOpenCartDrawer?.();
+    }, 100);
   };
 
   return (
     <button
       onClick={handleAddToCart}
       disabled={isAdding}
-      className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer font-Outfit text-sm transition duration-300 disabled:opacity-60"
+      className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer font-Outfit text-sm transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
     >
       {isAdding ? "ADDING..." : "ADD TO CART"}
     </button>
