@@ -91,7 +91,7 @@ Today, I created the product details page. I've completed about 50% of it, but t
 
 Today, I worked on the Product Detail Page. I completed the Product Info section and made it mobile responsive. Additionally, I implemented the Recommended Products section.
 
-### Day 21 – January 22, 2026
+### Day 22 – January 22, 2026
 
 Over the past six to seven days, I made a lot of changes to the project, which is why I couldn't keep a clear, day-by-day record of what was done and when.
 Most importantly, I completely redesigned the navigation bar. The previous version looked very attractive, but it didn't align properly with my data structure and API logic.So even though it was visually pleasing, I decided to let it go and rebuild it from scratch.😢. Now, the navigation bar is fully completed and properly integrated.
