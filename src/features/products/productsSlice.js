@@ -14,6 +14,7 @@ const initialState = {
     productType: null,
     priceRange: defaultPriceRange,
     sizes: [],
+    brands: [],
     colors: [],
     availability: null,
     flags: [],
@@ -42,6 +43,11 @@ const productsSlice = createSlice ({
     toggleSize(state, action) {
       const size = action.payload;
       state.filters.sizes.includes(size)? state.filters.sizes = state.filters.sizes.filter(s => s !== size): state.filters.sizes.push(size);
+    },
+
+    toggleBrand(state, action) {
+      const brand = action.payload;
+      state.filters.brands.includes(brand)? state.filters.brands = state.filters.brands.filter(b => b !== brand): state.filters.brands.push(brand);
     },
 
     toggleColor(state, action) {
@@ -82,7 +88,7 @@ const productsSlice = createSlice ({
   }
 });
 
-export const { setProductType, setPriceRange, toggleSize, toggleColor,toggleFlag,setGender, setAvailability, setSortBy, resetFilters, setViewMode, setSearchQuery } = productsSlice.actions;
+export const { setProductType, setPriceRange, toggleSize, toggleBrand, toggleColor,toggleFlag,setGender, setAvailability, setSortBy, resetFilters, setViewMode, setSearchQuery } = productsSlice.actions;
 
 export default productsSlice.reducer;
 
@@ -108,6 +114,9 @@ export const selectFilteredProducts = createSelector(
       p.price.original >= filters.priceRange[0] &&
       p.price.original <= filters.priceRange[1]
     );
+
+    if(filters.brands.length)
+      result = result.filter(p => filters.brands.includes(p.brand))
 
     if (filters.sizes.length)
       result = result.filter(p =>
@@ -174,10 +183,12 @@ export const selectBestSellers = createSelector(
 
     const sizes = unique(flatten(products.map(p => p.variants.map(v => Object.keys(v.stockBySize).filter(size => v.stockBySize[size] > 0 ))))).sort((a, b) => a - b);
 
+    const brands = unique(products.map(b => b.brand))
+
     const genders = unique(products.map(p => p.gender));
 
     return {
-      productTypes, priceRange, colors, sizes, genders
+      productTypes, priceRange, colors, sizes, brands, genders
     };
 
   });

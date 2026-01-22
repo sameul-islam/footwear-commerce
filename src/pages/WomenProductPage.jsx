@@ -15,6 +15,7 @@ import banner from '../assets/image/womenbanner.png'
 import Loader from '../components/Loader/Loader'
 import { motion } from 'framer-motion'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+import BrandFilter from '../components/Products/FilterDrawer/filters/BrandFilter'
 
 
 const faqData = [
@@ -171,8 +172,9 @@ const WomenProductPage = () => {
       <PriceRangeFilter/>
       <SizeFilter/>
       <ColorFilter/>
+      <BrandFilter/>
     </FilterDrawer>
-  
+    
     </div>
 
     )}

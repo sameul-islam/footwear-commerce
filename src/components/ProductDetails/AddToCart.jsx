@@ -1,115 +1,3 @@
-// import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { addToCart } from '../../features/products/cartSlice'
-
-// const AddToCart = ({ 
-//   product, 
-//   activeVariant, 
-//   selectedSize,
-//   onOpenCartDrawer
-// }) => {
-//   const dispatch = useDispatch();
-//   const [isAdding, setIsAdding] = useState(false);
-
-//   const handleAddToCart = () => {
-//     if (!selectedSize || isAdding) return;
-
-//     setIsAdding(true);
-
-//     onOpenCartDrawer?.();
-
-//     dispatch(
-//       addToCart({
-//         id: product.id + selectedSize,
-//         name: product.name,
-//         image: activeVariant.images[0],
-//         color: activeVariant.color || "N/A",
-//         price: {
-//           original: activeVariant.price?.original || 0,
-//           currency: activeVariant.price?.currency || "$",
-//         },
-//         size: selectedSize,
-//         quantity: 1,
-//       })
-//     );
-
-//     setTimeout(() => {
-//       setIsAdding(false);
-//     }, 800);
-//   };
-
-//   return (
-//     <button
-//       onClick={handleAddToCart}
-//       disabled={isAdding}
-//       className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer font-Outfit text-sm transition duration-300 disabled:opacity-60"
-//     >
-//       {isAdding ? "ADDING..." : "ADD TO CART"}
-//     </button>
-//   );
-// };
-
-// export default AddToCart;
-
-
-
-
-
-
-
-
-
-// import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { addToCart } from '../../features/products/cartSlice'
-
-// const AddToCart = ({ product, activeVariant, selectedSize, onOpenCartDrawer }) => {
-//   const dispatch = useDispatch();
-//   const [isAdding, setIsAdding] = useState(false);
-
-//   const handleAddToCart = () => {
-//     if (!selectedSize || isAdding) return;
-//     setIsAdding(true);
-
-//     dispatch(
-//       addToCart({
-//         id: product.id + selectedSize,
-//         name: product.name,
-//         image: activeVariant.images[0],
-//         color: activeVariant.color || "N/A",
-//         price: {
-//           original: activeVariant.price?.original || 0,
-//           currency: activeVariant.price?.currency || "$",
-//         },
-//         size: selectedSize,
-//         quantity: 1,
-//       })
-//     );
-
-//     onOpenCartDrawer?.();
-
-//     setTimeout(() => setIsAdding(false), 800);
-//   };
-
-//   return (
-//     <button
-//       onClick={handleAddToCart}
-//       disabled={isAdding}
-//       className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer font-Outfit text-sm transition duration-300 disabled:opacity-60"
-//     >
-//       {isAdding ? "ADDING..." : "ADD TO CART"}
-//     </button>
-//   );
-// };
-
-// export default AddToCart;
-
-
-
-
-
-
-
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from '../../features/products/cartSlice';
@@ -120,11 +8,9 @@ const AddToCart = ({ product, activeVariant, selectedSize, onOpenCartDrawer }) =
 
   const handleAddToCart = async () => {
     if (!selectedSize || isAdding) return;
-    
-    // Start adding state
+
     setIsAdding(true);
 
-    // Dispatch to cart with correct payload structure
     dispatch(
       addToCart({
         product: {
@@ -144,13 +30,13 @@ const AddToCart = ({ product, activeVariant, selectedSize, onOpenCartDrawer }) =
       })
     );
 
-    // Wait for 800ms to show "ADDING..." state
+
     await new Promise(resolve => setTimeout(resolve, 800));
 
-    // Stop adding state
+ 
     setIsAdding(false);
 
-    // Wait a bit more, then open drawer
+
     setTimeout(() => {
       onOpenCartDrawer?.();
     }, 100);
@@ -160,9 +46,9 @@ const AddToCart = ({ product, activeVariant, selectedSize, onOpenCartDrawer }) =
     <button
       onClick={handleAddToCart}
       disabled={isAdding}
-      className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer font-Outfit text-sm transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+      className="bg-black hover:bg-[#3d3d3d] text-white px-6 py-3 cursor-pointer transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
     >
-      {isAdding ? "ADDING..." : "ADD TO CART"}
+      {isAdding ? <span className="font-Outfit text-sm font-semibold">ADDING...</span> : <span className="font-Outfit text-sm font-semibold">ADD TO CART</span>}
     </button>
   );
 };

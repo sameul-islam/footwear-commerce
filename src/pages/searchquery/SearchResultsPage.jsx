@@ -15,6 +15,7 @@ import GenderFilter from '../../components/Products/FilterDrawer/filters/GenderF
 import SearchInput from './SearchInput'
 import NoResults from './NoResults'
 import Pagination from './Pagination'
+import BrandFilter from '../../components/Products/FilterDrawer/filters/BrandFilter'
 
 
 
@@ -115,6 +116,7 @@ const SearchResultsPage = () => {
       <PriceRangeFilter/>
       <SizeFilter/>
       <ColorFilter/>
+      <BrandFilter/>
     </FilterDrawer>
   
     </div>

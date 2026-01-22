@@ -577,7 +577,7 @@ const Navbar = () => {
                 <IoBagOutline size={25}/>
                 {totalCartQuantity > 0 && (
                   <>
-                <div className="absolute top-0 -right-0.5 h-2 w-2 rounded-full bg-red-900"/>
+                <div className="absolute top-0 -right-0.5 h-2 w-2 rounded-full bg-red-900 flex justify-center items-center before:absolute before:w-3 before:h-3 before:rounded-full before:animate-ping before:bg-linear-to-r before:from-purple-800 before:via-pink-800 before:to-red-800 before:opacity-40"/>
                 <div className="absolute top-1.5 pt-px right-1 left-1 text-red-950 text-xs font-Unna flex items-center justify-center">
                   {totalCartQuantity}
                 </div>
@@ -618,7 +618,7 @@ const Navbar = () => {
             <div className='relative' onClick={() => dispatch(openCartDrawer())}>
               <BiCart className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
               {totalCartQuantity > 0 && (
-              <div className="absolute -top-2 -right-1 h-4 w-4 rounded-full bg-[#791b1b] text-white text-xs font-Unna font-semibold flex items-center justify-center">
+              <div className="absolute -top-1 -right-1 h-3.5 w-3.5 rounded-full bg-[#791b1b] text-white text-xs font-Unna font-semibold flex items-center justify-center before:absolute before:w-3 before:h-3 before:rounded-full before:animate-ping before:bg-linear-to-r before:from-purple-800 before:via-pink-800 before:to-red-800 before:opacity-40">
                   {totalCartQuantity}
               </div>
               )}
@@ -651,9 +651,12 @@ const Navbar = () => {
             <div onClick={() => dispatch(openCartDrawer())} className='flex flex-col items-center justify-center relative'>
               <SlBag className='h-6 w-6 sm:h-7 sm:w-7'/><span className='font-Lato text-sm font-semibold'>Cart</span>
               {totalCartQuantity > 0 && (
+                <>
+                <div className="absolute top-0 -right-0.5 h-2 w-2 rounded-full bg-red-900 flex justify-center items-center before:absolute before:w-2.5 before:h-2.5 before:rounded-full before:animate-ping before:bg-linear-to-r before:from-purple-800 before:via-pink-800 before:to-red-800 before:opacity-40"/>
                  <div className="absolute top-1.5 sm:top-2 text-black text-xs font-bold flex items-center justify-center">
                   {totalCartQuantity}
                 </div>
+                </>
               )}
             </div>
 

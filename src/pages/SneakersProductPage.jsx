@@ -15,6 +15,7 @@ import Loader from '../components/Loader/Loader'
 import GenderFilter from '../components/Products/FilterDrawer/filters/GenderFilter'
 import { motion } from 'framer-motion'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+import BrandFilter from '../components/Products/FilterDrawer/filters/BrandFilter'
 
 
 const faqData = [
@@ -167,6 +168,7 @@ const SneakersProductPage = () => {
       <PriceRangeFilter/>
       <SizeFilter/>
       <ColorFilter/>
+      <BrandFilter/>
     </FilterDrawer>
   
     </div>

@@ -559,7 +559,7 @@ export const products = [
   slug: "classic-canvas-men-casual-shoes",
 
   name: "Classic Canvas",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "men",
   category: "casual",
@@ -625,7 +625,7 @@ export const products = [
   slug: "slip-on-comfort-women-casual-shoes",
 
   name: "Slip-On Comfort",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "women",
   category: "casual",
@@ -686,7 +686,7 @@ export const products = [
   slug: "low-heel-boots-women-fashion-boots",
 
   name: "Low-Heel Boots",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "fashion",
@@ -747,7 +747,7 @@ export const products = [
   slug: "running-pro-x-men-performance-running-shoes",
 
   name: "Running Pro X",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "men",
   category: "performance",
@@ -808,7 +808,7 @@ export const products = [
   slug: "training-flex-women-training-shoes",
 
   name: "Training Flex",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "women",
   category: "training",
@@ -946,7 +946,7 @@ export const products = [
   slug: "high-end-sneakers-women-premium-sneakers",
 
   name: "High-End Sneakers",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "women",
   category: "premium",
@@ -1018,7 +1018,7 @@ export const products = [
   slug: "women-fun-canvas-kids-casual-shoes",
 
   name: "Women Fun Canvas",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "women",
   category: "women",
@@ -1085,7 +1085,7 @@ export const products = [
   slug: "women-canvas-slip-on-casual-shoes",
 
   name: "women Canvas Slip-On",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "women",
@@ -1152,7 +1152,7 @@ export const products = [
   slug: "urban-street-sneaker-men-premium-sneakers",
 
   name: "Urban Street Sneaker",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "men",
   category: "sneakers",
@@ -1218,7 +1218,7 @@ export const products = [
   slug: "daily-comfort-slip-on-men-sneakers",
 
   name: "Daily Comfort Slip-On",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "men",
   category: "sneakers",
@@ -1350,7 +1350,7 @@ export const products = [
   slug: "power-run-pro-men-performance-sneakers",
 
   name: "Power Run Pro",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "men",
   category: "performance",
@@ -1416,7 +1416,7 @@ export const products = [
   slug: "canvas-flex-shoe-men-casual-canvas",
 
   name: "Canvas Flex Shoe",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "men",
   category: "canvas",
@@ -1478,7 +1478,7 @@ export const products = [
   slug: "elegant-heel-walk-women-heels",
 
   name: "Elegant Heel Walk",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "heels",
@@ -1536,7 +1536,7 @@ export const products = [
   slug: "women-active-trainer-women-training-shoes",
 
   name: "Women Active Trainer",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "women",
   category: "training",
@@ -1594,7 +1594,7 @@ export const products = [
   slug: "soft-walk-flat-women-casual-shoes",
 
   name: "Soft Walk Flat",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "women",
   category: "casual",
@@ -1710,7 +1710,7 @@ export const products = [
   slug: "womens-school-shoe-womens-formal-shoes",
 
   name: "Womens School Shoe",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "women",
   category: "formal",
@@ -1763,7 +1763,7 @@ export const products = [
   slug: "pro-street-high-sneaker-men-sneakers",
 
   name: "Pro Street High Sneaker",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "men",
   category: "sneakers",
@@ -1821,7 +1821,7 @@ export const products = [
   slug: "classic-office-formal-men-formal-shoes",
 
   name: "Classic Office Formal",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "men",
   category: "formal",
@@ -1879,7 +1879,7 @@ export const products = [
   slug: "urban-casual-walk-men-casual-shoes",
 
   name: "Urban Casual Walk",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "men",
   category: "casual",
@@ -1937,7 +1937,7 @@ export const products = [
   slug: "extreme-trail-boot-men-boots",
 
   name: "Extreme Trail Boot",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "men",
   category: "boots",
@@ -2053,7 +2053,7 @@ export const products = [
   slug: "elegant-party-heel-women-heels",
 
   name: "Elegant Party Heel",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "women",
   category: "heels",
@@ -2111,7 +2111,7 @@ export const products = [
   slug: "women-flex-sneaker-women-sneakers",
 
   name: "Women Flex Sneaker",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "women",
   category: "sneakers",
@@ -2169,7 +2169,7 @@ export const products = [
   slug: "soft-comfort-sandal-women-sandals",
 
   name: "Soft Comfort Sandal",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "sandals",
@@ -2227,7 +2227,7 @@ export const products = [
   slug: "womens-sport-sneaker-womens-sneakers",
 
   name: "Womens Sport Sneaker",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "women",
   category: "sneakers",
@@ -2285,7 +2285,7 @@ export const products = [
   slug: "womens-casual-slip-womens-slip-on",
 
   name: "womens Casual Slip",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "women",
   category: "slip-on",
@@ -2401,7 +2401,7 @@ export const products = [
   slug: "urban-canvas-low-men-canvas",
 
   name: "Urban Canvas Low",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "men",
   category: "canvas",
@@ -2459,7 +2459,7 @@ export const products = [
   slug: "premium-leather-derby-men-formal",
 
   name: "Premium Leather Derby",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "men",
   category: "formal",
@@ -2517,7 +2517,7 @@ export const products = [
   slug: "women-active-run-women-running",
 
   name: "Women Active Run",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "running",
@@ -2575,7 +2575,7 @@ export const products = [
   slug: "soft-step-flats-women-casual",
 
   name: "Soft Step Flats",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "women",
   category: "casual",
@@ -2633,7 +2633,7 @@ export const products = [
   slug: "luxury-strap-sandal-women-sandals",
 
   name: "Luxury Strap Sandal",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "women",
   category: "sandals",
@@ -2744,7 +2744,7 @@ export const products = [
   slug: "kids-outdoor-runner-kids-running",
 
   name: "Womens Outdoor Runner",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "women",
   category: "running",
@@ -2802,7 +2802,7 @@ export const products = [
   slug: "mens-easy-slip-mens-slip-on",
 
   name: "Mens Easy Slip",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "men",
   category: "slip-on",
@@ -2860,7 +2860,7 @@ export const products = [
   slug: "classic-mens-canvas-mens-canvas",
 
   name: "Classic Mens Canvas",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "men",
   category: "canvas",
@@ -2918,7 +2918,7 @@ export const products = [
   slug: "elite-power-trainer-men-training",
 
   name: "Elite Power Trainer",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "men",
   category: "training",
@@ -2976,7 +2976,7 @@ export const products = [
   slug: "minimal-slip-comfort-men-slip-on",
 
   name: "Minimal Slip Comfort",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "men",
   category: "slip-on",
@@ -3092,7 +3092,7 @@ export const products = [
   slug: "women-luxe-sneaker-women-sneakers",
 
   name: "Women Luxe Sneaker",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "women",
   category: "sneakers",
@@ -3150,7 +3150,7 @@ export const products = [
   slug: "daily-comfort-walk-women-casual",
 
   name: "Daily Comfort Walk",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "women",
   category: "casual",
@@ -3208,7 +3208,7 @@ export const products = [
   slug: "women-flex-trainer-women-training",
 
   name: "Women Flex Trainer",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "training",
@@ -3266,7 +3266,7 @@ export const products = [
   slug: "womens-everyday-sneaker-women-sneakers",
 
   name: "Womens Everyday Sneaker",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "women",
   category: "sneakers",
@@ -3324,7 +3324,7 @@ export const products = [
   slug: "womens-soft-sandal-womens-sandals",
 
   name: "Womens Soft Sandal",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "women",
   category: "sandals",
@@ -3440,7 +3440,7 @@ export const products = [
   slug: "mens-easy-walk-slip-mens-slip-on",
 
   name: "Mens Easy Walk Slip",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "men",
   category: "slip-on",
@@ -3498,7 +3498,7 @@ export const products = [
   slug: "men-easy-walk-slip-gray-men-slip-on",
 
   name: "Men Easy Walk Slip",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "men",
   category: "slip-on",
@@ -3556,7 +3556,7 @@ export const products = [
   slug: "men-easy-walk-slip-black-men-slip-on",
 
   name: "Men Easy Walk Slip - Black Edition",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "men",
   category: "slip-on",
@@ -3609,7 +3609,7 @@ export const products = [
   slug: "mens-easy-walk-slip-sport-men-slip-on",
 
   name: "Mens Easy Walk Slip - Sport Edition",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "men",
   category: "slip-on",
@@ -3667,7 +3667,7 @@ export const products = [
   slug: "mens-easy-walk-slip-premium-men-slip-on",
 
   name: "Mens Easy Walk Slip - Premium Edition",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "men",
   category: "slip-on",
@@ -3788,7 +3788,7 @@ export const products = [
   slug: "classic-canvas-blue-men-casual",
 
   name: "Classic Canvas - Blue Edition",
-  brand: "Aero",
+  brand: "Nike",
 
   gender: "men",
   category: "casual",
@@ -3851,7 +3851,7 @@ export const products = [
   slug: "classic-canvas-grey-men-casual",
 
   name: "Classic Canvas - Grey Edition",
-  brand: "Aero",
+  brand: "Adidas",
 
   gender: "men",
   category: "casual",
@@ -3914,7 +3914,7 @@ export const products = [
   slug: "women-active-trainer-pink-women-training",
 
   name: "Women Active Trainer - Pink Edition",
-  brand: "Aero",
+  brand: "Puma",
 
   gender: "women",
   category: "training",
@@ -3972,7 +3972,7 @@ export const products = [
   slug: "women-active-trainer-white-women-training",
 
   name: "Women Active Trainer - White Edition",
-  brand: "Aero",
+  brand: "Reebok",
 
   gender: "women",
   category: "training",
@@ -4030,7 +4030,7 @@ export const products = [
   slug: "women-active-trainer-premium-women-training",
 
   name: "Women Active Trainer - Premium Edition",
-  brand: "Aero",
+  brand: "Converse",
 
   gender: "women",
   category: "training",

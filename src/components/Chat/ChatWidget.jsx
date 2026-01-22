@@ -88,7 +88,7 @@ const ChatWidget = () => {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 p-4 overflow-y-auto space-y-2">
+            <div className="flex-1 p-4 no-scrollbar overflow-y-auto space-y-2">
               {messages.map(msg => (
                 <ChatMessage key={msg.id} message={msg} />
               ))}

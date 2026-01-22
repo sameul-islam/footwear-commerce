@@ -59,7 +59,7 @@ const FilterDrawer = ({ isOpen, onClose, children }) => {
                 Filter & Sort
               </h2>
               <button onClick={onClose}>
-                <RiCloseLargeLine size={26} className='text-gray-600 hover:rotate-180 transition duration-300 cursor-pointer'/>
+                <RiCloseLargeLine size={26} className='text-gray-600 hover:rotate-180 transition duration-700 cursor-pointer'/>
               </button>
             </div>
 

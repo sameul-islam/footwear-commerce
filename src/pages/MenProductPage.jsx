@@ -15,6 +15,7 @@ import banner from '../assets/image/menbanner.png'
 import Loader from '../components/Loader/Loader'
 import { motion } from 'framer-motion'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+import BrandFilter from '../components/Products/FilterDrawer/filters/BrandFilter'
 
 
 
@@ -169,6 +170,7 @@ const MenProductPage = () => {
       <PriceRangeFilter/>
       <SizeFilter/>
       <ColorFilter/>
+      <BrandFilter/>
     </FilterDrawer>
   
     </div>
