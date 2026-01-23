@@ -8,6 +8,7 @@ import ProductImagesGalleryMobile from "../components/ProductDetails/ProductImag
 import Spotlight from "../components/ProductDetails/SpotLight";
 import RecommendedProduct from "../components/ProductDetails/RecommendedProduct";
 import ProductGuidanceSection from "../components/ProductDetails/ProductGuidanceSection";
+import Reviews from "../components/ProductDetails/Reviews";
 
 const ProductDetailPage = () => {
   const { slug } = useParams();
@@ -60,7 +61,7 @@ if (!product) {
     <ProductGuidanceSection/>
     <Spotlight/>
     <RecommendedProduct/>
-
+    <Reviews/>
     </div>
   );
 };

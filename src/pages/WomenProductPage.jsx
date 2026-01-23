@@ -83,17 +83,19 @@ const WomenProductPage = () => {
   return (
      <>
       { loading ? (<Loader/>) : (
-    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-20'>
+    <div className='w-full mt-15 sm:mt-18 md:mt-22 lg:mt-28 xl:mt-22'>
       
       {/* header */}
-      <div className=' bg-[#7FAE8C] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-xl md:rounded-t-2xl '>
+      <div className=' bg-[#791b1b] w-[99%] mx-auto p-5 flex items-center justify-center font-Libre text-white rounded-t-xl md:rounded-t-2xl '>
         <Link to="/" className='p-1 cursor-pointer hover:text-gray-300 transition duration-300'>Home</Link> /<span className='p-1'>Women</span>
       </div>
 
-      {/* banner */}
-      <div className='w-[99%] mx-auto'>
-        <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-xl md:rounded-b-2xl' />
-      </div> 
+    {/* banner */}
+    <div className='w-[99%] mx-auto relative'>
+     <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-xl md:rounded-b-2xl' />
+     <div className='absolute inset-0 bg-black/30 rounded-b-2xl'/>
+     <div className='absolute inset-0 flex items-center justify-center text-2xl font-Quicksand font-bold text-white'>WOMEN'S COLLECTION</div>
+     </div>
   
       {/* Filter & Grid view */}
       <div className='flex w-[92%] mx-auto rounded-full bg-gray-50 border-t border-b border-gray-100 items-center justify-between mt-2 md:mt-5 p-2 md:p-4 px-3 lg:px-8 mb-5'>

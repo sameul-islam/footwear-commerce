@@ -88,14 +88,13 @@
 
 import React, { useEffect, useState } from 'react'
 import slider1 from '../../../assets/image/slider1.png';
-import slider2 from '../../../assets/image/slider2.png';
-import slider3 from '../../../assets/image/slider3.png';
+import slider2 from '../../../assets/image/slider2.webp';
 import {motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 
 
- const slideImage = [slider1, slider2, slider3]
+ const slideImage = [slider1, slider2]
 
 const Hero = () => {
     const [isSlide, setisSlide] = useState(0);
@@ -105,7 +104,7 @@ const Hero = () => {
     useEffect(() => {
          const interval = setInterval (() => {
             setisSlide((prev) => (prev + 1) % slideImage.length)
-         }, 7500);
+         }, 10000);
          return () => clearInterval(interval)
     }, []);
 
@@ -126,7 +125,7 @@ const Hero = () => {
         </AnimatePresence>
 
         {/* Overlay */}
-        <div className='absolute inset-0 bg-black/15 rounded-xl md:rounded-2xl pointer-events-none' />
+        <div className='absolute inset-0 bg-black/20 rounded-xl md:rounded-2xl pointer-events-none' />
 
        <div className='absolute bottom-10 flex flex-col md:flex-row items-center justify-between w-full gap-5 md:px-20'>
         {/* Hero Text */}

@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
     <div onClick={() => navigate(`/product/${product.slug}`)} className="group relative cursor-pointer py-2">
 
       {/* IMAGE WRAPPER */}
-      <div className="relative overflow-hidden rounded-md md:rounded-xl bg-gray-50 border border-gray-100 -z-10">
+      <div className="relative overflow-hidden rounded-md md:rounded-xl bg-[#f5f5f5] border border-gray-100">
 
         {/* BADGE (Desktop only) */}
         {(isBestSeller || isFeatured) && (

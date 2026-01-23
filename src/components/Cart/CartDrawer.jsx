@@ -6,6 +6,7 @@ import { closeCartDrawer } from '../../features/products/uiSlice';
 import { TfiClose } from 'react-icons/tfi';
 import { Link } from 'react-router-dom';
 import { GrCart } from 'react-icons/gr';
+import RecommendedDrawerProducts from './RecommendedDrawerProducts';
 
 const CartDrawer = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const CartDrawer = () => {
 
           {/* Drawer */}
           <motion.div
-            className="relative w-145 bg-white h-full shadow-xl"
+            className="relative w-full sm:w-145 bg-white h-full shadow-xl"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -38,7 +39,7 @@ const CartDrawer = () => {
               <button onClick={() => dispatch(closeCartDrawer())} className="text-xl cursor-pointer hover:rotate-180 transition duration-700"><TfiClose size={24}/></button>
             </div>
 
-            <div className="p-4 flex flex-col gap-4 overflow-y-auto no-scrollbar h-[calc(100%-400px)]">
+            <div className="p-4 flex flex-col gap-4 overflow-y-auto no-scrollbar h-[calc(100%-210px)]">
               {cartItems.length ? (
                 cartItems.map(item => <CartItem key={item.id} item={item} />)
               ) : (
@@ -62,7 +63,9 @@ const CartDrawer = () => {
                 </div>
                 
               )}
+            {cartItems.length > 0 && <RecommendedDrawerProducts/>}
             </div>
+
 
 
          {cartItems.length > 0 && (

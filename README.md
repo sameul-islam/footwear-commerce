@@ -97,3 +97,7 @@ Over the past six to seven days, I made a lot of changes to the project, which i
 Most importantly, I completely redesigned the navigation bar. The previous version looked very attractive, but it didn't align properly with my data structure and API logic.So even though it was visually pleasing, I decided to let it go and rebuild it from scratch.😢. Now, the navigation bar is fully completed and properly integrated.
 I have also finished around 70% of the cart section. In addition to that, I discovered multiple bugs across different parts of the project. Fixing those issues took a significant amount of time, which is another reason I couldn't document everything precisely.
 Finally, I've overcome all of those challenges. At this point, only a small portion of the cart section remains unfinished.
+
+### Day 23 – January 23, 2026
+
+Today, I added several shoe products to the cart section, which required updating the related objects. In addition, the review section and the recommended products section have been inplemented on the product detail page. The hero section image has also been changed, and these images were personally designed by me using Canva.

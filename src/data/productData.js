@@ -457,6 +457,62 @@ import product60_img5 from "../assets/products/women/product60/img5.webp";
 
 
 
+// =====================
+// SOCKS IMAGES
+// =====================
+
+// Socks Product 1
+import socks1_img1 from "../assets/products/socks/socks1-1.webp";
+import socks1_img2 from "../assets/products/socks/socks1-2.webp";
+
+// Socks Product 2
+import socks2_img1 from "../assets/products/socks/socks2-1.webp";
+import socks2_img2 from "../assets/products/socks/socks2-2.webp";
+
+// Socks Product 3
+import socks3_img1 from "../assets/products/socks/socks3-1.webp";
+import socks3_img2 from "../assets/products/socks/socks3-2.webp";
+
+// Socks Product 4
+import socks4_img1 from "../assets/products/socks/socks4-1.webp";
+import socks4_img2 from "../assets/products/socks/socks4-2.webp";
+
+// Socks Product 5
+import socks5_img1 from "../assets/products/socks/socks5-1.webp";
+import socks5_img2 from "../assets/products/socks/socks5-2.webp";
+
+// Socks Product 6
+import socks6_img1 from "../assets/products/socks/socks6-1.webp";
+import socks6_img2 from "../assets/products/socks/socks6-2.webp";
+
+// Socks Product 7
+import socks7_img1 from "../assets/products/socks/socks7-1.webp";
+import socks7_img2 from "../assets/products/socks/socks7-2.webp";
+
+
+
+
+// =====================
+// SHOE CARE IMAGES
+// =====================
+
+import care1_img from "../assets/products/shoe-care/liquid.png";
+import care2_img from "../assets/products/shoe-care/brush.png";
+import care3_img from "../assets/products/shoe-care/cream.png";
+import care4_img from "../assets/products/shoe-care/spray.png";
+import care5_img from "../assets/products/shoe-care/sprays.png";
+import care6_img from "../assets/products/shoe-care/wood.png";
+import care7_img from "../assets/products/shoe-care/cloth.png";
+import care8_img from "../assets/products/shoe-care/eraser.png";
+import care9_img from "../assets/products/shoe-care/kit.png";
+import care10_img from "../assets/products/shoe-care/shoehorn.png";
+
+
+
+
+
+
+
 
 export const products = [
   // Product 1
@@ -4078,6 +4134,747 @@ export const products = [
 
   createdAt: "2025-02-23",
   updatedAt: "2025-02-23"
+},
+
+// SOCKS PRODUCTS
+
+// product 1
+
+{
+  id: "elite-performance-socks",
+  sku: "SOCK-UNI-001",
+  slug: "elite-performance-running-socks",
+
+  name: "Elite Performance Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 25, sale: null, currency: "USD" },
+
+  rating: 4.8,
+  reviewsCount: 312,
+
+  description: {
+    short: "High-performance socks designed for long runs and intense training.",
+    long: "Elite Performance Socks provide moisture control, breathability, and arch support—ideal for athletes who demand comfort and durability.",
+    features: [
+      "Moisture-wicking fabric",
+      "Reinforced heel & toe",
+      "Arch compression support"
+    ],
+    materials: ["Cotton blend", "Elastane"],
+    careInstructions: ["Machine wash cold", "Do not bleach"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [socks1_img1, socks1_img2],
+      stockBySize: { oneSize: 120 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["premium", "sportswear"],
+  flags: { isFeatured: true, isBestseller: true },
+
+  createdAt: "2025-01-20",
+  updatedAt: "2025-01-22"
+},
+
+// product 2
+
+{
+  id: "everyday-comfort-socks",
+  sku: "SOCK-UNI-002",
+  slug: "everyday-comfort-cotton-socks",
+
+  name: "Everyday Comfort Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 18, sale: null, currency: "USD" },
+
+  rating: 4.6,
+  reviewsCount: 198,
+
+  description: {
+    short: "Soft cotton socks for daily wear.",
+    long: "Designed for everyday comfort with breathable cotton and a soft-touch finish.",
+    features: ["Soft feel", "Breathable weave"],
+    materials: ["Premium cotton"],
+    careInstructions: ["Machine wash", "Air dry"]
+  },
+
+  variants: [
+    {
+      color: "white",
+      images: [socks2_img1, socks2_img2],
+      stockBySize: { oneSize: 150 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["daily-wear"],
+  flags: { isFeatured: false, isBestseller: true },
+
+  createdAt: "2025-01-20",
+  updatedAt: "2025-01-22"
+},
+
+// product 3
+
+{
+  id: "anti-blister-running-socks",
+  sku: "SOCK-UNI-003",
+  slug: "anti-blister-running-socks",
+
+  name: "Anti-Blister Running Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 28, sale: null, currency: "USD" },
+
+  rating: 4.9,
+  reviewsCount: 264,
+
+  description: {
+    short: "Blister-free comfort for long-distance runners.",
+    long: "Advanced cushioning and seamless design reduce friction and hotspots.",
+    features: ["Seamless toe", "Extra cushioning"],
+    materials: ["Nylon blend"],
+    careInstructions: ["Cold wash only"]
+  },
+
+  variants: [
+    {
+      color: "gray",
+      images: [socks3_img1, socks3_img2],
+      stockBySize: { oneSize: 90 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["running", "performance"],
+  flags: { isFeatured: true, isBestseller: false },
+
+  createdAt: "2025-01-21",
+  updatedAt: "2025-01-22"
+},
+
+// product 4
+
+{
+  id: "ankle-training-socks",
+  sku: "SOCK-UNI-004",
+  slug: "ankle-training-socks",
+
+  name: "Ankle Training Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 16, sale: null, currency: "USD" },
+
+  rating: 4.5,
+  reviewsCount: 143,
+
+  description: {
+    short: "Lightweight ankle socks for workouts.",
+    long: "Low-cut ankle socks designed for gym sessions and daily training with breathable comfort.",
+    features: ["Lightweight", "Sweat control"],
+    materials: ["Cotton blend"],
+    careInstructions: ["Machine wash cold"]
+  },
+
+  variants: [
+    {
+      color: "black",
+      images: [socks4_img1, socks4_img2],
+      stockBySize: { oneSize: 110 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["training", "ankle"],
+  flags: { isFeatured: false, isBestseller: false },
+
+  createdAt: "2025-01-21",
+  updatedAt: "2025-01-22"
+},
+
+// product 5
+
+{
+  id: "no-show-socks",
+  sku: "SOCK-UNI-005",
+  slug: "no-show-socks",
+
+  name: "No-Show Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 14, sale: null, currency: "USD" },
+
+  rating: 4.4,
+  reviewsCount: 121,
+
+  description: {
+    short: "Invisible socks for sneakers.",
+    long: "Designed to stay hidden while providing grip and comfort throughout the day.",
+    features: ["Hidden fit", "Anti-slip heel"],
+    materials: ["Cotton", "Spandex"],
+    careInstructions: ["Gentle wash"]
+  },
+
+  variants: [
+    {
+      color: "beige",
+      images: [socks5_img1, socks5_img2],
+      stockBySize: { oneSize: 95 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["casual", "no-show"],
+  flags: { isFeatured: false, isBestseller: true },
+
+  createdAt: "2025-01-21",
+  updatedAt: "2025-01-22"
+},
+
+// product 6
+
+{
+  id: "winter-thermal-socks",
+  sku: "SOCK-UNI-006",
+  slug: "winter-thermal-socks",
+
+  name: "Winter Thermal Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 30, sale: null, currency: "USD" },
+
+  rating: 4.9,
+  reviewsCount: 210,
+
+  description: {
+    short: "Warm socks for cold weather.",
+    long: "Thermal insulation socks built for winter wear and extreme comfort.",
+    features: ["Heat retention", "Soft interior"],
+    materials: ["Wool blend"],
+    careInstructions: ["Hand wash recommended"]
+  },
+
+  variants: [
+    {
+      color: "charcoal",
+      images: [socks6_img1, socks6_img2],
+      stockBySize: { oneSize: 80 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["winter", "thermal"],
+  flags: { isFeatured: true, isBestseller: false },
+
+  createdAt: "2025-01-21",
+  updatedAt: "2025-01-22"
+},
+
+// product 7
+
+{
+  id: "casual-striped-socks",
+  sku: "SOCK-UNI-007",
+  slug: "casual-striped-socks",
+
+  name: "Casual Striped Socks",
+  brand: "Aero",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "socks",
+
+  price: { original: 20, sale: null, currency: "USD" },
+
+  rating: 4.3,
+  reviewsCount: 88,
+
+  description: {
+    short: "Stylish striped socks for casual outfits.",
+    long: "Add subtle style to your everyday look with comfortable striped socks.",
+    features: ["Modern design", "Soft touch"],
+    materials: ["Cotton"],
+    careInstructions: ["Machine wash"]
+  },
+
+  variants: [
+    {
+      color: "navy",
+      images: [socks7_img1, socks7_img2],
+      stockBySize: { oneSize: 100 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["casual", "style"],
+  flags: { isFeatured: false, isBestseller: false },
+
+  createdAt: "2025-01-21",
+  updatedAt: "2025-01-22"
+},
+
+
+// SHOE CARE PRODUCTS
+
+// product 1
+
+{
+  id: "premium-shoe-cleaner",
+  sku: "CARE-001",
+  slug: "premium-shoe-cleaner",
+
+  name: "Premium Shoe Cleaner",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 24, sale: null, currency: "USD" },
+
+  rating: 4.8,
+  reviewsCount: 312,
+
+  description: {
+    short: "Deep cleaning solution for all footwear.",
+    long: "A powerful yet gentle cleaner designed to remove dirt and stains without damaging materials.",
+    features: ["Safe for leather & fabric", "Deep cleaning"],
+    materials: ["Natural cleaning agents"],
+    careInstructions: ["Apply with brush, wipe with cloth"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care1_img],
+      stockBySize: { standard: 150 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["cleaning", "essential"],
+  flags: { isFeatured: true, isBestseller: true },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 2
+
+{
+  id: "shoe-cleaning-brush",
+  sku: "CARE-002",
+  slug: "shoe-cleaning-brush",
+
+  name: "Shoe Cleaning Brush",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 14, sale: null, currency: "USD" },
+
+  rating: 4.6,
+  reviewsCount: 190,
+
+  description: {
+    short: "Soft-bristle brush for safe cleaning.",
+    long: "Designed to lift dirt effectively while protecting delicate shoe materials.",
+    features: ["Soft bristles", "Ergonomic grip"],
+    materials: ["Natural fibers", "Wood handle"],
+    careInstructions: ["Rinse after use"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care2_img],
+      stockBySize: { standard: 200 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["brush", "cleaning"],
+  flags: { isFeatured: false, isBestseller: false },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 3
+
+{
+  id: "leather-conditioner",
+  sku: "CARE-003",
+  slug: "leather-conditioner",
+
+  name: "Leather Conditioner Cream",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 28, sale: null, currency: "USD" },
+
+  rating: 4.9,
+  reviewsCount: 265,
+
+  description: {
+    short: "Restore softness and shine to leather.",
+    long: "Nourishes leather shoes to prevent cracking and extend lifespan.",
+    features: ["Moisturizes leather", "Prevents cracks"],
+    materials: ["Natural waxes"],
+    careInstructions: ["Apply with cloth, let dry"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care3_img],
+      stockBySize: { standard: 120 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["leather", "premium"],
+  flags: { isFeatured: true, isBestseller: false },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 4
+
+{
+  id: "shoe-protector-spray",
+  sku: "CARE-004",
+  slug: "shoe-protector-spray",
+
+  name: "Water & Stain Protector Spray",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 26, sale: null, currency: "USD" },
+
+  rating: 4.7,
+  reviewsCount: 221,
+
+  description: {
+    short: "Invisible protection against water and stains.",
+    long: "Creates a breathable barrier that repels liquid and dirt.",
+    features: ["Water-repellent", "Breathable layer"],
+    materials: ["Eco-safe formula"],
+    careInstructions: ["Spray evenly, air dry"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care4_img],
+      stockBySize: { standard: 140 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["protection", "spray"],
+  flags: { isFeatured: true, isBestseller: true },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 5
+
+{
+  id: "shoe-deodorizer",
+  sku: "CARE-005",
+  slug: "shoe-deodorizer",
+
+  name: "Shoe Deodorizer Spray",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 18, sale: null, currency: "USD" },
+
+  rating: 4.5,
+  reviewsCount: 174,
+
+  description: {
+    short: "Eliminates odor instantly.",
+    long: "Keeps shoes fresh with antibacterial odor-control technology.",
+    features: ["Odor neutralizer", "Antibacterial"],
+    materials: ["Plant-based agents"],
+    careInstructions: ["Spray inside shoe"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care5_img],
+      stockBySize: { standard: 160 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["fresh", "hygiene"],
+  flags: { isFeatured: false, isBestseller: false },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 6
+
+{
+  id: "shoe-polish-kit",
+  sku: "CARE-006",
+  slug: "shoe-polish-kit",
+
+  name: "Premium Shoe Polish Kit",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 42, sale: null, currency: "USD" },
+
+  rating: 4.9,
+  reviewsCount: 98,
+
+  description: {
+    short: "Complete polishing kit for leather shoes.",
+    long: "Everything needed to restore shine and elegance.",
+    features: ["Complete kit", "Luxury finish"],
+    materials: ["Wax polish", "Cotton cloth"],
+    careInstructions: ["Use after cleaning"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care6_img],
+      stockBySize: { standard: 90 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["polish", "luxury"],
+  flags: { isFeatured: true, isBestseller: false },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 7
+
+{
+  id: "shoe-trees",
+  sku: "CARE-007",
+  slug: "shoe-trees",
+
+  name: "Cedar Wood Shoe Trees",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 38, sale: null, currency: "USD" },
+
+  rating: 4.8,
+  reviewsCount: 142,
+
+  description: {
+    short: "Maintain shoe shape and freshness.",
+    long: "Absorbs moisture and preserves the natural shape of shoes.",
+    features: ["Moisture absorption", "Shape retention"],
+    materials: ["Cedar wood"],
+    careInstructions: ["Insert after wear"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care7_img],
+      stockBySize: { standard: 110 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["storage", "maintenance"],
+  flags: { isFeatured: true, isBestseller: true },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 8
+
+{
+  id: "microfiber-cleaning-cloth",
+  sku: "CARE-008",
+  slug: "microfiber-cleaning-cloth",
+
+  name: "Microfiber Cleaning Cloth",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 10, sale: null, currency: "USD" },
+
+  rating: 4.4,
+  reviewsCount: 210,
+
+  description: {
+    short: "Lint-free polishing cloth.",
+    long: "Perfect for wiping, drying, and polishing shoes.",
+    features: ["Non-scratch", "Reusable"],
+    materials: ["Microfiber"],
+    careInstructions: ["Machine washable"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care8_img],
+      stockBySize: { standard: 300 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["cloth", "cleaning"],
+  flags: { isFeatured: false, isBestseller: false },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 9
+
+{
+  id: "suede-eraser",
+  sku: "CARE-009",
+  slug: "suede-eraser",
+
+  name: "Suede & Nubuck Eraser",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 16, sale: null, currency: "USD" },
+
+  rating: 4.6,
+  reviewsCount: 133,
+
+  description: {
+    short: "Remove stains from suede shoes.",
+    long: "Specialized eraser designed for suede and nubuck materials.",
+    features: ["Material-safe", "Precision cleaning"],
+    materials: ["Rubber compound"],
+    careInstructions: ["Rub gently on stains"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care9_img],
+      stockBySize: { standard: 140 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["suede", "special-care"],
+  flags: { isFeatured: false, isBestseller: false },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
+},
+
+// product 10
+
+{
+  id: "complete-shoe-care-kit",
+  sku: "CARE-010",
+  slug: "complete-shoe-care-kit",
+
+  name: "Complete Shoe Care Kit",
+  brand: "Aero Care",
+
+  gender: "unisex",
+  category: "accessories",
+  productType: "shoe-care",
+
+  price: { original: 85, sale: null, currency: "USD" },
+
+  rating: 5.0,
+  reviewsCount: 76,
+
+  description: {
+    short: "All-in-one professional shoe care solution.",
+    long: "Includes cleaner, brush, protector, cloth, and conditioner.",
+    features: ["All essentials included", "Professional grade"],
+    materials: ["Mixed premium materials"],
+    careInstructions: ["Use as per included guide"]
+  },
+
+  variants: [
+    {
+      color: "",
+      images: [care10_img],
+      stockBySize: { standard: 60 }
+    }
+  ],
+
+  availability: "inStock",
+  tags: ["shoehorn", "ultimate"],
+  flags: { isFeatured: true, isBestseller: true },
+
+  createdAt: "2025-01-22",
+  updatedAt: "2025-01-22"
 }
+
 
 ];

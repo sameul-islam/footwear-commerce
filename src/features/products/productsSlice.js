@@ -163,6 +163,7 @@ export const selectBestSellers = createSelector(
 
 
 
+
   
 
 //  Generates available filter options for the filter UI. Used to display product types, price range, colors, sizes.  availability and flags in the filter sidebar/drawer. (That means just make options , Don't filtering)
@@ -213,3 +214,26 @@ export const selectBestSellers = createSelector(
   // Product detail cart logic
 
   export const selectProductBySlug = (slug) => createSelector([selectAllProducts],(products) => products.find(p => p.slug === slug));
+
+
+
+
+
+  // cart drawer users  Purchased
+
+export const selectShoeCareProducts = createSelector(
+  [selectAllProducts],products => products.filter(p => p.productType === "shoe-care")
+);
+
+export const selectSocksProducts = createSelector(
+  [selectAllProducts], products => products.filter(p => p.productType === "socks")
+);
+
+export const selectDrawerRecommendations = createSelector(
+  [selectShoeCareProducts, selectSocksProducts], (careProducts, socksProducts) => {
+    return {
+      shoeCare: careProducts.slice(0, 7),
+      socks: socksProducts.slice(0, 7),
+    };
+  }
+);
