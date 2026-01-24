@@ -30,7 +30,7 @@ const CheckoutPage = () => {
     <div className="fixed inset-0 z-50 bg-white w-full">
 
       {/* top logo */}
-      <Link className="w-full border-b border-black/15">
+      <Link to="/" className="w-full border-b border-black/15">
       <div className="max-w-5xl mx-auto items-center justify-start">
         <img src={logo} alt="logo" className="h-16" />
       </div>
