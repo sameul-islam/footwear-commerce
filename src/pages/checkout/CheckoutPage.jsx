@@ -5,6 +5,7 @@ import  logo  from '../../assets/image/logo.webp'
 import { FaDotCircle, FaRegDotCircle } from "react-icons/fa";
 import paymentImage from '../../assets/image/payment.png'
 import { HiDotsHorizontal } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const CheckoutPage = () => {
   const cartItems = useSelector(selectCartItems);
@@ -29,11 +30,11 @@ const CheckoutPage = () => {
     <div className="fixed inset-0 z-50 bg-white w-full">
 
       {/* top logo */}
-      <div className="w-full border-b border-black/15">
+      <Link className="w-full border-b border-black/15">
       <div className="max-w-5xl mx-auto items-center justify-start">
         <img src={logo} alt="logo" className="h-16" />
       </div>
-      </div>
+      </Link>
 
       <div className=" h-screen w-full sm:w-[98%] md:w-[95%] lg:w-[75%] xl:w-[65%] 2xl:w-[55%] mx-auto flex flex-col md:flex-row overflow-hidden">
 
