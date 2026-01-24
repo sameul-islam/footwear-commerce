@@ -13,6 +13,7 @@ import FeaturedProductPage from './pages/FeaturedProductPage'
 import SearchResultsPage from './pages/searchquery/SearchResultsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
 import CollectionPage from './pages/CollectionPage'
+import CheckoutPage from './pages/checkout/CheckoutPage'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
              <Route path='/search' element={<SearchResultsPage/>} />
              <Route path='/product/:slug' element={<ProductDetailPage/>} />
              <Route path='/collections/:gender/:productType' element={<CollectionPage/>} />
+             <Route path='/checkout' element={<CheckoutPage/>} />
             </Routes>
             <Footer/>
       </div>

@@ -101,3 +101,8 @@ Finally, I've overcome all of those challenges. At this point, only a small port
 ### Day 23 – January 23, 2026
 
 Today, I added several shoe products to the cart section, which required updating the related objects. In addition, the review section and the recommended products section have been inplemented on the product detail page. The hero section image has also been changed, and these images were personally designed by me using Canva.
+
+### Day 24 – January 24, 2026
+
+Today, I completed the checkout page where all purchased products are clearly displayed in a structured order summary.
+The entire checkout experience has been implemented purely on the frontend, covering everything that is realistically achievable without backend integration. The design follows a premium standard, with a clean layout, clear user flow, and a professsional purchase experience that refilects real-world e-commerce platforms.

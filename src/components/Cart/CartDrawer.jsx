@@ -73,9 +73,11 @@ const CartDrawer = () => {
               <p className="font-semibold flex justify-between font-Quicksand">
                 Subtotal: <span>${total.toFixed(2)}</span>
               </p>
-              <button className="mt-5 w-full bg-[#111010] hover:bg-[#5f5c5c] text-white font-semibold py-3 cursor-pointer font-Quicksand transition duration-300">
+             <Link to='/checkout'>
+              <button onClick={() => dispatch(closeCartDrawer())} className="mt-5 w-full bg-[#111010] hover:bg-[#5f5c5c] text-white font-semibold py-3 cursor-pointer font-Quicksand transition duration-300">
                 Checkout
               </button>
+              </Link>
             </div>
          )}
 
