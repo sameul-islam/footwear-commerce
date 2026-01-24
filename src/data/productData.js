@@ -505,7 +505,7 @@ import care6_img from "../assets/products/shoe-care/wood.png";
 import care7_img from "../assets/products/shoe-care/cloth.png";
 import care8_img from "../assets/products/shoe-care/eraser.png";
 import care9_img from "../assets/products/shoe-care/kit.png";
-import care10_img from "../assets/products/shoe-care/shoehorn.png";
+import care10_img from "../assets/products/shoe-care/shoe-horn.png";
 
 
 
