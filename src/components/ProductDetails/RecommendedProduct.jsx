@@ -80,6 +80,7 @@ const RecommendedProduct = () => {
                   <img
                     src={item.variants?.[0]?.images?.[0] || 'placeholder.webp'}
                     alt={item.name}
+                    loading='lazy'
                     className="h-65 md:h-90 xl:h-113 2xl:h-125 border border-gray-100 cursor-pointer bg-[#f5f5f5]"
                   />
                 </Link>

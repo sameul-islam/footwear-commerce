@@ -222,7 +222,7 @@ const Reviews = () => {
 
             {/* Right Section */}
             <div className="flex flex-col items-end gap-2">
-              <img src={review.productImg} alt={review.name} className="w-20 h-20 md:w-24 md:h-24 object-cover"/>
+              <img src={review.productImg} alt={review.name} loading="lazy" className="w-20 h-20 md:w-24 md:h-24 object-cover"/>
               <span className="text-[#791b1b] font-Poppins text-xs">{review.date}</span>
               <span className="text-[#791b1b] font-Poppins text-xs flex items-center gap-0.5"><VscVerifiedFilled/> {review.verified ? "Verified Buyer" : "Unverified"}</span>
             </div>

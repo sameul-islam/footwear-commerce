@@ -3,13 +3,16 @@ import { motion } from "framer-motion";
 import { Menu } from "./menuData"; 
 import  logo  from '../../../assets/image/logo.webp'
 import { GrClose } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
 import { CiLocationOn } from "react-icons/ci";
 import { IoLanguageSharp } from "react-icons/io5";
 import { MdFavoriteBorder } from "react-icons/md";
 
 const MainDrawer = ({ isOpen, onClose, onOpenSubMenu }) => {
+  
+  const navigate = useNavigate();
+
   return (
     <div>
       {/* Overlay */}
@@ -44,7 +47,15 @@ const MainDrawer = ({ isOpen, onClose, onOpenSubMenu }) => {
               <li
                 key={item.id}
                 className="flex justify-between items-center p-4 sm:p-5 border-b border-gray-200 cursor-pointer hover:bg-gray-100"
-                onClick={() => onOpenSubMenu(item.name)}
+                // onClick={() => onOpenSubMenu(item.name)}
+                onClick={() => {
+                  if (item.type === "dropdown") {
+                    onOpenSubMenu(item.name);
+                  } else {
+                    onClose();
+                    navigate(item.link)
+                  }
+                }}
               >
                 <span className="font-medium text-gray-800 font-Lato">{item.name}</span>
                 <span className="text-gray-600"><SlArrowRight/></span>

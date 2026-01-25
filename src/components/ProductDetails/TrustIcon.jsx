@@ -38,6 +38,7 @@ const TrustIcon = () => {
           <img
             src={item.image}
             alt={`image${idx}`}
+            loading='lazy'
             className="h-8 w-8 object-contain"
           />
           {item.title && (

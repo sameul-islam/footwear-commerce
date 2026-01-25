@@ -40,7 +40,6 @@ const CategoryImage = () => {
         {image.map((item, idx) => (
           <div key={idx} className='relative flex shrink-0 overflow-hidden category-img'>
           <img
-          
           src={item.img}
           alt={`Image${idx}`}
           loading='lazy'

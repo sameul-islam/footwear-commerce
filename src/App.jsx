@@ -14,6 +14,8 @@ import SearchResultsPage from './pages/searchquery/SearchResultsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
 import CollectionPage from './pages/CollectionPage'
 import CheckoutPage from './pages/checkout/CheckoutPage'
+import AuthPage from './pages/account/AuthPage'
+import OurStory from './pages/OurStory'
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
              <Route path='/product/:slug' element={<ProductDetailPage/>} />
              <Route path='/collections/:gender/:productType' element={<CollectionPage/>} />
              <Route path='/checkout' element={<CheckoutPage/>} />
+             <Route path='/account' element={<AuthPage/>} />
+             <Route path='/our-story' element={<OurStory/>} />
             </Routes>
             <Footer/>
       </div>

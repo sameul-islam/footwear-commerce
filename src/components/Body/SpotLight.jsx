@@ -94,6 +94,7 @@ const Spotlight = () => {
         {/* Shoe image */}
         <motion.img
           src={shoeImage}
+          loading="lazy"
           alt="Premium Shoe"
           className="relative w-60 md:w-80 lg:w-100 xl:w-110 select-none"
         />

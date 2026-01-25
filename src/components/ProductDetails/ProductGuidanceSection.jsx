@@ -12,6 +12,7 @@ const ProductGuidanceSection = () => {
         <img
           src={sampleImage}
           alt="Product Guidance"
+          loading="lazy"
           className="w-auto max-h-180"
         />
       </div>

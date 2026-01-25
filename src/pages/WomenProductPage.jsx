@@ -92,7 +92,7 @@ const WomenProductPage = () => {
 
     {/* banner */}
     <div className='w-[99%] mx-auto relative'>
-     <img src={banner} alt="menBannerImage" className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-xl md:rounded-b-2xl' />
+     <img src={banner} alt="menBannerImage" loading='lazy' className='object-cover object-center h-60 md:h-80 lg:h-100 w-full rounded-b-xl md:rounded-b-2xl' />
      <div className='absolute inset-0 bg-black/30 rounded-b-2xl'/>
      <div className='absolute inset-0 flex items-center justify-center text-2xl font-Quicksand font-bold text-white'>WOMEN'S COLLECTION</div>
      </div>

@@ -29,6 +29,7 @@ const CartItem = ({ item }) => {
       <img 
         src={item.image} 
         alt={item.name} 
+        loading="lazy"
         className="w-18 h-18 sm:w-20 sm:h-20 bg-gray-50/60 object-cover rounded-lg" 
       />
 

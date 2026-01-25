@@ -116,6 +116,7 @@ const Hero = () => {
            key={isSlide}
            src={slideImage[isSlide]} 
            alt="slideImage" 
+           fetchPriority='high'
            className='w-full h-[56vh] md:h-[70vh] xl:h-[85vh]  object-cover rounded-xl md:rounded-2xl'
            initial={{ opacity: 0 }}
            animate={{ opacity: 1 }}

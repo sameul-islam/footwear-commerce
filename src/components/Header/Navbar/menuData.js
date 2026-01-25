@@ -402,8 +402,8 @@ import womenFeatured1 from "../../../assets/image/womenfeatured1.webp";
 import womenFeatured2 from "../../../assets/image/womenfeatured2.webp";
 
 export const Menu = [
-  { id: 1, name: "MEN", link: "/men", type: "dropdown" },
-  { id: 2, name: "WOMEN", link: "/women", type: "dropdown" },
+  { id: 1, name: "MEN", type: "dropdown" },
+  { id: 2, name: "WOMEN", type: "dropdown" },
   { id: 3, name: "OUR STORY", link: "/our-story", type: "link" },
 ];
 

@@ -551,7 +551,7 @@ const Navbar = () => {
               <div className='flex gap-2'>
               {MENU_CONFIG[activeMenu].featuredImages.map((img, idx) => (
                 <Link to={img.href} key={idx} className='relative overflow-hidden cursor-pointer group'>
-                  <img src={img.src} alt={img.alt} className='h-90 w-auto object-cover group-hover:scale-105 transition-transform duration-500'/>
+                  <img src={img.src} alt={img.alt} loading='lazy' className='h-90 w-auto object-cover group-hover:scale-105 transition-transform duration-500'/>
                
                     <div className='absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300' />
 
@@ -569,9 +569,9 @@ const Navbar = () => {
               <div className=' cursor-pointer p-3 rounded-full hover:bg-gray-100 transition duration-300'>
                 <LuSearch size={22} onClick={handleSearchClick}/>
               </div>
-              <div className='cursor-pointer p-3 rounded-full hover:bg-gray-100 transition duration-300'>
+              <Link to='/account' className='cursor-pointer p-3 rounded-full hover:bg-gray-100 transition duration-300'>
                 <BiUser size={22}/>
-              </div>
+              </Link>
               <div>
                 <div onClick={() => dispatch(openCartDrawer())} className='relative cursor-pointer'>
                 <IoBagOutline size={25}/>
@@ -611,9 +611,9 @@ const Navbar = () => {
             </Link>
 
             <div className='flex items-center gap-5 md:gap-7 lg:gap-10'>
-            <div>
+            <Link to='/account'>
               <RiUser6Line className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
-            </div>
+            </Link>
 
             <div className='relative' onClick={() => dispatch(openCartDrawer())}>
               <BiCart className='h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8'/>
@@ -660,38 +660,23 @@ const Navbar = () => {
               )}
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
+            <Link to="/account" className='flex flex-col items-center justify-center'>
               <FiUser className='h-6 w-6 sm:h-7 sm:w-7'/><span className='font-Lato text-xs font-semibold'>Account</span>
-            </div>
+            </Link>
 
          </div>
 
         </motion.div>
 
-        {/* Main Drawer of Mobile */}
-           <MainDrawer
-            isOpen={mobileMenuOpen}
-            onClose={closeAllDrawers}
-            onOpenSubMenu={handleOpenSubMenu}
-            />
 
-         {/* SubMenu Drawer of Mobile */}
-                <SubMenuDrawer
-                 isOpen={Boolean(subMenuOpen)}
-                 menuName={subMenuOpen}
-                 onClose={closeAllDrawers}
-                 onBack={handleBackToMainMenu}
-                 onOpenItemList={handleOpenItemList}
-               />
+   <AnimatePresence mode="wait">
+  {mobileMenuOpen && <MainDrawer key="main" isOpen={mobileMenuOpen} onClose={closeAllDrawers} onOpenSubMenu={handleOpenSubMenu} />}
 
-         {/* Item List Drawer of Mobile */}
-             <ItemListDrawer
-                isOpen={Boolean(itemListOpen)}
-                menuName={itemListOpen?.menuName}
-                columnTitle={itemListOpen?.columnTitle}
-                onClose={closeAllDrawers}
-                onBack={handleBackToSubMenu}
-              />
+  {subMenuOpen && <SubMenuDrawer key="sub" isOpen={Boolean(subMenuOpen)} menuName={subMenuOpen} onClose={closeAllDrawers} onBack={handleBackToMainMenu} onOpenItemList={handleOpenItemList} />}
+  
+  {itemListOpen && <ItemListDrawer key="item" isOpen={Boolean(itemListOpen)} menuName={itemListOpen?.menuName} columnTitle={itemListOpen?.columnTitle} onClose={closeAllDrawers} onBack={handleBackToSubMenu} />}
+</AnimatePresence>
+
 
 
            <CartDrawer isOpen={cartDrawerOpen} onClose={() => dispatch(closeCartDrawer())} />
@@ -701,3 +686,37 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
+
+        {/* Main Drawer of Mobile */}
+           {/* <MainDrawer
+            isOpen={mobileMenuOpen}
+            onClose={closeAllDrawers}
+            onOpenSubMenu={handleOpenSubMenu}
+            /> */}
+
+         {/* SubMenu Drawer of Mobile */}
+                {/* <SubMenuDrawer
+                 isOpen={Boolean(subMenuOpen)}
+                 menuName={subMenuOpen}
+                 onClose={closeAllDrawers}
+                 onBack={handleBackToMainMenu}
+                 onOpenItemList={handleOpenItemList}
+               /> */}
+
+         {/* Item List Drawer of Mobile */}
+             {/* <ItemListDrawer
+                isOpen={Boolean(itemListOpen)}
+                menuName={itemListOpen?.menuName}
+                columnTitle={itemListOpen?.columnTitle}
+                onClose={closeAllDrawers}
+                onBack={handleBackToSubMenu}
+              /> */}

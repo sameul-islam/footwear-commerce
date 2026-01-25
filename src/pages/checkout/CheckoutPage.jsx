@@ -193,7 +193,7 @@ const CheckoutPage = () => {
         <div className="flex flex-col gap-4 mb-8">
           {cartItems.map(item => (
             <div key={item.id} className="flex gap-4 border-b border-gray-200 p-2">
-              <img src={item.image} alt={item.name} className="w-16 h-16 object-cover bg-[#f5f5f5]" />
+              <img src={item.image} alt={item.name} loading="lazy" className="w-16 h-16 object-cover bg-[#f5f5f5]" />
               <div className="flex-1">
                 <p className="text-sm font-medium font-Outfit">{item.name}</p>
                 <p className="text-xs text-gray-600 font-Outfit">

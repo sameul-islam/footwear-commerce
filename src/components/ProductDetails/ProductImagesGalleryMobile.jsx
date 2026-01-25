@@ -82,6 +82,7 @@ const ProductImagesGalleryMobile = ({ product , activeVariant }) => {
       <motion.img
         src={activeVariant.images[activeIndex]}
         alt={`${product.name} fullscreen`}
+        loading="lazy"
         className="w-full h-full object-contain touch-none"
         initial={{ scale: 1 }}
         whileTap={{ scale: 1 }}

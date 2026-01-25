@@ -106,3 +106,22 @@ Today, I added several shoe products to the cart section, which required updatin
 
 Today, I completed the checkout page where all purchased products are clearly displayed in a structured order summary.
 The entire checkout experience has been implemented purely on the frontend, covering everything that is realistically achievable without backend integration. The design follows a premium standard, with a clean layout, clear user flow, and a professsional purchase experience that refilects real-world e-commerce platforms.
+
+### Day 25 – January 25, 2026
+
+Today, I have completed the Account and Our Story pages.
+
+
+
+## Conclusion & Reflection :
+
+I have completed the frontend of the shoe e-commerce website, and it is ready for backend integration. All products are sourced from local suppliers and structured to reflect high backend quality. The project includes many types of logic, and I used Redux Toolkit to manage all state and functionality effectively.
+
+Because of the heavy use of images and the fact that all data is currently served from the frontend, hosting on platforms like Netlify or Vercel might lead to slower performance. Also, as a free hosting option, such a large project may naturally experience some delays.
+
+The code for this project is publicly available, so anyone can pull it and run it locally for learning purposes. However, I strongly recommend using it only as a reference or learning tool, and not claiming or deploying it as your own work.
+
+Although the documentation states that the development took 25 days, the truth is the project took much longer to finish due to various bugs and challenges. I have kept track of progress as accurately as possible to provide a clear overview of my daily work.
+
+Importantly, this project is not “finished” in the true sense. I plan to keep updating and improving it whenever needed. I also expect to start backend development very soon, aiming to make this a fully functional full-stack application. Ultimately, this project is designed to be production-ready and suitable for real-world business use.
+
